@@ -1,0 +1,243 @@
+{%- liquid
+  assign has_visible_rows = false
+  assign product_labels = section.settings.product_metafield_labels | split: '|'
+  assign product_keys = section.settings.product_metafield_keys | split: '|'
+  assign variant_labels = section.settings.variant_metafield_labels | split: '|'
+  assign variant_keys = section.settings.variant_metafield_keys | split: '|'
+  assign current_variant = product.selected_or_first_available_variant
+
+  for key in product_keys
+    assign key_val = key | strip
+    if key_val == blank
+      continue
+    endif
+    assign mf = product.metafields.custom[key_val]
+    if mf != blank and mf.value != blank
+      assign has_visible_rows = true
+      break
+    endif
+  endfor
+
+  unless has_visible_rows
+    for key in variant_keys
+      assign key_val = key | strip
+      if key_val == blank
+        continue
+      endif
+      assign mf = current_variant.metafields.custom[key_val]
+      if mf != blank and mf.value != blank
+        assign has_visible_rows = true
+        break
+      endif
+    endfor
+  endunless
+-%}
+
+{% style %}
+  #shopify-section-{{ section.id }} .product-specs {
+    --product-specs-stripe: {{ section.settings.stripe_color }};
+  }
+
+  #shopify-section-{{ section.id }} .product-specs__row:nth-child(odd) {
+    background-color: var(--product-specs-stripe);
+  }
+{% endstyle %}
+
+<div
+  class="product-specs fully-spaced-row--medium"
+  data-product-specs
+  data-section-id="{{ section.id }}"
+  data-url="{{ product.url }}"
+  {% unless has_visible_rows %}style="display: none;"{% endunless %}
+>
+  <div class="container">
+    {%- if section.settings.title != blank -%}
+      <h2 class="product-specs__title majortitle in-content">{{ section.settings.title | escape }}</h2>
+    {%- endif -%}
+
+    <div class="product-specs__table" data-product-specs-table>
+      {%- for key in product_keys -%}
+        {%- assign key_val = key | strip -%}
+        {%- if key_val == blank -%}
+          {%- continue -%}
+        {%- endif -%}
+        {%- assign mf = product.metafields.custom[key_val] -%}
+        {%- if mf != blank and mf.value != blank -%}
+          {%- assign label = product_labels[forloop.index0] | strip -%}
+          <div class="product-specs__row">
+            <div class="product-specs__label">{{ label | escape }}</div>
+            <div class="product-specs__value">{{ mf.value }}</div>
+          </div>
+        {%- endif -%}
+      {%- endfor -%}
+
+      {%- for key in variant_keys -%}
+        {%- assign key_val = key | strip -%}
+        {%- if key_val == blank -%}
+          {%- continue -%}
+        {%- endif -%}
+        {%- assign mf = current_variant.metafields.custom[key_val] -%}
+        {%- assign label = variant_labels[forloop.index0] | strip -%}
+        {% assign mf_value = '' %}
+        {% assign mf_value = mf.value %}
+        {% if label == 'SKU' %}
+          {% assign mf = 'SKU' %}
+          {% assign mf_value = product.selected_or_first_available_variant.sku %}
+        {% endif %}
+        {%- if mf != blank and mf_value != blank -%}
+          <div class="product-specs__row">
+            <div class="product-specs__label">{{ label | escape }}</div>
+            <div class="product-specs__value">{{ mf_value }}</div>
+          </div>
+        {%- endif -%}
+      {%- endfor -%}
+    </div>
+  </div>
+</div>
+
+{% stylesheet %}
+  .product-specs__title {
+    margin-bottom: 1.5em;
+    font-family: var(--heading-font-family);
+    font-weight: var(--heading-font-weight);
+    font-style: var(--heading-font-style);
+  }
+
+  .product-specs__table {
+    width: 100%;
+  }
+
+  .product-specs__row {
+    display: grid;
+    grid-template-columns: minmax(8rem, 40%) 1fr;
+    gap: 1.5rem 2rem;
+    padding: 0.75rem 1rem;
+    font-family: var(--base-font-family);
+    font-size: var(--base-text-size);
+    color: var(--text-color);
+  }
+
+  .product-specs__label,
+  .product-specs__value {
+    text-align: left;
+  }
+
+  @media (max-width: 767.98px) {
+    .product-specs__row {
+      grid-template-columns: minmax(6rem, 45%) 1fr;
+      gap: 0.5rem 0.75rem;
+      padding: 0.875rem 1rem;
+    }
+  }
+{% endstylesheet %}
+
+{% javascript %}
+(function () {
+  if (window.__productSpecsVariantListener) return;
+  window.__productSpecsVariantListener = true;
+
+  var controllers = new WeakMap();
+
+  function refreshProductSpecs(variantId) {
+    if (!variantId) return;
+
+    document.querySelectorAll('[data-product-specs]').forEach(function (el) {
+      var sectionId = el.dataset.sectionId;
+      var productUrl = el.dataset.url;
+      if (!sectionId || !productUrl) return;
+
+      var prev = controllers.get(el);
+      if (prev) prev.abort();
+      var controller = new AbortController();
+      controllers.set(el, controller);
+
+      var separator = productUrl.indexOf('?') >= 0 ? '&' : '?';
+      var fetchUrl = productUrl + separator + 'variant=' + encodeURIComponent(variantId) + '&section_id=' + encodeURIComponent(sectionId);
+
+      fetch(fetchUrl, { signal: controller.signal })
+        .then(function (response) {
+          if (!response.ok) throw new Error('Section fetch failed');
+          return response.text();
+        })
+        .then(function (html) {
+          var doc = new DOMParser().parseFromString(html, 'text/html');
+          var incoming = doc.querySelector('[data-product-specs][data-section-id="' + sectionId + '"]')
+            || doc.querySelector('[data-product-specs]');
+          if (!incoming) return;
+
+          el.innerHTML = incoming.innerHTML;
+          if (incoming.getAttribute('style')) {
+            el.setAttribute('style', incoming.getAttribute('style'));
+          } else {
+            el.removeAttribute('style');
+          }
+        })
+        .catch(function (err) {
+          if (err && err.name === 'AbortError') return;
+        });
+    });
+  }
+
+  document.addEventListener('on:variant:change', function (event) {
+    var variant = event.detail && event.detail.variant;
+    if (!variant || !variant.id) return;
+    refreshProductSpecs(variant.id);
+  });
+})();
+{% endjavascript %}
+
+{% schema %}
+{
+  "name": "Product specifications",
+  "tag": "section",
+  "class": "section-product-specifications",
+  "enabled_on": {
+    "templates": ["product"]
+  },
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading"
+    },
+    {
+      "type": "color",
+      "id": "stripe_color",
+      "label": "Alternate row color",
+      "default": "#e8ecf3"
+    },
+    {
+      "type": "header",
+      "content": "Product metafields"
+    },
+    {
+      "type": "textarea",
+      "id": "product_metafield_labels",
+      "label": "Product metafield labels",
+      "info": "Separate labels with |. Example: Metal|Setting Type|Diamond Shape"
+    },
+    {
+      "type": "textarea",
+      "id": "product_metafield_keys",
+      "label": "Product metafield keys",
+      "info": "Keys in the custom namespace, separated by |. Example: metal|setting_type|diamond_shape"
+    },
+    {
+      "type": "header",
+      "content": "Variant metafields"
+    },
+    {
+      "type": "textarea",
+      "id": "variant_metafield_labels",
+      "label": "Variant metafield labels",
+      "info": "Separate labels with |. Example: Outer Rows — Carat Weight|Outer Rows — Diamond Count"
+    },
+    {
+      "type": "textarea",
+      "id": "variant_metafield_keys",
+      "label": "Variant metafield keys",
+      "info": "Keys in the custom namespace, separated by |. Example: outer_rows_carat_weight|outer_rows_diamond_count"
+    }
+  ]
+}
+{% endschema %}

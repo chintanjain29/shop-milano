@@ -1,0 +1,30 @@
+<div class="signup-form">
+  {% form 'customer' %}
+    {% if form.posted_successfully? %}
+      <div class="signup-form__response signup-form__response--success alert">
+        <div class="heading-font h6">{{ 'newsletter.success' | t }}</div>
+      </div>
+    {% else %}
+      {% if form.errors %}
+        {% for field in form.errors %}
+          <p class="signup-form__response signup-form__response--error alert">
+            {{ field | capitalize }} - {{ form.errors.messages[field] }}
+          </p>
+        {% endfor %}
+      {% endif %}
+      <input type="hidden" name="contact[tags]" value="prospect,newsletter"/>
+      <p>
+        <input type="email"
+          placeholder="{{ 'newsletter.placeholder' | t }}"
+          class="signup-form__email"
+          value=""
+          name="contact[email]"
+          aria-label="{{ 'newsletter.label' | t }}"
+          required />
+      </p>
+      <button class="btn btn--{{ block.settings.button_style }} signup-form__button" type="submit">
+        {{- 'newsletter.button_label' | t -}}
+      </button>
+    {% endif %}
+  {% endform %}
+</div>

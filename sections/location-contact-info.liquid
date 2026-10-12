@@ -1,0 +1,68 @@
+<div class="{% if section.settings.use_alt_bg %}use-alt-bg fully-padded-row--medium{% else %}fully-spaced-row--medium{% endif %}">
+  <div class="container">
+    <div class="column">
+      {% for block in section.blocks %}
+        {% if block.settings.text_content != blank or block.settings.rich_text_content != blank %}
+          <div class="content-block">
+            {% if block.settings.text_content != blank %}
+              <div class="text-content">
+                <h6 class="content-heading">{{ block.settings.text_content }}</h6>
+              </div>
+            {% endif %}
+
+            <div class="rich-text-content">
+              {% if forloop.index != 2 %}
+                {{ block.settings.rich_text_content }}
+              {% else %}
+                {% if page.metafields.custom.location_address != blank %}
+                  {{ page.metafields.custom.location_address | escape }}
+                {% else %}
+                  {{ block.settings.rich_text_content }}
+                {% endif %}
+              {% endif %}
+            </div>
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Location contact info",
+  "class": "shopify-section location-detail-ci",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "use_alt_bg",
+      "label": "Use alternate section color",
+      "default": false
+    }
+  ],
+  "blocks": [
+    {
+      "type": "custom_block",
+      "name": "Content Block",
+      "settings": [
+        {
+            "type": "text",
+            "label": "Text",
+            "id": "text_content"
+          },
+        {
+          "type": "richtext",
+          "label": "Rich Text",
+          "id": "rich_text_content"
+        }
+      ]
+    }
+  ], "presets": [
+    {
+      "name": "Location contact details",
+      "category": "Text",
+      "settings": {}
+    }
+  ]
+}
+{% endschema %}

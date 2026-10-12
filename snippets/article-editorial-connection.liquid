@@ -1,0 +1,87 @@
+{%- comment -%}
+  Parameters:
+    - block {Object} - Connection CTA block object.
+{%- endcomment -%}
+{%- liquid
+  assign has_content = false
+  if block.settings.heading != blank or block.settings.text != blank or block.settings.image != blank or block.settings.button_label != blank
+    assign has_content = true
+  endif
+
+  assign connection_bg = block.settings.background_color
+  if connection_bg == blank or connection_bg == 'rgba(0,0,0,0)'
+    assign connection_bg = '#f5f5f5'
+  endif
+
+  assign connection_border = block.settings.border_color
+  if connection_border == blank or connection_border == 'rgba(0,0,0,0)'
+    assign connection_border = 'rgb(var(--btn-bg-color))'
+  endif
+
+  assign heading_color = block.settings.heading_color
+  if heading_color == blank or heading_color == 'rgba(0,0,0,0)'
+    assign heading_color = '#5c6b3c'
+  endif
+
+  assign bold_text_color = block.settings.bold_text_color
+  if bold_text_color == blank or bold_text_color == 'rgba(0,0,0,0)'
+    assign bold_text_color = 'rgb(var(--btn-bg-color))'
+  endif
+
+  assign button_bg = block.settings.button_background_color
+  assign use_custom_button = false
+  if button_bg != blank and button_bg != 'rgba(0,0,0,0)'
+    assign use_custom_button = true
+  endif
+
+  assign image_width = block.settings.image_width | default: 280
+  assign image_height = block.settings.image_height | default: 380
+  assign image_spacing = block.settings.image_spacing | default: 24
+-%}
+
+{%- if has_content -%}
+  <div
+    class="article-editorial__connection"
+    style="--article-editorial-connection-bg: {{ connection_bg }}; --article-editorial-connection-border: {{ connection_border }}; --article-editorial-connection-heading: {{ heading_color }}; --article-editorial-connection-bold: {{ bold_text_color }}; --article-editorial-connection-image-width: {{ image_width }}px; --article-editorial-connection-image-spacing: {{ image_spacing }}px;{% if image_height > 0 %} --article-editorial-connection-image-height: {{ image_height }}px;{% endif %}{% if use_custom_button %} --article-editorial-connection-btn-bg: {{ button_bg }};{% endif %}"
+    {{ block.shopify_attributes }}
+  >
+    <div class="article-editorial__connection-grid">
+      <div class="article-editorial__connection-content">
+        {%- if block.settings.heading != blank -%}
+          <h2 class="article-editorial__connection-heading">{{ block.settings.heading | escape }}</h2>
+        {%- endif -%}
+
+        {%- if block.settings.text != blank -%}
+          <div class="article-editorial__connection-text rte cf">
+            {{ block.settings.text }}
+          </div>
+        {%- endif -%}
+
+        {%- if block.settings.button_label != blank and block.settings.button_link != blank -%}
+          <div class="article-editorial__connection-button">
+            {%- if use_custom_button -%}
+              <a class="article-editorial__connection-btn article-editorial__connection-btn--custom" href="{{ block.settings.button_link }}">
+                {{- block.settings.button_label | escape -}}
+              </a>
+            {%- else -%}
+              <a class="btn btn--{{ block.settings.button_style | default: 'primary' }}" href="{{ block.settings.button_link }}">
+                {{- block.settings.button_label | escape -}}
+              </a>
+            {%- endif -%}
+          </div>
+        {%- endif -%}
+      </div>
+
+      {%- if block.settings.image != blank -%}
+        <div class="article-editorial__connection-media">
+          <div class="article-editorial__connection-media-inner">
+            {%- render 'image' with block.settings.image,
+              sizes: '(min-width: 768px) 320px, 100vw',
+              loading: 'lazy'
+            -%}
+          </div>
+        </div>
+      {%- endif -%}
+    </div>
+  </div>
+{%- endif -%}

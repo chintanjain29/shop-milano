@@ -1,0 +1,290 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "show_page_title": true,
+        "full_width": false
+      }
+    },
+    "1774956703f11098d9": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_all_reviews_page_EBNPBp": {
+          "type": "shopify://apps/judge-me-reviews/blocks/all_reviews_page/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "max_width": 1200,
+            "review_source": "all",
+            "show_all_reviews_in_same_tab": false,
+            "show_first": "product",
+            "empty_state": "empty_widget"
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_all_reviews_page_EBNPBp"
+      ],
+      "settings": {
+        "full_width": false
+      }
+    },
+    "gem_find_iwto_XkadxP": {
+      "type": "gem-find-iwto",
+      "blocks": {
+        "heading_iAHaei": {
+          "type": "heading",
+          "settings": {
+            "title": "Milano x Save the Whales",
+            "heading_max_width": 15,
+            "title_size": 48,
+            "title_size_mobile": 24,
+            "use_h1": true
+          }
+        },
+        "subheading_MJ7HDP": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Style With A Purpose"
+          }
+        }
+      },
+      "block_order": [
+        "heading_iAHaei",
+        "subheading_MJ7HDP"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".text-overlay {font-size: 24px; color: #ffffff;}",
+        "h1 {color: #ffffff;}"
+      ],
+      "name": "Image with text overlay",
+      "settings": {
+        "image": "shopify://shop_images/Copy_of_MilanoXSTW_Hero_Banner.png",
+        "mobile_image": "shopify://shop_images/Copy_of_MilanoXSTW_Hero_Banner.png",
+        "height": "fixed",
+        "height_desktop": 480,
+        "height_mobile": 400,
+        "image_link": "",
+        "full_width": true,
+        "text_alignment": "center center",
+        "mobile_overlay_under": false,
+        "overlay_style": "full"
+      }
+    },
+    "rich_text_czWEgw": {
+      "type": "rich-text",
+      "blocks": {
+        "text_jUByfz": {
+          "type": "text",
+          "settings": {
+            "text": "<p>At Milano, we believe true luxury is about beauty with intention. That’s why we’ve partnered with <a href=\"https://savethewhales.org/\" title=\"https://savethewhales.org/\">SaveTheWhales.org</a>, a respected nonprofit dedicated to protecting the ocean and its magnificent inhabitants through education, and long-term conservation efforts, ensuring that future generations inherit not just memories of the sea, but thriving ecosystems and life beneath the waves. </p>",
+            "enlarge_text": false
+          }
+        },
+        "image_RAXYiY": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Savethewhales.jpg",
+            "image_width": 350,
+            "url": ""
+          }
+        },
+        "subheading_JXaHAf": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Wear the Ocean. Protect What You Love. "
+          }
+        },
+        "text_hNnGUx": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Every piece in our Whale Collection is designed not only as a refined expression of sustainable craftsmanship, but also as a reminder of what we stand to protect. With every purchase, 5% of the proceeds are donated directly to support whale conservation, and ocean preservation, so that the elegance you choose today becomes part of a greater legacy tomorrow.<br/></p>",
+            "enlarge_text": false
+          }
+        },
+        "subheading_qr9FnA": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "WHY WE SAVE THE WHALES"
+          }
+        },
+        "text_DTttYG": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Whales are more than breathtaking creatures; they play an essential role in maintaining the health of the oceans. From balancing marine ecosystems to capturing carbon in their large bodies, their protection matters for the future of our planet. At the heart of this collaboration is education - inspiring over 370,000 children through hands-on learning, awareness, and nurturing care for the ocean, and its friends.  </p>",
+            "enlarge_text": false
+          }
+        },
+        "button_ngqQpV": {
+          "type": "button",
+          "settings": {
+            "button_label": "LEARN MORE",
+            "button_link": "https://savethewhales.org/",
+            "button_style": "primary"
+          }
+        }
+      },
+      "block_order": [
+        "text_jUByfz",
+        "image_RAXYiY",
+        "subheading_JXaHAf",
+        "text_hNnGUx",
+        "subheading_qr9FnA",
+        "text_DTttYG",
+        "button_ngqQpV"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".subheading {color: #002058; font-size: 20px; margin-bottom: 6px;}"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "height": "small",
+        "text_alignment": "center",
+        "full_width": true,
+        "color_scheme": "default"
+      }
+    },
+    "rich_text_zeRU3G": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_CiwzhN": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "SHOP OUR WHALE COLLECTION"
+          }
+        },
+        "text_pgtN9h": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Each piece in this collection draws inspiration from the strength and elegance of the ocean’s most iconic creatures, crafted to feel enduring, refined, and effortless to wear.</p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "subheading_CiwzhN",
+        "text_pgtN9h"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".subheading {color: #002058; font-size: 20px; margin-bottom: 6px;}"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "height": "small",
+        "text_alignment": "center",
+        "full_width": false,
+        "color_scheme": "default"
+      }
+    },
+    "multi_column_3ThQBN": {
+      "type": "multi-column",
+      "blocks": {
+        "text_block_JPtTWA": {
+          "type": "text_block",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify://shop_images/KP-3325-W1_a1fe7178-fddd-4bfc-8b10-0c519ac0806e.jpg",
+            "title": "Lab Diamond Dancing Whale Tail Pendant",
+            "text": "<p>$279.00<br/>A delicately curved whale tail, set with lab-grown diamonds that catch the light like sunlight on water. A symbol of strength, freedom, and connection to the ocean.<br/></p>",
+            "button_label": "SHOP NOW",
+            "link": "https://www.milanojewelry.com/products/lab-diamond-dancing-whale-tail-pendant"
+          }
+        },
+        "text_block_C3jRtk": {
+          "type": "text_block",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify://shop_images/KP3789-Y2.jpg",
+            "title": "Pavé Whale Tail Diamond Pendant",
+            "text": "<p>$580.00<br/>Crafted in 14K gold with pavé-set diamonds that echo the quiet shimmer of the deep, this pendant captures the serenity and power of the whales we aim to protect.</p>",
+            "button_label": "SHOP NOW",
+            "link": "https://www.milanojewelry.com/products/pave-whale-tail-diamond-pendant"
+          }
+        },
+        "text_block_gJPYxq": {
+          "type": "text_block",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify://shop_images/KN-790-Y1.jpg",
+            "title": "Pavé Wave Lab Diamond Necklace",
+            "text": "<p>$1,595.00<br/>Crafted in 14K gold with pavé-set lab-grown diamonds, this wave necklace reflects the fluid shimmer of the ocean in modern elegance and fine jewelry design.</p>",
+            "button_label": "SHOP NOW",
+            "link": "https://www.milanojewelry.com/products/pave-wave-diamond-necklace"
+          }
+        }
+      },
+      "block_order": [
+        "text_block_JPtTWA",
+        "text_block_C3jRtk",
+        "text_block_gJPYxq"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".container {margin-bottom: 0 !important; padding-bottom: 8px !important;}"
+      ],
+      "name": "Multi-column",
+      "settings": {
+        "title": "",
+        "media_aspect_ratio": "1",
+        "media_width": 350,
+        "text_alignment": "center",
+        "button_style": "primary",
+        "color_scheme": "default"
+      }
+    },
+    "rich_text_Gd3wkL": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_Ma9jtw": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "DIVE INTO WHAT'S NEXT"
+          }
+        },
+        "text_xUwFNt": {
+          "type": "text",
+          "settings": {
+            "text": "<p>New ocean-inspired designs are always on the horizon.</p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "subheading_Ma9jtw",
+        "text_xUwFNt"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".subheading {color: #002058; font-size: 20px; margin-bottom: 6px;}"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "height": "medium",
+        "text_alignment": "center",
+        "full_width": false,
+        "color_scheme": "default"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1774956703f11098d9",
+    "gem_find_iwto_XkadxP",
+    "rich_text_czWEgw",
+    "rich_text_zeRU3G",
+    "multi_column_3ThQBN",
+    "rich_text_Gd3wkL"
+  ]
+}

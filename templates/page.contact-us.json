@@ -1,0 +1,145 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "wrapper": "div.page-contact-us",
+  "sections": {
+    "main": {
+      "type": "page-story-template",
+      "disabled": true,
+      "settings": {
+        "show_page_content": true
+      }
+    },
+    "image_with_text_overlay_dipUYz": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "heading_WhitJ7": {
+          "type": "heading",
+          "settings": {
+            "title": "Contact Us",
+            "heading_max_width": 18,
+            "title_size": 40,
+            "title_size_mobile": 32,
+            "use_h1": true
+          }
+        },
+        "text_MtL4qK": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Our team is here to guide you every step of the way. From selecting the perfect engagement ring to offering personalized style advice, or arranging an in-store or virtual consultation, we’re dedicated to helping you bring your jewelry vision to life.</p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_WhitJ7",
+        "text_MtL4qK"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/Milano_Lab_Grown_Sustainable_Rings.jpg",
+        "height": "fixed",
+        "height_desktop": 360,
+        "height_mobile": 360,
+        "image_link": "",
+        "full_width": true,
+        "text_alignment": "center left",
+        "mobile_overlay_under": true,
+        "overlay_style": "full"
+      }
+    },
+    "1e54f99a-0eec-4175-8208-7a5530483d26": {
+      "type": "contact-logo-list",
+      "blocks": {
+        "e2fe6049-0bfd-4581-a828-e71f4d8df98d": {
+          "type": "text_block",
+          "settings": {
+            "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"29.413\" height=\"26\" viewbox=\"0 0 29.413 26\">\n  <path id=\"Union_8\" data-name=\"Union 8\" d=\"M10.037,20.793a10.358,10.358,0,0,1-4.625-1.262l-3.785.631a.862.862,0,0,1-.992-.993l.63-3.792A10.386,10.386,0,0,1,19.376,5.207a10.405,10.405,0,0,1,8.772,15.371l.63,3.792a.862.862,0,0,1-.992.993L24,24.733a10.374,10.374,0,0,1-13.964-3.94Zm9,3.481a8.634,8.634,0,0,0,4.373-1.187.86.86,0,0,1,.578-.107l2.9.483-.482-2.9a.865.865,0,0,1,.107-.579A8.68,8.68,0,0,0,20.193,7.006a10.486,10.486,0,0,1,.56,3.009h0v.038h0v.056h0v.039c0,.012,0,.024,0,.036v.078h0V10.3c0,.006,0,.011,0,.017v0s0,.009,0,.014v.024s0,.009,0,.014,0,0,0,0,0,.011,0,.017,0,.01,0,.016,0,0,0,.005,0,.007,0,.011v.33h0v.13h0l0,.049h0v.005h2.787a.863.863,0,0,1,0,1.727H20.507a10.319,10.319,0,0,1-.7,2.065h3.73a.863.863,0,0,1,0,1.727H18.791a10.572,10.572,0,0,1-1.967,2.065h6.708a.863.863,0,0,1,0,1.727h-9a.857.857,0,0,1-.472-.141,10.246,10.246,0,0,1-1.106.355l-.006,0-.009,0-.008,0-.006,0-.009,0h-.005l-.01,0h0l-.012,0h0q-.435.11-.884.182A8.615,8.615,0,0,0,19.033,24.273ZM6.007,17.885a8.634,8.634,0,0,0,4.373,1.187l.154,0a8.709,8.709,0,0,0,8.484-8.1q.019-.285.019-.574A8.657,8.657,0,1,0,2.908,14.781a.865.865,0,0,1,.107.579l-.482,2.9,2.9-.483a.86.86,0,0,1,.578.107Zm3.512-2.6a.862.862,0,1,1,.862.863A.872.872,0,0,1,9.518,15.282Zm0-2.878V9.86A.863.863,0,0,1,10.38,9,1.309,1.309,0,1,0,9.074,7.688a.862.862,0,1,1-1.723,0,3.03,3.03,0,1,1,3.891,2.91V12.4a.862.862,0,1,1-1.723,0Z\" fill=\"#fff\"></path>\n</svg>",
+            "title": "FAQs",
+            "text": "<p>Most questions can be answered here.</p>",
+            "button_label": "Go To FAQs",
+            "link": "#"
+          }
+        },
+        "7c17f322-b565-402b-b351-0ee7152f3b4b": {
+          "type": "text_block",
+          "settings": {
+            "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"31.385\" height=\"24\" viewbox=\"0 0 31.385 24\">\n  <g id=\"Group_12676\" data-name=\"Group 12676\" transform=\"translate(-2277 -1897)\">\n    <path id=\"Path_20930\" data-name=\"Path 20930\" d=\"M46.692,70.385a.921.921,0,0,1-.624-.243L31.3,56.6a.923.923,0,1,1,1.247-1.361L46.692,68.209,60.838,55.243A.923.923,0,0,1,62.085,56.6L47.316,70.142A.921.921,0,0,1,46.692,70.385Z\" transform=\"translate(2246 1842)\" fill=\"#fff\"></path>\n    <path id=\"Path_20931\" data-name=\"Path 20931\" d=\"M31.923,55H61.462a.923.923,0,0,1,.923.923V76.846A2.156,2.156,0,0,1,60.231,79H33.154A2.156,2.156,0,0,1,31,76.846V55.923A.923.923,0,0,1,31.923,55Zm28.615,1.846H32.846v20a.308.308,0,0,0,.308.308H60.231a.308.308,0,0,0,.308-.308Z\" transform=\"translate(2246 1842)\" fill=\"#fff\"></path>\n    <path id=\"Line_1\" data-name=\"Line 1\" d=\"M-.077,11.569a.921.921,0,0,1-.681-.3A.923.923,0,0,1-.7,9.966L10.991-.757A.923.923,0,0,1,12.3-.7.923.923,0,0,1,12.239.6L.547,11.326A.92.92,0,0,1-.077,11.569Z\" transform=\"translate(2278.384 1909.077)\" fill=\"#fff\"></path>\n    <path id=\"Line_2\" data-name=\"Line 2\" d=\"M11.615,11.569a.92.92,0,0,1-.624-.243L-.7.6A.923.923,0,0,1-.757-.7a.923.923,0,0,1,1.3-.056L12.239,9.966a.923.923,0,0,1-.624,1.6Z\" transform=\"translate(2295.461 1909.077)\" fill=\"#fff\"></path>\n  </g>\n</svg>",
+            "title": "Email Us",
+            "text": "<p>Drop us a line. We'll get back to you ASAP.</p>",
+            "button_label": "Contact Us",
+            "link": "#test-form"
+          }
+        },
+        "ff70f61d-9ead-4194-9d42-4e2938b71554": {
+          "type": "text_block",
+          "settings": {
+            "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"26\" height=\"26\" viewbox=\"0 0 26 26\">\n  <g id=\"Group_12681\" data-name=\"Group 12681\" transform=\"translate(-337.484 -803.274)\">\n    <path id=\"Path_20930\" data-name=\"Path 20930\" d=\"M166.8,48.4a1,1,0,0,1-.965-.741,9.494,9.494,0,0,0-6.689-6.689,1,1,0,0,1,.518-1.932,11.467,11.467,0,0,1,8.1,8.1A1,1,0,0,1,166.8,48.4Z\" transform=\"translate(194.686 765.276)\" fill=\"#fff\"></path>\n    <path id=\"Path_20931\" data-name=\"Path 20931\" d=\"M155.542,76.343a1,1,0,0,1-.966-.744,5.271,5.271,0,0,0-3.733-3.733,1,1,0,0,1,.513-1.933,7.275,7.275,0,0,1,5.153,5.153,1,1,0,0,1-.967,1.257Z\" transform=\"translate(201.902 738.413)\" fill=\"#fff\"></path>\n    <path id=\"Path_20932\" data-name=\"Path 20932\" d=\"M57.772,57.335h0A18.757,18.757,0,0,1,39,38.564a7.272,7.272,0,0,1,6.346-7.212,2.032,2.032,0,0,1,2.134,1.229l2.625,6.124a2.04,2.04,0,0,1-.155,1.913l-.007.01-2.179,3.314a.046.046,0,0,0,0,.043A9.959,9.959,0,0,0,52.386,48.6a.045.045,0,0,0,.044,0L55.7,46.411a2.032,2.032,0,0,1,1.948-.179l6.108,2.624a2.037,2.037,0,0,1,1.229,2.133,7.272,7.272,0,0,1-7.212,6.348Zm-12.165-24H45.6A5.283,5.283,0,0,0,41,38.564,16.791,16.791,0,0,0,57.772,55.335,5.284,5.284,0,0,0,63,50.733a.033.033,0,0,0-.02-.034l-.01,0-6.116-2.627-.006,0a.032.032,0,0,0-.031,0l-.006,0-3.267,2.182a2.034,2.034,0,0,1-1.14.347h0a2.058,2.058,0,0,1-.875-.2l-.006,0a11.971,11.971,0,0,1-5.563-5.548,2.06,2.06,0,0,1,.126-2l0-.006,2.177-3.311a.045.045,0,0,0,0-.041l-2.628-6.133,0-.01A.032.032,0,0,0,45.607,33.335Z\" transform=\"translate(298.484 771.939)\" fill=\"#fff\"></path>\n  </g>\n</svg>",
+            "title": "Call Us",
+            "text": "<p>Call us, beep us if you want to reach us.</p>",
+            "button_label": "(800) 888-2166",
+            "link": "#"
+          }
+        },
+        "94969bf1-238a-4362-9337-382ae83d24a2": {
+          "type": "text_block",
+          "settings": {
+            "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"27.974\" height=\"26\" viewbox=\"0 0 27.974 26\">\n  <g id=\"Group_12682\" data-name=\"Group 12682\" transform=\"translate(-282.275 -1124.659)\">\n    <path id=\"Path_32\" data-name=\"Path 32\" d=\"M32.993,50.8a9.994,9.994,0,0,1-4.716-1.185l-2.708.772h0a1.749,1.749,0,0,1-2.156-2.156v0l.772-2.708A10,10,0,1,1,32.993,50.8ZM28.4,47.543a1,1,0,0,1,.51.14,8,8,0,1,0-2.8-2.8,1,1,0,0,1,.1.784l-.762,2.673,2.673-.762A1,1,0,0,1,28.4,47.543Z\" transform=\"translate(259.279 1093.86)\" fill=\"#fff\"></path>\n    <path id=\"Path_33\" data-name=\"Path 33\" d=\"M100.578,99.07a9.994,9.994,0,0,1-9.422-6.678,1,1,0,0,1,1.887-.662,7.978,7.978,0,0,0,11.605,4.216,1,1,0,0,1,.785-.1l2.673.762-.762-2.673a1,1,0,0,1,.1-.786A7.978,7.978,0,0,0,101.012,81.1a1,1,0,0,1,.1-2,9.978,9.978,0,0,1,8.266,14.686l.771,2.707v0A1.749,1.749,0,0,1,108,98.655h0l-2.708-.771A9.943,9.943,0,0,1,100.578,99.07Z\" transform=\"translate(199.679 1051.589)\" fill=\"#fff\"></path>\n  </g>\n</svg>",
+            "title": "Chat with Us",
+            "text": "<p>We are live and ready to help!</p>",
+            "button_label": "Chat with our Team",
+            "link": "#"
+          }
+        },
+        "4f43f89f-961f-441e-a4b4-86fe43de58c1": {
+          "type": "text_block",
+          "settings": {
+            "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"33.495\" height=\"24\" viewbox=\"0 0 33.495 24\">\n  <g id=\"virtual-event\" transform=\"translate(-14 -86.3)\">\n    <path id=\"Ellipse_3\" data-name=\"Ellipse 3\" d=\"M3.352-1A4.352,4.352,0,1,1-1,3.352,4.357,4.357,0,0,1,3.352-1Zm0,6.857A2.506,2.506,0,1,0,.846,3.352,2.508,2.508,0,0,0,3.352,5.857Z\" transform=\"translate(27.396 91.52)\" fill=\"#fff\"></path>\n    <path id=\"Path_20936\" data-name=\"Path 20936\" d=\"M165.2,263.7a.923.923,0,0,1-.923-.923,5.934,5.934,0,1,0-11.868,0,.923.923,0,0,1-1.846,0,7.78,7.78,0,1,1,15.56,0A.923.923,0,0,1,165.2,263.7Z\" transform=\"translate(-127.6 -157.623)\" fill=\"#fff\"></path>\n    <path id=\"Path_20937\" data-name=\"Path 20937\" d=\"M74.486,106.08a.923.923,0,0,1-.923-.923V89.333a1.187,1.187,0,0,0-1.187-1.187H49.167a1.187,1.187,0,0,0-1.187,1.187v15.824a.923.923,0,1,1-1.846,0V89.333A3.033,3.033,0,0,1,49.167,86.3H72.376a3.033,3.033,0,0,1,3.033,3.033v15.824A.923.923,0,0,1,74.486,106.08Z\" transform=\"translate(-30.024)\" fill=\"#fff\"></path>\n    <path id=\"Path_20938\" data-name=\"Path 20938\" d=\"M14.923,359.433H27.583a.923.923,0,0,1,.653.27.884.884,0,0,0,.621.257h3.783a.885.885,0,0,0,.621-.257.923.923,0,0,1,.653-.27H46.571a.923.923,0,0,1,.923.923v2.11a3.033,3.033,0,0,1-3.033,3.033H17.033A3.033,3.033,0,0,1,14,362.466v-2.11A.923.923,0,0,1,14.923,359.433Zm12.321,1.846h-11.4v1.187a1.187,1.187,0,0,0,1.187,1.187H44.462a1.187,1.187,0,0,0,1.187-1.187v-1.187h-11.4a2.7,2.7,0,0,1-1.612.527H28.856A2.7,2.7,0,0,1,27.244,361.279Z\" transform=\"translate(0 -255.199)\" fill=\"#fff\"></path>\n  </g>\n</svg>",
+            "title": "Virtual & In-Person Appointments",
+            "text": "<p>Schedule personalized jewelry consultation - available virtually or in person at our NYC location<br/><br/></p>",
+            "button_label": "Book Now",
+            "link": "https://outlook.office.com/book/VirtualAppointment@milanodg.com/?ismsaljsauthenabled"
+          }
+        },
+        "5bbc15de-38e8-4212-89ce-635b77964db2": {
+          "type": "text_block",
+          "settings": {
+            "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"21.973\" height=\"26\" viewbox=\"0 0 21.973 26\">\n  <g id=\"diamond-ring\" transform=\"translate(-54.011 -14.1)\">\n    <g id=\"Group_12723\" data-name=\"Group 12723\" transform=\"translate(58.284 14.1)\">\n      <path id=\"Path_20940\" data-name=\"Path 20940\" d=\"M147.2,82.487a.842.842,0,0,1-.582-1.45l2.588-2.473h-7.544l2.588,2.473a.842.842,0,0,1-1.163,1.217L138.98,78.33a.842.842,0,0,1,.582-1.45H151.3a.842.842,0,0,1,.582,1.45l-4.106,3.923A.839.839,0,0,1,147.2,82.487Z\" transform=\"translate(-138.72 -73.713)\" fill=\"#fff\"></path>\n      <path id=\"Path_20941\" data-name=\"Path 20941\" d=\"M151.3,18.951H139.562a.842.842,0,0,1-.593-1.439l3.191-3.167a.842.842,0,0,1,.593-.244h5.6a.842.842,0,0,1,.616.268l2.948,3.167a.842.842,0,0,1-.616,1.415Zm-9.7-1.683h7.766l-1.381-1.484H143.1Z\" transform=\"translate(-138.72 -14.1)\" fill=\"#fff\"></path>\n    </g>\n    <path id=\"Ellipse_52\" data-name=\"Ellipse 52\" d=\"M8.644-.9A9.544,9.544,0,1,1-.9,8.644,9.555,9.555,0,0,1,8.644-.9Zm0,17.4A7.861,7.861,0,1,0,.783,8.644,7.87,7.87,0,0,0,8.644,16.5Z\" transform=\"translate(56.353 21.912)\" fill=\"#fff\"></path>\n    <g id=\"Group_12725\" data-name=\"Group 12725\" transform=\"translate(58.48 24.038)\">\n      <g id=\"Group_12724\" data-name=\"Group 12724\" transform=\"translate(0 0)\">\n        <path id=\"Ellipse_53\" data-name=\"Ellipse 53\" d=\"M5.617-.9A6.517,6.517,0,1,1-.9,5.617,6.525,6.525,0,0,1,5.617-.9Zm0,11.351A4.834,4.834,0,1,0,.783,5.617,4.839,4.839,0,0,0,5.617,10.451Z\" transform=\"translate(0.9 0.9)\" fill=\"#fff\"></path>\n      </g>\n    </g>\n    <path id=\"Line_1\" data-name=\"Line 1\" d=\"M1.665,1.613A.838.838,0,0,1,1.3,1.53L-.423.7A.842.842,0,0,1-.817-.423.842.842,0,0,1,.307-.817l1.724.83a.842.842,0,0,1-.366,1.6Z\" transform=\"translate(54.911 15.262)\" fill=\"#fff\"></path>\n    <path id=\"Line_2\" data-name=\"Line 2\" d=\"M-.058,1.613a.842.842,0,0,1-.759-.477A.842.842,0,0,1-.423.013L1.3-.817a.842.842,0,0,1,1.123.393A.842.842,0,0,1,2.031.7L.307,1.53A.839.839,0,0,1-.058,1.613Z\" transform=\"translate(54.911 20.215)\" fill=\"#fff\"></path>\n    <path id=\"Line_3\" data-name=\"Line 3\" d=\"M-.058,1.613a.842.842,0,0,1-.759-.477A.842.842,0,0,1-.423.013L1.3-.817a.842.842,0,0,1,1.123.393A.842.842,0,0,1,2.031.7L.307,1.53A.839.839,0,0,1-.058,1.613Z\" transform=\"translate(73.476 15.262)\" fill=\"#fff\"></path>\n    <path id=\"Line_4\" data-name=\"Line 4\" d=\"M1.665,1.613A.838.838,0,0,1,1.3,1.53L-.423.7A.842.842,0,0,1-.817-.423.842.842,0,0,1,.307-.817l1.724.83a.842.842,0,0,1-.366,1.6Z\" transform=\"translate(73.476 20.215)\" fill=\"#fff\"></path>\n  </g>\n</svg>",
+            "title": "Bridal",
+            "text": "<p>Looking to get custom? Connect with our bridal specialists.</p>",
+            "button_label": "Contact Us",
+            "link": "#"
+          }
+        }
+      },
+      "block_order": [
+        "e2fe6049-0bfd-4581-a828-e71f4d8df98d",
+        "7c17f322-b565-402b-b351-0ee7152f3b4b",
+        "ff70f61d-9ead-4194-9d42-4e2938b71554",
+        "94969bf1-238a-4362-9337-382ae83d24a2",
+        "4f43f89f-961f-441e-a4b4-86fe43de58c1",
+        "5bbc15de-38e8-4212-89ce-635b77964db2"
+      ],
+      "settings": {
+        "bg_color": "#00205b",
+        "custom_bg_color": "#ebebdf",
+        "title": "Our Customer Service team is available from Monday to Friday 10:00am-6:00pm (Closed on U.S. Federal Holidays)",
+        "text_alignment": "left",
+        "button_style": "primary",
+        "use_alt_bg": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_with_text_overlay_dipUYz",
+    "1e54f99a-0eec-4175-8208-7a5530483d26"
+  ]
+}

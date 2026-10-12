@@ -1,0 +1,683 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin language editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "general": {
+    "localization": {
+      "country_label": "Country/Region",
+      "countries_error": "Error fetching countries, please try again.",
+      "language_label": "Language",
+      "update": "Update"
+    },
+    "icon_labels": {
+      "close": "Close",
+      "play": "Play"
+    },
+    "labels": {
+      "please_select": "Please select"
+    },
+    "navigation": {
+      "menu": "Menu",
+      "show_links": "Show links",
+      "back": "Back",
+      "close": "Close"
+    },
+    "breadcrumbs": {
+      "title": "Breadcrumbs",
+      "home": "Home",
+      "collections": "Collections"
+    },
+    "pagination": {
+      "next": "Next",
+      "previous": "Previous"
+    },
+    "search": {
+      "title": "Search",
+      "input_label": "Search",
+      "placeholder": "Search our store",
+      "submit": "Search",
+      "close": "Close",
+      "results_with_count": {
+        "one": "We found {{ count }} result",
+        "other": "We found {{ count }} results"
+      },
+      "no_results": "No results found for \"{{ terms }}\".",
+      "no_results_without_terms": "Sorry, we couldnʼt find any results",
+      "suggestions": "Suggestions",
+      "pages": "Pages",
+      "view_all": "View all search results"
+    },
+    "slider": {
+      "next": "Next",
+      "previous": "Previous",
+      "of": "of"
+    },
+    "social": {
+      "share_heading": "Share",
+      "share_on_facebook": "Share on Facebook",
+      "share_on_twitter": "Tweet on X",
+      "share_on_pinterest": "Pin on Pinterest",
+      "follow_shop": "{{ shop_name }} on {{ social_platform }}"
+    },
+    "meta": {
+      "page": "Page {{ page }}",
+      "tags": "Tagged \"{{ tags }}\""
+    }
+  },
+  "accessibility": {
+    "skip_to_content": "Skip to content",
+    "close": "Close",
+    "main_navigation": "Primary",
+    "secondary_navigation": "Secondary",
+    "star_reviews_info": "{{ rating_value }} out of {{ rating_max }} stars",
+    "view_details": "View details"
+  },
+  "products": {
+    "product": {
+      "add_to_cart": "Add to bag",
+      "added_to_cart_with_link_html": "Added to your <a href=\"{{ cart_url }}\">Bag</a>",
+      "backorder": "is backordered and will ship as soon as it is back in stock.",
+      "barcode": "Barcode:",
+      "choose_a": "Choose a",
+      "description": "Product Details",
+      "from": "From",
+      "include_taxes": "Tax included",
+      "media": {
+        "gallery_viewer": "Gallery Viewer",
+        "load_image": "Load image {{ index }} in gallery view",
+        "play_video": "Play video"
+      },
+      "more_swatches": "+ {{ count }} more",
+      "new": "New arrival",
+      "next_product": "Next",
+      "percent_reduction": "{{ amount }}% off",
+      "pickup_availability": {
+        "check_other_stores": "Check availability at other stores",
+        "pick_up_available": "Pickup available",
+        "pick_up_available_at_html": "Pickup available at <strong>{{ location_name }}</strong>",
+        "pick_up_unavailable": "Pickup currently unavailable",
+        "pick_up_unavailable_at_html": "Pickup currently unavailable at <strong>{{ location_name }}</strong>",
+        "refresh": "Refresh",
+        "unavailable": "Couldn't load pickup availability",
+        "view_store_info": "View store information"
+      },
+      "preorder": "Pre-order",
+      "prev_product": "Previous",
+      "price": {
+        "unit_price": "Unit price",
+        "unit_price_separator": " / "
+      },
+      "product_variants": "Product variants",
+      "quantity": "Quantity",
+      "quick_buy": "Quick buy",
+      "reviews_count": {
+        "one": "{{ count }} review",
+        "other": "{{ count }} reviews"
+      },
+      "sale": "Sale",
+      "shipping_policy_html": "<a href=\"{{ link }}\">Shipping</a> calculated at checkout.",
+      "size_chart": "Size guide",
+      "sku": "SKU:",
+      "sold_out": "Sold out",
+      "value_reduction_html": "{{ amount }} off",
+      "vendor": "By",
+      "view_details": "View details",
+      "xr_button": "View in your space"
+    },
+    "filtering": {
+      "title": "Filters",
+      "applied_filters": "Applied Filters",
+      "apply": "Apply",
+      "clear_all": "Clear all",
+      "filter": "Filter",
+      "out_of_stock_label": "Out of stock",
+      "show_label": "Show",
+      "hide_label": "Hide",
+      "min_price_label": "From",
+      "max_price_label": "To"
+    },
+    "sorting": {
+      "sort_by_label": "Sort by"
+    },
+    "inventory": {
+      "in_stock": "In stock",
+      "low_stock": "Low stock",
+      "only_x_left": "{{ quantity }} in stock",
+      "x_left": "{{ quantity }} in stock, ready to ship"
+    },
+    "transfers": {
+      "will_not_ship_until": "Ships {{ date }}",
+      "will_be_in_stock_after": "In stock after {{ date }}",
+      "waiting_for_stock": "More stock coming soon"
+    },
+    "variant": {
+      "no_stock": "Sold out",
+      "non_existent": "Unavailable"
+    }
+  },
+  "sections": {
+    "header": {
+      "account": "Account",
+      "search": "Search",
+      "cart": "Bag"
+    },
+    "footer": {
+      "copyright_html": "&copy; {{ year }} <a href=\"{{ shop_url }}\">{{ shop_name }}</a>."
+    },
+    "faq_header": {
+      "search_label": "Search FAQ",
+      "search_placeholder": "Search FAQ"
+    },
+    "collection": {
+      "empty": "No products found",
+      "product_count": {
+        "one": "{{ count }} product",
+        "other": "{{ count }} products"
+      },
+      "grid_layout": "Grid",
+      "list_layout": "List",
+      "view_all_related_collections": "View all..."
+    },
+    "countdown": {
+      "days_short": "Day",
+      "hours_short": "Hour",
+      "minutes_short": "Min",
+      "seconds_short": "Sec",
+      "end_date": "Ends {{ date }}"
+    },
+    "featured_collection": {
+      "view_all": "View all"
+    },
+    "slideshow": {
+      "load_slide": "Load slide",
+      "carousel": "Carousel",
+      "slide": "Slide"
+    }
+  },
+  "templates": {
+    "404": {
+      "title": "Page not found",
+      "subtext": "Sorry, the page you requested does not exist.",
+      "link": "Back to home"
+    },
+    "password": {
+      "general": {
+        "login_link": "Enter using password",
+        "powered_by": "This shop will be powered by"
+      },
+      "login_form": {
+        "admin_link_html": "Are you the store owner? <a href=\"/admin\">Log in here</a>",
+        "error": "Incorrect password",
+        "heading": "Enter store using password",
+        "password_label": "Password",
+        "password_placeholder": "Password",
+        "submit": "Enter"
+      },
+      "signup_form": {
+        "email_label": "Email",
+        "email_placeholder": "Your email",
+        "submit": "Submit",
+        "success": "Thank you for your interest. We'll be sure to keep you up to date."
+      }
+    }
+  },
+  "newsletter": {
+    "label": "Email",
+    "placeholder": "Your email",
+    "button_label": "Subscribe",
+    "success": "Thank you for subscribing."
+  },
+  "contact": {
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "phone": "Phone",
+      "message": "Message",
+      "send": "Send",
+      "post_success": "Thanks for contacting us. We'll get back to you as soon as possible."
+    }
+  },
+  "blogs": {
+    "article": {
+      "back_to_blog": "Back to {{ title }}",
+      "no_matches": "You don't have any articles yet! Once you've written one, it will show up here.",
+      "read_more": "Read more"
+    },
+    "comments": {
+      "title": "Comments",
+      "form_title": "Leave a comment",
+      "name": "Name",
+      "email": "Email",
+      "message": "Comment",
+      "post": "Post comment",
+      "moderated": "Please note: comments must be approved before they are published.",
+      "success": "Your comment was posted successfully! Thank you!"
+    },
+    "filtering": {
+      "all": "All",
+      "filter_by": "Filter by"
+    },
+    "pagination": {
+      "newer_articles": "Newer articles",
+      "older_articles": "Older articles"
+    },
+    "tags": {
+      "label": "Tagged"
+    }
+  },
+  "cart": {
+    "general": {
+      "title": "Your bag",
+      "backorder": "Product is backordered and will ship as soon as it is back in stock.",
+      "free_shipping": "Your order is eligible for free shipping!",
+      "free_shipping_deficit_html": "Spend <strong>{{ amount }}</strong> more for <strong>free shipping</strong>!",
+      "taxes_and_shipping_at_checkout": "Taxes and shipping calculated at checkout.",
+      "taxes_and_shipping_at_checkout_html": "Taxes and <a href=\"{{ link }}\">shipping</a> calculated at checkout.",
+      "taxes_included_shipping_at_checkout": "Tax included, shipping calculated at checkout.",
+      "taxes_included_shipping_at_checkout_html": "Tax included, <a href=\"{{ link }}\">shipping</a> calculated at checkout.",
+      "update": "Update bag"
+    },
+    "items": {
+      "product": "Product",
+      "quantity": "Quantity",
+      "increase_quantity": "Increase quantity",
+      "decrease_quantity": "Decrease quantity",
+      "price": "Price",
+      "remove": "Remove",
+      "total": "Subtotal",
+      "quantity_error": "You can only add {{ quantity }} of this item to your bag."
+    },
+    "note": {
+      "label": "Order note"
+    },
+    "shipping_calculator": {
+      "show": "Estimate shipping",
+      "hide": "Hide shipping calculator",
+      "title": "Estimate shipping",
+      "country": "Country",
+      "province": "Province",
+      "zip": "Zip/Postal Code",
+      "submit": "Calculate",
+      "single_rate": "There is one shipping rate for this destination:",
+      "multiple_rates": "There are multiple shipping rates for this destination:",
+      "no_rates": "We do not ship to this destination.",
+      "error": "Please correct the following errors:"
+    },
+    "summary": {
+      "subtotal": "Subtotal",
+      "checkout": "Checkout",
+      "continue_shopping": "Continue shopping"
+    },
+    "terms": {
+      "agreement_html": "I agree to the <a href=\"{{ terms_url }}\" target=\"_blank\">terms and refund policy</a>",
+      "confirmation": "You must agree to the terms and conditions before continuing."
+    }
+  },
+  "customer": {
+    "account": {
+      "title": "Account",
+      "view_addresses": "View addresses",
+      "home": "Account home",
+      "log_out": "Log out"
+    },
+    "activate_account": {
+      "title": "Activate account",
+      "subtext": "Create your password to activate your account.",
+      "password": "Password",
+      "password_confirm": "Confirm password",
+      "submit": "Activate account",
+      "cancel": "Decline invitation"
+    },
+    "addresses": {
+      "title": "Addresses",
+      "default": "Default",
+      "edit": "Edit",
+      "edit_address": "Edit address",
+      "delete": "Delete",
+      "delete_confirm": "Are you sure you wish to delete this address?",
+      "add_new": "Add a new address",
+      "first_name": "First name",
+      "last_name": "Last name",
+      "company": "Company",
+      "address1": "Address 1",
+      "address2": "Address 2",
+      "city": "City",
+      "country": "Country",
+      "province": "Province",
+      "zip": "Postal/Zip code",
+      "phone": "Phone",
+      "set_default": "Set as default address",
+      "add": "Add address",
+      "update": "Update address",
+      "cancel": "Cancel"
+    },
+    "login": {
+      "title": "Login",
+      "email": "Email",
+      "password": "Password",
+      "forgot_password": "Forgot password",
+      "sign_in": "Sign in",
+      "guest_title": "Continue as a guest",
+      "guest_continue": "Continue"
+    },
+    "order": {
+      "title": "Order {{ name }}",
+      "date": "Placed on {{ date }}",
+      "cancelled_on": "Order cancelled on {{ date }}",
+      "cancelled_reason": "Reason: {{ reason }}",
+      "billing_address": "Billing address",
+      "payment_status": "Payment status",
+      "fulfillment_status": "Fulfillment status",
+      "fulfilled_on": "Fulfilled {{ date }}",
+      "shipping": "Shipping",
+      "shipping_address": "Shipping address",
+      "product": "Product",
+      "sku": "SKU",
+      "quantity": "Quantity",
+      "price": "Price",
+      "subtotal": "Subtotal",
+      "tax": "Tax",
+      "total": "Total"
+    },
+    "orders": {
+      "order_number": "Order",
+      "view_order": "View order",
+      "date": "Date",
+      "payment_status": "Payment status",
+      "fulfillment_status": "Fulfillment Status",
+      "total": "Total",
+      "none": "You haven't placed any orders yet."
+    },
+    "recover_password": {
+      "title": "Reset your password",
+      "subtext": "We will send you an email to reset your password.",
+      "email": "Email",
+      "submit": "Submit",
+      "cancel": "Cancel",
+      "success": "We've sent you an email with a link to update your password."
+    },
+    "register": {
+      "title": "Create account",
+      "first_name": "First name",
+      "last_name": "Last name",
+      "email": "Email",
+      "password": "Password",
+      "submit": "Create account",
+      "have_account": "Already have an account?",
+      "log_in": "Log in here"
+    },
+    "reset_password": {
+      "title": "Reset Password",
+      "subtext": "Enter a new password for {{ email }}",
+      "password": "Password",
+      "password_confirm": "Confirm Password",
+      "submit": "Reset password"
+    }
+  },
+  "gift_cards": {
+    "issued": {
+      "title": "Here's your {{ value }} gift card for {{ shop }}!",
+      "subtext": "Here's your gift card!",
+      "expired": "Expired on {{ expiry }}",
+      "remaining_html": "{{ balance }} left",
+      "qr_image_alt": "QR code — scan to redeem gift card",
+      "code": "Gift card code",
+      "add_to_apple_wallet": "Add to Apple Wallet",
+      "shop_link": "Start shopping",
+      "print": "Print"
+    },
+    "recipient": {
+      "checkbox": "I want to send this as a gift",
+      "email_label_optional": "Recipient email",
+      "email_label_required": "Recipient email *",
+      "name_label": "Recipient name",
+      "message_label": "Message",
+      "max_characters": "{{ max_chars }} characters max",
+      "send_on_label": "Send on"
+    }
+  },
+  "onboarding": {
+    "article": {
+      "title": "Blog post",
+      "excerpt": "Give your customers a summary of your blog post.",
+      "author": "Author name"
+    },
+    "blog": {
+      "empty": "You don't have any articles yet! Once you've written one, it will show up here."
+    },
+    "collection": {
+      "title": "Collection"
+    },
+    "product": {
+      "title": "Product title",
+      "vendor": "Product vendor",
+      "sku": "SKU1234",
+      "description": "A description of the product, including details such as build quality, materials used and reasons to purchase."
+    }
+  },
+  "pagefly": {
+    "products": {
+      "product": {
+        "regular_price": "Regular price",
+        "sold_out": "Sold out",
+        "unavailable": "Unavailable",
+        "on_sale": "Sale",
+        "quantity": "Quantity",
+        "add_to_cart": "Add to cart",
+        "back_to_collection": "Back to {{ title }}",
+        "view_details": "View details"
+      }
+    },
+    "article": {
+      "tags": "Tags:",
+      "all_topics": "All topics",
+      "by_author": "by {{ author }}",
+      "posted_in": "Posted in",
+      "read_more": "Read more",
+      "back_to_blog": "Back to {{ title }}"
+    },
+    "comments": {
+      "title": "Leave a comment",
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "post": "Post comment",
+      "moderated": "Please note, comments must be approved before they are published",
+      "success_moderated": "Your comment was posted successfully. We will publish it in a little while, as our blog is moderated.",
+      "success": "Your comment was posted successfully! Thank you!",
+      "comments_with_count": {
+        "one": "{{ count }} comment",
+        "other": "{{ count }} comments"
+      }
+    },
+    "password_page": {
+      "login_form_message": "Enter store using password:",
+      "login_form_password_label": "Password",
+      "login_form_password_placeholder": "Your password",
+      "login_form_submit": "Enter",
+      "signup_form_email_label": "Email",
+      "signup_form_success": "We will send you an email right before we open!",
+      "password_link": "Enter using password"
+    }
+  },
+  "shopify": {
+    "checkout": {
+      "general": {
+        "cart": "Bag",
+        "back_to_cart": "Return to Bag",
+        "errors": {
+          "delivery": {
+            "only_one_delivery_line_allowed": "Bag must have only one delivery line."
+          },
+          "discount": {
+            "allocations_mismatch": "Your discount code has changed. Review your bag and try again."
+          }
+        }
+      },
+      "stock": {
+        "removed_from_cart_notice": "Removed from bag",
+        "remove_from_cart_button_label": "Remove from bag",
+        "go_back_to_cart_button_label": "Go back to my bag",
+        "empty_cart_label": "Your bag is empty",
+        "quantity_update": {
+          "description": "Available quantities for these items have changed and are updated in your bag."
+        },
+        "unpurchasable_product": {
+          "header": "Some items were removed from your bag"
+        },
+        "unpurchasable_product_generic": {
+          "header": "Some items were removed from your bag"
+        },
+        "unshippable_product": {
+          "message": {
+            "one": "This item will be removed from your bag because there are no delivery methods available for your address.",
+            "other": "These items will be removed from your bag because there are no delivery methods available for your address."
+          }
+        },
+        "price_update": {
+          "description": "Prices for these items have changed and are updated in your bag."
+        },
+        "price_and_quantity_update": {
+          "description": "Prices and available quantities for these items have changed and are updated in your bag."
+        },
+        "out_of_stock": {
+          "description": "These items are no longer available and have been removed from your bag.",
+          "items_unavailable": "Some items are no longer available and have been removed from your bag."
+        }
+      },
+      "contextual_availability": {
+        "products_not_available": {
+          "one": "This product will be removed from your bag because it's not available in your country/region.",
+          "other": "These products will be removed from your bag because they're not available in your country/region."
+        }
+      },
+      "merchandise_unavailable_in_buyer_location": {
+        "banner_title": {
+          "all_products_one": "The product in your bag is not available for delivery to {{ location_name }}.",
+          "all_products_other": "The products in your bag are not available for delivery to {{ location_name }}."
+        },
+        "cart_updated": "Your bag has been updated.",
+        "empty_cart_action": "empty bag and return to store"
+      },
+      "deliverability": {
+        "not_deliverable": {
+          "message": {
+            "one": "This item will be removed from your bag because there are no delivery methods available for your address.",
+            "other": "These items will be removed from your bag because there are no delivery methods available for your address."
+          }
+        }
+      },
+      "order_summary": {
+        "shopping_cart_label": "Shopping bag",
+        "discount_code_allocations_mismatch": "Your <strong style=\"text-transform:uppercase\">{{ code }}</strong> discount code has changed. Review your bag and try again.",
+        "cart_does_not_meet_discount_requirements_notice": "<strong style=\"text-transform:uppercase\">{{ code }}</strong> discount code isn’t valid for the items in your bag"
+      },
+      "shipping": {
+        "no_rates_for_cart_or_destination_notice": "There are no shipping methods available for your bag or address"
+      },
+      "shipping_errors": {
+        "shipping_method_not_available": "Your bag has been updated and the items you added can’t be shipped to your address. Remove the items to complete your order.",
+        "shipping_method_not_available_generic": {
+          "other": "Some items in your bag can’t be shipped to the address you entered. Review your address to ensure it’s correct and try again, or select a different address."
+        },
+        "shipping_method_not_available_due_to_unsatisfied_conditions": "Items in the bag do not meet price or weight requirements to qualify for shipping. Update your bag and try again."
+      },
+      "failed_payment": {
+        "payment_not_processed_text": "You haven’t been charged. Return to your bag to complete your purchase.",
+        "return_to_cart_button_label": "Return to bag"
+      },
+      "thank_you": {
+        "thank_you_payments_app_failed_pending_payment": "You weren’t charged for your order. Return to your bag to review your order and pay again.",
+        "thank_you_payments_app_failed_pending_payment_payment": "You weren’t charged for your order. Return to your bag to review your order and pay again.",
+        "thank_you_payments_app_failed_pending_payment_pick_up": "You weren’t charged for your order. Return to your bag to review your order and pay again.",
+        "order_status_payments_app_failed_pending_payment": "You weren’t charged for your order. Return to your bag to review your order and pay again.",
+        "order_status_payments_app_failed_pending_payment_payment": "You weren’t charged for your order. Return to your bag to review your order and pay again.",
+        "order_status_payments_app_failed_pending_payment_pick_up": "You weren’t charged for your order. Return to your bag to review your order and pay again."
+      },
+      "marketing": {
+        "unsubscribe": {
+          "description": "You won’t receive any more bag reminders from us."
+        },
+        "sms": {
+          "disclaimer": {
+            "description_html": "By signing up via text, you agree to receive recurring automated marketing messages, including bag reminders, at the phone number provided. Consent is not a condition of purchase. Reply STOP to unsubscribe. Reply HELP for help. Message frequency varies. Msg & data rates may apply. View our {{ privacy_policy_link }} and {{ terms_of_service_link }}."
+          }
+        }
+      },
+      "change_country": {
+        "cart_updated_based_on_country": "Your bag has been updated based on your shipping country.",
+        "cart_and_currency_updated_based_on_country": "Your bag and currency have been updated based on your shipping country."
+      },
+      "throttle": {
+        "cart_summary_heading": "Your bag",
+        "inventory": {
+          "partial_inventory_banner": "Part of your bag is sold out and will not be available to purchase at checkout.",
+          "sold_out": {
+            "heading": "Your bag is sold out"
+          }
+        },
+        "footer": {
+          "body": "Items in your bag are not reserved until you complete checkout."
+        }
+      },
+      "notice_banner": {
+        "return_to_cart_link_text": "Return to bag",
+        "company_location_changed": "Your bag has been updated. Review your order before submitting it.",
+        "company_location_changed_product_removed": "Your bag has been updated because some products are not available at this location. Review your order before submitting it."
+      },
+      "review_address_modal": {
+        "return_to_cart": "Return to bag"
+      },
+      "payment": {
+        "subscription_agreement_label": "One or more items in your bag is a deferred or subscription purchase. By continuing with your payment, you agree that your payment method will automatically be charged at the price and frequency listed on this page until it ends or you cancel. All cancellations are subject to the {{ cancelled }}.",
+        "purchase_options_agreement_label": "One or more items in your bag are a deferred or recurring purchase. By continuing with your payment, you agree that your payment method will automatically be charged at the price and frequency listed on this page until it ends or you cancel. All cancellations are subject to the {{ cancellation_policy_label }}.",
+        "purchase_options_agreement_label_html": "I understand that one or more items in my bag are a deferred or recurring purchase. By continuing, I agree to the <a class=\"link--small\" data-modal=\"true\" data-title-text=\"{{ subscription_policy }}\" href=\"{{ policy_href }}\">cancellation policy</a> and authorize you to charge my payment method at the prices, frequency, and dates listed on this page until my order is fulfilled or I cancel, if permitted.",
+        "purchase_options_and_vaulting_agreement_label": "One or more items in your bag are a deferred or subscription purchase. By continuing with your payment, you agree that your payment method will automatically be charged at the price and frequency listed on this page until it ends or you cancel. All cancellations are subject to the {{ cancellation_policy_label }}."
+      }
+    },
+    "notices": {
+      "cart": {
+        "only_n_items_available": "You can only add {{ count }} {{ name }} to the bag.",
+        "too_many_items_in_cart": "You can't add more {{ name }} to the bag.",
+        "only_one_added_to_cart": "Only 1 item was added to your bag due to availability.",
+        "only_n_added_to_cart": "Only {{ quantity }} items were added to your bag due to availability.",
+        "maximum_available_quantity_reached": "The maximum quantity of this item is already in your bag.",
+        "all_items_in_cart": "All {{ count }} {{ name }} are in your bag.",
+        "empty_update": "cannot update empty bag",
+        "generic_error": "Bag Error",
+        "too_many_line_items_error": "Your bag can’t contain more than {{ max }} items.",
+        "stock_problems_html": "One or more items are no longer available. We’ve provided an <a href='{{ link }}'>updated bag</a>.",
+        "changed": "Bag changed",
+        "items_changed": "One or more items have changed.",
+        "shipping_address_not_required": "This bag does not require shipping",
+        "bundle_requires_components": "The bundle product '{{ name }}' cannot be added to the bag.",
+        "gift_card_with_components_not_supported": "The bundle product '{{ name }}' cannot be added to the bag.",
+        "gift_card_price_must_be_greater_than_zero": "The bundle product '{{ name }}' cannot be added to the bag.",
+        "cart_too_large": "Bag is too large.",
+        "cart_attributes_error": "Bag attributes contain invalid data.",
+        "merchandise_line_transformers": {
+          "run_error": "An error occurred in your bag."
+        }
+      }
+    },
+    "page_titles": {
+      "shopping_cart": "Your Shopping Bag"
+    },
+    "subscriptions": {
+      "buyer_consent_cart": "One or more of the items in your bag are a recurring or deferred purchase. By continuing, I agree to the {{ cancellationPolicyLink }} and authorize you to charge my payment method at the prices, frequency, and dates listed on this page until my order is fulfilled or I cancel, if permitted."
+    }
+  },
+  "customer_accounts": {
+    "B2B": {
+      "location_selection": {
+        "description": "If you already have items in your bag, changing locations might affect bag prices and quantities."
+      }
+    }
+  }
+}

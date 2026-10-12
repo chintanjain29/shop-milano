@@ -1,0 +1,237 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "wrapper": "div.page-location-detail",
+  "sections": {
+    "main": {
+      "type": "page-story-template",
+      "disabled": true,
+      "settings": {
+        "show_page_content": true
+      }
+    },
+    "cbf1386e-d9ed-4de7-9ff0-ec58a3f8ddc1": {
+      "type": "location-info-iwt-1",
+      "settings": {
+        "image": "shopify://shop_images/Cozumel.png",
+        "title": "Milano Jewelry Cozumel",
+        "text": "<p>Visit Milano at <strong>Cozumel </strong>and explore a refined collection of fine jewelry inspired by the ease and elegance of island life. From luminous diamonds to sun-warmed gold, each piece is designed to feel timeless. Enjoy a moment of calm, personal service, and beautifully wrapped pieces to take home - or wear out tonight.</p>",
+        "button_label": "Get Directions",
+        "button_link": "https://www.google.com/maps/dir//milano+diamond+gallery+av.+Rafael+Melgar,+No+101,+entre+1+y+A.R+Salas,+Colonia+Centro,+77600/@1.4629362,-92.9802062,3z/data=!4m8!4m7!1m0!1m5!1m1!1s0x8f4e59cee7e7a057:0xcd43ef1ecc7c4491!2m2!1d-86.9503764!2d20.5101827?entry=ttu",
+        "button_style": "secondary",
+        "image_position": "left",
+        "text_alignment": "left",
+        "use_alt_bg": false
+      }
+    },
+    "5bca3c62-2e03-4b6a-9764-e438fc7189cb": {
+      "type": "location-contact-info",
+      "blocks": {
+        "a890cb47-f18a-468f-85f2-ec3264a9707d": {
+          "type": "custom_block",
+          "settings": {
+            "text_content": "Hours",
+            "rich_text_content": "<p>Monday-Friday 10am - 6pm ET</p>"
+          }
+        },
+        "ae26b1f8-0bad-40d7-af81-e6e44246914b": {
+          "type": "custom_block",
+          "settings": {
+            "text_content": "Location",
+            "rich_text_content": "<p>Mexico · Puerta Maya Shopping Mall, Location 13B-C-D, Q.Roo, 77600</p>"
+          }
+        },
+        "c1a75ac5-76e1-46a4-a649-e16604daa365": {
+          "type": "custom_block",
+          "settings": {
+            "text_content": "Phone",
+            "rich_text_content": "<p><a href=\"tel:(800) 888-2166\" title=\"tel:(800) 888-2166\">(800) 888-2166</a></p>"
+          }
+        },
+        "d8b2ac69-e993-4fb1-af62-3f2fd7e0dc38": {
+          "type": "custom_block",
+          "settings": {
+            "text_content": "Email",
+            "rich_text_content": "<p><a href=\"#\" title=\"#\">info@milanojewelry.com</a></p>"
+          }
+        }
+      },
+      "block_order": [
+        "a890cb47-f18a-468f-85f2-ec3264a9707d",
+        "ae26b1f8-0bad-40d7-af81-e6e44246914b",
+        "c1a75ac5-76e1-46a4-a649-e16604daa365",
+        "d8b2ac69-e993-4fb1-af62-3f2fd7e0dc38"
+      ],
+      "settings": {
+        "use_alt_bg": false
+      }
+    },
+    "2c3f3ccb-6e2e-438e-8c25-92a032936a6e": {
+      "type": "location-info-iwt-2",
+      "settings": {
+        "use_alt_bg": false,
+        "bg_color": "#fafafa",
+        "image": "shopify://shop_images/Mask_Group_10.png",
+        "title": "Exclusive Collection",
+        "text": "<p>Exclusive for Caribbean travelers. Making up this collection are the breathtaking Caribbean themed Jewelry designs set with Swiss Blue Topaz representing the refreshing Caribbean Ocean Waves.</p><p>This gemstone is certainly a reminder of your beautiful time on the beach in <strong>ISLAND NAME</strong></p>",
+        "button_label": "View the Collection",
+        "button_link": "shopify://collections/best-sellers",
+        "button_style": "secondary",
+        "image_position": "right",
+        "text_alignment": "left"
+      }
+    },
+    "faaa5f79-8580-4eb8-a24b-17791507b8ca": {
+      "type": "location-detail-gallery",
+      "blocks": {
+        "template--14659272474757__faaa5f79-8580-4eb8-a24b-17791507b8ca-text_block-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify://shop_images/Cozumel.png",
+            "title": "Milano Diamond Gallery Cozumel",
+            "text": "<p>Mexico · Av Rafael Melgar, between 2 & 4, No: 125, Q.Roo, 77600</p>",
+            "button_label": "",
+            "link": "shopify://pages/location-detail-of-cozumel-downtown2"
+          }
+        },
+        "template--14659272474757__faaa5f79-8580-4eb8-a24b-17791507b8ca-text_block-2": {
+          "type": "text_block",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify://shop_images/Cozumel.png",
+            "title": "Milano Diamond Gallery Cozumel",
+            "text": "<p>Mexico · Av. Rafael Melgar, No 101, Entre 1 y A.R Salas, Colonia Centro, Q.Roo, 77600</p>",
+            "button_label": "",
+            "link": "shopify://pages/location-of-cozumel"
+          }
+        },
+        "template--14659272474757__faaa5f79-8580-4eb8-a24b-17791507b8ca-text_block-3": {
+          "type": "text_block",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify://shop_images/Cozumel.png",
+            "title": "Milano Diamond Gallery Cozumel",
+            "text": "<p>Mexico · International Pier Shopping Mall, Location 21, Cozumel, Q.Roo</p>",
+            "button_label": "",
+            "link": "shopify://pages/location-detail-of-cozumel-international-pier"
+          }
+        }
+      },
+      "block_order": [
+        "template--14659272474757__faaa5f79-8580-4eb8-a24b-17791507b8ca-text_block-1",
+        "template--14659272474757__faaa5f79-8580-4eb8-a24b-17791507b8ca-text_block-2",
+        "template--14659272474757__faaa5f79-8580-4eb8-a24b-17791507b8ca-text_block-3"
+      ],
+      "settings": {
+        "title": "Nearby Showrooms",
+        "media_aspect_ratio": "s",
+        "media_width": 700,
+        "text_alignment": "left",
+        "button_style": "primary",
+        "color_scheme": "default"
+      }
+    },
+    "fd8beac3-3105-4fe8-866b-d506e305adac": {
+      "type": "location-help",
+      "blocks": {
+        "ca3e222b-1034-466c-92c6-f51c68363fdb": {
+          "type": "custom_block",
+          "settings": {
+            "svg_content": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"31.385\" height=\"24\" viewbox=\"0 0 31.385 24\">\n  <g id=\"Group_12676\" data-name=\"Group 12676\" transform=\"translate(-2277 -1897)\">\n    <path id=\"Path_20930\" data-name=\"Path 20930\" d=\"M46.692,70.385a.921.921,0,0,1-.624-.243L31.3,56.6a.923.923,0,1,1,1.247-1.361L46.692,68.209,60.838,55.243A.923.923,0,0,1,62.085,56.6L47.316,70.142A.921.921,0,0,1,46.692,70.385Z\" transform=\"translate(2246 1842)\" fill=\"#fff\"></path>\n    <path id=\"Path_20931\" data-name=\"Path 20931\" d=\"M31.923,55H61.462a.923.923,0,0,1,.923.923V76.846A2.156,2.156,0,0,1,60.231,79H33.154A2.156,2.156,0,0,1,31,76.846V55.923A.923.923,0,0,1,31.923,55Zm28.615,1.846H32.846v20a.308.308,0,0,0,.308.308H60.231a.308.308,0,0,0,.308-.308Z\" transform=\"translate(2246 1842)\" fill=\"#fff\"></path>\n    <path id=\"Line_1\" data-name=\"Line 1\" d=\"M-.077,11.569a.921.921,0,0,1-.681-.3A.923.923,0,0,1-.7,9.966L10.991-.757A.923.923,0,0,1,12.3-.7.923.923,0,0,1,12.239.6L.547,11.326A.92.92,0,0,1-.077,11.569Z\" transform=\"translate(2278.384 1909.077)\" fill=\"#fff\"></path>\n    <path id=\"Line_2\" data-name=\"Line 2\" d=\"M11.615,11.569a.92.92,0,0,1-.624-.243L-.7.6A.923.923,0,0,1-.757-.7a.923.923,0,0,1,1.3-.056L12.239,9.966a.923.923,0,0,1-.624,1.6Z\" transform=\"translate(2295.461 1909.077)\" fill=\"#fff\"></path>\n  </g>\n</svg>",
+            "rich_text_content": "<p>Email with Us</p>"
+          }
+        },
+        "184f7ac3-3c38-4671-92a0-9003a8ff9218": {
+          "type": "custom_block",
+          "settings": {
+            "svg_content": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"26.008\" height=\"26.008\" viewbox=\"0 0 26.008 26.008\">\n  <g id=\"Group_12681\" data-name=\"Group 12681\" transform=\"translate(-337.484 -803.266)\">\n    <path id=\"Path_20930\" data-name=\"Path 20930\" d=\"M159.4,40a10.467,10.467,0,0,1,7.4,7.4\" transform=\"translate(194.686 765.276)\" fill=\"none\" stroke=\"#fff\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\"></path>\n    <path id=\"Path_20931\" data-name=\"Path 20931\" d=\"M151.1,70.9a6.259,6.259,0,0,1,4.443,4.443\" transform=\"translate(201.902 738.413)\" fill=\"none\" stroke=\"#fff\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\"></path>\n    <path id=\"Path_20932\" data-name=\"Path 20932\" d=\"M46.86,44.418a10.924,10.924,0,0,0,5.1,5.083,1.045,1.045,0,0,0,1.032-.078l3.267-2.182a1.032,1.032,0,0,1,.993-.091l6.116,2.627a1.032,1.032,0,0,1,.627,1.085,6.272,6.272,0,0,1-6.22,5.475A17.772,17.772,0,0,1,40,38.564a6.272,6.272,0,0,1,5.474-6.22,1.032,1.032,0,0,1,1.086.627L49.186,39.1a1.045,1.045,0,0,1-.078.98L46.926,43.4A1.045,1.045,0,0,0,46.86,44.418Z\" transform=\"translate(298.484 771.939)\" fill=\"none\" stroke=\"#fff\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\"></path>\n  </g>\n</svg>",
+            "rich_text_content": "<p><a href=\"tel:(800) 888-2166\" title=\"tel:(800) 888-2166\">Contact with Us</a></p>"
+          }
+        },
+        "29899aed-9a28-415e-9b7a-722c363efaec": {
+          "type": "custom_block",
+          "settings": {
+            "svg_content": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"25.822\" height=\"24\" viewbox=\"0 0 25.822 24\">\n  <g id=\"Group_12682\" data-name=\"Group 12682\" transform=\"translate(-282.275 -1124.659)\">\n    <path id=\"Path_32\" data-name=\"Path 32\" d=\"M32.224,49.265a9.225,9.225,0,0,1-4.353-1.094l-2.5.712h0a1.615,1.615,0,0,1-1.99-1.99v0l.712-2.5a9.233,9.233,0,1,1,8.134,4.875Zm-4.236-3.01a.923.923,0,0,1,.471.129A7.386,7.386,0,1,0,25.877,43.8a.923.923,0,0,1,.094.724l-.7,2.467,2.467-.7A.923.923,0,0,1,27.988,46.255Z\" transform=\"translate(259.279 1093.86)\" fill=\"#fff\"></path>\n    <path id=\"Path_33\" data-name=\"Path 33\" d=\"M99.849,97.534a9.225,9.225,0,0,1-8.7-6.165.923.923,0,0,1,1.742-.611,7.364,7.364,0,0,0,10.713,3.892.923.923,0,0,1,.725-.094l2.467.7-.7-2.467a.923.923,0,0,1,.095-.725,7.364,7.364,0,0,0-5.941-11.122.923.923,0,0,1,.1-1.843,9.21,9.21,0,0,1,7.63,13.556l.712,2.5v0a1.615,1.615,0,0,1-1.99,1.99h0l-2.5-.712A9.178,9.178,0,0,1,99.849,97.534Z\" transform=\"translate(199.025 1051.125)\" fill=\"#fff\"></path>\n  </g>\n</svg>",
+            "rich_text_content": "<p>Chat with our Team</p>"
+          }
+        }
+      },
+      "block_order": [
+        "ca3e222b-1034-466c-92c6-f51c68363fdb",
+        "184f7ac3-3c38-4671-92a0-9003a8ff9218",
+        "29899aed-9a28-415e-9b7a-722c363efaec"
+      ],
+      "settings": {
+        "use_alt_bg": false,
+        "bg_color": "#008cc2",
+        "title": "How Can We Help?"
+      }
+    },
+    "1e54f99a-0eec-4175-8208-7a5530483d26": {
+      "type": "contact-logo-list",
+      "blocks": {
+        "e2fe6049-0bfd-4581-a828-e71f4d8df98d": {
+          "type": "text_block",
+          "settings": {
+            "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"29.413\" height=\"26\" viewbox=\"0 0 29.413 26\">\n  <path id=\"Union_8\" data-name=\"Union 8\" d=\"M10.037,20.793a10.358,10.358,0,0,1-4.625-1.262l-3.785.631a.862.862,0,0,1-.992-.993l.63-3.792A10.386,10.386,0,0,1,19.376,5.207a10.405,10.405,0,0,1,8.772,15.371l.63,3.792a.862.862,0,0,1-.992.993L24,24.733a10.374,10.374,0,0,1-13.964-3.94Zm9,3.481a8.634,8.634,0,0,0,4.373-1.187.86.86,0,0,1,.578-.107l2.9.483-.482-2.9a.865.865,0,0,1,.107-.579A8.68,8.68,0,0,0,20.193,7.006a10.486,10.486,0,0,1,.56,3.009h0v.038h0v.056h0v.039c0,.012,0,.024,0,.036v.078h0V10.3c0,.006,0,.011,0,.017v0s0,.009,0,.014v.024s0,.009,0,.014,0,0,0,0,0,.011,0,.017,0,.01,0,.016,0,0,0,.005,0,.007,0,.011v.33h0v.13h0l0,.049h0v.005h2.787a.863.863,0,0,1,0,1.727H20.507a10.319,10.319,0,0,1-.7,2.065h3.73a.863.863,0,0,1,0,1.727H18.791a10.572,10.572,0,0,1-1.967,2.065h6.708a.863.863,0,0,1,0,1.727h-9a.857.857,0,0,1-.472-.141,10.246,10.246,0,0,1-1.106.355l-.006,0-.009,0-.008,0-.006,0-.009,0h-.005l-.01,0h0l-.012,0h0q-.435.11-.884.182A8.615,8.615,0,0,0,19.033,24.273ZM6.007,17.885a8.634,8.634,0,0,0,4.373,1.187l.154,0a8.709,8.709,0,0,0,8.484-8.1q.019-.285.019-.574A8.657,8.657,0,1,0,2.908,14.781a.865.865,0,0,1,.107.579l-.482,2.9,2.9-.483a.86.86,0,0,1,.578.107Zm3.512-2.6a.862.862,0,1,1,.862.863A.872.872,0,0,1,9.518,15.282Zm0-2.878V9.86A.863.863,0,0,1,10.38,9,1.309,1.309,0,1,0,9.074,7.688a.862.862,0,1,1-1.723,0,3.03,3.03,0,1,1,3.891,2.91V12.4a.862.862,0,1,1-1.723,0Z\" fill=\"#fff\"></path>\n</svg>",
+            "title": "FAQs",
+            "text": "<p>Most questions can be answered here.</p>",
+            "button_label": "Go To FAQs",
+            "link": "#"
+          }
+        },
+        "7c17f322-b565-402b-b351-0ee7152f3b4b": {
+          "type": "text_block",
+          "settings": {
+            "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"31.385\" height=\"24\" viewbox=\"0 0 31.385 24\">\n  <g id=\"Group_12676\" data-name=\"Group 12676\" transform=\"translate(-2277 -1897)\">\n    <path id=\"Path_20930\" data-name=\"Path 20930\" d=\"M46.692,70.385a.921.921,0,0,1-.624-.243L31.3,56.6a.923.923,0,1,1,1.247-1.361L46.692,68.209,60.838,55.243A.923.923,0,0,1,62.085,56.6L47.316,70.142A.921.921,0,0,1,46.692,70.385Z\" transform=\"translate(2246 1842)\" fill=\"#fff\"></path>\n    <path id=\"Path_20931\" data-name=\"Path 20931\" d=\"M31.923,55H61.462a.923.923,0,0,1,.923.923V76.846A2.156,2.156,0,0,1,60.231,79H33.154A2.156,2.156,0,0,1,31,76.846V55.923A.923.923,0,0,1,31.923,55Zm28.615,1.846H32.846v20a.308.308,0,0,0,.308.308H60.231a.308.308,0,0,0,.308-.308Z\" transform=\"translate(2246 1842)\" fill=\"#fff\"></path>\n    <path id=\"Line_1\" data-name=\"Line 1\" d=\"M-.077,11.569a.921.921,0,0,1-.681-.3A.923.923,0,0,1-.7,9.966L10.991-.757A.923.923,0,0,1,12.3-.7.923.923,0,0,1,12.239.6L.547,11.326A.92.92,0,0,1-.077,11.569Z\" transform=\"translate(2278.384 1909.077)\" fill=\"#fff\"></path>\n    <path id=\"Line_2\" data-name=\"Line 2\" d=\"M11.615,11.569a.92.92,0,0,1-.624-.243L-.7.6A.923.923,0,0,1-.757-.7a.923.923,0,0,1,1.3-.056L12.239,9.966a.923.923,0,0,1-.624,1.6Z\" transform=\"translate(2295.461 1909.077)\" fill=\"#fff\"></path>\n  </g>\n</svg>",
+            "title": "Email Us",
+            "text": "<p>Drop us a line. We'll get back to you ASAP.</p>",
+            "button_label": "Contact Us",
+            "link": "#"
+          }
+        },
+        "ff70f61d-9ead-4194-9d42-4e2938b71554": {
+          "type": "text_block",
+          "settings": {
+            "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"26\" height=\"26\" viewbox=\"0 0 26 26\">\n  <g id=\"Group_12681\" data-name=\"Group 12681\" transform=\"translate(-337.484 -803.274)\">\n    <path id=\"Path_20930\" data-name=\"Path 20930\" d=\"M166.8,48.4a1,1,0,0,1-.965-.741,9.494,9.494,0,0,0-6.689-6.689,1,1,0,0,1,.518-1.932,11.467,11.467,0,0,1,8.1,8.1A1,1,0,0,1,166.8,48.4Z\" transform=\"translate(194.686 765.276)\" fill=\"#fff\"></path>\n    <path id=\"Path_20931\" data-name=\"Path 20931\" d=\"M155.542,76.343a1,1,0,0,1-.966-.744,5.271,5.271,0,0,0-3.733-3.733,1,1,0,0,1,.513-1.933,7.275,7.275,0,0,1,5.153,5.153,1,1,0,0,1-.967,1.257Z\" transform=\"translate(201.902 738.413)\" fill=\"#fff\"></path>\n    <path id=\"Path_20932\" data-name=\"Path 20932\" d=\"M57.772,57.335h0A18.757,18.757,0,0,1,39,38.564a7.272,7.272,0,0,1,6.346-7.212,2.032,2.032,0,0,1,2.134,1.229l2.625,6.124a2.04,2.04,0,0,1-.155,1.913l-.007.01-2.179,3.314a.046.046,0,0,0,0,.043A9.959,9.959,0,0,0,52.386,48.6a.045.045,0,0,0,.044,0L55.7,46.411a2.032,2.032,0,0,1,1.948-.179l6.108,2.624a2.037,2.037,0,0,1,1.229,2.133,7.272,7.272,0,0,1-7.212,6.348Zm-12.165-24H45.6A5.283,5.283,0,0,0,41,38.564,16.791,16.791,0,0,0,57.772,55.335,5.284,5.284,0,0,0,63,50.733a.033.033,0,0,0-.02-.034l-.01,0-6.116-2.627-.006,0a.032.032,0,0,0-.031,0l-.006,0-3.267,2.182a2.034,2.034,0,0,1-1.14.347h0a2.058,2.058,0,0,1-.875-.2l-.006,0a11.971,11.971,0,0,1-5.563-5.548,2.06,2.06,0,0,1,.126-2l0-.006,2.177-3.311a.045.045,0,0,0,0-.041l-2.628-6.133,0-.01A.032.032,0,0,0,45.607,33.335Z\" transform=\"translate(298.484 771.939)\" fill=\"#fff\"></path>\n  </g>\n</svg>",
+            "title": "Call Us",
+            "text": "<p>Call us, beep us if you want to reach us.</p>",
+            "button_label": "(800) 888-2166",
+            "link": "#"
+          }
+        }
+      },
+      "block_order": [
+        "e2fe6049-0bfd-4581-a828-e71f4d8df98d",
+        "7c17f322-b565-402b-b351-0ee7152f3b4b",
+        "ff70f61d-9ead-4194-9d42-4e2938b71554"
+      ],
+      "disabled": true,
+      "settings": {
+        "bg_color": "#008cc2",
+        "custom_bg_color": "#f8f8f8",
+        "title": "Our Customer Service team is available from Monday to Friday 10:00am-6:00pm",
+        "text_alignment": "left",
+        "button_style": "primary",
+        "use_alt_bg": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "cbf1386e-d9ed-4de7-9ff0-ec58a3f8ddc1",
+    "5bca3c62-2e03-4b6a-9764-e438fc7189cb",
+    "2c3f3ccb-6e2e-438e-8c25-92a032936a6e",
+    "faaa5f79-8580-4eb8-a24b-17791507b8ca",
+    "fd8beac3-3105-4fe8-866b-d506e305adac",
+    "1e54f99a-0eec-4175-8208-7a5530483d26"
+  ]
+}

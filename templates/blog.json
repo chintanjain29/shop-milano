@@ -1,0 +1,31 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-blog",
+      "settings": {
+        "show_page_title": true,
+        "layout": "columns",
+        "crop_ratio": "1.0",
+        "show_author": false,
+        "show_date": false,
+        "show_excerpts": true,
+        "show_article_tags": true,
+        "show_rss_icon": true,
+        "show_twitter": true,
+        "show_facebook": true
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

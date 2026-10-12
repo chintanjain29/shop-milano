@@ -1,0 +1,439 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "show_tax_and_shipping": false,
+            "enable_product_reviews_by_price": true
+          }
+        },
+        "vendor": {
+          "type": "vendor",
+          "disabled": true,
+          "settings": {}
+        },
+        "variant-picker": {
+          "type": "variant-picker",
+          "settings": {
+            "show_single": false,
+            "select_first_variant": true,
+            "selector_style": "dropdown",
+            "enable_dynamic_availability": true,
+            "enable_size_chart": true,
+            "size_chart_variant": "Size",
+            "size_chart_page": "about"
+          }
+        },
+        "inventory_level_FkqPDq": {
+          "type": "inventory-level",
+          "disabled": true,
+          "settings": {
+            "show_inventory_notice": "low",
+            "show_inventory_count": "low",
+            "inventory_threshold": 10,
+            "enable_box": false,
+            "enable_pulse": true,
+            "show_in_quickbuy": true
+          }
+        },
+        "buy-buttons": {
+          "type": "buy-buttons",
+          "settings": {
+            "show_quantity_selector": true,
+            "enable_payment_button": false,
+            "show_backorder_text": false,
+            "show_pickup_availability": false,
+            "show_gift_card_recipient": true
+          }
+        },
+        "affirm_pay_over_time_messaging_product_block_phUTkD": {
+          "type": "shopify://apps/affirm-pay-over-time-messaging/blocks/product-block/6dce54be-130d-4d13-9636-1e8f611b3071",
+          "settings": {
+            "logo_align": "left",
+            "font_size": 16,
+            "logo_color": "blue",
+            "logo_type": "logo",
+            "public_api_key": "YEZ359BOQBE2R5TQ",
+            "price_selector": ".buy-buttons-row"
+          }
+        },
+        "text_z3UkNf": {
+          "type": "text",
+          "settings": {
+            "text": "Estimated Ship Date: <strong></strong>",
+            "icon": "calendar",
+            "icon_size": "small",
+            "enable_box": false,
+            "box_color": "#e0f4d5",
+            "show_in_quickbuy": false
+          }
+        },
+        "text_qMzC6m": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Order now for delivery by Wed, April 10",
+            "icon": "calendar",
+            "icon_size": "small",
+            "enable_box": false,
+            "box_color": "#e0f4d5",
+            "show_in_quickbuy": false
+          }
+        },
+        "text_KgrjKa": {
+          "type": "text",
+          "settings": {
+            "text": "Free Shipping | Free Returns",
+            "icon": "truck",
+            "icon_size": "small",
+            "enable_box": false,
+            "box_color": "#e0f4d5",
+            "show_in_quickbuy": false
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "show_in_tab": true,
+            "open_tab": true,
+            "icon": "",
+            "show_in_quickbuy": false
+          }
+        },
+        "accordion_zEhq7V": {
+          "type": "accordion",
+          "settings": {
+            "title": "Free Shipping & Free Returns",
+            "icon": "",
+            "content": "<p>Milano is committed to delivering a jewelry journey that fills your heart with delight, both today and always. We provide complimentary insured shipping, granting you tranquility with tracking and a signature upon receipt. Our insurance safeguards against loss, damage, or theft while in transit. Should any of these rare incidents occur, we strive diligently to retrieve the item(s). If retrieval isn't possible, we promise a replacement of equivalent quality. Returns within 30 days are straightforward and at no cost within the US, guaranteeing an effortless and pleasant experience for our cherished clientele.</p>",
+            "page": "",
+            "open": false,
+            "show_in_quickbuy": false
+          }
+        },
+        "accordion_zh4Jfg": {
+          "type": "accordion",
+          "settings": {
+            "title": "Lifetime Warranty & Appraisal",
+            "icon": "",
+            "content": "<p><strong>Lifetime Warranty</strong></p><p>Milano is dedicated to crafting top-tier jewelry designed to stand the test of time. Our aim is to ensure your enduring satisfaction with our pieces. We provide complimentary lifetime cleaning and accept full accountability for any issues stemming from manufacturing flaws. It's important to understand that the warranty does not cover diamonds over 0.10ct, nor does it include center stone diamonds/gemstones on engagement rings. Additionally, damages, losses, and theft are excluded from coverage. Repair charges are determined by our expert jewelers based on service requirements. To maintain warranty eligibility, we advise having all services performed by Milano.</p><p><strong>Appraisal</strong></p><p>Each item with a MSRP value over $1,000 will receive an appraisal document stating the approximate monetary value of your item. This appraisal is solely for insurance purposes only.</p>",
+            "page": "",
+            "open": false,
+            "show_in_quickbuy": false
+          }
+        },
+        "complementary_VhC4zJ": {
+          "type": "complementary",
+          "settings": {
+            "heading": "",
+            "enable_carousel": true,
+            "max_products": 2
+          }
+        },
+        "divider": {
+          "type": "divider",
+          "disabled": true,
+          "settings": {
+            "show_in_quickbuy": true
+          }
+        },
+        "sku_6Q49jg": {
+          "type": "sku",
+          "disabled": true,
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "title",
+        "price",
+        "vendor",
+        "variant-picker",
+        "inventory_level_FkqPDq",
+        "buy-buttons",
+        "affirm_pay_over_time_messaging_product_block_phUTkD",
+        "text_z3UkNf",
+        "text_qMzC6m",
+        "text_KgrjKa",
+        "description",
+        "accordion_zEhq7V",
+        "accordion_zh4Jfg",
+        "complementary_VhC4zJ",
+        "divider",
+        "sku_6Q49jg"
+      ],
+      "settings": {
+        "show_breadcrumbs": true,
+        "show_location_underneath": false,
+        "inventory_transfers_enable": true,
+        "enable_sticky_columns": true,
+        "gallery_size": "medium",
+        "gallery_layout": "collage-1",
+        "enable_zoom": true,
+        "show_alt_text": false,
+        "alt_text_icon": "",
+        "enable_video_autoplay": false,
+        "enable_video_looping": false,
+        "enable_media_grouping": true,
+        "media_grouping_option": "Metal Color,Color"
+      }
+    },
+    "logo_list_R3Tdcc": {
+      "type": "logo-list",
+      "blocks": {
+        "logo_6jQGeV": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/idVOOj_s3n.jpg",
+            "image_width": 160,
+            "link": "",
+            "title": ""
+          }
+        },
+        "logo_YtHwFP": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/images.png",
+            "image_width": 160,
+            "link": "",
+            "title": ""
+          }
+        },
+        "logo_jLMNL9": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/brand.gif",
+            "image_width": 160,
+            "link": "",
+            "title": ""
+          }
+        },
+        "logo_6eAwaH": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/1ab336_32e95f3d4bd14e92945b0eab059a8a28_mv2.png",
+            "image_width": 160,
+            "link": "",
+            "title": ""
+          }
+        }
+      },
+      "block_order": [
+        "logo_6jQGeV",
+        "logo_YtHwFP",
+        "logo_jLMNL9",
+        "logo_6eAwaH"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "image_opacity": 100,
+        "color_scheme": "default"
+      }
+    },
+    "image_with_text_overlay_4iymPK": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "subheading_wDT4z6": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Get ready"
+          }
+        },
+        "heading_hwtkeM": {
+          "type": "heading",
+          "settings": {
+            "title": "Shop our wonderful jewellery",
+            "heading_max_width": 15,
+            "title_size": 50,
+            "title_size_mobile": 32,
+            "use_h1": false
+          }
+        }
+      },
+      "block_order": [
+        "subheading_wDT4z6",
+        "heading_hwtkeM"
+      ],
+      "disabled": true,
+      "settings": {
+        "image": "shopify://shop_images/img-3.png",
+        "height": "fixed",
+        "height_desktop": 500,
+        "height_mobile": 460,
+        "image_link": "",
+        "full_width": true,
+        "text_alignment": "center center",
+        "mobile_overlay_under": false,
+        "overlay_style": "shadow"
+      }
+    },
+    "rich_text_UL3AAz": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_iAiKVM": {
+          "type": "heading",
+          "settings": {
+            "title": "Designed and Manufactured by Milano",
+            "use_h1": false
+          }
+        },
+        "text_UYAhWP": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Every Milano piece is designed with the goal of captivating<br/>you. We pride ourselves on our ability to create made-to-order jewelry beautifully<br/>handcrafted in our own manufacturing facility. Every detail is thoughtfully<br/>considered, with a focus on comfort, exceptional quality, and lasting<br/>durability, ensuring your jewelry remains a treasured keepsake for a lifetime.</p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_iAiKVM",
+        "text_UYAhWP"
+      ],
+      "settings": {
+        "height": "medium",
+        "text_alignment": "center",
+        "full_width": false,
+        "color_scheme": "default"
+      }
+    },
+    "slideshow_BPBdjd": {
+      "type": "slideshow",
+      "blocks": {
+        "image_w6Em7a": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/pexels-andrea-piacquadio-1050312_2da834dc-c6df-4906-95bd-f5c9ecec7047.jpg",
+            "mobile_image": "shopify://shop_images/pexels-andrea-piacquadio-1050312_2da834dc-c6df-4906-95bd-f5c9ecec7047.jpg",
+            "slide_link": "",
+            "subheading": "",
+            "title": "",
+            "heading_max_width": 15,
+            "title_size": 84,
+            "title_size_mobile": 46,
+            "use_h1": false,
+            "text": "",
+            "enlarge_text": true,
+            "button_label_1": "",
+            "button_url_1": "",
+            "button_label_2": "",
+            "button_url_2": "",
+            "text_alignment": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "image_w6Em7a"
+      ],
+      "settings": {
+        "height": "fixed",
+        "height_desktop": 600,
+        "height_mobile": 460,
+        "full_width": false,
+        "mobile_overlay_under": false,
+        "overlay_style": "shadow",
+        "transition": "fade",
+        "navigation": "arrows",
+        "autoplay": true,
+        "autoplay_speed": 7,
+        "accessibility_info": ""
+      }
+    },
+    "faq_header_VNKbdT": {
+      "type": "faq-header",
+      "disabled": true,
+      "settings": {
+        "title": "FAQ",
+        "use_h1": false,
+        "text": "",
+        "show_search": true,
+        "show_index": true,
+        "index_heading": "How can we help?"
+      }
+    },
+    "collapsible_tabs_LdnTeq": {
+      "type": "collapsible-tabs",
+      "blocks": {
+        "question_j7Q64x": {
+          "type": "question",
+          "settings": {
+            "title": "What size should I buy?",
+            "answer": "<p>If you’re not quite sure which size is right for you, refer to our size guides. They’re located underneath the available sizes for each of our products.</p>"
+          }
+        },
+        "question_jhmkDQ": {
+          "type": "question",
+          "settings": {
+            "title": "Can I cancel my order?",
+            "answer": "<p>We completely get it, we change our minds too! While we wish could, once an order is placed, we are unable to alter or cancel it at this time. We hope to have a cancellation window one day in the future.</p><p>Should the item(s) not work out, make sure to exchange for a preferred style or return for a refund. As a reminder, domestic return shipping is free.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_j7Q64x",
+        "question_jhmkDQ"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "Ordering"
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "settings": {
+        "title": "You may also like",
+        "show_vendor": false,
+        "grid": 4
+      }
+    },
+    "17141120212db4d4a0": {
+      "type": "apps",
+      "blocks": {
+        "affirm_pay_over_time_messaging_product_block_gBna9V": {
+          "type": "shopify://apps/affirm-pay-over-time-messaging/blocks/product-block/6dce54be-130d-4d13-9636-1e8f611b3071",
+          "settings": {
+            "logo_align": "left",
+            "font_size": 16,
+            "logo_color": "blue",
+            "logo_type": "logo",
+            "public_api_key": "",
+            "price_selector": ".price-container .price"
+          }
+        }
+      },
+      "block_order": [
+        "affirm_pay_over_time_messaging_product_block_gBna9V"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "logo_list_R3Tdcc",
+    "image_with_text_overlay_4iymPK",
+    "rich_text_UL3AAz",
+    "slideshow_BPBdjd",
+    "faq_header_VNKbdT",
+    "collapsible_tabs_LdnTeq",
+    "related-products",
+    "17141120212db4d4a0"
+  ]
+}

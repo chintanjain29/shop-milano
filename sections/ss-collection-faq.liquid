@@ -1,0 +1,284 @@
+{% assign has_faq = false %}
+
+{% for block in section.blocks %}
+  {% if block.settings.question != blank %}
+    {% assign has_faq = true %}
+    {% break %}
+  {% endif %}
+{% endfor %}
+
+{% if has_faq %}
+  <div class="rb-faq-shopify-section">
+
+    {% if section.settings.heading != blank %}
+    <h2 class="rb-faq-heading">
+        {{ section.settings.heading }}
+    </h2>
+    {% endif %}
+
+    <div class="rb-faq-container">
+      {% for block in section.blocks %}
+        {% if block.settings.question != blank %}
+          <div class="rb-faq-container-item" {{ block.shopify_attributes }}>
+            <input
+              style="display:none!important;"
+              type="checkbox"
+              id="faq-{{ section.id }}-{{ block.id }}"
+              class="tab-toggle"
+            >
+
+            <label
+              for="faq-{{ section.id }}-{{ block.id }}"
+              class="rb-faq-question"
+            >
+              {{ block.settings.question }}
+            </label>
+
+            <div class="rb-faq-answer">
+              {{ block.settings.answer }}
+            </div>
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+
+  </div>
+{% endif %}
+  {% schema %}
+  {
+    "name": "Collection FAQ",
+    "presets": [
+        {
+            "category": "Custom sections",
+            "name": "Collection FAQ"
+        }
+    ],
+    "settings": [
+        {
+            "type":"text",
+            "label":"Heading",
+            "id":"heading",
+            "default":"FAQ"
+        },
+        {
+            "type":"color",
+            "label":"Icon color",
+            "id":"icon_color",
+            "default":"#fff"
+        },
+        {
+            "type":"color",
+            "label":"Question hover color",
+            "id":"hover_color",
+            "default":"#EFEFEF"
+        },
+        {
+            "type":"color",
+            "label":"Question color",
+            "id":"question_color",
+            "default":"#fff"
+        },
+        {
+            "type":"color",
+            "label":"Question Background color",
+            "id":"background_color",
+            "default":"#D5CAA6"
+        },
+        {
+            "type":"color",
+            "label":"Answer color",
+            "id":"answer_color",
+            "default":"#000"
+        },
+        {
+            "type":"color",
+            "label":"Answer Background color",
+            "id":"answer_bg_color",
+            "default":"#fff"
+        },
+        {
+            "type":"range",
+            "id":"questions-font-size",
+            "label":"Questions font size",
+            "default":1.5,
+            "min":0.8,
+            "max":3.0,
+            "step":0.1
+        }
+    ],
+    "blocks":	[
+        {
+        "type":"text",
+        "name":"Questions/Answer",
+        "settings": [
+            {
+                "type":"text",
+                "label":"Question",
+                "id":"question"
+            },
+            {
+                "type":"richtext",
+                "label":"Answer",
+                "id":"answer"
+                }
+            ]
+        }
+    ]
+}
+{% endschema %}
+
+{% style %}
+
+  .rb-faq-shopify-section {
+    max-width: 1480px;
+    margin: 0 auto;
+    padding: 45px 30px 55px;
+  }
+
+  .rb-faq-heading {
+    margin: 0 0 20px;
+    padding: 0;
+    text-align: left;
+    color: #0b285f;
+    font-size: 24px;
+    line-height: 1.2;
+    font-weight: 500;
+  }
+
+  .rb-faq-container {
+    width: 100%;
+    margin: 0;
+    max-width: none;
+  }
+
+  .rb-faq-container-item {
+    margin: 0;
+    border-bottom: 1px solid #d6d8de;
+    border-radius: 0;
+    overflow: visible;
+  }
+
+  .rb-faq-question {
+    position: relative;
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+    padding: 22px 0;
+
+    background: transparent;
+    border-radius: 0;
+
+    color: #0b285f;
+    font-size: 18px;
+    line-height: 1.35;
+    font-weight: 500;
+
+    cursor: pointer;
+    transition: color 0.2s ease;
+  }
+
+  .rb-faq-question:hover {
+    color: #0b285f;
+    opacity: .7;
+  }
+
+  /* Chevron */
+  .rb-faq-question::after {
+    content: "";
+    display: block;
+    flex: 0 0 auto;
+
+    width: 10px;
+    height: 10px;
+    margin-left: 25px;
+    margin-right: 6px;
+
+    border-right: 3px solid #8b93a2;
+    border-bottom: 3px solid #8b93a2;
+
+    transform: rotate(45deg);
+    transition: transform 0.2s ease;
+  }
+
+  .rb-faq-answer {
+    position: relative;
+    width: 100%;
+
+    height: 0;
+    padding: 0;
+    margin: 0;
+
+    opacity: 0;
+    visibility: hidden;
+    overflow: hidden;
+
+    color: #686d76;
+    background: transparent;
+
+    font-size: 15px;
+    line-height: 1.55;
+
+    transform: translateY(-5px);
+    transition:
+      opacity 0.2s ease,
+      transform 0.2s ease;
+  }
+
+  .rb-faq-answer p {
+    margin: 0;
+  }
+
+  .rb-faq-answer a {
+    color: inherit;
+    text-decoration: underline;
+  }
+
+  .tab-toggle:checked ~ .rb-faq-answer {
+    height: auto;
+    padding: 0 0 22px;
+
+    opacity: 1;
+    visibility: visible;
+    overflow: visible;
+
+    transform: translateY(0);
+  }
+
+  /* Arrow points up when open */
+  .tab-toggle:checked ~ .rb-faq-question::after {
+    transform: rotate(-135deg);
+  }
+
+  .tab-toggle {
+    display: none !important;
+  }
+
+  @media (max-width: 749px) {
+
+    .rb-faq-shopify-section {
+      padding: 35px 20px 45px;
+    }
+
+    .rb-faq-heading {
+      margin-bottom: 14px;
+      font-size: 22px;
+    }
+
+    .rb-faq-question {
+      padding: 18px 0;
+      font-size: 17px;
+    }
+
+    .rb-faq-answer {
+      font-size: 15px;
+    }
+
+    .tab-toggle:checked ~ .rb-faq-answer {
+      padding-bottom: 18px;
+    }
+
+  }
+
+{% endstyle %}

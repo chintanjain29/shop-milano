@@ -1,0 +1,717 @@
+<div id="section-id-{{ section.id }}" class="container fully-spaced-row--medium section-id-{{ section.id }}">
+  <div class="flexible-layout flexible-layout--align-center valign-{{ section.settings.alignment }}">
+    {% for block in section.blocks %}
+      <div id="block-id-{{ block.id }}" class="column column--{{ block.settings.width }} block-id-{{ block.id }} fade-in-up" {{ block.shopify_attributes }} data-cc-animate data-cc-animate-delay="{{ forloop.index | times: 0.15 }}s">
+
+        {% if block.type == 'image' %}
+          <style>
+            {%- if block.settings.height == 'fixed' -%}
+              #block-id-{{ block.id }} .height--fixed {
+                --image-height: {{ block.settings.height_mobile }}px;
+              }
+              @media (min-width: 768px) {
+                #block-id-{{ block.id }} .height--fixed {
+                  --image-height: {{ block.settings.height_desktop }}px;
+                }
+              }
+            {%- elsif block.settings.height == 'adapt' -%}
+              #block-id-{{ block.id }} .height--adapt {
+                {%- if block.settings.mobile_image -%}
+                  --aspect-ratio: {{ block.settings.mobile_image.aspect_ratio }};
+                {%- else -%}
+                  --aspect-ratio: {{ block.settings.image.aspect_ratio | default: 2.0 }};
+                {%- endif -%}
+              }
+              {%- if block.settings.mobile_image -%}
+                @media (min-width: 768px) {
+                  #block-id-{{ block.id }} .height--adapt {
+                    --aspect-ratio: {{ block.settings.image.aspect_ratio | default: 2.0 }};
+                  }
+                }
+              {%- endif -%}
+            {%- endif -%}
+          </style>
+
+          {%- assign show_overlay_text = false -%}
+          {%- if block.settings.title != blank or block.settings.subheading != blank or block.settings.text != blank or block.settings.button_label != blank -%}
+            {%- assign show_overlay_text = true -%}
+          {%- endif -%}
+          <div class="height--{{ block.settings.height }} image-overlay image-overlay--bg-{{ block.settings.overlay_style }} {% if block.settings.mobile_overlay_under %}text-overlay-parent--mobile-stack{% endif %}">
+            {%- unless block.settings.image_link == blank or block.settings.text contains '</a>' -%}
+              <a class="image-overlay__image-link" href="{{ block.settings.image_link }}">
+            {%- endunless -%}
+
+            {%- if block.settings.image == blank -%}
+              <div class="height__image image-overlay__image">
+                <div class="placeholder-image{% if show_overlay_text %} dark{% endif %}">
+                  {{- 'image' | placeholder_svg_tag: 'placeholder-svg' -}}
+                </div>
+              </div>
+            {%- else -%}
+              {%- liquid
+                case block.settings.width
+                  when 'quarter'
+                    assign size_cols_desktop = 4
+                  when 'third'
+                    assign size_cols_desktop = 3
+                  when 'half'
+                    assign size_cols_desktop = 2
+                  when 'two-thirds'
+                    assign size_cols_desktop = 0.67
+                  when 'three-quarters'
+                    assign size_cols_desktop = 0.25
+                  else
+                    assign size_cols_desktop = nil
+                endcase
+              -%}
+
+              <div class="height__image image-overlay__image">
+                {%- render 'image-desktop-and-mobile', desktop_image: block.settings.image, mobile_image: block.settings.mobile_image, size_cols_desktop: size_cols_desktop, block: block -%}
+              </div>
+            {%- endif -%}
+
+            {%- if show_overlay_text -%}
+            <div class="text-overlay text-overlay--v-{{ block.settings.text_alignment | split: ' ' | first }} text-overlay--h-{{ block.settings.text_alignment | split: ' ' | last }} image-overlay__over">
+              <div class="text-overlay__inner">
+                <div class="text-overlay__text">
+                  {%- if block.settings.subheading != blank -%}
+                    <div class="text-overlay__subheading subheading subheading--over">{{ block.settings.subheading | escape }}</div>
+                  {%- endif -%}
+                  {%- if block.settings.title != blank -%}
+                    <h2 class="text-overlay__title h4">{% render 'multiline-text' with block.settings.title %}</h2>
+                  {%- endif -%}
+                  {%- if block.settings.text != blank -%}
+                    <div class="text-overlay__rte rte {% if block.settings.enlarge_text %}large-text{% endif %}">{{ block.settings.text }}</div>
+                  {%- endif -%}
+                  {%- if block.settings.button_label != blank -%}
+                    <div class="text-overlay__button-row text-overlay__button-row--secondary">
+                      {%- if block.settings.text contains '</a>' -%}
+                      <a class="text-overlay__button {% if block.settings.button_style != 'link' %}btn btn--{{ block.settings.button_style }}{% else %}small-feature-link{% endif %}" href="{{ block.settings.image_link }}">{{ block.settings.button_label | escape }}</a>
+                      {%- else -%}
+                      <span class="text-overlay__button {% if block.settings.button_style != 'link' %}btn btn--{{ block.settings.button_style }}{% else %}small-feature-link{% endif %}">{{ block.settings.button_label | escape }}</span>
+                      {%- endif -%}
+                    </div>
+                  {%- endif -%}
+                </div>
+              </div>
+            </div>
+            {%- endif -%}
+
+            {%- unless block.settings.image_link == blank or block.settings.text contains '</a>' -%}
+              </a>
+            {%- endunless -%}
+          </div>
+
+        {% elsif block.type == 'text' %}
+
+          <div class="align-ltr-{{ block.settings.text_alignment }}">
+            {%- if block.settings.subheading != blank -%}
+              <div class="subheading subheading--over">{{ block.settings.subheading | escape }}</div>
+            {%- endif -%}
+
+            {%- if block.settings.title != blank -%}
+              <h2 class="majortitle h1 in-content">{{ block.settings.title | escape }}</h2>
+            {%- endif -%}
+
+            <div class="rte {% if block.settings.enlarge_text %}large-text{% endif %}">{{ block.settings.text }}</div>
+
+            {%- if block.settings.button_label != blank -%}
+              <div class="lightish-spaced-row-above">
+                <a class="{% if block.settings.button_style != 'link' %}btn btn--{{ block.settings.button_style }}{% else %}small-feature-link{% endif %}" href="{{ block.settings.button_link }}">{{ block.settings.button_label | escape }}</a>
+              </div>
+            {%- endif -%}
+          </div>
+
+        {% elsif block.type == 'video' %}
+
+          {%- unless video_assets_output -%}
+            <link rel="stylesheet" href="{{ 'video.css' | asset_url }}" {%- render 'lazy-stylesheet-attrs' %}>
+            <script src="{{ 'video.js' | asset_url }}" defer></script>
+          {%- endunless -%}
+
+          {%- liquid
+            assign video_assets_output = true
+
+            assign using_video_tag = false
+            if block.settings.video_shopify != blank
+              assign using_video_tag = true
+            endif
+
+            if block.settings.placeholder_image
+              assign placeholder_image = block.settings.placeholder_image
+            elsif block.settings.video_shopify
+              assign placeholder_image = block.settings.video_shopify.preview_image
+            else
+              assign placeholder_image = nil
+            endif
+
+            case block.settings.width
+              when 'quarter'
+                assign size_cols_desktop = 4
+              when 'third'
+                assign size_cols_desktop = 3
+              when 'half'
+                assign size_cols_desktop = 2
+              when 'two-thirds'
+                assign size_cols_desktop = 0.67
+              when 'three-quarters'
+                assign size_cols_desktop = 0.25
+              else
+                assign size_cols_desktop = nil
+            endcase
+          -%}
+
+          <div class="video-section">
+            <div class="height--adapt image-overlay image-overlay--bg-no_background" data-cc-animate {% if placeholder_image %}style="--aspect-ratio: {{ placeholder_image.aspect_ratio }}"{% endif %}>
+              <div class="image-overlay__image height__image">
+                <deferred-media>
+                  <button type="button" class="js-load-media hidden" aria-hidden="true"></button>
+                  <template>
+                    <video-component class="{% if using_video_tag %}has-video{% else %}has-iframe{% endif %}"
+                      {%- unless using_video_tag %} data-video-url="{{ block.settings.video_external | escape }}"{% endunless %}
+                                    data-video-id="{{ block.id }}"
+                                    data-autoplay="false"
+                                    data-background="false"
+                                    data-description="{{ block.settings.video_description | escape }}">
+                      {%- if using_video_tag -%}
+                        {{ block.settings.video_shopify | video_tag: playsinline: true, controls: true, autoplay: false, muted: false, loop: false, poster: '' | replace: '<img ', '<img loading="lazy" hidden ' }}
+                      {%- else -%}
+                        <div></div>
+                      {%- endif -%}
+                    </video-component>
+                  </template>
+                </deferred-media>
+
+                {% if placeholder_image %}
+                  {%- render 'image' with placeholder_image, class: 'video-played-hidden', size_cols_desktop: size_cols_desktop -%}
+                {% else %}
+                  <div class="placeholder-image video-played-hidden">{{- 'lifestyle-1' | placeholder_svg_tag: 'placeholder-svg' -}}</div>
+                {% endif %}
+              </div>
+
+              <div class="text-overlay text-overlay--for-banner text-overlay--v-center text-overlay--h-center image-overlay__over video-played-hidden">
+                <div class="text-overlay__inner">
+                  <div class="text-overlay__text">
+                    <video-section-play-button role="button" tabindex="0" type="button" class="button-row__btn video-section__play-btn">
+                      <span class="visually-hidden">{{ 'general.icon_labels.play' | t }}</span>
+                      {%- render 'icon-play' -%}
+                    </video-section-play-button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <script>
+            if (!customElements.get('video-section-play-button')) {
+              class VideoSectionPlayButton extends HTMLElement {
+                connectedCallback() {
+                  this.addEventListener('click', this.handleClick);
+                }
+
+                handleClick(evt) {
+                  const section = evt.target.closest('.video-section');
+                  section.querySelector('.js-load-media').click();
+                  if (Shopify.designMode) {
+                    setTimeout(() => section.classList.add('video-section--played'), 500);
+                  }
+                }
+              }
+
+              customElements.define('video-section-play-button', VideoSectionPlayButton);
+            }
+          </script>
+
+        {% elsif block.type == 'html' %}
+
+          <div class="custom-html">
+            {{ block.settings.code }}
+          </div>
+
+        {% endif %}
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+
+{% schema %}
+{
+  "name": "Custom content",
+  "class": "section-custom-content",
+  "disabled_on": {
+    "groups": [
+      "aside"
+    ]
+  },
+  "max_blocks": 5,
+  "settings": [
+    {
+      "type": "select",
+      "id": "alignment",
+      "label": "Vertical alignment",
+      "default": "top",
+      "options": [
+        {
+          "value": "top",
+          "label": "Top"
+        },
+        {
+          "value": "middle",
+          "label": "Middle"
+        },
+        {
+          "value": "bottom",
+          "label": "Bottom"
+        }
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "name": "Image",
+      "settings": [
+        {
+          "type": "select",
+          "id": "width",
+          "label": "Width",
+          "default": "half",
+          "options": [
+            {
+              "value": "quarter",
+              "label": "25%"
+            },
+            {
+              "value": "third",
+              "label": "33%"
+            },
+            {
+              "value": "half",
+              "label": "50%"
+            },
+            {
+              "value": "two-thirds",
+              "label": "66%"
+            },
+            {
+              "value": "three-quarters",
+              "label": "75%"
+            },
+            {
+              "value": "full",
+              "label": "100%"
+            }
+          ]
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image",
+          "info": "2048 x 1024px recommended"
+        },
+        {
+          "type": "image_picker",
+          "id": "mobile_image",
+          "label": "Mobile Image",
+          "info": "1024 x 1024px recommended"
+        },
+        {
+          "type": "select",
+          "id": "height",
+          "label": "Image height",
+          "options": [
+            {
+              "value": "adapt",
+              "label": "Natural"
+            },
+            {
+              "value": "fixed",
+              "label": "Fixed height"
+            }
+          ],
+          "default": "adapt"
+        },
+        {
+          "type": "range",
+          "id": "height_desktop",
+          "min": 200,
+          "max": 1000,
+          "step": 20,
+          "unit": "px",
+          "label": "Desktop fixed height",
+          "default": 600
+        },
+        {
+          "type": "range",
+          "id": "height_mobile",
+          "min": 100,
+          "max": 1000,
+          "step": 20,
+          "unit": "px",
+          "label": "Mobile fixed height",
+          "default": 500
+        },
+        {
+          "type": "text",
+          "id": "subheading",
+          "label": "Subheading",
+          "default": "Subheading"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Heading",
+          "info": "Enter <br> for a line-break",
+          "default": "Tell your story"
+        },
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "Text",
+          "default": "<p>Pair text with an image to tell a story</p>"
+        },
+        {
+          "type": "checkbox",
+          "id": "enlarge_text",
+          "label": "Enlarge text",
+          "default": false
+        },
+        {
+          "type": "text",
+          "id": "button_label",
+          "label": "Button"
+        },
+        {
+          "type": "select",
+          "id": "button_style",
+          "label": "Button style",
+          "default": "primary",
+          "options": [
+            {
+              "label": "Primary",
+              "value": "primary"
+            },
+            {
+              "label": "Secondary",
+              "value": "secondary"
+            },
+            {
+              "label": "Link",
+              "value": "link"
+            }
+          ]
+        },
+        {
+          "type": "url",
+          "id": "image_link",
+          "label": "Image link"
+        },
+        {
+          "type": "select",
+          "id": "text_alignment",
+          "label": "Text overlay position",
+          "options": [
+            {
+              "value": "top left",
+              "label": "Top left"
+            },
+            {
+              "value": "top center",
+              "label": "Top center"
+            },
+            {
+              "value": "top right",
+              "label": "Top right"
+            },
+            {
+              "value": "center left",
+              "label": "Middle left"
+            },
+            {
+              "value": "center center",
+              "label": "Middle center"
+            },
+            {
+              "value": "center right",
+              "label": "Middle right"
+            },
+            {
+              "value": "bottom left",
+              "label": "Bottom left"
+            },
+            {
+              "value": "bottom center",
+              "label": "Bottom center"
+            },
+            {
+              "value": "bottom right",
+              "label": "Bottom right"
+            }
+          ],
+          "default": "center center"
+        },
+        {
+          "type": "header",
+          "content": "Layout"
+        },
+        {
+          "id": "mobile_overlay_under",
+          "type": "checkbox",
+          "label": "Show text below image on mobile",
+          "default": false
+        },
+        {
+          "id": "overlay_style",
+          "type": "select",
+          "label": "Overlay style",
+          "default": "shadow",
+          "options": [
+            {
+              "value": "full",
+              "label": "Tint"
+            },
+            {
+              "value": "box",
+              "label": "Box"
+            },
+            {
+              "value": "shadow",
+              "label": "Text shadow"
+            },
+            {
+              "value": "full image-overlay--bg-shadow",
+              "label": "Text shadow and tint"
+            },
+            {
+              "value": "no_background",
+              "label": "No background"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "name": "Text",
+      "settings": [
+        {
+          "type": "select",
+          "id": "width",
+          "label": "Width",
+          "default": "half",
+          "options": [
+            {
+              "value": "quarter",
+              "label": "25%"
+            },
+            {
+              "value": "third",
+              "label": "33%"
+            },
+            {
+              "value": "half",
+              "label": "50%"
+            },
+            {
+              "value": "two-thirds",
+              "label": "66%"
+            },
+            {
+              "value": "three-quarters",
+              "label": "75%"
+            },
+            {
+              "value": "full",
+              "label": "100%"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "subheading",
+          "label": "Subheading"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Heading",
+          "default": "Rich text"
+        },
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "Text",
+          "default": "<p>Use this text to share information about your store with your customers.</p><p>Describe products, share announcements, or welcome customers to your store.</p>"
+        },
+        {
+          "type": "text",
+          "id": "button_label",
+          "label": "Button"
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": "Button link"
+        },
+        {
+          "type": "select",
+          "id": "button_style",
+          "label": "Button style",
+          "default": "primary",
+          "options": [
+            {
+              "label": "Primary",
+              "value": "primary"
+            },
+            {
+              "label": "Secondary",
+              "value": "secondary"
+            },
+            {
+              "label": "Link",
+              "value": "link"
+            }
+          ]
+        },
+        {
+          "type": "text_alignment",
+          "id": "text_alignment",
+          "label": "Text alignment",
+          "default": "center"
+        }
+      ]
+    },
+    {
+      "type": "video",
+      "name": "Video",
+      "settings": [
+        {
+          "type": "select",
+          "id": "width",
+          "label": "Width",
+          "default": "half",
+          "options": [
+            {
+              "value": "quarter",
+              "label": "25%"
+            },
+            {
+              "value": "third",
+              "label": "33%"
+            },
+            {
+              "value": "half",
+              "label": "50%"
+            },
+            {
+              "value": "two-thirds",
+              "label": "66%"
+            },
+            {
+              "value": "three-quarters",
+              "label": "75%"
+            },
+            {
+              "value": "full",
+              "label": "100%"
+            }
+          ]
+        },
+        {
+          "id": "video_shopify",
+          "type": "video",
+          "label": "Video upload",
+          "info": "Hosted by Shopify. Replaces External video if both are set."
+        },
+        {
+          "id": "video_external",
+          "type": "text",
+          "label": "External video",
+          "info": "Supports YouTube and Vimeo",
+          "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+        },
+        {
+          "type": "text",
+          "id": "video_description",
+          "label": "Video description",
+          "info": "Describe the video for customers using screen readers. [Learn more](https://help.shopify.com/manual/online-store/themes/theme-structure/theme-features#video-block)"
+        },
+        {
+          "id": "placeholder_image",
+          "type": "image_picker",
+          "label": "Custom placeholder image",
+          "info": "Required for External videos. Choose an image the same shape as your video."
+        }
+      ]
+    },
+    {
+      "type": "html",
+      "name": "Custom Liquid",
+      "settings": [
+        {
+          "type": "select",
+          "id": "width",
+          "label": "Width",
+          "default": "half",
+          "options": [
+            {
+              "value": "quarter",
+              "label": "25%"
+            },
+            {
+              "value": "third",
+              "label": "33%"
+            },
+            {
+              "value": "half",
+              "label": "50%"
+            },
+            {
+              "value": "two-thirds",
+              "label": "66%"
+            },
+            {
+              "value": "three-quarters",
+              "label": "75%"
+            },
+            {
+              "value": "full",
+              "label": "100%"
+            }
+          ]
+        },
+        {
+          "type": "liquid",
+          "id": "code",
+          "label": "Liquid code"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Custom content",
+      "settings": {
+        "alignment": "middle"
+      },
+      "blocks": [
+        {
+          "type": "image",
+          "settings": {
+            "width": "half"
+          }
+        },
+        {
+          "type": "text",
+          "settings": {
+            "title": "Welcome",
+            "text": "<p>Use this text to share information about your store with your customers.</p><p>Describe products, share announcements, or welcome customers to your store.</p>",
+            "width": "half"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

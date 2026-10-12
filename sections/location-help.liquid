@@ -1,0 +1,126 @@
+<style>
+  #shopify-section-{{ section.id }} .custom-bg {
+   background: {{ section.settings.bg_color }}
+  }
+</style>
+<div class="fully-spaced-row--medium custom-bg">
+  <div class="container">
+    <div class="column">
+      {% if section.settings.title != blank %}
+      <div class="section-title">
+        <h2>{{ section.settings.title }}</h2>
+      </div>
+    {% endif %}
+      <div class="contact-list-box">
+        {% for block in section.blocks %}
+          {% if block.settings.svg_content != blank or block.settings.rich_text_content != blank %}
+            <div class="content-block  location-help-{{ forloop.index }}">
+              {% if block.settings.svg_content != blank %}
+                <div class="img-content">
+                  {{ block.settings.svg_content }}
+                </div>
+              {% endif %}
+              {% if block.settings.rich_text_content != blank %}
+                <div class="rich-text-content">
+                  {{ block.settings.rich_text_content }}
+                </div>
+              {% endif %}
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+<div id="popup" class="custom-popup-container">
+  <div id="custom-popup-content">
+    <span class="close-popup">
+      {% render 'icon-close-contact' %}
+    </span>
+    <script defer src=https://contact.gorgias.help/api/contact-forms/loader.js?uid=bowuvttr&locale=en-US data-gorgias-contact-form="script"></script>
+    <div data-gorgias-contact-form="container">
+    </div>
+  </div>
+</div>
+<script>
+  let contactSelector = document.querySelector('.location-help-1');
+  let chatSelector = document.querySelector('.location-help-3');
+  const popups = document.querySelector('.custom-popup-container');
+  const bodyElement = document.body;
+  const htmlElement = document.documentElement;
+  contactSelector.onclick = function() {
+  popups.classList.add('active');
+  bodyElement.style.overflow = "hidden"; 
+  htmlElement.style.overflow = "hidden"; 
+  };
+  chatSelector.addEventListener('click', function(event) {
+      event.preventDefault();
+      GorgiasChat.open();
+  });
+  const closePopup = popup.querySelector('.close-popup');
+    closePopup.addEventListener('click', function () {
+      popups.classList.remove('active');
+      bodyElement.style.overflow = 'auto';
+      htmlElement.style.overflow = 'auto';
+    });
+
+    bodyElement.addEventListener('click', function (evt) {
+      if (evt.target === popups) {
+        popups.classList.remove('active');
+        bodyElement.style.overflow = 'auto';
+        htmlElement.style.overflow = 'auto';
+      }
+    });
+</script> 
+
+{% schema %}
+{
+  "name": "Location contact help",
+  "class": "shopify-section location-detail-help",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "use_alt_bg",
+      "label": "Use alternate section color",
+      "default": false
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Background",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "text",
+      "label": "Title",
+      "id": "title",
+      "default": "How Can We Help?"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "custom_block",
+      "name": "Content Block",
+      "settings": [
+        {
+          "type": "html",
+          "label": "Svg",
+          "id": "svg_content"
+        },
+        {
+          "type": "richtext",
+          "label": "Rich Text",
+          "id": "rich_text_content"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Location help",
+      "category": "Text",
+      "settings": {}
+    }
+  ]
+}
+{% endschema %}

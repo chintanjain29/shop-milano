@@ -1,0 +1,51 @@
+{%- assign product_values = product.metafields.custom.add_on_products.value -%}
+{%- assign material_type = product.metafields.custom.material_type -%}
+{%- assign product_titles = product.metafields.custom.add_on_products_name | split: ',' -%}
+{{ 'additional-add-ons.css' | asset_url | stylesheet_tag }}
+{{ 'additional-add-ons.js' | asset_url | script_tag }}
+
+
+<div class="product-detail_form_add-ons additional-add_ons">
+  <div class="additional-add_ons-products">
+    <div class="product- product--small">
+      <div
+        class="add-on-container add-ons-container"
+        data-products-in-view="1"
+      >
+        {% if material_type != bank %}
+          <div class="material-type">
+            <p>
+              <span>{{ material_type }}: </span><span class="material-add-on-hover"></span>
+            </p>
+          </div>
+        {% endif %}
+        <div class="add-on-wrapper" data-normheights=".image" data-normheights-inner="img">
+          {%- for handle in product_values limit: count -%}
+            {%- assign add_on_product = handle -%}
+            {%- assign product_title = product_titles[forloop.index0] -%}
+            <div class="add-on-master">
+              <div class="additional-add-ons-product">
+                <a href="{{ add_on_product.url}}">
+                  {% comment %}
+                    {%- if add_on_product.featured_image -%}
+                      <div class="product-image">
+
+                          <img src="{{ add_on_product.featured_image | img_url: 'medium' }}" alt="{{ product_title | escape }}" image-count="content-count-{{ forloop.index }}">
+
+                      </div>
+                    {%- endif -%}
+                  {% endcomment %}
+                  <div class="product-details">
+                    <p class="product-title-addon" title-count="content-count-{{ forloop.index }}">
+                      {{ product_title | escape }}
+                    </p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          {%- endfor -%}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

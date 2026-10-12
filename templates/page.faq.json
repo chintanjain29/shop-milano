@@ -1,0 +1,351 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "heading": {
+      "type": "image-with-text-overlay",
+      "disabled": true,
+      "settings": {
+        "image": "shopify://shop_images/Ruby_Leaf_f68d2395-b328-4187-b224-14d252dd3fb0.jpg",
+        "height": "fixed",
+        "height_desktop": 400,
+        "height_mobile": 300,
+        "image_link": "",
+        "full_width": true,
+        "text_alignment": "center center",
+        "mobile_overlay_under": false,
+        "overlay_style": "shadow"
+      }
+    },
+    "main": {
+      "type": "faq-header",
+      "settings": {
+        "title": "FAQ",
+        "use_h1": true,
+        "text": "",
+        "show_search": true,
+        "show_index": true,
+        "index_heading": "Browse by topic"
+      }
+    },
+    "faq-content-1": {
+      "type": "collapsible-tabs",
+      "blocks": {
+        "question-1": {
+          "type": "question",
+          "settings": {
+            "title": "Do I need an Account to purchase?",
+            "answer": "<p>No, you are not required to create an account in order to make a purchase. However, creating an account will enable you to save personal information and payment details for faster checkout process. It will also allow you to track and maintain information about your purchase.</p>"
+          }
+        },
+        "question-2": {
+          "type": "question",
+          "settings": {
+            "title": "What payment methods do you accept?",
+            "answer": "<p>Milano accepts all major credit cards as well as PayPal and Bitcoin. Milano also offers financing through Affirm and Synchrony. </p>"
+          }
+        },
+        "question_TqgJbz": {
+          "type": "question",
+          "settings": {
+            "title": "What is Affirm and Synchrony?",
+            "answer": "<p>Affirm and Synchrony are alternative payment methods that provide flexible financing over a period of time.</p><p>After applying, you will receive a decision on your eligibility to purchase with payments over 3, 6 or 12 months.</p><p>There are no hidden fees and any APR or Loan Options will be clearly mentioned prior to your purchase.</p><p>To learn more about financing options please visit our <a href=\"/pages/payment-financing\" title=\"Payment financing\">Payment & Financing</a> page.</p>"
+          }
+        },
+        "question_a4Vm6A": {
+          "type": "question",
+          "settings": {
+            "title": "Can I combine discount codes/offers?",
+            "answer": "<p>We do not offer discount combination or stacking. Discount codes available online may not be combined with discounts given In-Store or vice versa.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "question-1",
+        "question-2",
+        "question_TqgJbz",
+        "question_a4Vm6A"
+      ],
+      "settings": {
+        "title": "Payment"
+      }
+    },
+    "faq-content-2": {
+      "type": "collapsible-tabs",
+      "blocks": {
+        "question-1": {
+          "type": "question",
+          "settings": {
+            "title": "What Shipping Methods Are Available?",
+            "answer": "<p>We ship using all major carriers such as USPS, UPS & FedEx. All Shipments are fully insured by us.</p>"
+          }
+        },
+        "question-2": {
+          "type": "question",
+          "settings": {
+            "title": "Is shipping free?",
+            "answer": "<p>We offer Free Ground Shipping on all domestic orders. You have the ability to upgrade to 2nd Day Shipping if you like.</p>"
+          }
+        },
+        "question_fCcEwk": {
+          "type": "question",
+          "settings": {
+            "title": "Do you ship internationally?",
+            "answer": "<p>Yes, we ship worldwide on most items. Please note that the cost of shipping varies depending on the jurisdiction. </p><p>Items in your order that are designated for shipment to countries outside the United States may be subject to taxes, custom duties and fees levied by the destination country (\"Import Fees\"). This is the responsibility of the importer/recipient. </p><p>Milano is not responsible for any Customs Duties or Taxes that are applicable in your country. </p><p>If you refuse a shipment from Milano, you are responsible for the original shipping charges, any import fees that are incurred on the package, and the cost of returning the package back to Milano. This amount will be deducted from your refund.</p><p>We are happy to work with you to get your jewelry to you safely, smoothly and quickly.</p>"
+          }
+        },
+        "question_zBebQU": {
+          "type": "question",
+          "settings": {
+            "title": "When can I expect to receive my Milano order?",
+            "answer": "<p>We work to ship your purchase to you as quickly as possible, but factors like personalization and vendor lead times may impact timelines. All in stock items are shipped during business days. Please allow a minimum of 3-5 days processing time for us to ship your order out. Once your order has been shipped, you will receive your order depending on the method of shipment chosen at checkout. Should you have any questions about your order, please do not hesitate to <a href=\"https://shopmilano.com/pages/contact\" target=\"_blank\" title=\"https://shopmilano.com/pages/contact\">Contact Us</a></p>"
+          }
+        },
+        "question_RFkzhy": {
+          "type": "question",
+          "settings": {
+            "title": "Do you ship to a P.O. Box?",
+            "answer": "<p>We only ship to APO, FPO, DPO. We do not ship to regular post boxes.</p>"
+          }
+        },
+        "question_jmKzmQ": {
+          "type": "question",
+          "settings": {
+            "title": "How do I track my order?",
+            "answer": "<p>Once your order has shipped, you will receive a notification containing the tracking number. You can use the tracking number on the respective Carrier website or you can check the status over <a href=\"/pages/track-your-order\" title=\"Track Your Order\">here</a>.</p>"
+          }
+        },
+        "question_RKcHLB": {
+          "type": "question",
+          "settings": {
+            "title": "How long will my order take?",
+            "answer": "<p>Most of our jewelry is made to order. Each item has a different lead time (generally 10-15 business days) which is specified under the product details. Once an item ships, it should arrive within 2-3 business days within the United States and 5-10 business days internationally. If your purchase is a gift and you will not receive it in time, please <a href=\"/pages/contact\" title=\"Contact Us\">contact us</a> and we can send an email with a gift notification to the recipient, informing them that a Milano Gift is on the way.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "question-1",
+        "question-2",
+        "question_fCcEwk",
+        "question_zBebQU",
+        "question_RFkzhy",
+        "question_jmKzmQ",
+        "question_RKcHLB"
+      ],
+      "settings": {
+        "title": "Shipping"
+      }
+    },
+    "collapsible_tabs_Diaytk": {
+      "type": "collapsible-tabs",
+      "blocks": {
+        "question_meab7W": {
+          "type": "question",
+          "settings": {
+            "title": "What is your refund policy?",
+            "answer": "<p>We offer free returns on all eligible U.S. domestic online orders (in-store purchases are Final Sale). If for any reason you're unsatisfied with your purchase, you may return your online purchase for a refund, exchange or merchandise credit within 30 calendar days of the shipment. The item must be unworn, unblemished, unaltered and in it's original state. Purchases beyond 30 calendar days are only eligible for upgrades or store credit. Please refer to our upgrade policy for more information. </p><p>Customized, Engraved and Personalized items (Ex. name jewelry) are not eligible for refunds. You may upgrade it or exchange it for an item of equal or greater value. These exchanges are subject to a 20% restocking fee and subject to shipping/duty costs.</p><p>Customers may return a product up to two times within 30 days of receipt. Any purchases beyond that is only eligible for 100% store credit or can incur a 20% restocking fee. Each order is eligible for 1 Shipping Label. If additional items need to be shipped back in a separate package, a $25 shipping fee will be deducted from your refund.</p><p><strong>Please note that the following items are not eligible for return:</strong></p><ul><li>Diamond and Jewelry Upgrades</li><li>Jewelry with lost diamonds</li><li>Jewelry or Diamonds that have chips, scratches, breaks or nicks</li><li>Jewelry that has been worked on, resized or repaired by another jeweler</li></ul><p>All orders are considered final sale after the initial 30-day period.</p><p>All refunds (not including shipping or sizing charges if applicable) will be refunded to your original method of payment. Please allow up to two weeks for it to reflect on your bank statement. Our refund policies do not apply to Final Sales and Custom Orders. Please <a href=\"https://shopmilano.com/pages/contact\" target=\"_blank\" title=\"https://shopmilano.com/pages/contact\">Contact Us </a>to find out what your options are.</p>"
+          }
+        },
+        "question_fAYePB": {
+          "type": "question",
+          "settings": {
+            "title": "How do I return a purchase?",
+            "answer": "<p><a href=\"https://shopmilano.com/pages/contact\" target=\"_blank\" title=\"https://shopmilano.com/pages/contact\">Contact Us</a> in order to process your refunds. Once approved we will provide you with an authorization # as well as a refund slip that must be included with the return.</p>"
+          }
+        },
+        "question_aGKMCf": {
+          "type": "question",
+          "settings": {
+            "title": "Can I exchange my purchase?",
+            "answer": "<p>All exchanges require approval. Approved exchanges are accepted for items purchased online or in store only. Shipping, taxes and duties are not applicable towards exchange credit. </p><p>Customized, Engraved or Personalized orders are considered final sale. Depending on the product, they may be exchanged subject to a 15% restocking fee if an exchange is requested.</p><p>All non-jewelry and accessory items are Final Sale and not applicable for exchange.</p>"
+          }
+        },
+        "question_bGwiFN": {
+          "type": "question",
+          "settings": {
+            "title": "How long will my refund take to process?",
+            "answer": "<p>Once we receive the return shipment, we will assess the item to ensure it's unworn, unblemished and untampered. Upon completion of this we will process your refund. Please allow up to two weeks for the refund to be processed.</p>"
+          }
+        },
+        "question_dNQB6g": {
+          "type": "question",
+          "settings": {
+            "title": "How do I cancel an order?",
+            "answer": "<p>Please <a href=\"https://shopmilano.com/pages/contact\" target=\"_blank\" title=\"https://shopmilano.com/pages/contact\">Contact Us</a> directly in order to cancel an order.</p>"
+          }
+        },
+        "question_YW3fip": {
+          "type": "question",
+          "settings": {
+            "title": "How do I return an In-Store Purchase?",
+            "answer": "<p>Please refer to the back of your Milano receipt for our In-Store return policy details. If your purchase is eligible for a return, please submit your return by <a href=\"/pages/contact\" title=\"Contact Us\">Contacting Us</a>.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_meab7W",
+        "question_fAYePB",
+        "question_aGKMCf",
+        "question_bGwiFN",
+        "question_dNQB6g",
+        "question_YW3fip"
+      ],
+      "settings": {
+        "title": "Returns & Exchanges"
+      }
+    },
+    "collapsible_tabs_cPChgz": {
+      "type": "collapsible-tabs",
+      "blocks": {
+        "question_EwaKrH": {
+          "type": "question",
+          "settings": {
+            "title": "How do I care for my Jewelry?",
+            "answer": "<p>Jewelry made out of precious metals and gemstones are delicate and require constant upkeep and care. If cared for properly fine jewelry can become a treasured family heirloom!<br/><br/>Dust, pollution and daily wear all cause the brilliance and shine of metals and gemstones to become dull and cloudy. We recommend professional cleaning and servicing at least once a year. Stop by any of our locations for complimentary servicing.</p><p>In between servicing, store your jewelry safely in a jewelry case. Prior to storage, wipe your jewelry of any fluids that it may have come in contact with throughout the day. Examine your jewelry on a regular basis and take care to protect your jewelry from impact against hard surfaces or abrasive surfaces.</p><p>You can clean your gemstones at home to prevent any clouding. For diamonds, use a mild solution of water and soap and gently brush with a soft bristle. For softer gemstones such as pearls, simply wipe gently with a damp cloth.</p>"
+          }
+        },
+        "question_6CMCPC": {
+          "type": "question",
+          "settings": {
+            "title": "What is your repair policy?",
+            "answer": "<p>Jewelry is delicate and when it becomes a part of your daily life, it's natural for the metals to wear down with time. Prongs may become loose being pulled on by strands in our clothes, chains can be weakened and break by the occasional unintentional tug. Milano stands by the manufacturing of it's products and has a lifetime warranty on all repair charges that stem from manufacturing defects. In the event of a lost diamond or gemstone, the cost of  the diamonds and/or gemstones are the responsibility of the customer. We guarantee all repairs for 6 months.</p>"
+          }
+        },
+        "question_VJQ9WB": {
+          "type": "question",
+          "settings": {
+            "title": "How can I get an Appraisal?",
+            "answer": "<p>Please contact us directly to get an appraisal for your purchase. Items valued at over $1,000 are eligible for a free Milano Appraisal. <br/><br/>If you would like a Certified Independent Appraisal, you may purchase it for $65. We offer all purchases over $500 the option to get a Certified Independent 3rd Party Appraisal. Please note, this must be requested at the time of purchase. Certified Appraisals add 3 days to your shipping time. </p>"
+          }
+        },
+        "question_LULqiW": {
+          "type": "question",
+          "settings": {
+            "title": "Do you resize Jewelry?",
+            "answer": "<p>Most of our rings can be resized. Pricing for ring sizing varies depending on style and the variation in size required. Pricing starts at $50. Shipping and other similar expenses will be the responsibility of the customer.</p><p>We cannot accept the responsibility for items repaired by any other jeweler (including sizing). This will void any and all warranty.</p><p>To request a resizing please <a href=\"/pages/contact\" title=\"Contact Us\">Contact Us.</a></p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_EwaKrH",
+        "question_6CMCPC",
+        "question_VJQ9WB",
+        "question_LULqiW"
+      ],
+      "settings": {
+        "title": "Jewelry Care & Repair"
+      }
+    },
+    "collapsible_tabs_bLyWpV": {
+      "type": "collapsible-tabs",
+      "blocks": {
+        "question_ghDjDt": {
+          "type": "question",
+          "settings": {
+            "title": "What is the Milano Warranty?",
+            "answer": "<p>Milano stands behind everything that we sell and ensures the quality of your purchase. We ensure that all items* will be free from any manufacturing defects at the time of delivery. We will repair and maintain your jewelry for the entire life of the piece.<br/><br/>As a manufacturer, we ensure all our jewelry is manufactured using the highest quality materials and passes through stringent quality control systems before reaching our customers. Our lifetime service warranty offers free prong tightening, re-polishing, rhodium plating and cleaning services. We recommend you have your Jewelry inspected at our stores or by our jewelers at least once a year to ensure it is free from extreme wear and tear. To take advantage of our services you can either mail your jewelry to our offices or take it to a Milano store to receive complimentary maintenance and repairs.<br/><br/>In the event that there is a problem with your jewelry or you require services not covered under our manufacturers warranty, you can mail your jewelry to our office for evaluation** and upon inspection we will notify you of any applicable charges for approval prior to working on your jewelry.<br/><br/>If you have any questions or would like to send us your jewelry for maintenance and repair, please <a href=\"/pages/contact\" title=\"Contact Us\">Contact Us</a>.<br/><br/>*Milano's lifetime warranty is applicable to all non-branded merchandise. Please refer to each Brand's warranty. We are happy to assist you with the warranty process for the brand you purchased. <br/><br/>**Domestic Customers may purchase a fully insured shipping label from us for $25 and International Customers for $35. International customers will be subject to return shipping costs applicable to their order. </p>"
+          }
+        },
+        "question_VwYnat": {
+          "type": "question",
+          "settings": {
+            "title": "What is the Milano Upgrade Policy?",
+            "answer": "<p>Any purchase made at ShopMilano.com or a Milano retail location is eligible for our lifetime upgrade policy. You will receive 100% credit towards any purchase value of at least 2x the value of the trade in pieces. Please <a href=\"/pages/contact\" title=\"Contact Us\">Contact Us</a> to take advantage of our Lifetime Upgrade Policy.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_ghDjDt",
+        "question_VwYnat"
+      ],
+      "settings": {
+        "title": "Upgrade & Warranty"
+      }
+    },
+    "collapsible_tabs_43ikMm": {
+      "type": "collapsible-tabs",
+      "blocks": {
+        "question_PEC9Rz": {
+          "type": "question",
+          "settings": {
+            "title": "What is your upgrade policy?",
+            "answer": "<p>Milano offers a lifetime upgrade policy on all items purchased in store and online. Upgrades will be honored only on items at least double the value of the item purchased. The item being upgraded must be in good condition and accompanied by an invoice. </p>"
+          }
+        },
+        "question_jzfKck": {
+          "type": "question",
+          "settings": {
+            "title": "Do you offer Insurance?",
+            "answer": "<p>Yes, Milano partners with Lavalier to offer comprehensive insurance coverage for all our customers. Lavalier's insurance coverage is more comprehensive than the jewelry coverage on your homeowners insurance. It covers everything from damage to theft and allows a smooth replacement process.<br/><br/>Get your quote here: <a href=\"https://lavalier.com/milanodg\" target=\"_blank\" title=\"https://lavalier.com/milanodg\">https://lavalier.com/milanodg</a></p><p>To prove our confidence in Lavalier's insurance, we offer a 100% credit of your first years premium towards a future purchase with a value of 2.5x the credit amount. Contact us to find out more information.</p>"
+          }
+        },
+        "question_BEnQtg": {
+          "type": "question",
+          "settings": {
+            "title": "My size is not available",
+            "answer": "<p>If your size is not available, please contact us. While we try to stock a lot of sizes, we're unable to have every size at all times. We are still able to fulfill most orders and custom sizes. Sizes not listed require sizing and can add an additional 3-5 days processing time.</p>"
+          }
+        },
+        "question_EidydC": {
+          "type": "question",
+          "settings": {
+            "title": "Do you price match?",
+            "answer": "<p>We will price match for identical items at a lower price. The lower price must be verifiable and from an authentic source. Price matching will not be honored after purchase.</p><p>Price matching does not apply to Marketplaces (Amazon, Facebook, Ebay). Offers that include financing, item bundles, free gifts, pricing errors, out-of-stock or used goods are not eligible for price match.</p>"
+          }
+        },
+        "question_HUfDkn": {
+          "type": "question",
+          "settings": {
+            "title": "Are Milano's products conflict-free",
+            "answer": "<p>All our diamonds, gemstones and metals are sourced responsibly and ethically. By being vertically integrated, Milano is able to ensure it adheres to all necessary rules and regulations.</p>"
+          }
+        },
+        "question_ppXLPd": {
+          "type": "question",
+          "settings": {
+            "title": "Are all Milano Jewelry Made-to-Order?",
+            "answer": "<p>Most of our products are made-to-order. Milano aims to minimize excess inventory and the negative impact excess inventory has on the environment. By making each piece to order, we can can offer a larger selection of beautiful jewelry.</p><p>We do however, stock our <a href=\"/collections/best-sellers\" title=\"Best Sellers\">Best Sellers</a>. If you're in a rush for a gift, please browse our on hand inventory that ships within 2-3 business days.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_PEC9Rz",
+        "question_jzfKck",
+        "question_BEnQtg",
+        "question_EidydC",
+        "question_HUfDkn",
+        "question_ppXLPd"
+      ],
+      "settings": {
+        "title": "Other"
+      }
+    },
+    "rich_text_HUqn3W": {
+      "type": "rich-text",
+      "settings": {
+        "height": "medium",
+        "text_alignment": "center",
+        "full_width": false,
+        "color_scheme": "default"
+      }
+    }
+  },
+  "order": [
+    "heading",
+    "main",
+    "faq-content-1",
+    "faq-content-2",
+    "collapsible_tabs_Diaytk",
+    "collapsible_tabs_cPChgz",
+    "collapsible_tabs_bLyWpV",
+    "collapsible_tabs_43ikMm",
+    "rich_text_HUqn3W"
+  ]
+}

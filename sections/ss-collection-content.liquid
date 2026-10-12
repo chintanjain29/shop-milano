@@ -1,0 +1,175 @@
+{%- liquid
+  assign has_image = false
+  assign has_content = false
+
+  if section.settings.image != blank
+    assign has_image = true
+  endif
+
+  if section.settings.content != blank
+    assign has_content = true
+  endif
+-%}
+
+{% if has_image or has_content %}
+
+  <div class="
+    {% if section.settings.color_scheme != 'default' %}
+      use-color-scheme
+      use-color-scheme--{{ section.settings.color_scheme }}
+      fully-padded-row--medium
+    {% else %}
+      fully-spaced-row--medium
+    {% endif %}
+  ">
+    <div class="container">
+
+      <div class="flexible-layout valign-middle">
+
+        {% if has_image %}
+          <div
+            class="
+              column
+              {% if has_content %}column--half{% endif %}
+              {% if has_content and section.settings.image_position == 'right' %}
+                column--order-push-desktop
+              {% endif %}
+            "
+          >
+            <div
+              style="
+                max-width: {{ section.settings.image_width }}px;
+                margin-left: auto;
+                margin-right: auto;
+              "
+            >
+              <div
+                class="fade-in-up"
+                data-cc-animate
+                data-cc-animate-delay="0.1s"
+              >
+                {%- render 'image'
+                  with section.settings.image,
+                  size_cols_desktop: 2
+                -%}
+              </div>
+            </div>
+          </div>
+        {% endif %}
+
+
+        {% if has_content %}
+          <div
+            class="
+              column
+              {% if has_image %}column--half{% endif %}
+              align-ltr-{{ section.settings.text_alignment }}
+            "
+            data-cc-animate
+          >
+            <div class="feature-text-paired" style="margin-left:0;">
+
+              <div class="rte lightly-spaced-row">
+                {{ section.settings.content }}
+              </div>
+
+            </div>
+          </div>
+        {% endif %}
+
+      </div>
+
+    </div>
+  </div>
+
+{% endif %}
+
+
+{% schema %}
+{
+  "name": "Collection content",
+  "class": "section-image-with-text",
+
+  "disabled_on": {
+    "groups": [
+      "aside"
+    ]
+  },
+
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+
+    {
+      "type": "range",
+      "id": "image_width",
+      "min": 150,
+      "max": 700,
+      "step": 10,
+      "unit": "px",
+      "label": "Image width",
+      "default": 700
+    },
+
+    {
+      "type": "select",
+      "id": "image_position",
+      "label": "Image alignment",
+      "default": "right",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ]
+    },
+
+    {
+      "type": "text_alignment",
+      "id": "text_alignment",
+      "label": "Text alignment",
+      "default": "left"
+    },
+
+    {
+      "type": "select",
+      "id": "color_scheme",
+      "label": "Color scheme",
+      "default": "default",
+      "options": [
+        {
+          "value": "default",
+          "label": "Default"
+        },
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        }
+      ]
+    },
+
+    {
+      "type": "richtext",
+      "id": "content",
+      "label": "Content"
+    }
+  ],
+
+  "presets": [
+    {
+      "name": "Collection content"
+    }
+  ]
+}
+{% endschema %}

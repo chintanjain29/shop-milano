@@ -1,0 +1,614 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "show_page_title": true,
+        "full_width": false
+      }
+    },
+    "gem_find_iwto_XkadxP": {
+      "type": "gem-find-iwto",
+      "blocks": {
+        "heading_iAHaei": {
+          "type": "heading",
+          "settings": {
+            "title": "Milano x Save the Whales",
+            "heading_max_width": 15,
+            "title_size": 48,
+            "title_size_mobile": 24,
+            "use_h1": true
+          }
+        },
+        "subheading_MJ7HDP": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Style With A Purpose"
+          }
+        }
+      },
+      "block_order": [
+        "heading_iAHaei",
+        "subheading_MJ7HDP"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".text-overlay {font-size: 24px; color: #ffffff;}",
+        "h1 {color: #ffffff;}"
+      ],
+      "name": "Image with text overlay",
+      "settings": {
+        "image": "shopify://shop_images/Copy_of_MilanoXSTW_Hero_Banner.png",
+        "mobile_image": "shopify://shop_images/Copy_of_MilanoXSTW_Hero_Banner.png",
+        "height": "fixed",
+        "height_desktop": 480,
+        "height_mobile": 400,
+        "image_link": "",
+        "full_width": true,
+        "text_alignment": "center center",
+        "mobile_overlay_under": false,
+        "overlay_style": "full"
+      }
+    },
+    "rich_text_czWEgw": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_kYqBzH": {
+          "type": "heading",
+          "settings": {
+            "title": "Diamond Buying Guide: How to Choose the Right Diamond",
+            "use_h1": true
+          }
+        },
+        "text_jUByfz": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Buying a diamond is a significant decision—whether for an engagement ring, a gift, or a personal investment. Understanding how diamonds are graded and what factors influence their value helps you make a confident and informed choice.</p><p>At Milano Jewelry, we focus on transparency, offering both natural and lab-grown diamonds that are certified and carefully selected for quality.</p>",
+            "enlarge_text": false
+          }
+        },
+        "subheading_JXaHAf": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "What Are the 4Cs of Diamonds?"
+          }
+        },
+        "text_hNnGUx": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The 4Cs—Cut, Color, Clarity, and Carat Weight—are the global standard for evaluating diamond quality.</p><p>These four factors determine a diamond’s appearance, value, and overall appeal.</p>",
+            "enlarge_text": false
+          }
+        },
+        "subheading_Ncnjjt": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Diamond Cut: The Most Important Factor"
+          }
+        },
+        "text_wCkTi3": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The cut of a diamond refers to how well it has been shaped and polished. It directly affects how light reflects within the stone, determining its brilliance and sparkle.</p><h3>Cut Grades:</h3><ul><li><strong>Ideal Cut</strong>: Maximum brilliance and light performance<br/></li><li><strong>Very Good Cut</strong>: High sparkle with slight variations<br/></li><li><strong>Good Cut</strong>: Moderate brilliance with less light reflection<br/></li><li><strong>Fair to Poor Cut</strong>: Reduced sparkle and visual appeal<br/></li></ul><p>A well-cut diamond will appear brighter and more refined, even if other factors are lower.</p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_kYqBzH",
+        "text_jUByfz",
+        "subheading_JXaHAf",
+        "text_hNnGUx",
+        "subheading_Ncnjjt",
+        "text_wCkTi3"
+      ],
+      "custom_css": [
+        ".subheading {color: #002058; font-size: 20px; margin-bottom: 6px;}"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "height": "small",
+        "text_alignment": "left",
+        "full_width": true,
+        "color_scheme": "default"
+      }
+    },
+    "gallery_PPUftJ": {
+      "type": "gallery",
+      "blocks": {
+        "media_eyr4Eq": {
+          "type": "media",
+          "settings": {
+            "image": "shopify://shop_images/Diamond_cut.png",
+            "enlarge_media": true,
+            "subheading": "",
+            "title": "",
+            "button_label": "",
+            "link": "",
+            "text_alignment": "bottom left"
+          }
+        }
+      },
+      "block_order": [
+        "media_eyr4Eq"
+      ],
+      "name": "Gallery",
+      "settings": {
+        "grid_desktop": 2,
+        "grid_mobile": "1",
+        "height": "fixed",
+        "desktop_image_height": 700,
+        "mobile_image_height": 400,
+        "title_size": 30,
+        "title_size_mobile": 22,
+        "enable_margin": true,
+        "enable_row_spacing": true,
+        "full_width": false,
+        "color_scheme": "default",
+        "enable_carousel": true,
+        "overlay_style": "full",
+        "button_style": "primary"
+      }
+    },
+    "rich_text_JyMWB8": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_N3jcVD": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Diamond Color: Understanding the Scale"
+          }
+        },
+        "text_E9GHmB": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Clarity measures the presence of internal inclusions or surface blemishes within a diamond.</p><h3>Clarity Grades:</h3><ul><li><strong>FL / IF</strong>: No visible inclusions under magnification<br/></li><li><strong>VVS1 / VVS2</strong>: Extremely minor inclusions<br/></li><li><strong>VS1 / VS2</strong>: Minor inclusions, not visible to the naked eye<br/></li><li><strong>SI1 / SI2</strong>: Noticeable inclusions, sometimes visible<br/></li><li><strong>I1–I3</strong>: Obvious inclusions affecting appearance<br/></li></ul><p>Many diamonds in the VS and SI range offer excellent visual clarity without unnecessary cost.</p>",
+            "enlarge_text": false
+          }
+        },
+        "image_zbpwyR": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/FL_IF.png",
+            "image_width": 280,
+            "url": ""
+          }
+        },
+        "image_4QFmUc": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/VVS1_VVS2.png",
+            "image_width": 280,
+            "url": ""
+          }
+        },
+        "image_FJfT8U": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/VS1_VS2.png",
+            "image_width": 280,
+            "url": ""
+          }
+        },
+        "image_LWF83J": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/SI1_SI2.png",
+            "image_width": 280,
+            "url": ""
+          }
+        },
+        "image_xKwg8n": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/I1_I3.png",
+            "image_width": 280,
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "subheading_N3jcVD",
+        "text_E9GHmB",
+        "image_zbpwyR",
+        "image_4QFmUc",
+        "image_FJfT8U",
+        "image_LWF83J",
+        "image_xKwg8n"
+      ],
+      "custom_css": [
+        ".subheading {color: #002058; font-size: 20px; margin-bottom: 6px;}"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "height": "small",
+        "text_alignment": "left",
+        "full_width": true,
+        "color_scheme": "default"
+      }
+    },
+    "rich_text_nPBzJ8": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_K7GGhU": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Diamond Clarity: Inclusions and Blemishes"
+          }
+        },
+        "text_zHdpwP": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Clarity measures the presence of internal inclusions or surface blemishes within a diamond.</p><h3>Clarity Grades:</h3><ul><li><strong>FL / IF</strong>: No visible inclusions under magnification<br/></li><li><strong>VVS1 / VVS2</strong>: Extremely minor inclusions<br/></li><li><strong>VS1 / VS2</strong>: Minor inclusions, not visible to the naked eye<br/></li><li><strong>SI1 / SI2</strong>: Noticeable inclusions, sometimes visible<br/></li><li><strong>I1–I3</strong>: Obvious inclusions affecting appearance<br/></li></ul><p>Many diamonds in the VS and SI range offer excellent visual clarity without unnecessary cost.</p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "subheading_K7GGhU",
+        "text_zHdpwP"
+      ],
+      "custom_css": [
+        ".subheading {color: #002058; font-size: 20px; margin-bottom: 6px;}"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "height": "small",
+        "text_alignment": "left",
+        "full_width": true,
+        "color_scheme": "default"
+      }
+    },
+    "rich_text_y79RTG": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_zM9mTm": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Carat Weight: Size and Value"
+          }
+        },
+        "text_dRCcFk": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Carat refers to the weight of a diamond, which often influences its perceived size and price.</p><ul><li><strong>Lower carat weights</strong>: More budget-friendly and practical<br/></li><li><strong>Higher carat weights</strong>: Greater visual impact and higher cost<br/></li></ul><p>It is important to balance carat weight with cut quality, as cut has a greater impact on overall appearance.</p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "subheading_zM9mTm",
+        "text_dRCcFk"
+      ],
+      "custom_css": [
+        ".subheading {color: #002058; font-size: 20px; margin-bottom: 6px;}"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "height": "small",
+        "text_alignment": "left",
+        "full_width": true,
+        "color_scheme": "default"
+      }
+    },
+    "rich_text_hAiEAk": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_D3QV9X": {
+          "type": "heading",
+          "settings": {
+            "title": "Diamond Certification: Why It Matters",
+            "use_h1": false
+          }
+        },
+        "text_cE74mh": {
+          "type": "text",
+          "settings": {
+            "text": "<p>A diamond certificate is an independent grading report that verifies the quality and authenticity of a diamond.</p><p>Reputable certification bodies include:</p><ul><li>Gemological Institute of America<br/></li><li>American Gem Society<br/></li><li>IGI (International Gemological Institute)<br/></li></ul><p>These reports provide an unbiased evaluation of the 4Cs and ensure transparency in your purchase.</p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_D3QV9X",
+        "text_cE74mh"
+      ],
+      "custom_css": [
+        ".subheading {color: #002058; font-size: 20px; margin-bottom: 6px;}"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "height": "small",
+        "text_alignment": "left",
+        "full_width": true,
+        "color_scheme": "default"
+      }
+    },
+    "rich_text_gFfzfQ": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_qL8zf6": {
+          "type": "heading",
+          "settings": {
+            "title": "How to Choose the Right Diamond",
+            "use_h1": false
+          }
+        },
+        "text_zEze6c": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Selecting a diamond involves balancing personal preference, budget, and quality factors.</p><h3>Key Considerations:</h3><p><strong>Set a Budget</strong><br/><br/>Define a comfortable spending range to guide your options.</p><p><strong>Prioritize the 4Cs</strong><br/><br/>Decide which factors matter most—cut quality, size, clarity, or color.</p><p><strong>Choose a Shape</strong><br/><br/>Popular diamond shapes include round, oval, cushion, emerald, and princess cuts.</p><p><strong>Compare Natural vs Lab-Grown</strong><br/><br/>Both options offer identical beauty, with differences in origin and pricing.</p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_qL8zf6",
+        "text_zEze6c"
+      ],
+      "custom_css": [
+        ".subheading {color: #002058; font-size: 20px; margin-bottom: 6px;}"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "height": "small",
+        "text_alignment": "left",
+        "full_width": true,
+        "color_scheme": "default"
+      }
+    },
+    "rich_text_QXRhTU": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_dz7hqA": {
+          "type": "heading",
+          "settings": {
+            "title": "Tips for Buying Diamonds Online",
+            "use_h1": false
+          }
+        },
+        "text_b3PXbJ": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Buying diamonds online offers convenience and access to a wider selection, but it requires careful consideration.</p><p><strong>Review Product Details</strong><br/><br/>Look for complete specifications, certification, and high-quality images.</p><p><strong>Compare Pricing</strong><br/><br/>Evaluate similar diamonds across retailers to understand fair market value.</p><p><strong>Check Policies</strong><br/><br/>Ensure clear return policies, warranties, and after-sales support.</p><p><strong>Secure Payment Methods</strong><br/><br/>Choose retailers that offer trusted and secure payment options.</p><p>At Milano Jewelry, we provide transparent pricing, certified diamonds, and dedicated customer support throughout your purchase journey.</p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_dz7hqA",
+        "text_b3PXbJ"
+      ],
+      "custom_css": [
+        ".subheading {color: #002058; font-size: 20px; margin-bottom: 6px;}"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "height": "small",
+        "text_alignment": "left",
+        "full_width": true,
+        "color_scheme": "default"
+      }
+    },
+    "rich_text_bX84gd": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_HKpFN4": {
+          "type": "heading",
+          "settings": {
+            "title": "Diamond Care and Maintenance",
+            "use_h1": false
+          }
+        },
+        "text_jMDRxP": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Proper care ensures your diamond retains its brilliance over time.</p><p><strong>Regular Cleaning</strong><br/><br/>Use mild soap and a soft brush to remove buildup.</p><p><strong>Professional Inspection</strong><br/><br/>Have your jewelry checked periodically for setting security.</p><p><strong>Safe Storage</strong><br/><br/>Store diamonds separately to prevent scratches.</p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_HKpFN4",
+        "text_jMDRxP"
+      ],
+      "custom_css": [
+        ".subheading {color: #002058; font-size: 20px; margin-bottom: 6px;}"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "height": "small",
+        "text_alignment": "left",
+        "full_width": true,
+        "color_scheme": "default"
+      }
+    },
+    "rich_text_gapFcf": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_8Qy9CD": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Why Choose Milano Jewelry"
+          }
+        },
+        "text_6ba8CR": {
+          "type": "text",
+          "settings": {
+            "text": "<p>At Milano Jewelry, every diamond is selected with a focus on quality, transparency, and craftsmanship.</p><p>We offer:</p><ul><li>Certified diamonds (IGI and GIA)<br/></li><li>Transparent pricing through direct sourcing<br/></li><li>Customization options<br/></li><li>Dedicated customer support<br/></li></ul><p>Our goal is to help you make a confident, informed decision—whether you choose a lab-grown or natural diamond.</p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "subheading_8Qy9CD",
+        "text_6ba8CR"
+      ],
+      "custom_css": [
+        ".subheading {color: #002058; font-size: 20px; margin-bottom: 6px;}"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "height": "medium",
+        "text_alignment": "left",
+        "full_width": true,
+        "color_scheme": "default"
+      }
+    },
+    "rich_text_tFANat": {
+      "type": "rich-text",
+      "blocks": {
+        "text_k9t3V9": {
+          "type": "text",
+          "settings": {
+            "text": "<p>A well-informed purchase is the key to choosing the right diamond. By understanding the 4Cs, certification standards, and your personal priorities, you can select a diamond that reflects both your style and your expectations.</p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "text_k9t3V9"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "height": "small",
+        "text_alignment": "left",
+        "full_width": true,
+        "color_scheme": "default"
+      }
+    },
+    "ss_simple_faq_fnE4JW": {
+      "type": "ss-simple-faq",
+      "blocks": {
+        "text_ykzGbk": {
+          "type": "text",
+          "settings": {
+            "question": "Which of the 4Cs is most important?",
+            "answer": "<p>Cut is generally the most important, as it directly affects brilliance and sparkle.</p>"
+          }
+        },
+        "text_KbcWdT": {
+          "type": "text",
+          "settings": {
+            "question": "How do I get the best value when buying a diamond?",
+            "answer": "<p>Focus on cut quality and consider slightly lower color or clarity grades for better pricing.</p>"
+          }
+        },
+        "text_n8Liy7": {
+          "type": "text",
+          "settings": {
+            "question": "Is certification necessary when buying a diamond?",
+            "answer": "<p>Yes. Certification ensures authenticity and provides an unbiased quality assessment.</p>"
+          }
+        },
+        "text_zmQQ8B": {
+          "type": "text",
+          "settings": {
+            "question": "Should I choose a lab-grown or natural diamond?",
+            "answer": "<p>This depends on your priorities—lab-grown diamonds offer better value, while natural diamonds offer rarity.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_ykzGbk",
+        "text_KbcWdT",
+        "text_n8Liy7",
+        "text_zmQQ8B"
+      ],
+      "name": "SS - FAQ #1",
+      "settings": {
+        "heading": "Frequently Asked Questions",
+        "icon_color": "#ffffff",
+        "hover_color": "#00205b",
+        "question_color": "#363636",
+        "background_color": "#fafafa",
+        "answer_color": "#000000",
+        "answer_bg_color": "#ffffff",
+        "questions-font-size": 1
+      }
+    },
+    "multi_column_3ThQBN": {
+      "type": "multi-column",
+      "blocks": {
+        "text_block_JPtTWA": {
+          "type": "text_block",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify://shop_images/KP-3325-W1_a1fe7178-fddd-4bfc-8b10-0c519ac0806e.jpg",
+            "title": "Lab Diamond Dancing Whale Tail Pendant",
+            "text": "<p>$279.00<br/>A delicately curved whale tail, set with lab-grown diamonds that catch the light like sunlight on water. A symbol of strength, freedom, and connection to the ocean.<br/></p>",
+            "button_label": "SHOP NOW",
+            "link": "https://www.milanojewelry.com/products/lab-diamond-dancing-whale-tail-pendant"
+          }
+        },
+        "text_block_C3jRtk": {
+          "type": "text_block",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify://shop_images/KP3789-Y2.jpg",
+            "title": "Pavé Whale Tail Diamond Pendant",
+            "text": "<p>$580.00<br/>Crafted in 14K gold with pavé-set diamonds that echo the quiet shimmer of the deep, this pendant captures the serenity and power of the whales we aim to protect.</p>",
+            "button_label": "SHOP NOW",
+            "link": "https://www.milanojewelry.com/products/pave-whale-tail-diamond-pendant"
+          }
+        },
+        "text_block_gJPYxq": {
+          "type": "text_block",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify://shop_images/KN-790-Y1.jpg",
+            "title": "Pavé Wave Lab Diamond Necklace",
+            "text": "<p>$1,595.00<br/>Crafted in 14K gold with pavé-set lab-grown diamonds, this wave necklace reflects the fluid shimmer of the ocean in modern elegance and fine jewelry design.</p>",
+            "button_label": "SHOP NOW",
+            "link": "https://www.milanojewelry.com/products/pave-wave-diamond-necklace"
+          }
+        }
+      },
+      "block_order": [
+        "text_block_JPtTWA",
+        "text_block_C3jRtk",
+        "text_block_gJPYxq"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".container {margin-bottom: 0 !important; padding-bottom: 8px !important;}"
+      ],
+      "name": "Multi-column",
+      "settings": {
+        "title": "",
+        "media_aspect_ratio": "1",
+        "media_width": 350,
+        "text_alignment": "center",
+        "button_style": "primary",
+        "color_scheme": "default"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "gem_find_iwto_XkadxP",
+    "rich_text_czWEgw",
+    "gallery_PPUftJ",
+    "rich_text_JyMWB8",
+    "rich_text_nPBzJ8",
+    "rich_text_y79RTG",
+    "rich_text_hAiEAk",
+    "rich_text_gFfzfQ",
+    "rich_text_QXRhTU",
+    "rich_text_bX84gd",
+    "rich_text_gapFcf",
+    "rich_text_tFANat",
+    "ss_simple_faq_fnE4JW",
+    "multi_column_3ThQBN"
+  ]
+}

@@ -1,0 +1,162 @@
+{%- comment -%}
+  Parameters:
+    - block {Object} - Section block object.
+    - section {Object} - Parent section object.
+{%- endcomment -%}
+{%- liquid
+  assign has_heading = false
+  if block.settings.heading != blank
+    assign has_heading = true
+  endif
+
+  assign has_subheading = false
+  if block.settings.subheading != blank
+    assign has_subheading = true
+  endif
+
+  assign has_rich_text = false
+  if block.settings.rich_text != blank
+    assign has_rich_text = true
+  endif
+
+  assign has_images = false
+  if block.settings.image_1 != blank or block.settings.image_2 != blank
+    assign has_images = true
+  endif
+
+  assign has_products = false
+  if block.settings.product_list != blank and block.settings.product_list.size > 0
+    assign has_products = true
+  endif
+
+  assign has_accent_text = false
+  if block.settings.accent_text != blank
+    assign has_accent_text = true
+  endif
+
+  assign has_button = false
+  if block.settings.button_label != blank and block.settings.button_link != blank
+    assign has_button = true
+  endif
+
+  assign subheading_text_color = block.settings.subheading_text_color
+  if subheading_text_color == blank or subheading_text_color == 'rgba(0,0,0,0)'
+    assign subheading_text_color = '#8b7d4a'
+  endif
+
+  assign subheading_background = block.settings.subheading_background
+  if subheading_background == blank or subheading_background == 'rgba(0,0,0,0)'
+    assign subheading_background = '#f5f2eb'
+  endif
+
+  assign heading_tag = block.settings.heading_tag | default: 'h2'
+  unless heading_tag == 'h1' or heading_tag == 'h2' or heading_tag == 'h3' or heading_tag == 'h4' or heading_tag == 'h5' or heading_tag == 'h6'
+    assign heading_tag = 'h2'
+  endunless
+
+  assign heading_font_size = block.settings.heading_font_size | default: 48
+-%}
+
+{%- if has_heading or has_subheading or has_rich_text or has_images or has_products or has_accent_text or has_button -%}
+  <div
+    class="article-editorial__block"
+    style="--article-editorial-block-heading-size: {{ heading_font_size }}px;"
+    {{ block.shopify_attributes }}
+  >
+    {%- if has_heading -%}
+      {%- case heading_tag -%}
+        {%- when 'h1' -%}
+          <h1 class="article-editorial__block-heading">{{ block.settings.heading | escape }}</h1>
+        {%- when 'h3' -%}
+          <h3 class="article-editorial__block-heading">{{ block.settings.heading | escape }}</h3>
+        {%- when 'h4' -%}
+          <h4 class="article-editorial__block-heading">{{ block.settings.heading | escape }}</h4>
+        {%- when 'h5' -%}
+          <h5 class="article-editorial__block-heading">{{ block.settings.heading | escape }}</h5>
+        {%- when 'h6' -%}
+          <h6 class="article-editorial__block-heading">{{ block.settings.heading | escape }}</h6>
+        {%- else -%}
+          <h2 class="article-editorial__block-heading">{{ block.settings.heading | escape }}</h2>
+      {%- endcase -%}
+    {%- endif -%}
+
+    {%- if has_subheading -%}
+      <div
+        class="article-editorial__subheading"
+        style="--article-editorial-subheading-text: {{ subheading_text_color }}; --article-editorial-subheading-bg: {{ subheading_background }};"
+      >
+        <span class="article-editorial__subheading-text">{{ block.settings.subheading | escape }}</span>
+      </div>
+    {%- endif -%}
+
+    {%- if has_rich_text -%}
+      <div class="article-editorial__block-text rte cf">
+        {{ block.settings.rich_text }}
+      </div>
+    {%- endif -%}
+
+    {%- if has_images -%}
+      <div class="article-editorial__image-pair">
+        {%- if block.settings.image_1 != blank -%}
+          <div class="article-editorial__image-pair-item">
+            {%- render 'image' with block.settings.image_1,
+              sizes: '(min-width: 768px) 44vw, 50vw',
+              loading: 'lazy'
+            -%}
+          </div>
+        {%- endif -%}
+
+        {%- if block.settings.image_2 != blank -%}
+          <div class="article-editorial__image-pair-item">
+            {%- render 'image' with block.settings.image_2,
+              sizes: '(min-width: 768px) 44vw, 50vw',
+              loading: 'lazy'
+            -%}
+          </div>
+        {%- endif -%}
+      </div>
+    {%- endif -%}
+
+    {%- if has_products -%}
+      <div class="article-editorial__featured-products">
+        {%- if block.settings.products_heading != blank -%}
+          <h3 class="article-editorial__featured-products-heading">{{ block.settings.products_heading | escape }}</h3>
+        {%- endif -%}
+
+        <div class="article-editorial__featured-products-grid">
+          {%- for product in block.settings.product_list -%}
+            {%- render 'article-editorial-featured-product', product: product -%}
+          {%- endfor -%}
+        </div>
+      </div>
+    {%- endif -%}
+
+    {%- if has_accent_text -%}
+      {%- liquid
+        assign accent_text_color = block.settings.accent_text_color
+        if accent_text_color == blank or accent_text_color == 'rgba(0,0,0,0)'
+          assign accent_text_color = 'inherit'
+        endif
+      -%}
+      <p
+        class="article-editorial__accent-text"
+        {% if accent_text_color != 'inherit' %}
+          style="color: {{ accent_text_color }};"
+        {% endif %}
+      >
+        {{ block.settings.accent_text | escape }}
+      </p>
+    {%- endif -%}
+
+    {%- if has_button -%}
+      <div class="article-editorial__block-button">
+        <a
+          class="{% if block.settings.button_style != 'link' %}btn btn--{{ block.settings.button_style }}{% else %}small-feature-link{% endif %}"
+          href="{{ block.settings.button_link }}"
+        >
+          {{- block.settings.button_label | escape -}}
+        </a>
+      </div>
+    {%- endif -%}
+  </div>
+{%- endif -%}

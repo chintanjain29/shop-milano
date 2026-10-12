@@ -1,0 +1,409 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-article-editorial",
+      "blocks": {
+        "content_section_iTEBgK": {
+          "type": "content_section",
+          "settings": {
+            "heading": "",
+            "heading_tag": "h2",
+            "heading_font_size": 48,
+            "subheading": "",
+            "subheading_text_color": "#8b7d4a",
+            "subheading_background": "#f5f2eb",
+            "rich_text": "<p></p>{{ article.content }}",
+            "products_heading": "Featured pieces:",
+            "product_list": [],
+            "accent_text": "\"Investment jewelry isn't about what you wear for an occasion. It's about what you reach for without thinking — every single morning.\"",
+            "accent_text_color": "#00205b",
+            "button_label": "Explore",
+            "button_link": "shopify://collections",
+            "button_style": "primary"
+          }
+        },
+        "content_section_R4q73x": {
+          "type": "content_section",
+          "disabled": true,
+          "settings": {
+            "heading": "Why Investment Jewelry Beats Fashion Jewelry Every Time",
+            "heading_tag": "h2",
+            "heading_font_size": 48,
+            "subheading": "",
+            "subheading_text_color": "#8b7d4a",
+            "subheading_background": "#f5f2eb",
+            "rich_text": "<p>Fashion jewelry is designed to be current. Investment jewelry is designed to be permanent. The difference shows up in the materials: solid 14K or 18K gold versus gold-plated brass, lab or natural diamonds versus cubic zirconia. It also shows up in what happens five years later investment pieces look identical, fashion pieces have faded, tarnished, or dated themselves.<br/><br/>14K gold is the standard for everyday fine jewelry: durable enough to withstand daily wear, pure enough to hold its value, and available in yellow, white, and rose. Lab diamonds are chemically and optically identical to mined diamonds — a gemologist cannot tell them apart with a loupe. They offer the same brilliance at better value, with cleaner provenance. For a piece you intend to wear every day for thirty years, these are the right materials.</p><p> By 30, the case for investment jewelry is simple: you've outgrown the trend cycle, you know what you actually wear, and you'd rather own six things that work than sixty that don't.<br/><br/></p>",
+            "products_heading": "Featured pieces:",
+            "product_list": [],
+            "accent_text": "",
+            "accent_text_color": "",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary"
+          }
+        },
+        "content_section_9AFF49": {
+          "type": "content_section",
+          "disabled": true,
+          "settings": {
+            "heading": "The Six Essential Jewelry Pieces to own by 30",
+            "heading_tag": "h2",
+            "heading_font_size": 42,
+            "subheading": "",
+            "subheading_text_color": "#8b7d4a",
+            "subheading_background": "#f5f2eb",
+            "rich_text": "",
+            "products_heading": "Featured pieces:",
+            "product_list": [],
+            "accent_text": "",
+            "accent_text_color": "",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary"
+          }
+        },
+        "studs": {
+          "type": "content_section",
+          "disabled": true,
+          "settings": {
+            "heading": "1. Diamond Studs — The Foundation of Every Fine Jewelry Collection",
+            "heading_tag": "h3",
+            "heading_font_size": 36,
+            "subheading": "NON-NEGOTIABLE FIRST PIECE",
+            "subheading_text_color": "#8b7d4a",
+            "subheading_background": "#f5f2eb",
+            "rich_text": "<p>Diamond studs are the single most versatile piece of jewelry a woman can own. One high-quality diamond per ear, set in solid gold — they work with everything from a white shirt and jeans to a black dress at a formal dinner. Unlike trend earrings that date themselves within a season, a well-made pair of diamond studs looks exactly as right in twenty years as it does today.</p><p>The key details that matter: solid 14K gold (not plated), a four-prong setting that maximises light return, and a stone size that reads as intentional rather than minimal. Lab diamond studs offer the same brilliance as mined at a price point that makes it easier to size up — a 0.5ct to 1ct total weight is the sweet spot for everyday wear.</p><p>Our <a href=\"https://www.milanojewelry.com/products/classic-round-4-prong-lab-diamond-studs?variant=40716972195973\"><em>Classic Round 4-Prong Diamond Studs</em></a> are the purist's choice — the definitive version of this piece. The <a href=\"https://www.milanojewelry.com/products/oval-lab-diamond-huggie-hoop-earrings\"><em>Oval Lab Diamond Huggie Hoops</em></a> are the modern alternative if you prefer something that sits closer to the ear with a little more contemporary presence.</p>",
+            "image_1": "shopify://shop_images/KE-1835-W3.jpg",
+            "image_2": "shopify://shop_images/KE-2419-W3.jpg",
+            "products_heading": "Featured pieces:",
+            "product_list": [
+              "classic-round-4-prong-lab-diamond-studs",
+              "oval-lab-diamond-huggie-hoop-earrings"
+            ],
+            "accent_text": "",
+            "accent_text_color": "",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary"
+          }
+        },
+        "hoops": {
+          "type": "content_section",
+          "disabled": true,
+          "settings": {
+            "heading": "2. Gold Hoops — The One You Never Take Off",
+            "heading_tag": "h3",
+            "heading_font_size": 36,
+            "subheading": "EVERYDAY ESSENTIAL",
+            "subheading_text_color": "#8b7d4a",
+            "subheading_background": "#f5f2eb",
+            "rich_text": "<p>Every woman needs a pair of gold hoops she can put on without thinking. Not the delicate huggie that disappears, not the oversized statement hoop — the medium-weight hoop in solid 14K gold that sits just below the earlobe and goes with everything. This is the piece that earns its place by being the answer to 'what earrings should I wear?' every single morning.</p><p>Why solid gold and not gold-filled or plated? Because gold-filled tarnishes with prolonged skin contact, and plating wears off at the highest-friction points first. A pair of solid 14K gold hoops, worn daily and stored properly, will look the same in 2040 as they do today. That is the entire case for spending the extra money once.</p><p>The 3mm Polished Hoop Earrings in 14K gold are the classic everyday version — the right weight, the right diameter, the right finish. For those who want more presence without tipping into statement territory, the 3mm x 40mm Polished Hoops make an impact without trying.</p>",
+            "image_1": "shopify://shop_images/TM001746-7.jpg",
+            "products_heading": "Featured pieces:",
+            "product_list": [
+              "3mm-polished-hoop-earrings",
+              "3mm-x-40mm-polished-hoop-earrings",
+              "3mm-x-30mm-polished-hoop-earrings"
+            ],
+            "accent_text": "",
+            "accent_text_color": "",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary"
+          }
+        },
+        "necklace": {
+          "type": "content_section",
+          "disabled": true,
+          "settings": {
+            "heading": "3. A Diamond Necklace — Your Everyday Sparkle",
+            "heading_tag": "h3",
+            "heading_font_size": 36,
+            "subheading": "THE PIECE YOU FORGET YOU'RE WEARING ",
+            "subheading_text_color": "#8b7d4a",
+            "subheading_background": "#f5f2eb",
+            "rich_text": "<p>The essential jewelry necklace for your 30s is not a pendant that needs an occasion. It's a necklace you put on in the morning and forget about — until someone asks about it. Fine, delicate, present without demanding attention. The kind that photographs well without looking like it was chosen for photographs.</p><p>A diamond station necklace — diamonds spaced at intervals along a fine gold chain — is the most versatile version. It works at every neckline, reads as elegant at any occasion, and layers well with other pieces if you ever choose to. A tennis necklace is the step up: continuous diamonds around a fine chain, more presence, still effortless.</p><p>The <a href=\"https://www.milanojewelry.com/products/bezel-set-lab-diamond-station-necklace\">Diamond Station Necklace</a> is the piece you'll still be reaching for at 50 — understated, permanently relevant, and at home in every context. For those who want continuous sparkle and are ready to commit to a lifetime piece, the <a href=\"https://www.milanojewelry.com/products/lab-diamond-classic-tennis-necklace\">Lab Diamond Classic Tennis Necklace</a> is the investment version.</p>",
+            "image_1": "shopify://shop_images/KN-821-W1.jpg",
+            "image_2": "shopify://shop_images/993J5FGNKWG_SGTVEW_ENLRES.jpg",
+            "products_heading": "Featured pieces:",
+            "product_list": [
+              "diamond-station-necklace",
+              "lab-diamond-classic-tennis-necklace"
+            ],
+            "accent_text": "",
+            "accent_text_color": "",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary"
+          }
+        },
+        "bracelet": {
+          "type": "content_section",
+          "disabled": true,
+          "settings": {
+            "heading": "4. A Tennis Bracelet — The Wrist Piece That Works Everywhere",
+            "heading_tag": "h3",
+            "heading_font_size": 36,
+            "subheading": "UNIVERSALLY FLATTERING ",
+            "subheading_text_color": "#8b7d4a",
+            "subheading_background": "#f5f2eb",
+            "rich_text": "<p>The tennis bracelet is the piece that fashion cycles around without ever replacing. It works equally well with a blazer, a bikini, and a wedding guest dress — worn slightly loose on one wrist, alone, with nothing else competing for attention. It is the definition of an investment jewelry piece: classic setting, real stones, endlessly wearable.</p><p>The tennis bracelet earned its name in 1987 when Chris Evert stopped a US Open match to search for her diamond bracelet after it snapped off her wrist mid-play — and the name has stuck ever since. That's the kind of cultural staying power that separates an investment piece from a trend piece.</p><p>The <a href=\"https://www.milanojewelry.com/products/classic-lab-diamond-tennis-bracelet?pr_prod_strat=e5_desc&pr_rec_id=c17afbdc1&pr_rec_pid=7095967318149&pr_ref_pid=7231849496709&pr_seq=uniform\">Classic Lab Diamond Tennis Bracelet in 14K gold</a> is the purist's version — the piece as it was meant to be worn. The <a href=\"https://www.milanojewelry.com/products/oval-bezel-lab-diamond-tennis-bracelet\">Oval Bezel Lab Diamond Tennis Bracelet</a> is the contemporary alternative: a low-profile bezel setting that sits flat against the wrist and suits those who prefer a more modern silhouette.</p>",
+            "image_1": "shopify://shop_images/KB1627-W1_622948b3-f0b3-4cf2-b80a-ef7fe8dd554b.jpg",
+            "image_2": "shopify://shop_images/70623FGYG-OV_SGTVEW_ENLRES.jpg",
+            "products_heading": "Featured pieces:",
+            "product_list": [
+              "classic-lab-diamond-tennis-bracelet",
+              "oval-bezel-lab-diamond-tennis-bracelet"
+            ],
+            "accent_text": "",
+            "accent_text_color": "",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary"
+          }
+        },
+        "band": {
+          "type": "content_section",
+          "disabled": true,
+          "settings": {
+            "heading": "5. A Diamond Band Ring — The Adult Right-Hand Ring",
+            "heading_tag": "h3",
+            "heading_font_size": 36,
+            "subheading": "QUIET CONFIDENCE PIECE ",
+            "subheading_text_color": "#8b7d4a",
+            "subheading_background": "#f5f2eb",
+            "rich_text": "<p>The right-hand diamond band is the piece that separates fine jewelry from fashion jewelry more clearly than anything else. Worn on the index or middle finger of the right hand, it requires no explanation and no occasion. It simply exists as part of how you present yourself — intentional, understated, and permanent.</p><p>This is the adult upgrade from the fashion rings of your twenties: a slim diamond band in solid gold that looks as at home in a boardroom as it does at a dinner party. The key is restraint — one ring, one hand, no stacking required. The band does the work.</p><p>The <a href=\"https://www.milanojewelry.com/products/minimalist-belima-diamond-ring\">Minimalist Belima Diamond Ring</a> is precisely this: clean, architectural, effortless. The kind of ring you'll still be wearing at 60 without a second thought. For slightly more presence, the<a href=\"https://www.milanojewelry.com/products/diamond-dainty-wedding-band-in-14k-white-gold?pr_prod_strat=e5_desc&pr_rec_id=64934ca47&pr_rec_pid=6625856094341&pr_ref_pid=6625856127109&pr_seq=uniform\"> Diamond Dainty Band</a> worn as a right-hand ring is quietly perfect — the piece you reach for when one ring needs to carry an outfit.</p>",
+            "image_1": "shopify://shop_images/KR-6905-Y1.jpg",
+            "image_2": "shopify://shop_images/KR6915.jpg",
+            "products_heading": "Featured pieces:",
+            "product_list": [
+              "minimalist-belima-diamond-ring",
+              "diamond-dainty-wedding-band-in-14k-white-gold"
+            ],
+            "accent_text": "",
+            "accent_text_color": "",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary"
+          }
+        },
+        "gemstone": {
+          "type": "content_section",
+          "disabled": true,
+          "settings": {
+            "heading": "6. One Piece That's Entirely Yours",
+            "heading_tag": "h3",
+            "heading_font_size": 36,
+            "subheading": "YOUR SIGNATURE PIECE ",
+            "subheading_text_color": "#8b7d4a",
+            "subheading_background": "#f5f2eb",
+            "rich_text": "<p>Five of these six pieces are universal. This one is personal. Every fine jewelry collection needs one piece that isn't a rule — it's a personality. A color that means something to you. A stone that makes you feel like yourself the moment you put it on.</p><p>For some women it's a sapphire ring in the deep blue of a piece their grandmother wore. For others it's a ruby pendant that adds warmth to everything. For others still it's an emerald that references the Carolyn Bessette engagement ring they've always loved. The specifics are yours — the principle is that this piece should feel like it couldn't belong to anyone else.</p><p>Browse our <a href=\"https://www.milanojewelry.com/collections/gemstone-jewelry?sort=price-descending\">gemstone collection</a> for the piece that already exists, or work with us to create something that never has. A custom piece built around a stone and a story is the definition of investment jewelry — and the kind of thing you're still explaining to people thirty years from now.</p><p> </p>",
+            "image_1": "shopify://shop_images/KR-8456-W1.jpg",
+            "products_heading": "Featured pieces:",
+            "product_list": [
+              "bezel-art-deco-sapphire-and-diamond-ring"
+            ],
+            "accent_text": "",
+            "accent_text_color": "",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary"
+          }
+        },
+        "content_section_bXjKmT": {
+          "type": "content_section",
+          "disabled": true,
+          "settings": {
+            "heading": "How to Build Your Fine Jewelry Collection by 30",
+            "heading_tag": "h3",
+            "heading_font_size": 36,
+            "subheading": "",
+            "subheading_text_color": "#8b7d4a",
+            "subheading_background": "#f5f2eb",
+            "rich_text": "<p>You don't need to acquire all six pieces at once. The point of investment jewelry is that each piece earns its place through daily use — which means you should start with the one you'd actually reach for every morning and build from there.</p><p>Start with diamond studs or gold hoops — whichever you wear more. Add the necklace when you find yourself reaching for one. The tennis bracelet and band ring are the pieces that reward you later, when you realise you've been wearing them for ten years without thinking about it. And the signature piece can come at any point — it doesn't follow a sequence, it follows a feeling.</p><p>Six pieces. Worn every day. Still working at 60. That's the brief — and that's investment jewelry done right.</p>",
+            "products_heading": "Featured pieces:",
+            "product_list": [],
+            "accent_text": "",
+            "accent_text_color": "",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary"
+          }
+        },
+        "faq_main": {
+          "type": "faq",
+          "disabled": true,
+          "settings": {
+            "heading": "Fine Jewelry FAQ",
+            "intro": "<p><strong>What jewelry should every woman own?</strong></p><p>The essential jewelry pieces every woman should own are: a pair of diamond studs, solid gold hoops, a diamond necklace (station or tennis style), a tennis bracelet, a diamond band ring for the right hand, and one personal signature piece in a gemstone or style that's uniquely hers. These six pieces cover every occasion from a morning meeting to a black-tie event without requiring additional pieces.</p><p><strong>What is the most important piece of jewelry to own?</strong></p><p>Diamond studs are widely considered the most essential piece of jewelry a woman can own. They are the most versatile — appropriate for every context from casual to formal — and the longest-lasting in terms of style relevance. A well-made pair of diamond studs in solid gold looks as current today as it did thirty years ago, and will look the same thirty years from now.</p><p><strong>Is it worth buying fine jewelry in your 30s?</strong></p><p>Yes, and your 30s are the ideal time to invest in fine jewelry. By this point, most women have a clearer sense of what they actually wear, which means fewer wasted purchases. Fine jewelry in solid gold with real diamonds holds its appearance indefinitely — unlike fashion jewelry, which tarnishes and dates. One well-chosen investment piece in your 30s will outlast many seasons' worth of trend purchases.</p><p><strong>What is the difference between fine jewelry and fashion jewelry?</strong></p><p>Fine jewelry is made from precious metals (solid 14K or 18K gold, sterling silver, platinum) and genuine stones (natural or lab diamonds, sapphires, rubies, emeralds). Fashion jewelry is typically made from base metals with gold or silver plating, and synthetic or simulated stones. Fine jewelry maintains its appearance indefinitely with proper care; fashion jewelry tarnishes, fades, and dates itself. The price difference is a one-time premium for pieces that last a lifetime.</p><p><strong>Are lab diamonds a good choice for investment jewelry?</strong></p><p>Lab diamonds are an excellent choice for investment jewelry pieces intended for daily wear. They are chemically, optically, and physically identical to mined diamonds — indistinguishable even to a gemologist with a loupe. For pieces like studs, tennis bracelets, and band rings that you wear every day, lab diamonds offer the same brilliance and durability as mined at a better value, allowing you to prioritise setting quality and metal weight.</p><p><strong>What is the best first fine jewelry piece to buy?</strong></p><p>Diamond studs are the best first fine jewelry purchase for most women. They are the most versatile piece in any collection — appropriate for every occasion, every outfit, and every age — and they require no coordination with other pieces. A pair of classic round diamond studs in 14K gold, in a size between 0.5ct and 1ct total weight, is a purchase you will not second-guess.</p><p><strong>What makes 14K gold better than 18K for everyday jewelry?</strong></p><p>14K gold contains 58.3% pure gold alloyed with metals like silver and copper, while 18K gold is 75% pure. The alloy in 14K gold makes it significantly more durable and scratch-resistant — better suited to pieces worn daily like rings, bracelets, and hoops that experience regular friction. 18K gold is softer and more prone to surface wear over time. For investment jewelry worn every day, 14K gold is the more practical choice, while 18K is better reserved for special occasion pieces worn less frequently.</p><p><strong>How do you wear a tennis bracelet every day?</strong></p><p>A tennis bracelet worn as an everyday piece should be worn slightly loose — loose enough to move freely on the wrist, not so loose that it slides over the hand. Wear it alone on one wrist for maximum impact; the old money approach is one wrist, one bracelet, nothing else. It pairs naturally with a watch on the opposite wrist. The classic and oval bezel settings both work well for daily wear, with the bezel setting sitting slightly lower profile against the wrist.</p><h2></h2>",
+            "background_color": "#f0f0f0",
+            "border_top_color": "#ecd597"
+          }
+        },
+        "faq_xqappj": {
+          "type": "faq",
+          "disabled": true,
+          "settings": {
+            "heading": "Fine Jewelry FAQ",
+            "intro": "",
+            "background_color": "#f8f8f8",
+            "border_top_color": "#ecd597"
+          }
+        },
+        "faq_q1": {
+          "type": "faq_question",
+          "disabled": true,
+          "settings": {
+            "title": "What jewelry should every woman own?",
+            "answer": "<p>The essential jewelry pieces every woman should own are: a pair of diamond studs, solid gold hoops, a diamond necklace (station or tennis style), a tennis bracelet, a diamond band ring for the right hand, and one personal signature piece in a gemstone or style that's uniquely hers.</p>"
+          }
+        },
+        "faq_q2": {
+          "type": "faq_question",
+          "disabled": true,
+          "settings": {
+            "title": "What is the most important piece of jewelry to own?",
+            "answer": "<p>Diamond studs are widely considered the most essential piece of jewelry a woman can own. They are the most versatile — appropriate for every context from casual to formal — and the longest-lasting in terms of style relevance.</p>"
+          }
+        },
+        "faq_q3": {
+          "type": "faq_question",
+          "disabled": true,
+          "settings": {
+            "title": "What is investment jewelry?",
+            "answer": "<p>Investment jewelry refers to fine jewelry pieces made from precious metals and genuine stones that retain value and relevance over decades. Unlike fashion jewelry, investment pieces are built to be worn daily and passed down.</p>"
+          }
+        },
+        "faq_q4": {
+          "type": "faq_question",
+          "disabled": true,
+          "settings": {
+            "title": "Should I buy lab-grown or natural diamonds?",
+            "answer": "<p>Both lab-grown and natural diamonds are real diamonds with identical physical and optical properties. Lab-grown diamonds offer exceptional value and are an excellent choice for everyday fine jewelry. Natural diamonds carry traditional rarity and resale associations that matter to some buyers.</p>"
+          }
+        },
+        "faq_q5": {
+          "type": "faq_question",
+          "disabled": true,
+          "settings": {
+            "title": "How do I build a fine jewelry collection on a budget?",
+            "answer": "<p>Start with one versatile piece you'll wear daily — diamond studs or gold hoops — and add one piece per year or per milestone. Prioritize solid gold settings and quality stones over quantity.</p>"
+          }
+        },
+        "faq_q6": {
+          "type": "faq_question",
+          "disabled": true,
+          "settings": {
+            "title": "What metal is best for everyday jewelry?",
+            "answer": "<p>14K gold is the standard for everyday fine jewelry — durable enough for daily wear while maintaining rich color. 18K gold is softer and better suited to occasional wear or pieces that won't take daily impact.</p>"
+          }
+        },
+        "faq_q7": {
+          "type": "faq_question",
+          "disabled": true,
+          "settings": {
+            "title": "How should I care for fine jewelry?",
+            "answer": "<p>Store pieces separately to prevent scratching, remove jewelry before swimming or exercising, and have settings checked annually by a jeweler. Clean with warm soapy water and a soft brush for most gold and diamond pieces.</p>"
+          }
+        },
+        "faq_q8": {
+          "type": "faq_question",
+          "disabled": true,
+          "settings": {
+            "title": "Can I customize a piece of fine jewelry?",
+            "answer": "<p>Yes. Milano Jewelry offers made-to-order and custom design services. You can select your metal, stone, setting style, and dimensions to create a piece that is entirely yours.</p>"
+          }
+        },
+        "connection_cta": {
+          "type": "connection_cta",
+          "disabled": true,
+          "settings": {
+            "heading": "Craft a Connection",
+            "heading_color": "#202223",
+            "text": "<p>Milano Jewelry is an international jeweler with a focus on <strong>made-to-order jewelry</strong> and a commitment to meticulous <strong>craftsmanship</strong> and <strong>sustainability</strong>.</p><p>Our fine jewelry, featuring diamonds and gemstones, is available to purchase online and in cruise ports in over 20 countries. We offer a <strong>lifetime guarantee</strong> on every exquisite piece, whether it's a modern twist on a classic design or a completely customized piece. To experience the beauty of Milano, <a href=\"/pages/contact\">contact our team</a> today.</p>",
+            "bold_text_color": "#1a2b4a",
+            "button_label": "Contact Us",
+            "button_link": "shopify://pages/contact",
+            "button_style": "primary",
+            "button_background_color": "",
+            "image": "shopify://shop_images/As_Seen_On_Mobile_Banner.png",
+            "image_width": 280,
+            "image_height": 380,
+            "image_spacing": 24,
+            "background_color": "#f5f5f5",
+            "border_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "content_section_iTEBgK",
+        "content_section_R4q73x",
+        "content_section_9AFF49",
+        "studs",
+        "hoops",
+        "necklace",
+        "bracelet",
+        "band",
+        "gemstone",
+        "content_section_bXjKmT",
+        "faq_main",
+        "faq_xqappj",
+        "faq_q1",
+        "faq_q2",
+        "faq_q3",
+        "faq_q4",
+        "faq_q5",
+        "faq_q6",
+        "faq_q7",
+        "faq_q8",
+        "connection_cta"
+      ],
+      "settings": {
+        "header_color_scheme": "default",
+        "header_background": "#ebebdf",
+        "show_article_tags": true,
+        "main_color_scheme": "default",
+        "main_background": "",
+        "show_featured_image": true,
+        "show_author": true,
+        "show_date": true,
+        "published_label": "Published on",
+        "show_published_icon": true,
+        "published_icon": "calendar",
+        "author_name": "Rahul Kheskwani",
+        "author_role": "President of Milano jewelry",
+        "author_bio": "<p>Rahul Kheskwani is the President of Milano Jewelry, a vertically integrated luxury retailer operating over 35 stores across 20 countries, specializing in the cruise-port and travel-retail markets. A Graduate Gemologist (GIA) and Accredited Jewelry Professional with two decades of experience, he also serves on the board of Diamond Universe, where he bridges design, sourcing, and retail execution on a global scale. Rahul is passionate about data-driven growth, sustainable innovation, and building retail experiences that capture the beauty and excitement of international travel.</p>",
+        "author_image": "shopify://shop_images/rahul-k.jpg",
+        "show_sharing_icons": true,
+        "show_twitter": true,
+        "show_facebook": true,
+        "show_pinterest": true,
+        "supplemental_text": "",
+        "show_sidebar": true,
+        "sidebar_color_scheme": "2",
+        "sidebar_background": "",
+        "cta_color_scheme": "default",
+        "sidebar_heading": "",
+        "sidebar_title": "Experience the Beauty of Milano",
+        "sidebar_text": "<p><strong>Milano Jewelry proudly crafts exquisite diamond and gemstone jewelry to help you mark every special moment in life.</strong> </p><p>Our made-to-order pieces and timeless classics are meticulously designed to stand the test of time and take your breath away.</p><p>Contact us to learn more about our jewelry and commitment to sustainability and excellence.</p>",
+        "sidebar_button_label": "Contact Us",
+        "sidebar_button_link": "shopify://pages/contact",
+        "sidebar_button_style": "primary",
+        "show_blog_categories": true,
+        "categories_heading": "Blog Categories"
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

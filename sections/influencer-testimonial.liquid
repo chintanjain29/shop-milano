@@ -1,0 +1,50 @@
+<div class="container mobile-full-container">
+  <div class="tp-influencer-testimonial-wrapper">
+    <div class="divider">
+      <div class="divider-line"></div>
+      <div class="divider-circle">
+        <img src="https://cdn.shopify.com/s/files/1/0367/6287/8085/files/Group_1000001762.png?v=1732258098" alt="Quotes Icon">
+      </div>
+      <div class="divider-line"></div>
+    </div>
+
+    <div class="tp-influencer-testimonial-container">
+      <div class="tp-influencer-testimonial-image">
+        <img src="{{ section.settings.placeholder_image | img_url: 'master' }}">
+      </div>
+      <div class="tp-influencer-testimonial-content">
+        {{ section.settings.content }}
+        <h4 class="tp-influencer-testimonial-content-title">{{ section.settings.heading }}</h4>
+      </div>
+    </div>
+  </div>
+</div>
+{% schema %}
+{
+  "name": "Influencer Testimonial",
+  "class": "tp-influencer-testimonial",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Heading"
+    },
+    {
+      "type": "richtext",
+      "id": "content",
+      "label": "Content"
+    },
+    {
+      "id": "placeholder_image",
+      "type": "image_picker",
+      "label": "Image"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Influencer Testimonial",
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,283 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "gallery_RgxFE9": {
+      "type": "gallery",
+      "blocks": {
+        "media_PfpeEj": {
+          "type": "media",
+          "settings": {
+            "image": "shopify://shop_images/petite_promo_1200x250_2.jpg",
+            "enlarge_media": true,
+            "subheading": "",
+            "title": "",
+            "button_label": "",
+            "link": "https://www.milanojewelry.com/products/petite-lab-diamond-tennis-bracelet",
+            "text_alignment": "bottom left"
+          }
+        }
+      },
+      "block_order": [
+        "media_PfpeEj"
+      ],
+      "disabled": true,
+      "name": "Gallery",
+      "settings": {
+        "grid_desktop": 1,
+        "grid_mobile": "1",
+        "height": "fixed",
+        "desktop_image_height": 300,
+        "mobile_image_height": 100,
+        "title_size": 30,
+        "title_size_mobile": 22,
+        "enable_margin": false,
+        "enable_row_spacing": false,
+        "full_width": true,
+        "color_scheme": "default",
+        "enable_carousel": false,
+        "overlay_style": "full",
+        "button_style": "primary"
+      }
+    },
+    "gem_find_iwto_CHcgzd": {
+      "type": "gem-find-iwto",
+      "disabled": true,
+      "name": "Image with text overlay",
+      "settings": {
+        "image": "shopify://shop_images/Petite_Promo_Revised.jpg",
+        "mobile_image": "shopify://shop_images/Petite_Promo_Revised.jpg",
+        "height": "adapt",
+        "ratio_desktop": 2.7,
+        "ratio_mobile": 0.7,
+        "height_desktop": 600,
+        "height_mobile": 460,
+        "image_link": "",
+        "full_width": true,
+        "text_alignment": "center center",
+        "mobile_overlay_under": false,
+        "overlay_style": "shadow"
+      }
+    },
+    "custom_content_gwmcQi": {
+      "type": "custom-content",
+      "blocks": {
+        "image_nEheQk": {
+          "type": "image",
+          "settings": {
+            "width": "full",
+            "image": "shopify://shop_images/petite_promo_1200x250_2.jpg",
+            "mobile_image": "shopify://shop_images/petite_promo_1200x250_2.jpg",
+            "height": "adapt",
+            "height_desktop": 600,
+            "height_mobile": 500,
+            "subheading": "",
+            "title": "",
+            "text": "",
+            "enlarge_text": false,
+            "button_label": "",
+            "button_style": "primary",
+            "image_link": "https://www.milanojewelry.com/products/petite-lab-diamond-tennis-bracelet",
+            "text_alignment": "center center",
+            "mobile_overlay_under": false,
+            "overlay_style": "shadow"
+          }
+        }
+      },
+      "block_order": [
+        "image_nEheQk"
+      ],
+      "disabled": true,
+      "name": "Custom content",
+      "settings": {
+        "alignment": "middle"
+      }
+    },
+    "contact_image_text_overlay_N3jdhJ": {
+      "type": "contact-image-text-overlay",
+      "blocks": {
+        "heading_KgMT4x": {
+          "type": "heading",
+          "settings": {
+            "title": "{{ collection.title }}",
+            "heading_max_width": 15,
+            "title_size": 38,
+            "title_size_mobile": 32,
+            "use_h1": true
+          }
+        },
+        "text_MW9wJB": {
+          "type": "text",
+          "settings": {
+            "text": "<p></p>{{ collection.metafields.custom.collection_hero_description | metafield_tag }}",
+            "enlarge_text": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_KgMT4x",
+        "text_MW9wJB"
+      ],
+      "custom_css": [
+        "h1 {color: #fff;}",
+        "p {font-size: var(--base-text-size); color: #fff;}",
+        ".placeholder-image.dark {background-color: #00205b;}",
+        ".placeholder-image.dark svg {display: none;}",
+        ".text-overlay--for-banner .text-overlay__inner {padding-left: 0; padding-right: 0; max-width: 40%;}",
+        "@media (max-width: 749px) {.text-overlay--for-banner .text-overlay__inner {max-width: 100%; } .text-overlay--for-banner {background-color: rgba(0, 0, 0, 0.5); }}"
+      ],
+      "name": "Collection Hero",
+      "settings": {
+        "image": "{{ collection.metafields.custom.collection_hero_image.value }}",
+        "mobile_image": "{{ collection.metafields.custom.collection_hero_image_mobile.value }}",
+        "height": "fixed",
+        "height_desktop": 300,
+        "height_mobile": 380,
+        "image_link": "",
+        "full_width": true,
+        "text_alignment": "center left",
+        "mobile_overlay_under": false,
+        "overlay_style": "shadow"
+      }
+    },
+    "main": {
+      "type": "main-collection",
+      "custom_css": [],
+      "settings": {
+        "show_title": true,
+        "show_description": false,
+        "show_image_behind_heading": false,
+        "heading_image_height": "medium",
+        "overlay_style": "full image-overlay--bg-shadow",
+        "coll_desc_pos": "above",
+        "coll_num_per_page_int": 32,
+        "grid": 4,
+        "show_vendor": false,
+        "show_total": true,
+        "enable_filtering": true,
+        "collapse_tag_sidebar_by_default": true,
+        "collapse_filters_method": "over-12",
+        "show_filter_counts": true,
+        "show_disabled_filters": true,
+        "auto_apply_hide_unavailable": false,
+        "enable_sticky_filter": true,
+        "filter_two_columns": false,
+        "show_sort": true,
+        "sort_show_featured": true,
+        "sort_show_best": true,
+        "sort_show_alpha": false,
+        "sort_show_price": true,
+        "sort_show_date": false,
+        "related_collections": [],
+        "related_collections_style": "gallery",
+        "rel_coll_gall_aspect_ratio": "1",
+        "image_position": "center center",
+        "rel_coll_gall_enable_margin": true,
+        "rel_coll_gall_full_width": false,
+        "rel_coll_gall_overlay_style": "shadow",
+        "rel_coll_gall_text_alignment": "center center",
+        "rel_coll_grid_mobile": "2"
+      }
+    },
+    "17138779121bcbcfbe": {
+      "type": "apps",
+      "blocks": {
+        "boost_ai_search_filter_filter_product_list_ssr_Wf98Wr": {
+          "type": "shopify://apps/boost-ai-search-filter/blocks/filter-product-list-ssr/7fc998ae-a150-4367-bab8-505d8a4503f7",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "boost_ai_search_filter_filter_product_list_ssr_Wf98Wr"
+      ],
+      "settings": {
+        "full_width": true
+      }
+    },
+    "ss_collection_content_Li4HBx": {
+      "type": "ss-collection-content",
+      "custom_css": [
+        ".section-image-with-text {background-color: #f3f3f3;}",
+        ".section-image-with-text .fully-spaced-row--medium {margin-top: var(--section-padding); margin-bottom: 0;}",
+        ".section-image-with-text h2,.section-image-with-text h3,.section-image-with-text h4 {color: var(--accessibility-widget-primary-color); font-weight: 500;}",
+        ".section-image-with-text p {color: var(--body-link-color);}"
+      ],
+      "name": "Collection content",
+      "settings": {
+        "image": "{{ collection.metafields.custom.collection_content_image.value }}",
+        "image_width": 700,
+        "image_position": "right",
+        "text_alignment": "left",
+        "color_scheme": "1",
+        "content": "{{ collection.metafields.custom.collection_content | metafield_tag }}"
+      }
+    },
+    "ss_collection_faq_cbJmQX": {
+      "type": "ss-collection-faq",
+      "blocks": {
+        "text_wPWUtP": {
+          "type": "text",
+          "settings": {
+            "question": "{{ collection.metafields.custom.faq_q1.value }}",
+            "answer": "{{ collection.metafields.custom.faq_a1 | metafield_tag }}"
+          }
+        },
+        "text_Fe6njA": {
+          "type": "text",
+          "settings": {
+            "question": "{{ collection.metafields.custom.faq_q2.value }}",
+            "answer": "{{ collection.metafields.custom.faq_a2 | metafield_tag }}"
+          }
+        },
+        "text_diY4zb": {
+          "type": "text",
+          "settings": {
+            "question": "{{ collection.metafields.custom.faq_q3.value }}",
+            "answer": "{{ collection.metafields.custom.faq_a3 | metafield_tag }}"
+          }
+        },
+        "text_PFXYJa": {
+          "type": "text",
+          "settings": {
+            "question": "{{ collection.metafields.custom.faq_q4.value }}",
+            "answer": "{{ collection.metafields.custom.faq_a4 | metafield_tag }}"
+          }
+        }
+      },
+      "block_order": [
+        "text_wPWUtP",
+        "text_Fe6njA",
+        "text_diY4zb",
+        "text_PFXYJa"
+      ],
+      "name": "Collection FAQ",
+      "settings": {
+        "heading": "FAQ",
+        "icon_color": "#fff",
+        "hover_color": "#efefef",
+        "question_color": "#fff",
+        "background_color": "#d5caa6",
+        "answer_color": "#000",
+        "answer_bg_color": "#fff",
+        "questions-font-size": 1.5
+      }
+    }
+  },
+  "order": [
+    "gallery_RgxFE9",
+    "gem_find_iwto_CHcgzd",
+    "custom_content_gwmcQi",
+    "contact_image_text_overlay_N3jdhJ",
+    "main",
+    "17138779121bcbcfbe",
+    "ss_collection_content_Li4HBx",
+    "ss_collection_faq_cbJmQX"
+  ]
+}

@@ -1,0 +1,29 @@
+{%- assign seen_p = '|' -%}
+{%- assign seen_v = '|' -%}
+{%- assign first_p = true -%}
+{%- assign first_v = true -%}
+{
+  "productionTypes": {
+    {%- for item in cart.items -%}
+      {%- assign pid = '|' | append: item.product.id | append: '|' -%}
+      {%- unless seen_p contains pid -%}
+        {%- assign seen_p = seen_p | append: item.product.id | append: '|' -%}
+        {%- unless first_p %},{% endunless -%}
+        {%- assign first_p = false -%}
+        "{{ item.product.id }}": {{ item.product.metafields.custom.production_type.value | default: '' | json }}
+      {%- endunless -%}
+    {%- endfor -%}
+  },
+  "variantInventory": {
+    {%- for item in cart.items -%}
+      {%- assign vid = '|' | append: item.variant.id | append: '|' -%}
+      {%- unless seen_v contains vid -%}
+        {%- assign seen_v = seen_v | append: item.variant.id | append: '|' -%}
+        {%- unless first_v %},{% endunless -%}
+        {%- assign first_v = false -%}
+        "{{ item.variant.id }}": {{ item.variant.inventory_quantity | default: 0 }}
+      {%- endunless -%}
+    {%- endfor -%}
+  },
+  "holidays": {{ shop.metafields.custom.holidays.value | json }}
+}

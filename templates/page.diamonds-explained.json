@@ -1,0 +1,534 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "show_page_title": true,
+        "full_width": false
+      }
+    },
+    "gem_find_iwto_XkadxP": {
+      "type": "gem-find-iwto",
+      "blocks": {
+        "heading_iAHaei": {
+          "type": "heading",
+          "settings": {
+            "title": "Milano x Save the Whales",
+            "heading_max_width": 15,
+            "title_size": 48,
+            "title_size_mobile": 24,
+            "use_h1": true
+          }
+        },
+        "subheading_MJ7HDP": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Style With A Purpose"
+          }
+        }
+      },
+      "block_order": [
+        "heading_iAHaei",
+        "subheading_MJ7HDP"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".text-overlay {font-size: 24px; color: #ffffff;}",
+        "h1 {color: #ffffff;}"
+      ],
+      "name": "Image with text overlay",
+      "settings": {
+        "image": "shopify://shop_images/Copy_of_MilanoXSTW_Hero_Banner.png",
+        "mobile_image": "shopify://shop_images/Copy_of_MilanoXSTW_Hero_Banner.png",
+        "height": "fixed",
+        "height_desktop": 480,
+        "height_mobile": 400,
+        "image_link": "",
+        "full_width": true,
+        "text_alignment": "center center",
+        "mobile_overlay_under": false,
+        "overlay_style": "full"
+      }
+    },
+    "rich_text_czWEgw": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_kYqBzH": {
+          "type": "heading",
+          "settings": {
+            "title": "What Is a Diamond?",
+            "use_h1": true
+          }
+        },
+        "text_jUByfz": {
+          "type": "text",
+          "settings": {
+            "text": "<p>A diamond is a gemstone composed of carbon atoms arranged in a highly structured crystalline form. Known for its exceptional hardness and light performance, it is one of the most durable and sought-after materials used in fine jewelry.</p><p>Diamonds are valued not only for their brilliance, but also for their rarity and the precision required to transform them into finished pieces. At Milano Jewelry, we focus on both natural and lab-grown diamonds, offering clarity on how each is formed and how they differ.<br/><br/>Key Characteristics:</p><ul><li>Highest level of hardness among natural materials<br/></li><li>Exceptional brilliance and light reflection<br/></li><li>Long-lasting durability suitable for everyday wear<br/></li><li>Formed naturally over billions of years or created using advanced technology<br/></li></ul><p>Diamonds are widely used in fine jewelry due to their ability to maintain structure and brilliance over time.</p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_kYqBzH",
+        "text_jUByfz"
+      ],
+      "custom_css": [
+        ".subheading {color: #002058; font-size: 20px; margin-bottom: 6px;}"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "height": "small",
+        "text_alignment": "left",
+        "full_width": true,
+        "color_scheme": "default"
+      }
+    },
+    "rich_text_hAiEAk": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_D3QV9X": {
+          "type": "heading",
+          "settings": {
+            "title": "How Are Diamonds Formed?",
+            "use_h1": false
+          }
+        },
+        "text_cE74mh": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>Natural Formation</h3><p>Natural diamonds are formed deep within the Earth’s mantle, typically 140–190 kilometers below the surface. They develop under intense heat and pressure over millions to billions of years.</p><p>Volcanic activity carries these diamonds closer to the Earth’s surface, where they are eventually mined, cut, and polished.</p><h3>Laboratory Creation</h3><p>Lab-grown diamonds are created using controlled processes that replicate natural formation conditions. These methods produce diamonds that are identical in composition and structure to natural diamonds.</p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_D3QV9X",
+        "text_cE74mh"
+      ],
+      "custom_css": [
+        ".subheading {color: #002058; font-size: 20px; margin-bottom: 6px;}"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "height": "small",
+        "text_alignment": "left",
+        "full_width": true,
+        "color_scheme": "default"
+      }
+    },
+    "rich_text_AhcT6B": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_83ERHh": {
+          "type": "heading",
+          "settings": {
+            "title": "Types of Diamonds",
+            "use_h1": false
+          }
+        },
+        "text_7m3G9c": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Diamonds can be broadly categorized based on their origin and treatment:</p>",
+            "enlarge_text": false
+          }
+        },
+        "subheading_dLcpBh": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Natural Diamonds"
+          }
+        },
+        "text_7TrV6E": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Natural diamonds are formed within the Earth over extended periods of time. Their rarity and geological origin contribute to their long-standing value and desirability.</p><p>They are commonly chosen for:</p><ul><li>Engagement rings<br/></li><li>Fine jewelry<br/></li><li>Long-term value perception</li></ul>",
+            "enlarge_text": false
+          }
+        },
+        "subheading_j8fja7": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Lab-Grown Diamonds"
+          }
+        },
+        "text_VUP66W": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Lab-grown diamonds are created in controlled environments using advanced technology. They have the same chemical, physical, and optical properties as natural diamonds.</p><p>They are typically selected for:</p><ul><li>Better value at comparable quality<br/></li><li>Ethical and traceable sourcing<br/></li><li>Greater flexibility in size and specifications</li></ul>",
+            "enlarge_text": false
+          }
+        },
+        "subheading_tpbpQM": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Treated Diamonds"
+          }
+        },
+        "text_TxUP4n": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Treated diamonds are natural or lab-grown diamonds that have undergone processes to enhance their appearance.</p><p>Common treatments include:</p><ul><li>Laser drilling to reduce visible inclusions<br/></li><li>Fracture filling to improve clarity<br/></li><li>Color enhancement through advanced processes<br/></li></ul><p>These treatments are used to improve visual appeal while maintaining the diamond’s overall structure.</p>",
+            "enlarge_text": false
+          }
+        },
+        "subheading_7fLFTq": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Fancy Color Diamonds"
+          }
+        },
+        "text_qkfTKE": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Fancy color diamonds exhibit distinct hues such as yellow, pink, blue, green, and black. These colors occur due to variations in the diamond’s formation or trace elements within the structure.</p><p>Color diamonds are valued based on:</p><ul><li>Intensity of color<br/></li><li>Even distribution<br/></li><li>Rarity of the shade<br/></li></ul><p>Naturally occurring fancy color diamonds are among the rarest in the world.</p>",
+            "enlarge_text": false
+          }
+        },
+        "subheading_QGQptM": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Are All Diamonds the Same?"
+          }
+        },
+        "text_LDqqpB": {
+          "type": "text",
+          "settings": {
+            "text": "<p>While all diamonds share the same core composition, they differ in:</p><ul><li>Origin (natural vs lab-grown)<br/></li><li>Color and clarity<br/></li><li>Cut and craftsmanship<br/></li><li>Rarity and price<br/></li></ul><p>These factors influence both appearance and value.</p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_83ERHh",
+        "text_7m3G9c",
+        "subheading_dLcpBh",
+        "text_7TrV6E",
+        "subheading_j8fja7",
+        "text_VUP66W",
+        "subheading_tpbpQM",
+        "text_TxUP4n",
+        "subheading_7fLFTq",
+        "text_qkfTKE",
+        "subheading_QGQptM",
+        "text_LDqqpB"
+      ],
+      "custom_css": [
+        ".subheading {color: #002058; font-size: 20px; margin-bottom: 6px;}"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "height": "small",
+        "text_alignment": "left",
+        "full_width": true,
+        "color_scheme": "default"
+      }
+    },
+    "gallery_7Kjm3x": {
+      "type": "gallery",
+      "blocks": {
+        "media_kQYYK8": {
+          "type": "media",
+          "settings": {
+            "image": "shopify://shop_images/Diamond_Types.png",
+            "enlarge_media": true,
+            "subheading": "",
+            "title": "",
+            "button_label": "",
+            "link": "",
+            "text_alignment": "bottom left"
+          }
+        }
+      },
+      "block_order": [
+        "media_kQYYK8"
+      ],
+      "name": "Gallery",
+      "settings": {
+        "grid_desktop": 2,
+        "grid_mobile": "1",
+        "height": "fixed",
+        "desktop_image_height": 700,
+        "mobile_image_height": 350,
+        "title_size": 30,
+        "title_size_mobile": 22,
+        "enable_margin": true,
+        "enable_row_spacing": false,
+        "full_width": true,
+        "color_scheme": "default",
+        "enable_carousel": true,
+        "overlay_style": "full",
+        "button_style": "primary"
+      }
+    },
+    "rich_text_gFfzfQ": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_qL8zf6": {
+          "type": "heading",
+          "settings": {
+            "title": "Why Diamonds Are Used in Jewelry",
+            "use_h1": false
+          }
+        },
+        "text_zEze6c": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Diamonds are widely used in jewelry due to their combination of durability and visual appeal.</p><p>They offer:</p><ul><li>Long-lasting brilliance<br/></li><li>Resistance to scratching and wear<br/></li><li>Versatility across designs and settings<br/></li></ul><p>This makes them suitable for everyday wear as well as heirloom pieces.</p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_qL8zf6",
+        "text_zEze6c"
+      ],
+      "custom_css": [
+        ".subheading {color: #002058; font-size: 20px; margin-bottom: 6px;}"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "height": "small",
+        "text_alignment": "left",
+        "full_width": true,
+        "color_scheme": "default"
+      }
+    },
+    "rich_text_QXRhTU": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_dz7hqA": {
+          "type": "heading",
+          "settings": {
+            "title": "Choosing the Right Diamond",
+            "use_h1": false
+          }
+        },
+        "text_b3PXbJ": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Selecting a diamond depends on individual priorities, including:</p><ul><li>Budget<br/></li><li>Design preference<br/></li><li>Ethical considerations<br/></li><li>Long-term value expectations<br/></li></ul><p>At Milano Jewelry, we offer both natural and lab-grown diamonds, each certified and selected for quality. Our focus is to provide transparency, so you can choose with confidence.</p>",
+            "enlarge_text": false
+          }
+        },
+        "button_VyaYJn": {
+          "type": "button",
+          "settings": {
+            "button_label": "SHOP NATURAL DIAMONDS",
+            "button_link": "https://www.milanojewelry.com/collections/natural-diamond-jewelry",
+            "button_style": "primary"
+          }
+        },
+        "button_V8kj6P": {
+          "type": "button",
+          "settings": {
+            "button_label": "SHOP LAB DIAMONDS",
+            "button_link": "https://www.milanojewelry.com/collections/lab-grown-diamonds",
+            "button_style": "primary"
+          }
+        }
+      },
+      "block_order": [
+        "heading_dz7hqA",
+        "text_b3PXbJ",
+        "button_VyaYJn",
+        "button_V8kj6P"
+      ],
+      "custom_css": [
+        ".subheading {color: #002058; font-size: 20px; margin-bottom: 6px;}"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "height": "small",
+        "text_alignment": "left",
+        "full_width": true,
+        "color_scheme": "default"
+      }
+    },
+    "rich_text_gapFcf": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_dQGRXq": {
+          "type": "heading",
+          "settings": {
+            "title": "Why Choose Milano Jewelry",
+            "use_h1": false
+          }
+        },
+        "text_6ba8CR": {
+          "type": "text",
+          "settings": {
+            "text": "<p>At Milano Jewelry, every diamond—lab-grown or natural—is selected with a focus on quality, certification, and craftsmanship.</p><p>We offer:</p><ul><li>Certified diamonds (IGI and GIA)<br/></li><li><a href=\"https://www.milanojewelry.com/pages/our-factory\" title=\"https://www.milanojewelry.com/pages/our-factory\">Transparent pricing </a>through direct sourcing and manufacturing<br/></li><li><a href=\"https://www.milanojewelry.com/pages/create-your-custom-jewelry\" title=\"https://www.milanojewelry.com/pages/create-your-custom-jewelry\">Customization options </a>across designs<br/></li><li>Dedicated<a href=\"https://www.milanojewelry.com/pages/contact\" title=\"https://www.milanojewelry.com/pages/contact\"> customer support</a> and after-sales service<br/></li></ul><p>Our goal is to provide clarity at every stage, so your purchase is guided by confidence and trust.</p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_dQGRXq",
+        "text_6ba8CR"
+      ],
+      "custom_css": [
+        ".subheading {color: #002058; font-size: 20px; margin-bottom: 6px;}"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "height": "medium",
+        "text_alignment": "left",
+        "full_width": true,
+        "color_scheme": "default"
+      }
+    },
+    "rich_text_tFANat": {
+      "type": "rich-text",
+      "blocks": {
+        "text_k9t3V9": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Diamonds represent a balance of natural science, craftsmanship, and design. Whether formed over billions of years or created using modern technology, their core characteristics remain the same.</p><p>Understanding the differences between types of diamonds allows for a more informed and confident purchase—one that aligns with both personal preference and long-term expectations.</p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "text_k9t3V9"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "height": "small",
+        "text_alignment": "left",
+        "full_width": true,
+        "color_scheme": "default"
+      }
+    },
+    "ss_simple_faq_fnE4JW": {
+      "type": "ss-simple-faq",
+      "blocks": {
+        "text_ykzGbk": {
+          "type": "text",
+          "settings": {
+            "question": "What is a diamond made of?",
+            "answer": "<p>A diamond is made of carbon atoms arranged in a crystalline structure.</p>"
+          }
+        },
+        "text_KbcWdT": {
+          "type": "text",
+          "settings": {
+            "question": "Are lab-grown diamonds real diamonds?",
+            "answer": "<p>Yes. They are identical to natural diamonds in composition and properties.</p>"
+          }
+        },
+        "text_n8Liy7": {
+          "type": "text",
+          "settings": {
+            "question": "How long does it take for a natural diamond to form?",
+            "answer": "<p>Natural diamonds can take millions to billions of years to form beneath the Earth’s surface.</p>"
+          }
+        },
+        "text_zmQQ8B": {
+          "type": "text",
+          "settings": {
+            "question": "What makes diamonds valuable?",
+            "answer": "<p>Rarity, quality (cut, color, clarity, carat), and origin all contribute to a diamond’s value.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_ykzGbk",
+        "text_KbcWdT",
+        "text_n8Liy7",
+        "text_zmQQ8B"
+      ],
+      "name": "SS - FAQ #1",
+      "settings": {
+        "heading": "Frequently Asked Questions",
+        "icon_color": "#ffffff",
+        "hover_color": "#00205b",
+        "question_color": "#363636",
+        "background_color": "#fafafa",
+        "answer_color": "#000000",
+        "answer_bg_color": "#ffffff",
+        "questions-font-size": 1
+      }
+    },
+    "multi_column_3ThQBN": {
+      "type": "multi-column",
+      "blocks": {
+        "text_block_JPtTWA": {
+          "type": "text_block",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify://shop_images/KP-3325-W1_a1fe7178-fddd-4bfc-8b10-0c519ac0806e.jpg",
+            "title": "Lab Diamond Dancing Whale Tail Pendant",
+            "text": "<p>$279.00<br/>A delicately curved whale tail, set with lab-grown diamonds that catch the light like sunlight on water. A symbol of strength, freedom, and connection to the ocean.<br/></p>",
+            "button_label": "SHOP NOW",
+            "link": "https://www.milanojewelry.com/products/lab-diamond-dancing-whale-tail-pendant"
+          }
+        },
+        "text_block_C3jRtk": {
+          "type": "text_block",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify://shop_images/KP3789-Y2.jpg",
+            "title": "Pavé Whale Tail Diamond Pendant",
+            "text": "<p>$580.00<br/>Crafted in 14K gold with pavé-set diamonds that echo the quiet shimmer of the deep, this pendant captures the serenity and power of the whales we aim to protect.</p>",
+            "button_label": "SHOP NOW",
+            "link": "https://www.milanojewelry.com/products/pave-whale-tail-diamond-pendant"
+          }
+        },
+        "text_block_gJPYxq": {
+          "type": "text_block",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify://shop_images/KN-790-Y1.jpg",
+            "title": "Pavé Wave Lab Diamond Necklace",
+            "text": "<p>$1,595.00<br/>Crafted in 14K gold with pavé-set lab-grown diamonds, this wave necklace reflects the fluid shimmer of the ocean in modern elegance and fine jewelry design.</p>",
+            "button_label": "SHOP NOW",
+            "link": "https://www.milanojewelry.com/products/pave-wave-diamond-necklace"
+          }
+        }
+      },
+      "block_order": [
+        "text_block_JPtTWA",
+        "text_block_C3jRtk",
+        "text_block_gJPYxq"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".container {margin-bottom: 0 !important; padding-bottom: 8px !important;}"
+      ],
+      "name": "Multi-column",
+      "settings": {
+        "title": "",
+        "media_aspect_ratio": "1",
+        "media_width": 350,
+        "text_alignment": "center",
+        "button_style": "primary",
+        "color_scheme": "default"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "gem_find_iwto_XkadxP",
+    "rich_text_czWEgw",
+    "rich_text_hAiEAk",
+    "rich_text_AhcT6B",
+    "gallery_7Kjm3x",
+    "rich_text_gFfzfQ",
+    "rich_text_QXRhTU",
+    "rich_text_gapFcf",
+    "rich_text_tFANat",
+    "ss_simple_faq_fnE4JW",
+    "multi_column_3ThQBN"
+  ]
+}

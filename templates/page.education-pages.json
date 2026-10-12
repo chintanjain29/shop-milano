@@ -1,0 +1,474 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "show_page_title": true,
+        "full_width": false
+      }
+    },
+    "gem_find_iwto_XkadxP": {
+      "type": "gem-find-iwto",
+      "blocks": {
+        "heading_iAHaei": {
+          "type": "heading",
+          "settings": {
+            "title": "Milano x Save the Whales",
+            "heading_max_width": 15,
+            "title_size": 48,
+            "title_size_mobile": 24,
+            "use_h1": true
+          }
+        },
+        "subheading_MJ7HDP": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Style With A Purpose"
+          }
+        }
+      },
+      "block_order": [
+        "heading_iAHaei",
+        "subheading_MJ7HDP"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".text-overlay {font-size: 24px; color: #ffffff;}",
+        "h1 {color: #ffffff;}"
+      ],
+      "name": "Image with text overlay",
+      "settings": {
+        "image": "shopify://shop_images/Copy_of_MilanoXSTW_Hero_Banner.png",
+        "mobile_image": "shopify://shop_images/Copy_of_MilanoXSTW_Hero_Banner.png",
+        "height": "fixed",
+        "height_desktop": 480,
+        "height_mobile": 400,
+        "image_link": "",
+        "full_width": true,
+        "text_alignment": "center center",
+        "mobile_overlay_under": false,
+        "overlay_style": "full"
+      }
+    },
+    "rich_text_czWEgw": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_kYqBzH": {
+          "type": "heading",
+          "settings": {
+            "title": "Lab-Grown Diamonds: A Complete Guide",
+            "use_h1": true
+          }
+        },
+        "text_jUByfz": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Lab-grown diamonds are real diamonds created using advanced technology that replicates the natural formation process. They offer the same brilliance, durability, and chemical composition as natural diamonds, while providing a more accessible price point.</p><p>At Milano Jewelry, we offer both lab-grown and natural diamonds. Our approach is rooted in transparency—so you can make an informed decision based on your preferences, values, and budget.</p>",
+            "enlarge_text": false
+          }
+        },
+        "subheading_JXaHAf": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "What Are Lab-Grown Diamonds?"
+          }
+        },
+        "text_hNnGUx": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Lab-grown diamonds are formed in controlled laboratory environments using processes that mimic the conditions under which diamonds develop beneath the Earth’s surface.</p><p>They possess the same physical, chemical, and optical properties as natural diamonds. To the naked eye, they are indistinguishable from mined diamonds and can only be identified using specialized equipment.</p><p>Lab-grown diamonds are certified by leading gemological institutes such as IGI and GIA, ensuring authenticity and quality.</p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_kYqBzH",
+        "text_jUByfz",
+        "subheading_JXaHAf",
+        "text_hNnGUx"
+      ],
+      "custom_css": [
+        ".subheading {color: #002058; font-size: 20px; margin-bottom: 6px;}"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "height": "small",
+        "text_alignment": "left",
+        "full_width": true,
+        "color_scheme": "default"
+      }
+    },
+    "rich_text_hAiEAk": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_D3QV9X": {
+          "type": "heading",
+          "settings": {
+            "title": "How Lab-Grown Diamonds Are Created",
+            "use_h1": false
+          }
+        },
+        "text_cE74mh": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Lab-grown diamonds are produced using two primary methods:</p><p><strong>High Pressure High Temperature (HPHT)</strong><br/><br/>This method recreates the high-pressure, high-temperature conditions found deep within the Earth. Carbon atoms crystallize around a diamond seed, forming a diamond over time.</p><p><strong>Chemical Vapor Deposition (CVD)</strong><br/><br/>In this process, a diamond seed is placed in a chamber filled with carbon-rich gas. As the gas is energized, carbon atoms bond to the seed, building the diamond layer by layer.</p><p>Both methods result in diamonds that are chemically and structurally identical to natural diamonds.</p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_D3QV9X",
+        "text_cE74mh"
+      ],
+      "custom_css": [
+        ".subheading {color: #002058; font-size: 20px; margin-bottom: 6px;}"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "height": "small",
+        "text_alignment": "left",
+        "full_width": true,
+        "color_scheme": "default"
+      }
+    },
+    "rich_text_gFfzfQ": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_qL8zf6": {
+          "type": "heading",
+          "settings": {
+            "title": "Advantages of Lab-Grown Diamonds",
+            "use_h1": false
+          }
+        },
+        "text_zEze6c": {
+          "type": "text",
+          "settings": {
+            "text": "<h5>Greater Value</h5><p>Lab-grown diamonds are typically priced 30–60% lower than natural diamonds of comparable size and quality. This allows for greater flexibility in selecting higher carat weights or better clarity and color within the same budget.</p><h5>Ethical Sourcing</h5><p>Lab-grown diamonds are produced in controlled environments, offering a transparent and conflict-free alternative to traditional mining. This appeals to customers who prioritize responsible sourcing.</p><h5>Reduced Environmental Impact</h5><p>Unlike mined diamonds, lab-grown diamonds do not require large-scale excavation or land disruption. While energy is required in production, the overall environmental footprint is generally lower than that of traditional diamond mining.</p><h5>Wider Range of Options</h5><p>Lab-grown diamonds are available in a broad range of sizes, cuts, colors, and clarities. Their availability and consistency make them well-suited for both classic designs and custom jewelry.</p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_qL8zf6",
+        "text_zEze6c"
+      ],
+      "custom_css": [
+        ".subheading {color: #002058; font-size: 20px; margin-bottom: 6px;}"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "height": "small",
+        "text_alignment": "left",
+        "full_width": true,
+        "color_scheme": "default"
+      }
+    },
+    "rich_text_QXRhTU": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_dz7hqA": {
+          "type": "heading",
+          "settings": {
+            "title": "Considerations Before Buying",
+            "use_h1": false
+          }
+        },
+        "text_b3PXbJ": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>Price Evolution</h3><p>Lab-grown diamonds follow a technology-driven pricing model. As production becomes more efficient and supply increases, prices may continue to adjust over time. They are best viewed as a purchase for personal value rather than long-term investment.</p><h3>Resale Value</h3><p>Compared to natural diamonds, lab-grown diamonds currently have lower resale value. This is influenced by market perception and supply dynamics rather than differences in quality.</p><h3>Energy Consumption</h3><p>The production of lab-grown diamonds requires significant energy, particularly in regions where fossil fuels are a primary energy source. Despite this, their overall environmental impact remains lower than traditional mining.</p><h3>Industry Impact</h3><p>The growing adoption of lab-grown diamonds has implications for regions that rely on natural diamond mining for economic activity. This is an important consideration in the broader context of the global diamond industry.</p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_dz7hqA",
+        "text_b3PXbJ"
+      ],
+      "custom_css": [
+        ".subheading {color: #002058; font-size: 20px; margin-bottom: 6px;}"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "height": "small",
+        "text_alignment": "left",
+        "full_width": true,
+        "color_scheme": "default"
+      }
+    },
+    "rich_text_bX84gd": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_HKpFN4": {
+          "type": "heading",
+          "settings": {
+            "title": "Lab-Grown vs Natural Diamonds",
+            "use_h1": false
+          }
+        },
+        "text_jMDRxP": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>Price Evolution</h3><p>Lab-grown diamonds follow a technology-driven pricing model. As production becomes more efficient and supply increases, prices may continue to adjust over time. They are best viewed as a purchase for personal value rather than long-term investment.</p><h3>Resale Value</h3><p>Compared to natural diamonds, lab-grown diamonds currently have lower resale value. This is influenced by market perception and supply dynamics rather than differences in quality.</p><h3>Energy Consumption</h3><p>The production of lab-grown diamonds requires significant energy, particularly in regions where fossil fuels are a primary energy source. Despite this, their overall environmental impact remains lower than traditional mining.</p><h3>Industry Impact</h3><p>The growing adoption of lab-grown diamonds has implications for regions that rely on natural diamond mining for economic activity. This is an important consideration in the broader context of the global diamond industry.</p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_HKpFN4",
+        "text_jMDRxP"
+      ],
+      "custom_css": [
+        ".subheading {color: #002058; font-size: 20px; margin-bottom: 6px;}"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "height": "small",
+        "text_alignment": "left",
+        "full_width": true,
+        "color_scheme": "default"
+      }
+    },
+    "rich_text_ddbTV3": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_b8DQAT": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Are Lab-Grown Diamonds Real?"
+          }
+        },
+        "text_UVkei4": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Yes. Lab-grown diamonds are real diamonds. They are not simulants such as cubic zirconia or moissanite. Their composition and performance are identical to those of natural diamonds.</p>",
+            "enlarge_text": false
+          }
+        },
+        "subheading_6JPVnT": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Choosing Between Lab-Grown and Natural Diamonds"
+          }
+        },
+        "text_ejqAVd": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Lab-grown diamonds are well suited for those seeking:</p><ul><li>Greater size or quality within a defined budget<br/></li><li>Ethical and transparent sourcing<br/></li><li>Contemporary, value-driven luxury<br/></li></ul><p>Natural diamonds may be preferred by those who value:</p><ul><li>Geological rarity<br/></li><li>Traditional significance<br/></li><li>Long-term perception and resale potentisl</li></ul>",
+            "enlarge_text": false
+          }
+        },
+        "button_3bnYPX": {
+          "type": "button",
+          "settings": {
+            "button_label": "SHOP DIAMONDS",
+            "button_link": "https://www.milanojewelry.com/collections/lab-grown-diamonds",
+            "button_style": "primary"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_b8DQAT",
+        "text_UVkei4",
+        "subheading_6JPVnT",
+        "text_ejqAVd",
+        "button_3bnYPX"
+      ],
+      "custom_css": [
+        ".subheading {color: #002058; font-size: 20px; margin-bottom: 6px;}"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "height": "medium",
+        "text_alignment": "left",
+        "full_width": true,
+        "color_scheme": "default"
+      }
+    },
+    "rich_text_gapFcf": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_8Qy9CD": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Why Choose Milano Jewelry"
+          }
+        },
+        "text_6ba8CR": {
+          "type": "text",
+          "settings": {
+            "text": "<p>At Milano Jewelry, every diamond—lab-grown or natural—is selected with a focus on quality, certification, and craftsmanship.</p><p>We offer:</p><ul><li>Certified diamonds (IGI and GIA)<br/></li><li>Transparent pricing through direct sourcing and manufacturing<br/></li><li>Customization options across designs<br/></li><li>Dedicated customer support and after-sales service<br/></li></ul><p>Our goal is to provide clarity at every stage, so your purchase is guided by confidence and trust.</p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "subheading_8Qy9CD",
+        "text_6ba8CR"
+      ],
+      "custom_css": [
+        ".subheading {color: #002058; font-size: 20px; margin-bottom: 6px;}"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "height": "medium",
+        "text_alignment": "left",
+        "full_width": true,
+        "color_scheme": "default"
+      }
+    },
+    "rich_text_tFANat": {
+      "type": "rich-text",
+      "blocks": {
+        "text_k9t3V9": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Lab-grown diamonds represent a shift in how fine jewelry is perceived—offering the same inherent qualities as natural diamonds with greater accessibility and transparency.</p><p>At Milano Jewelry, we are committed to helping you make a decision that reflects your priorities, whether that leads you to a lab-grown diamond or a natural one.</p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "text_k9t3V9"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "height": "small",
+        "text_alignment": "left",
+        "full_width": true,
+        "color_scheme": "default"
+      }
+    },
+    "ss_simple_faq_fnE4JW": {
+      "type": "ss-simple-faq",
+      "blocks": {
+        "text_ykzGbk": {
+          "type": "text",
+          "settings": {
+            "question": "Are lab-grown diamonds durable?",
+            "answer": "<p><br/>Yes. Lab-grown diamonds have the same hardness and durability as natural diamonds and are suitable for everyday wear.<br/><br/></p>"
+          }
+        },
+        "text_KbcWdT": {
+          "type": "text",
+          "settings": {
+            "question": "Can lab-grown diamonds be distinguished from natural diamonds?",
+            "answer": "<p><br/>They cannot be distinguished visually. Identification requires specialized gemological equipment.<br/><br/></p>"
+          }
+        },
+        "text_n8Liy7": {
+          "type": "text",
+          "settings": {
+            "question": "Are lab-grown diamonds a good choice?",
+            "answer": "<p>They are an excellent choice for those prioritizing value, size, and ethical sourcing.</p>"
+          }
+        },
+        "text_zmQQ8B": {
+          "type": "text",
+          "settings": {
+            "question": "Do lab-grown diamonds retain their appearance over time?",
+            "answer": "<p>Yes. Their brilliance and structure remain unchanged over time, just like natural diamonds.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_ykzGbk",
+        "text_KbcWdT",
+        "text_n8Liy7",
+        "text_zmQQ8B"
+      ],
+      "name": "SS - FAQ #1",
+      "settings": {
+        "heading": "Frequently Asked Questions",
+        "icon_color": "#ffffff",
+        "hover_color": "#00205b",
+        "question_color": "#363636",
+        "background_color": "#fafafa",
+        "answer_color": "#000000",
+        "answer_bg_color": "#ffffff",
+        "questions-font-size": 1
+      }
+    },
+    "multi_column_3ThQBN": {
+      "type": "multi-column",
+      "blocks": {
+        "text_block_JPtTWA": {
+          "type": "text_block",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify://shop_images/KP-3325-W1_a1fe7178-fddd-4bfc-8b10-0c519ac0806e.jpg",
+            "title": "Lab Diamond Dancing Whale Tail Pendant",
+            "text": "<p>$279.00<br/>A delicately curved whale tail, set with lab-grown diamonds that catch the light like sunlight on water. A symbol of strength, freedom, and connection to the ocean.<br/></p>",
+            "button_label": "SHOP NOW",
+            "link": "https://www.milanojewelry.com/products/lab-diamond-dancing-whale-tail-pendant"
+          }
+        },
+        "text_block_C3jRtk": {
+          "type": "text_block",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify://shop_images/KP3789-Y2.jpg",
+            "title": "Pavé Whale Tail Diamond Pendant",
+            "text": "<p>$580.00<br/>Crafted in 14K gold with pavé-set diamonds that echo the quiet shimmer of the deep, this pendant captures the serenity and power of the whales we aim to protect.</p>",
+            "button_label": "SHOP NOW",
+            "link": "https://www.milanojewelry.com/products/pave-whale-tail-diamond-pendant"
+          }
+        },
+        "text_block_gJPYxq": {
+          "type": "text_block",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify://shop_images/KN-790-Y1.jpg",
+            "title": "Pavé Wave Lab Diamond Necklace",
+            "text": "<p>$1,595.00<br/>Crafted in 14K gold with pavé-set lab-grown diamonds, this wave necklace reflects the fluid shimmer of the ocean in modern elegance and fine jewelry design.</p>",
+            "button_label": "SHOP NOW",
+            "link": "https://www.milanojewelry.com/products/pave-wave-diamond-necklace"
+          }
+        }
+      },
+      "block_order": [
+        "text_block_JPtTWA",
+        "text_block_C3jRtk",
+        "text_block_gJPYxq"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".container {margin-bottom: 0 !important; padding-bottom: 8px !important;}"
+      ],
+      "name": "Multi-column",
+      "settings": {
+        "title": "",
+        "media_aspect_ratio": "1",
+        "media_width": 350,
+        "text_alignment": "center",
+        "button_style": "primary",
+        "color_scheme": "default"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "gem_find_iwto_XkadxP",
+    "rich_text_czWEgw",
+    "rich_text_hAiEAk",
+    "rich_text_gFfzfQ",
+    "rich_text_QXRhTU",
+    "rich_text_bX84gd",
+    "rich_text_ddbTV3",
+    "rich_text_gapFcf",
+    "rich_text_tFANat",
+    "ss_simple_faq_fnE4JW",
+    "multi_column_3ThQBN"
+  ]
+}

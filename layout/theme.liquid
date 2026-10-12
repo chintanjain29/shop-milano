@@ -1,0 +1,531 @@
+{%- liquid
+  assign rtl_langs = 'ar,arc,dv,fa,ha,he,khw,ks,ku,ps,ur,yi' | split: ','
+  assign current_lang = localization.language.iso_code | split: '-' | first
+  if rtl_langs contains current_lang
+    assign lang_dir = 'rtl'
+  else
+    assign lang_dir = 'ltr'
+  endif
+-%}
+<!doctype html>
+<html class="no-js" lang="{{ request.locale.iso_code }}" dir="{{ lang_dir }}">
+  <head>
+   {%- comment -%} CWV FIX: preconnect removed — jQuery is now self-hosted below {%- endcomment -%}
+    <link rel="preconnect" href="https://cdn.shopify.com">
+
+    {%- comment -%} CWV FIX: head-level LCP banner preload {%- endcomment -%}
+    {%- liquid
+      assign cwv_img_desktop = null
+      assign cwv_img_mobile = null
+      if settings.cwv_lcp_preload_enabled
+        if request.page_type == 'index'
+          assign cwv_img_desktop = settings.cwv_lcp_home_desktop
+          assign cwv_img_mobile = settings.cwv_lcp_home_mobile
+        elsif request.page_type == 'collection'
+          assign cwv_img_desktop = settings.cwv_lcp_collection_desktop
+          assign cwv_img_mobile = settings.cwv_lcp_collection_mobile
+        endif
+      endif
+
+      comment
+        CWV FIX: PDP gallery image preloads
+      endcomment
+    -%}
+    {%- if cwv_img_desktop != blank or cwv_img_mobile != blank -%}
+      {%- liquid
+        assign cwv_banner_ladder = '340,480,740,980,1200,1400,1600,1920,2560' | split: ','
+        assign cwv_mobile_ladder = '340,400' | split: ','
+      -%}
+      {%- if cwv_img_desktop != blank -%}
+        {%- liquid
+          assign cwv_desktop_srcset = ''
+          for w in cwv_banner_ladder
+            assign cwv_w_num = w | plus: 0
+            if cwv_w_num <= cwv_img_desktop.width
+              assign cwv_w_scaled = cwv_w_num | times: settings.image_quality
+              assign cwv_w_url = cwv_img_desktop | image_url: width: cwv_w_scaled
+              assign cwv_desktop_srcset = cwv_desktop_srcset | append: cwv_w_url | append: ' ' | append: cwv_w_num | append: 'w, '
+            endif
+          endfor
+          assign cwv_desktop_srcset = cwv_desktop_srcset | remove_last: ', '
+          assign cwv_desktop_href = cwv_desktop_srcset | split: ', ' | last | split: ' ' | first
+        -%}
+        <link rel="preload" as="image" fetchpriority="high" href="{{ cwv_desktop_href }}" imagesrcset="{{ cwv_desktop_srcset }}" imagesizes="100vw" media="(min-width: 768px)">
+      {%- endif -%}
+      {%- if cwv_img_mobile != blank -%}
+        {%- liquid
+          assign cwv_mobile_srcset = ''
+          for w in cwv_mobile_ladder
+            assign cwv_w_num = w | plus: 0
+            if cwv_w_num <= cwv_img_mobile.width
+              assign cwv_w_scaled = cwv_w_num | times: settings.image_quality
+              assign cwv_w_url = cwv_img_mobile | image_url: width: cwv_w_scaled
+              assign cwv_mobile_srcset = cwv_mobile_srcset | append: cwv_w_url | append: ' ' | append: cwv_w_num | append: 'w, '
+            endif
+          endfor
+          assign cwv_mobile_srcset = cwv_mobile_srcset | remove_last: ', '
+          assign cwv_mobile_href = cwv_mobile_srcset | split: ', ' | last | split: ' ' | first
+        -%}
+        <link rel="preload" as="image" fetchpriority="high" href="{{ cwv_mobile_href }}" imagesrcset="{{ cwv_mobile_srcset }}" imagesizes="100vw" media="(max-width: 767.98px)">
+      {%- endif -%}
+    {%- endif -%}
+    {%- comment -%}
+      CWV FIX: single, sized PDP LCP preload.
+      Previously preloaded the first 3 media at full original size, which competed
+      with the LCP image and didn't match the gallery's responsive URLs (double download).
+      Now: first image of the active color/weight group only, with an imagesrcset/imagesizes
+      pair identical to the gallery <img> so the browser preloads exactly one matching URL.
+    {%- endcomment -%}
+    {%- if settings.cwv_lcp_preload_enabled and request.page_type == 'product' and product -%}
+      {%- liquid
+        assign cwv_lcp_image = null
+        if product.selected_or_first_available_variant
+          assign cwv_vtitle = product.selected_or_first_available_variant.title | strip | downcase
+          for cwv_m in product.media
+            unless cwv_m.media_type == 'image'
+              continue
+            endunless
+            assign cwv_parts = cwv_m.alt | split: '-'
+            assign cwv_color = cwv_parts.first | strip | downcase
+            assign cwv_weight = cwv_parts.last | strip | downcase
+            if cwv_vtitle contains cwv_color and cwv_vtitle contains cwv_weight
+              assign cwv_lcp_image = cwv_m.preview_image
+              break
+            endif
+          endfor
+        endif
+        assign cwv_lcp_image = cwv_lcp_image | default: product.featured_media.preview_image
+        if cwv_lcp_image
+          assign cwv_pdp_sizes = '(min-width: 768px) 50vw, calc(100vw - 40px)'
+          assign cwv_pdp_widths = '400,600,800,1000,1200,1400,1600' | split: ','
+          assign cwv_pdp_srcset = ''
+          for w in cwv_pdp_widths
+            assign wn = w | plus: 0
+            if wn <= cwv_lcp_image.width
+              assign cwv_wurl = cwv_lcp_image | image_url: width: wn
+              assign cwv_wn_str = wn | append: ''
+              assign cwv_pdp_srcset = cwv_pdp_srcset | append: cwv_wurl | append: ' ' | append: cwv_wn_str | append: 'w, '
+            endif
+          endfor
+          assign cwv_pdp_srcset = cwv_pdp_srcset | remove_last: ', '
+        endif
+      -%}
+      {%- if cwv_lcp_image -%}
+        <link rel="preload" as="image" href="{{ cwv_lcp_image | image_url: width: 800 }}" fetchpriority="high" imagesrcset="{{ cwv_pdp_srcset }}" imagesizes="{{ cwv_pdp_sizes }}">
+      {%- endif -%}
+    {%- endif -%}
+
+<style>
+html.f-interacted .shopify-section:not(.section-announcement-bar):not(.section-header):not(.boost-sd__product-list):not(.section-apps):not(:has(.not-in-quickbuy)),
+html.f-interacted .section-related-products,
+html.f-interacted .jdgm-widget,
+html.f-interacted .section-featured-collection,
+html.f-interacted .section-multi-column,
+html.f-interacted .needsclick,
+html.f-interacted .pd-cookie-banner-window,
+html.f-interacted #smile-ui-lite-launcher-frame-container,
+html.f-interacted .accessibility-settings-modal,
+html.f-interacted .accessibility-trigger,
+html.f-interacted #gorgias-chat-container {
+  display: none !important;
+}
+
+html.f-interacted main#content > .container > .shopify-section:nth-child(-n + 2) {
+  display: block !important;
+}
+.tp-main-slider:not(.slick-initialized) .slick-img-slide:not(:nth-child(-n + 1)) {
+  display: none;
+}
+.tp-thumbnails-slider:not(.slick-initialized) .slick-img-slide:not(:nth-child(-n + 1)) {
+  display: none;
+}
+html.f-interacted .tp-media-group button{display:none !important}
+</style>
+
+<script>
+!function(){"use strict";var doc=document,docEl=document.documentElement,classList=docEl.classList,win=window,startTime=performance.now(),MIN_DELAY=0,interactionCaptured=false,interactionApplied=false;var F_KEY="__fInteractedDone",fDone=false;try{fDone=localStorage.getItem(F_KEY)==="1"}catch(e){}if(!fDone){classList.add("f-interacted")}function applyInteraction(type){if(interactionApplied)return;interactionApplied=true;classList.add("interacted");classList.remove("f-interacted");try{localStorage.setItem(F_KEY,"1")}catch(e){}doc.dispatchEvent(new CustomEvent("site:interacted"))}function onFirstInteraction(type){if(interactionCaptured)return;interactionCaptured=true;var elapsed=performance.now()-startTime,remaining=MIN_DELAY-elapsed;if(remaining<=0)applyInteraction(type);else setTimeout(function(){applyInteraction(type)},remaining)}["pointerdown","click","keydown","touchstart","wheel","scroll","mousemove","focus"].forEach(function(evt){win.addEventListener(evt,function(){onFirstInteraction(evt)},{once:true,passive:true,capture:true})});var P=["hotjar","bat\\.bing\\.net","addshoppers","facebook\\.net/en_US/fbevents","googletagmanager","goaffpro","gorgias","pandectes","klaviyo","jdgm","smile","searchanise","boost-pfs","yotpo","stamped","loox","bing\\.com","criteo","taboola","outbrain","pinterest","snap\\.sc","tiktok","redditstatic","linkedin","twitter","amazonaws.*cloudfront","hotjar.*recorder","oxi-social","avada","speed-embed","booster","bing\\.com/bat","skynettechnologies","syfpayments","syfpos","syf\\.com","impactcdn","automizely","nytrng","recaptcha","cloudflareinsights","shop\\.pe","syf-unifi","syf-ecart","syfmarketing","aov\\.ai","oxiapps","doubleclick\\.net","googleadservices","static-tracking\\.klaviyo","shopify-extensions"],R=P.length?new RegExp(P.map(function(p){return p.replace(/[.*+?^${}()|[\]\\]/g,"\\$&")}).join("|")):null,H=function(){return classList.contains("interacted")},S=Element.prototype.setAttribute,A=Element.prototype.appendChild,I=Element.prototype.insertBefore,C=Node.prototype.replaceChild,nativeSrcSet=Object.getOwnPropertyDescriptor(HTMLScriptElement.prototype,"src").set;function B(s){if(!H()&&s&&"SCRIPT"===s.tagName){var t=s.src||s.getAttribute("src")||"";if(t&&R&&R.test(t)){s.hasAttribute("data-type")||s.setAttribute("data-type",s.getAttribute("type")||"");s.type="text/plain";s.removeAttribute("src");s._ps=t}}}Element.prototype.appendChild=function(e){return e&&"SCRIPT"===e.tagName&&B(e),A.call(this,e)};Element.prototype.insertBefore=function(e,t){return e&&"SCRIPT"===e.tagName&&B(e),I.call(this,e,t)};Node.prototype.replaceChild=function(e,t){return e&&"SCRIPT"===e.tagName&&B(e),C.call(this,e,t)};Element.prototype.setAttribute=function(e,t){if("SCRIPT"===this.tagName){if("src"===e){var r=String(t||"");if(r&&R&&R.test(r))return this._ps=r,this.type="text/plain",void this.removeAttribute("src")}if("type"===e&&this.hasAttribute("data-type"))return}return S.call(this,e,t)};window.__dsq&&(window.__dsq.forEach(function(e){"s"===e.t?((t=String(e.v||""))&&R&&R.test(t)&&(e.e._ps=t,e.e.type="text/plain",e.e.removeAttribute("src"))):B(e.e);var t}),window.__dsq=null);window.__dsmo&&(window.__dsmo.disconnect(),window.__dsmo=null);doc.querySelectorAll("script").forEach(B);var O=new MutationObserver(function(t){if(H())O.disconnect();else for(var e=0;e<t.length;e++)for(var r=t[e].addedNodes,s=0;s<r.length;s++){var n=r[s];if(1===n.nodeType&&("SCRIPT"===n.tagName&&B(n),n.querySelectorAll))for(var a=n.querySelectorAll("script"),i=0;i<a.length;i++)B(a[i])}});O.observe(docEl,{childList:true,subtree:true});function releaseGatedScripts(){O.disconnect();doc.querySelectorAll('script[type="text/plain"]').forEach(function(e){if(e._ps){var t=doc.createElement("script");for(var r=0;r<e.attributes.length;r++){var s=e.attributes[r];"type"!==s.name&&"src"!==s.name&&S.call(t,s.name,s.value)}var n=e.getAttribute("data-type")||"";n&&S.call(t,"type",n);S.call(t,"src",e._ps);A.call(doc.head,t);e.remove()}})}doc.addEventListener("site:interacted",releaseGatedScripts,{once:true});if(H())releaseGatedScripts();!function(){var LS_KEY="__wpmDelayDone",alreadyRan=false;try{alreadyRan=localStorage.getItem(LS_KEY)==="1"}catch(e){}if(alreadyRan)return;var FIRST_USER_DELAY_SCRIPTS=[],_pt=(location.pathname.split("/")[1]||"").toLowerCase(),_delay=_pt==="collections"?13000:_pt==="products"?10000:_pt==="index"?6000:8000;if(_pt==="index")FIRST_USER_DELAY_SCRIPTS.push("pagefly");if(_pt==="products")FIRST_USER_DELAY_SCRIPTS.push();if(_pt==="collections")FIRST_USER_DELAY_SCRIPTS.push();var fudRe=FIRST_USER_DELAY_SCRIPTS.length?new RegExp(FIRST_USER_DELAY_SCRIPTS.map(function(p){return p.replace(/[.*+?^${}()|[\]\\]/g,"\\$&")}).join("|")):null,hold=[],released=false,srcDesc=Object.getOwnPropertyDescriptor(HTMLScriptElement.prototype,"src"),origSrc=srcDesc.set,origSetAttr=Element.prototype.setAttribute;function isFirstDelayUrl(v){v=String(v||"");return!!(fudRe&&fudRe.test(v))}function markDone(){try{localStorage.setItem(LS_KEY,"1")}catch(e){}}function holdScript(el,url){if(el._wpmheld||released)return;el._wpmheld=1;el._ps=url;origSetAttr.call(el,"data-wpm-deferred","1");hold.push(el)}function releaseHeld(){for(var i=0;i<hold.length;i++){var el=hold[i];if(el&&el._wpmheld){el.removeAttribute("data-wpm-deferred");el._wpmheld=0;origSrc.call(el,el._ps)}}hold=[]}Object.defineProperty(HTMLScriptElement.prototype,"src",{configurable:true,get:function(){return srcDesc.get.call(this)},set:function(v){if(!this._wpmheld&&!released&&isFirstDelayUrl(v))return void holdScript(this,v);return origSrc.call(this,v)}});Element.prototype.setAttribute=function(n,v){if("SCRIPT"===this.tagName&&"src"===n&&!this._wpmheld&&!released&&isFirstDelayUrl(v))return void holdScript(this,v);return origSetAttr.call(this,n,v)};function rel(){if(released)return;released=true;releaseHeld();markDone()}["pointerdown","keydown","touchstart","wheel","scroll","mousemove","focus"].forEach(function(e){window.addEventListener(e,rel,{once:true,passive:true,capture:true})});setTimeout(rel,_delay)}();!function(){var EVERY_TIME_DELAY_SCRIPTS=["wpm","gtm","clarity"],etRe=EVERY_TIME_DELAY_SCRIPTS.length?new RegExp(EVERY_TIME_DELAY_SCRIPTS.map(function(p){return p.replace(/[.*+?^${}()|[\]\\]/g,"\\$&")}).join("|")):null,heldET=[],etReleased=false;function isETUrl(v){v=String(v||"");return!!(etRe&&etRe.test(v))}function holdScriptET(el,url){if(etReleased||el._etHeld)return;el._etHeld=1;el._ps=url;S.call(el,"data-et-deferred","1");heldET.push(el)}function releaseHeldET(){for(var i=0;i<heldET.length;i++){var el=heldET[i];if(el&&el._etHeld){el.removeAttribute("data-et-deferred");el._etHeld=0;nativeSrcSet.call(el,el._ps)}}heldET=[]}var curSrcDesc=Object.getOwnPropertyDescriptor(HTMLScriptElement.prototype,"src"),curSrcGetter=curSrcDesc.get,curSrcSetter=curSrcDesc.set,curSetAttr=Element.prototype.setAttribute;Object.defineProperty(HTMLScriptElement.prototype,"src",{configurable:true,get:function(){return curSrcGetter.call(this)},set:function(v){if(!etReleased&&isETUrl(v))return void holdScriptET(this,v);return curSrcSetter.call(this,v)}});Element.prototype.setAttribute=function(n,v){if("SCRIPT"===this.tagName&&"src"===n&&!etReleased&&isETUrl(v))return void holdScriptET(this,v);return curSetAttr.call(this,n,v)};setTimeout(function(){etReleased=true;releaseHeldET()},8000)}()}();
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{%- comment -%} mm-uxrv.com removed — approved for deletion {%- endcomment -%}
+
+
+{%- comment -%} LOOMI SDK removed {%- endcomment -%}
+
+{% comment %}
+<script type="text/javascript" src="https://api.goaffpro.com/loader.js?shop=rakish-jewelry.myshopify.com"></script>
+{%  endcomment %}
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '633463703876029');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=633463703876029&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-W99NW4L');</script>
+<!-- End Google Tag Manager -->
+
+<script src="{{ 'pandectes-rules.js' | file_url }}"></script>
+    
+    {%- render 'doc-head-core' -%}
+    {%- render 'doc-head-social' -%}
+
+    {%- liquid
+      assign base_font = settings.type_base_font
+      assign base_font_bold = base_font | font_modify: 'weight', 'bolder'
+      assign base_font_medium = base_font | font_modify: 'weight', '500'
+      assign base_font_italic = base_font | font_modify: 'style', 'italic'
+      assign base_font_bold_italic = base_font_bold | font_modify: 'style', 'italic'
+      assign heading_font = settings.type_heading_font
+      assign logo_font = settings.type_logo_font
+      assign nav_font = settings.type_nav_font
+      assign nav_font_600 = nav_font | font_modify: 'weight', '600'
+    -%}
+
+    <style>
+      {{- base_font | font_face: font_display: 'fallback' -}}
+      {{- base_font_bold | font_face: font_display: 'fallback' -}}
+      {{- base_font_medium | font_face: font_display: 'fallback' -}}
+      {{- base_font_italic | font_face: font_display: 'fallback' -}}
+      {{- base_font_bold_italic | font_face: font_display: 'fallback' -}}
+      {{- heading_font | font_face: font_display: 'fallback' -}}
+      {{- logo_font | font_face: font_display: 'fallback' -}}
+      {{- nav_font | font_face: font_display: 'fallback' -}}
+      {{- nav_font_600 | font_face: font_display: 'fallback' -}}
+
+      {%- render 'doc-head-styles' -%}
+    </style>
+
+    {{ 'main.css' | asset_url | stylesheet_tag: preload: true }}
+
+    {{ 'custom.css' | asset_url | stylesheet_tag: preload: true }}
+
+    {%- if settings.swatch_enabled and settings.swatch_value_list != blank -%}
+      <link rel="stylesheet" href="{{ 'swatches.css' | asset_url }}" media="print" onload="this.media='all'">
+      <noscript><link rel="stylesheet" href="{{ 'swatches.css' | asset_url }}"></noscript>
+    {%- endif -%}
+
+    {%- unless base_font.system? -%}
+      <link rel="preload" as="font" href="{{ base_font | font_url }}" type="font/woff2" crossorigin>
+    {%- endunless -%}
+
+    {%- unless heading_font.system? -%}
+      <link rel="preload" as="font" href="{{ heading_font | font_url }}" type="font/woff2" crossorigin>
+    {%- endunless -%}
+
+    <script>
+      document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+
+      window.theme = {
+        info: {
+          name: 'Symmetry',
+          version: '7.1.2'
+        },
+        device: {
+          hasTouch: window.matchMedia('(any-pointer: coarse)').matches,
+          hasHover: window.matchMedia('(hover: hover)').matches
+        },
+        mediaQueries: {
+          md: '(min-width: 768px)',
+          productMediaCarouselBreak: '(min-width: 1041px)'
+        },
+        routes: {
+          base: '{{ shop.url }}',
+          cart: '{{ routes.cart_url }}',
+          cartAdd: '{{ routes.cart_add_url }}.js',
+          cartUpdate: '{{ routes.cart_update_url }}.js',
+          predictiveSearch: '{{ routes.predictive_search_url }}'
+        },
+        strings: {
+          cartTermsConfirmation: {{ 'cart.terms.confirmation' | t | json }},
+          cartItemsQuantityError: {{ 'cart.items.quantity_error' | t: quantity: '[QUANTITY]' | json }},
+          generalSearchViewAll: {{ 'general.search.view_all' | t | json }},
+          noStock: {{ 'products.variant.no_stock' | t | json }},
+          noVariant: {{ 'products.variant.non_existent' | t | json }},
+          productsProductChooseA: {{ 'products.product.choose_a' | t | json }},
+          generalSearchPages: {{ 'general.search.pages' | t | json }},
+          generalSearchNoResultsWithoutTerms: {{ 'general.search.no_results_without_terms' | t | json }},
+          shippingCalculator: {
+            singleRate: {{ 'cart.shipping_calculator.single_rate' | t | json }},
+            multipleRates: {{ 'cart.shipping_calculator.multiple_rates' | t | json }},
+            noRates: {{ 'cart.shipping_calculator.no_rates' | t | json }}
+          }
+        },
+        settings: {
+          moneyWithCurrencyFormat: {{ shop.money_with_currency_format | json }},
+          cartType: {{ settings.cart_type | json }},
+          afterAddToCart: {{ settings.after_add_to_cart | json }},
+          quickbuyStyle: {{ settings.quickbuy_style | json }},
+          externalLinksNewTab: {{ settings.external_links_new_tab | json }},
+          internalLinksSmoothScroll: {{ settings.internal_links_smooth_scroll | json }}
+        }
+      }
+
+      theme.inlineNavigationCheck = function() {
+        var pageHeader = document.querySelector('.pageheader'),
+            inlineNavContainer = pageHeader.querySelector('.logo-area__left__inner'),
+            inlineNav = inlineNavContainer.querySelector('.navigation--left');
+        if (inlineNav && getComputedStyle(inlineNav).display != 'none') {
+          var inlineMenuCentered = document.querySelector('.pageheader--layout-inline-menu-center'),
+              logoContainer = document.querySelector('.logo-area__middle__inner');
+          if(inlineMenuCentered) {
+            var rightWidth = document.querySelector('.logo-area__right__inner').clientWidth,
+                middleWidth = logoContainer.clientWidth,
+                logoArea = document.querySelector('.logo-area'),
+                computedLogoAreaStyle = getComputedStyle(logoArea),
+                logoAreaInnerWidth = logoArea.clientWidth - Math.ceil(parseFloat(computedLogoAreaStyle.paddingLeft)) - Math.ceil(parseFloat(computedLogoAreaStyle.paddingRight)),
+                availableNavWidth = logoAreaInnerWidth - Math.max(rightWidth, middleWidth) * 2 - 40;
+            inlineNavContainer.style.maxWidth = availableNavWidth + 'px';
+          }
+
+          var firstInlineNavLink = inlineNav.querySelector('.navigation__item:first-child'),
+              lastInlineNavLink = inlineNav.querySelector('.navigation__item:last-child');
+          if (lastInlineNavLink) {
+            var inlineNavWidth = null;
+            if(document.querySelector('html[dir=rtl]')) {
+              inlineNavWidth = firstInlineNavLink.offsetLeft - lastInlineNavLink.offsetLeft + firstInlineNavLink.offsetWidth;
+            } else {
+              inlineNavWidth = lastInlineNavLink.offsetLeft - firstInlineNavLink.offsetLeft + lastInlineNavLink.offsetWidth;
+            }
+            if (inlineNavContainer.offsetWidth >= inlineNavWidth) {
+              pageHeader.classList.add('pageheader--layout-inline-permitted');
+              var tallLogo = logoContainer.clientHeight > lastInlineNavLink.clientHeight + 20;
+              if (tallLogo) {
+                inlineNav.classList.add('navigation--tight-underline');
+              } else {
+                inlineNav.classList.remove('navigation--tight-underline');
+              }
+            } else {
+              pageHeader.classList.remove('pageheader--layout-inline-permitted');
+            }
+          }
+        }
+      };
+
+      theme.setInitialHeaderHeightProperty = () => {
+        const section = document.querySelector('.section-header');
+        if (section) {
+          document.documentElement.style.setProperty('--theme-header-height', Math.ceil(section.clientHeight) + 'px');
+        }
+      };
+    </script>
+    
+    <script src="{{ 'main.js' | asset_url }}" defer></script>
+    {%- comment -%} CWV FIX: self-hosted jQuery — same-origin instead of ajax.googleapis.com, removing an external-origin hop from the critical path {%- endcomment -%}
+    <script src="{{ 'jquery.min.js' | asset_url }}"></script>
+    <script src="{{ 'custom.js' | asset_url }}"></script>
+
+    {%- if request.design_mode -%}
+      <script src="{{ 'theme-editor.js' | asset_url }}" defer></script>
+    {%- endif -%}
+
+    {% if settings.animations_enabled_desktop %}
+      <script src="{{ 'animate-on-scroll.js' | asset_url }}" defer></script>
+      {{ 'animate-on-scroll.css' | asset_url | stylesheet_tag: preload: true }}
+    {% endif %}
+
+    {% if template.name == "collection" and collection.handle == 'test-1-gemstones' %}
+      <script>
+        var hiddenTags = [
+                          "hide_not_garnet",
+                          "hide_not_amethyst",
+                          "hide_not_aquamarine",
+                          "hide_not_white-topaz",
+                          "hide_not_emerald",
+                          "hide_not_smoky-quartz",
+                          "hide_not_ruby",
+                          "hide_not_peridot",
+                          "hide_not_sapphire",
+                          "hide_not_opal",
+                          "hide_not_citrine",
+                          "hide_not_blue-topaz"
+                        ]
+        window.boostSdCustomParams = {
+          h_options: 'hide_not_garnet'
+        };
+      </script>
+    {% endif %}
+
+    {{ content_for_header }}
+
+    {%- if settings.custom_html_head -%}
+      <!-- CC Custom Head Start -->
+      {{- settings.custom_html_head -}}
+      <!-- CC Custom Head End -->
+    {%- endif -%}
+    <script src="{{ 'affirm.js' | asset_url }}" defer></script>
+
+    <!-- Hotjar Tracking Code for www.shopmilano.com -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:1967733,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+    
+  </head>
+
+  <body
+    class="
+      template-{{ template | split: '.' | first | handle }}
+      {%- if template.suffix %} template-suffix-{{ template.suffix }}{% endif -%}
+      {%- if settings.swatch_enabled %} swatch-method-{{ settings.swatch_method }} swatch-style-{{ settings.swatch_style }}{% endif -%}
+      {%- if settings.animations_enabled_desktop %} cc-animate-enabled{% endif -%}
+    "
+  >
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W99NW4L"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+    <a class="skip-link visually-hidden" href="#content">{{ 'accessibility.skip_to_content' | t }}</a>
+
+    {%- sections 'header-group' -%}
+    {%- if template.name != 'index'  and template.name != 'milano-edit-standard-blog' -%}
+      <div
+        class="container desktop-only not-in-quickbuy"
+        style="padding-top:20px"
+      >
+        <div class="page-header">
+          {% render 'breadcrumbs', show_next_prev: true %}
+        </div>
+      </div>
+    {% endif -%}
+    {% comment %}
+      {% unless template != blank or request.path contains '/policies/' %}
+        {% section 'gem-find-iwto' %}
+      {% endunless %}
+    {% endcomment %}
+    <main id="content" role="main">
+      <div class="container cf">
+        {{ content_for_layout }}
+      </div>
+    </main>
+
+    {%- if request.path != '/challenge' -%}
+      <div id="pagefooter">
+        {%- sections 'footer-group' -%}
+      </div>
+
+      {%- sections 'overlay-group' -%}
+    {%- endif -%}
+
+    <a href="#" class="page-shade" aria-label="{{ 'general.navigation.close' | t }}"></a>
+    <div class="overlay fixed top-0 right-0 bottom-0 left-0 js-overlay"></div>
+
+    {%- if settings.after_add_to_cart == 'notification' -%}
+      <script src="{{ 'added-notification.js' | asset_url }}" defer></script>
+      <template id="AddedNotification">
+        <added-notification class="added-notification added-notification--hidden">
+          <div class="added-notification__message-area">
+            <div class="added-notification__message-title"></div>
+            <div class="added-notification__message-text underline-child">
+              {{ 'products.product.added_to_cart_with_link_html' | t: cart_url: routes.cart_url }}
+            </div>
+          </div>
+          <div class="added-notification__button-area">
+            <button
+              type="button"
+              class="added-notification__close"
+              aria-label="{{ 'general.icon_labels.close' | t | escape }}"
+            >
+              {%- render 'icon-close' -%}
+            </button>
+          </div>
+        </added-notification>
+      </template>
+    {%- endif -%}
+    {%- render 'swym-custom-header-counter' -%}
+
+    <script>
+      (function () {
+      function replaceColour(root = document) {
+      root.querySelectorAll('*:not(script):not(style)').forEach(el => {
+      el.childNodes.forEach(node => {
+      if (node.nodeType === Node.TEXT_NODE) {
+      let text = node.textContent;
+      // Singular only, case-specific
+      text = text
+      .replace(/\bColour\b/g, 'Color')
+      .replace(/\bcolour\b/g, 'color')
+      .replace(/\bColourless\b/g, 'Colorless')
+      .replace(/\Select diamond\b/g, 'ADD TO RING')
+      .replace(/\United States 6.0\b/g, 'United States 7.0')
+      .replace(/\Select ring size\b/g, 'SELECT RING SIZE')
+      .replace(/\Adding to cart\b/g, 'ADDING TO CART')
+      .replace(/\Select Setting\b/g, 'SELECT SETTING')
+      .replace(/\Select setting\b/g, 'SELECT SETTING')
+      .replace(/\Add to cart\b/g, 'ADD TO CART')
+      .replace(/\Finger Size\b/g, 'Rings will be shipped in 3-4 weeks');
+      node.textContent = text;
+      }
+      });
+      });
+      }
+      function init() {
+      replaceColour();
+      const observer = new MutationObserver(() => replaceColour());
+      observer.observe(document.body, {
+      childList: true,
+      subtree: true
+      });
+      }
+      document.addEventListener('DOMContentLoaded', init);
+      })();
+    </script>
+
+    <script>
+    (function() {
+      var script = document.createElement('script');
+      script.id = 'minty-onsite-script';
+      script.src = 'https://cdn.addshoppers.com/minty/shopify-onsite/executeminty.js';
+      script.async = true;
+      script.defer = true;
+      document.head.appendChild(script);
+    })();
+    </script>
+  </body>
+</html>

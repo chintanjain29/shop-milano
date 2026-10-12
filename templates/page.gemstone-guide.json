@@ -1,0 +1,530 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "show_page_title": true,
+        "full_width": false
+      }
+    },
+    "gem_find_iwto_XkadxP": {
+      "type": "gem-find-iwto",
+      "blocks": {
+        "heading_iAHaei": {
+          "type": "heading",
+          "settings": {
+            "title": "Milano x Save the Whales",
+            "heading_max_width": 15,
+            "title_size": 48,
+            "title_size_mobile": 24,
+            "use_h1": true
+          }
+        },
+        "subheading_MJ7HDP": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Style With A Purpose"
+          }
+        }
+      },
+      "block_order": [
+        "heading_iAHaei",
+        "subheading_MJ7HDP"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".text-overlay {font-size: 24px; color: #ffffff;}",
+        "h1 {color: #ffffff;}"
+      ],
+      "name": "Image with text overlay",
+      "settings": {
+        "image": "shopify://shop_images/Copy_of_MilanoXSTW_Hero_Banner.png",
+        "mobile_image": "shopify://shop_images/Copy_of_MilanoXSTW_Hero_Banner.png",
+        "height": "fixed",
+        "height_desktop": 480,
+        "height_mobile": 400,
+        "image_link": "",
+        "full_width": true,
+        "text_alignment": "center center",
+        "mobile_overlay_under": false,
+        "overlay_style": "full"
+      }
+    },
+    "rich_text_czWEgw": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_kYqBzH": {
+          "type": "heading",
+          "settings": {
+            "title": "Gemstone Buying Guide: How to Choose the Right Gemstone",
+            "use_h1": true
+          }
+        },
+        "text_jUByfz": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Gemstone jewelry offers a distinct combination of color, individuality, and craftsmanship. From classic sapphires and emeralds to modern birthstone pieces, choosing the right gemstone requires an understanding of quality, origin, and durability.</p><p>At Milano Jewelry, we work with both precious and semi-precious gemstones, carefully selected for color, clarity, and overall composition—so you can choose with confidence.</p>",
+            "enlarge_text": false
+          }
+        },
+        "subheading_JXaHAf": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "What Are Gemstones?"
+          }
+        },
+        "text_hNnGUx": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Gemstones are naturally occurring minerals or organic materials that are cut and polished for use in jewelry. Their value is determined by factors such as color, clarity, rarity, and durability.</p><p>Gemstones are broadly categorized into:</p><ul><li><strong>Precious gemstones</strong> (such as diamond, ruby, sapphire, emerald)<br/></li><li><strong>Semi-precious gemstones</strong> (such as amethyst, topaz, citrine, garnet)<br/></li></ul><p>Both categories offer unique beauty and are widely used across fine jewelry.</p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_kYqBzH",
+        "text_jUByfz",
+        "subheading_JXaHAf",
+        "text_hNnGUx"
+      ],
+      "custom_css": [
+        ".subheading {color: #002058; font-size: 20px; margin-bottom: 6px;}"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "height": "small",
+        "text_alignment": "left",
+        "full_width": true,
+        "color_scheme": "default"
+      }
+    },
+    "rich_text_hAiEAk": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_D3QV9X": {
+          "type": "heading",
+          "settings": {
+            "title": "Key Factors to Consider When Buying Gemstones",
+            "use_h1": false
+          }
+        },
+        "text_cE74mh": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Unlike diamonds, gemstones are not evaluated using a universal grading system. However, several key factors determine their quality and value.</p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_D3QV9X",
+        "text_cE74mh"
+      ],
+      "custom_css": [
+        ".subheading {color: #002058; font-size: 20px; margin-bottom: 6px;}"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "height": "small",
+        "text_alignment": "left",
+        "full_width": true,
+        "color_scheme": "default"
+      }
+    },
+    "rich_text_gFfzfQ": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_JrTieH": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Color: The Most Important Factor"
+          }
+        },
+        "text_zEze6c": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Color is the primary value driver for most gemstones.</p><p>It is evaluated based on:</p><ul><li><strong>Hue</strong>: The actual color (blue, red, green, etc.)<br/></li><li><strong>Tone</strong>: Lightness or darkness of the color<br/></li><li><strong>Saturation</strong>: Intensity or richness of the color<br/></li></ul><p>Highly saturated, evenly distributed color is generally the most desirable.</p>",
+            "enlarge_text": false
+          }
+        },
+        "image_4phMM4": {
+          "type": "image",
+          "settings": {
+            "image_width": 260,
+            "url": ""
+          }
+        },
+        "subheading_TEBVNG": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Clarity: Natural Characteristics"
+          }
+        },
+        "text_TR7mzd": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Most gemstones contain natural inclusions. Unlike diamonds, inclusions in colored gemstones are often expected.</p><ul><li><strong>Eye-clean gemstones</strong>: No visible inclusions to the naked eye<br/></li><li><strong>Included gemstones</strong>: Visible inclusions, common in stones like emeralds<br/></li></ul><p>Clarity expectations vary depending on the gemstone type.</p>",
+            "enlarge_text": false
+          }
+        },
+        "subheading_bjRthf": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Cut: Enhancing Color and Brilliance"
+          }
+        },
+        "text_hX4DEw": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The cut of a gemstone influences how it reflects light and displays color.</p><p>Common gemstone cuts include:</p><ul><li>Oval<br/></li><li>Cushion<br/></li><li>Emerald<br/></li><li>Round<br/></li><li>Pear<br/></li></ul><p>A well-cut gemstone enhances both color and overall appearance, even if inclusions are present.</p>",
+            "enlarge_text": false
+          }
+        },
+        "subheading_YxHKwN": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Carat Weight: Size and Presence"
+          }
+        },
+        "text_AJmgtC": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Carat refers to the weight of the gemstone.</p><p>Larger gemstones are generally rarer and more valuable, but price also depends heavily on color and clarity. In many cases, a smaller gemstone with superior color can be more valuable than a larger one with lower quality</p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "subheading_JrTieH",
+        "text_zEze6c",
+        "image_4phMM4",
+        "subheading_TEBVNG",
+        "text_TR7mzd",
+        "subheading_bjRthf",
+        "text_hX4DEw",
+        "subheading_YxHKwN",
+        "text_AJmgtC"
+      ],
+      "custom_css": [
+        ".subheading {color: #002058; font-size: 20px; margin-bottom: 6px;}"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "height": "small",
+        "text_alignment": "left",
+        "full_width": true,
+        "color_scheme": "default"
+      }
+    },
+    "rich_text_QXRhTU": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_dz7hqA": {
+          "type": "heading",
+          "settings": {
+            "title": "Gemstone Origin: Why It Matters",
+            "use_h1": false
+          }
+        },
+        "text_b3PXbJ": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The origin of a gemstone can influence its desirability and value.</p><p>For example:</p><ul><li>Sapphires from Kashmir or Sri Lanka<br/></li><li>Emeralds from Colombia<br/></li><li>Rubies from Myanmar<br/></li></ul><p>While origin can impact pricing, overall quality characteristics remain the most important factor.</p>",
+            "enlarge_text": false
+          }
+        },
+        "subheading_9KCBcw": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Natural vs Treated Gemstones"
+          }
+        },
+        "text_fnkpfy": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Most gemstones undergo treatments to enhance their appearance.</p><h3>Natural Gemstones</h3><p>Untreated or minimally treated stones with natural color and clarity.</p><h3>Treated Gemstones</h3><p>Common treatments include:</p><ul><li><br/>Heat treatment (to enhance color)<br/></li><li><br/>Oil or resin filling (for clarity improvement)<br/></li><li><br/>Surface treatments<br/></li></ul><p>These treatments are widely accepted but should always be disclosed.</p>",
+            "enlarge_text": false
+          }
+        },
+        "subheading_nkieYx": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Durability and Everyday Wear"
+          }
+        },
+        "text_6AX3Cj": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Different gemstones vary in hardness and durability.</p><ul><li><strong>Hard gemstones</strong> (sapphire, ruby): Suitable for daily wear<br/></li><li><strong>Softer gemstones</strong> (opal, turquoise): Require more care<br/></li></ul><p>Durability is especially important when choosing gemstones for rings or everyday jewelry.</p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_dz7hqA",
+        "text_b3PXbJ",
+        "subheading_9KCBcw",
+        "text_fnkpfy",
+        "subheading_nkieYx",
+        "text_6AX3Cj"
+      ],
+      "custom_css": [
+        ".subheading {color: #002058; font-size: 20px; margin-bottom: 6px;}"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "height": "small",
+        "text_alignment": "left",
+        "full_width": true,
+        "color_scheme": "default"
+      }
+    },
+    "rich_text_bX84gd": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_HKpFN4": {
+          "type": "heading",
+          "settings": {
+            "title": "Choosing the Right Gemstone",
+            "use_h1": false
+          }
+        },
+        "text_jMDRxP": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Selecting a gemstone depends on personal style and intended use.</p><p>Consider:</p><ul><li>Color preference<br/></li><li>Occasion (everyday vs occasional wear)<br/></li><li>Budget<br/></li><li>Symbolism (birthstones, meaning, etc.)<br/></li></ul><p>For example:</p><ul><li>Sapphires for durability and classic appeal<br/></li><li>Emeralds for rich color and uniqueness<br/></li><li>Amethyst or citrine for accessible luxury</li></ul>",
+            "enlarge_text": false
+          }
+        },
+        "subheading_FCCXH9": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Buying Gemstones Online"
+          }
+        },
+        "text_MFmzFx": {
+          "type": "text",
+          "settings": {
+            "text": "<p>When purchasing gemstones online, transparency is key.</p><p>Look for:</p><ul><li>Clear product specifications<br/></li><li>Disclosure of treatments<br/></li><li>High-quality images or videos<br/></li><li>Certification (where applicable)<br/></li><li>Return policies and warranty<br/></li></ul><p>At Milano Jewelry, we ensure every gemstone is clearly described and carefully set, offering both quality assurance and customer support.</p>",
+            "enlarge_text": false
+          }
+        },
+        "subheading_7m7M9f": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Care and Maintenance"
+          }
+        },
+        "text_jDYnNb": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Proper care helps preserve the beauty of gemstone jewelry.</p><ul><li>Clean with mild soap and a soft cloth<br/></li><li>Avoid harsh chemicals and ultrasonic cleaners (for softer stones)<br/></li><li>Store separately to prevent scratches<br/></li><li>Schedule periodic professional checks</li></ul>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_HKpFN4",
+        "text_jMDRxP",
+        "subheading_FCCXH9",
+        "text_MFmzFx",
+        "subheading_7m7M9f",
+        "text_jDYnNb"
+      ],
+      "custom_css": [
+        ".subheading {color: #002058; font-size: 20px; margin-bottom: 6px;}"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "height": "small",
+        "text_alignment": "left",
+        "full_width": true,
+        "color_scheme": "default"
+      }
+    },
+    "rich_text_gapFcf": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_PYt4AH": {
+          "type": "heading",
+          "settings": {
+            "title": "Why Choose Milano Jewelry",
+            "use_h1": false
+          }
+        },
+        "text_6ba8CR": {
+          "type": "text",
+          "settings": {
+            "text": "<p>At Milano Jewelry, every gemstone is selected for its color, quality, and craftsmanship.</p><p>We offer:</p><ul><li>Carefully sourced natural gemstones<br/></li><li>Transparent disclosure of treatments<br/></li><li>Fine craftsmanship and setting quality<br/></li><li>Customization options<br/></li></ul><p>Our focus is to provide clarity and confidence at every stage of your purchase.</p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_PYt4AH",
+        "text_6ba8CR"
+      ],
+      "custom_css": [
+        ".subheading {color: #002058; font-size: 20px; margin-bottom: 6px;}"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "height": "medium",
+        "text_alignment": "left",
+        "full_width": true,
+        "color_scheme": "default"
+      }
+    },
+    "rich_text_tFANat": {
+      "type": "rich-text",
+      "blocks": {
+        "text_k9t3V9": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Gemstone jewelry is defined by individuality. No two stones are exactly alike, which makes each piece inherently unique.</p><p>Understanding the key factors behind gemstone quality allows you to choose a piece that reflects both your style and your standards.</p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "text_k9t3V9"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "height": "small",
+        "text_alignment": "left",
+        "full_width": true,
+        "color_scheme": "default"
+      }
+    },
+    "ss_simple_faq_fnE4JW": {
+      "type": "ss-simple-faq",
+      "blocks": {
+        "text_ykzGbk": {
+          "type": "text",
+          "settings": {
+            "question": "What is the most important factor when buying a gemstone?",
+            "answer": "<p>Color is typically the most important factor, followed by clarity and cut.<br/></p>"
+          }
+        },
+        "text_KbcWdT": {
+          "type": "text",
+          "settings": {
+            "question": "Are treated gemstones less valuable?",
+            "answer": "<p>Not necessarily. Many treatments are standard in the industry, but transparency is essential.</p>"
+          }
+        },
+        "text_n8Liy7": {
+          "type": "text",
+          "settings": {
+            "question": "Which gemstones are best for everyday wear?",
+            "answer": "<p>Sapphires and rubies are among the most durable options.</p>"
+          }
+        },
+        "text_zmQQ8B": {
+          "type": "text",
+          "settings": {
+            "question": "Do gemstones hold value over time?",
+            "answer": "<p>Some rare gemstones can retain or increase value, but most purchases are driven by aesthetic and personal preference.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_ykzGbk",
+        "text_KbcWdT",
+        "text_n8Liy7",
+        "text_zmQQ8B"
+      ],
+      "name": "SS - FAQ #1",
+      "settings": {
+        "heading": "Frequently Asked Questions",
+        "icon_color": "#ffffff",
+        "hover_color": "#00205b",
+        "question_color": "#363636",
+        "background_color": "#fafafa",
+        "answer_color": "#000000",
+        "answer_bg_color": "#ffffff",
+        "questions-font-size": 1
+      }
+    },
+    "multi_column_3ThQBN": {
+      "type": "multi-column",
+      "blocks": {
+        "text_block_JPtTWA": {
+          "type": "text_block",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify://shop_images/KP-3325-W1_a1fe7178-fddd-4bfc-8b10-0c519ac0806e.jpg",
+            "title": "Lab Diamond Dancing Whale Tail Pendant",
+            "text": "<p>$279.00<br/>A delicately curved whale tail, set with lab-grown diamonds that catch the light like sunlight on water. A symbol of strength, freedom, and connection to the ocean.<br/></p>",
+            "button_label": "SHOP NOW",
+            "link": "https://www.milanojewelry.com/products/lab-diamond-dancing-whale-tail-pendant"
+          }
+        },
+        "text_block_C3jRtk": {
+          "type": "text_block",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify://shop_images/KP3789-Y2.jpg",
+            "title": "Pavé Whale Tail Diamond Pendant",
+            "text": "<p>$580.00<br/>Crafted in 14K gold with pavé-set diamonds that echo the quiet shimmer of the deep, this pendant captures the serenity and power of the whales we aim to protect.</p>",
+            "button_label": "SHOP NOW",
+            "link": "https://www.milanojewelry.com/products/pave-whale-tail-diamond-pendant"
+          }
+        },
+        "text_block_gJPYxq": {
+          "type": "text_block",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify://shop_images/KN-790-Y1.jpg",
+            "title": "Pavé Wave Lab Diamond Necklace",
+            "text": "<p>$1,595.00<br/>Crafted in 14K gold with pavé-set lab-grown diamonds, this wave necklace reflects the fluid shimmer of the ocean in modern elegance and fine jewelry design.</p>",
+            "button_label": "SHOP NOW",
+            "link": "https://www.milanojewelry.com/products/pave-wave-diamond-necklace"
+          }
+        }
+      },
+      "block_order": [
+        "text_block_JPtTWA",
+        "text_block_C3jRtk",
+        "text_block_gJPYxq"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".container {margin-bottom: 0 !important; padding-bottom: 8px !important;}"
+      ],
+      "name": "Multi-column",
+      "settings": {
+        "title": "",
+        "media_aspect_ratio": "1",
+        "media_width": 350,
+        "text_alignment": "center",
+        "button_style": "primary",
+        "color_scheme": "default"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "gem_find_iwto_XkadxP",
+    "rich_text_czWEgw",
+    "rich_text_hAiEAk",
+    "rich_text_gFfzfQ",
+    "rich_text_QXRhTU",
+    "rich_text_bX84gd",
+    "rich_text_gapFcf",
+    "rich_text_tFANat",
+    "ss_simple_faq_fnE4JW",
+    "multi_column_3ThQBN"
+  ]
+}

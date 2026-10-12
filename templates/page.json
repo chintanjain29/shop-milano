@@ -1,0 +1,89 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "gem_find_iwto_XkadxP": {
+      "type": "gem-find-iwto",
+      "blocks": {
+        "heading_iAHaei": {
+          "type": "heading",
+          "settings": {
+            "title": "The Necklace Everyone's Smiling About",
+            "heading_max_width": 20,
+            "title_size": 26,
+            "title_size_mobile": 24,
+            "use_h1": true
+          }
+        },
+        "subheading_MJ7HDP": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Enter for a chance to win our signature Lab Diamond Smile Necklace—crafted for everyday luxury and effortless elegance."
+          }
+        }
+      },
+      "block_order": [
+        "heading_iAHaei",
+        "subheading_MJ7HDP"
+      ],
+      "custom_css": [
+        ".text-overlay {font-size: 14px; color: #00205b;}",
+        "h1 {color: #00205b;}"
+      ],
+      "name": "Image with text overlay",
+      "settings": {
+        "image": "shopify://shop_images/Smile_Necklace.png",
+        "mobile_image": "shopify://shop_images/Smile_Necklace.png",
+        "height": "fixed",
+        "height_desktop": 480,
+        "height_mobile": 400,
+        "image_link": "",
+        "full_width": true,
+        "text_alignment": "bottom left",
+        "mobile_overlay_under": true,
+        "overlay_style": "full"
+      }
+    },
+    "rich_text_dyiFrz": {
+      "type": "rich-text",
+      "blocks": {
+        "text_Gf3WHp": {
+          "type": "text",
+          "settings": {
+            "text": "<p>HOW TO ENTER<br/>1. Like the post<br/>2. Follow Milano Jewelry on <a href=\"https://www.instagram.com/shopmilanojewelry/\" title=\"https://www.instagram.com/shopmilanojewelry/\">Instagram</a> or <a href=\"https://www.facebook.com/shopmilanojewelry\" title=\"https://www.facebook.com/shopmilanojewelry\">Facebook</a><br/>3. Comment & tag 2 friends who deserve a little sparkle<br/><br/>Winner will be announced on July 1st,2026.</p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "text_Gf3WHp"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "height": "small",
+        "text_alignment": "left",
+        "full_width": false,
+        "color_scheme": "default"
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "show_page_title": false,
+        "full_width": false
+      }
+    }
+  },
+  "order": [
+    "gem_find_iwto_XkadxP",
+    "rich_text_dyiFrz",
+    "main"
+  ]
+}

@@ -1,0 +1,368 @@
+{% comment %}
+  Parameters:
+  - product {Object} - Product object.
+  - product_form_id {String} - Product form ID.
+  - media_ratio {Number} - Media aspect ratio.
+  - block {Object} - Block object.
+  - dynamic_availability_down_mode {Boolean} - Dynamic availability mode, downwards or from selection.
+
+  Dependencies:
+  - Custom select component
+
+  Usage:
+  {% render 'variant-picker', product: product, product_form_id: product_form_id, block: block %}
+{% endcomment %}
+
+{%- unless product.has_only_default_variant -%}
+  {%- if product.variants.size > 1 or block.settings.show_single -%}
+    <script src="{{ 'variant-picker.js' | asset_url }}" defer></script>
+
+    {%- if block.settings.selector_style == 'dropdown' -%}
+      <script src="{{ 'custom-select.js' | asset_url }}" defer></script>
+    {%- endif -%}
+
+    {%- liquid
+      assign update_url = false
+      if request.page_type == 'product'
+        assign update_url = true
+      endif
+    -%}
+
+    <variant-picker
+      class="no-js-hidden tp-variant-picker"
+      data-url="{{ product.url }}"
+      data-update-url="{{ update_url }}"
+      data-show-availability="{{ block.settings.enable_dynamic_availability }}"
+      data-availability-mode="{{ dynamic_availability_mode | default: 'selection' }}"
+    >
+      {%- for option in product.options_with_values -%}
+        {% assign optionName = option.name | downcase %}
+        
+        {%- capture option_id %}{{ product_form_id }}-{{ option.name | handle }}{% endcapture -%}
+        {%- liquid
+          assign is_color_selector = false
+          assign is_variant_image_style = false
+          assign show_size_chart = false
+          assign is_dropdown = false
+
+          if block.settings.selector_style == 'dropdown'
+            assign is_dropdown = true
+          endif
+
+          if optionName contains 'type' and block.settings.choose_type_style == true
+            assign is_dropdown = false
+          endif 
+
+          if settings.swatch_enabled and settings.swatch_option_name contains option.name
+            assign is_color_selector = true
+            assign is_dropdown = false
+            if settings.swatch_style == 'dropdown'
+              assign is_dropdown = true
+            endif
+            if settings.swatch_method == 'variant-images'
+              assign is_variant_image_style = true
+              assign option_index0 = forloop.index0
+              assign img_sizes = settings.swatch_picker_image_size | append: 'px'
+              assign img_widths = settings.swatch_picker_image_size | times: 2 | append: ', ' | append: settings.swatch_picker_image_size
+              if settings.swatch_style == 'icon_square'
+                assign img_aspect_ratio = null
+                assign img_crop_align = null
+              else
+                assign img_aspect_ratio = 1
+                assign img_crop_align = settings.swatch_crop_align
+              endif
+            endif
+          endif
+
+          if block.settings.enable_size_chart and block.settings.size_chart_variant == option.name and block.settings.size_chart_page != blank
+            assign show_size_chart = true
+          endif
+        -%}
+
+        {%- if show_size_chart -%}
+          {%- capture size_chart_link -%}
+            {% comment %}
+            <modal-opener class="no-js-hidden" data-modal="size-chart-{{ product.id }}-{{ section.id }}">
+              <button type="button" class="link block text-sm size-chart-link" aria-haspopup="dialog">
+                <span class="size-chart-link__icon">{%- render 'icon', icon: 'ruler', size: 'small' -%}</span>
+                <span class="size-chart-link__text underline">{{- 'products.product.size_chart' | t -}}</span>
+              </button>
+            </modal-opener>
+            {% endcomment %}
+             {% comment %}
+            <a href="https://cdn.shopify.com/s/files/1/0367/6287/8085/files/Milano_Size_Guide.pdf" target="_blank" class="size-guide">
+              <span class="size-chart-link__icon">{%- render 'icon', icon: 'ruler', size: 'small' -%}</span>
+              <span class="size-chart-link__text underline">{{- 'products.product.size_chart' | t -}}</span>
+            </a>
+            {% endcomment %}
+            <a href="https://cdn.shopify.com/s/files/1/0367/6287/8085/files/Milano_Size_Guide_8798c192-65ef-4571-a1b1-1df5b3f6fed9.pdf" target="_blank" class="size-guide">
+              <span class="size-chart-link__icon">{%- render 'icon', icon: 'ruler', size: 'small' -%}</span>
+              <span class="size-chart-link__text underline">{{- 'products.product.size_chart' | t -}}</span>
+            </a>
+            <noscript>
+             
+              <a href="{{ block.settings.size_chart_page.url }}" class="link">{{ 'products.product.size_chart' | t }}</a>
+            </noscript>
+          {%- endcapture -%}
+        {%- endif -%}
+
+        {%- if is_dropdown -%}
+          {%- if is_variant_image_style -%}
+            <style>
+              {%- for value in option.values -%}
+                {%- for variant in product.variants -%}
+                  {%- if variant.options[option_index0] == value -%}
+                    #{{ option_id }} [data-swatch="{{ value | replace: '"', '\"' | downcase }}"] {
+                      --swatch-background-color: transparent;
+                      --swatch-background-image: url({{ variant.featured_media | image_url: width: 40, height: 40, crop: settings.swatch_crop_align }});
+                    }
+                  {%- endif -%}
+                {%- endfor -%}
+              {%- endfor -%}
+            </style>
+          {%- endif -%}
+          {%- capture selector_label -%}
+            <label class="label" id="{{ option_id }}-label">{{- option.name -}}
+               {% if optionName contains 'type' %}
+                  : <span class="tp-selected-type">Selected Type</span>
+                {% endif %}
+            </label>
+          {%- endcapture -%}
+        <div class="option-selector {% if optionName contains 'color' %}tp-color-option{% elsif optionName contains 'type' %}tp-type-option{% else %}tp-other-option{% endif %}" data-selector-type="dropdown">
+          {% comment %} {%- if section.settings.show_add_ons -%}
+              <add-ons>
+                {%- render 'additional-add-ons',
+                  title: block.settings.add_ons_title,
+                  count: block.settings.add_ons_products
+                -%}
+              </add-ons>
+            {%- endif -%}
+          {% endcomment %}
+          {%- if show_size_chart -%}
+              
+              <div class="flex justify-between">
+                {{ selector_label }}
+                {{ size_chart_link }}
+              </div>
+            {%- else -%}
+              {{ selector_label }}
+            {%- endif -%}
+            {%- liquid
+              if block.settings.select_first_variant or product.variants.size == 1
+                assign selected_value = option.selected_value
+              else
+                if product.selected_variant
+                  assign selected_value = option.selected_value
+                else
+                  assign selected_value = ''
+                endif
+              endif
+            -%}
+            {% render 'custom-select',
+              id: option_id,
+              option_values: option.values,
+              selected_value: selected_value,
+              swatches: is_color_selector
+            %}
+          </div>
+        {%- else -%}
+          <fieldset class="option-selector {% if optionName contains 'color' %}tp-color-option{% elsif optionName contains 'type' %}tp-type-option{% else %}tp-other-option{% endif %}" data-selector-type="listed">
+            {%- if show_size_chart -%}
+              <div class="flex justify-between">
+                <legend class="label">{{- option.name -}}</legend>
+                {{ size_chart_link }}
+              </div>
+            {%- else -%}
+              <legend class="label">
+                {{- option.name -}}
+                {% if optionName contains 'type' %}
+                  : <span class="tp-selected-type">Selected Type</span>
+                {% endif %}
+                
+                {% if is_color_selector -%}
+                  :
+                  <span class="option-selector__label-value js-color-text">
+                    {%- if block.settings.select_first_variant
+                      or product.variants.size == 1
+                      or product.selected_variant
+                    -%}
+                      {{- option.selected_value -}}
+                    {%- endif -%}
+                  </span>
+                {%- endif %}
+              </legend>
+            {%- endif -%}
+            <div class="option-selector__btns flex flex-wrap">
+              {%- for value in option.values -%}
+                {%- assign value_index0 = forloop.index0 -%}
+                <input
+                  type="radio"
+                  class="opt-btn visually-hidden focus-label js-option{% if value.available == false %} is-unavailable is-nonexistent{% endif %}"
+                  name="{{ option_id }}-option"
+                  data-available="{{ value.available }}"
+                  id="{{ option_id }}-opt-{{ value_index0 }}"
+                  value="{{ value | escape }}"
+                  {% if value.id %}data-option-value-id="{{ value.id }}"{% endif %}
+                  required
+                  {% if block.settings.select_first_variant or product.variants.size == 1 or product.selected_variant %}
+                    {%- if option.selected_value == value %} checked{% endif -%}
+                  {% endif %}
+                >
+                {%- if is_variant_image_style -%}
+                  {%- for variant in product.variants -%}
+                    {%- if variant.options[option_index0] == value -%}
+                      <label class="opt-label opt-label--image" for="{{ option_id }}-opt-{{ value_index0 }}">
+                        <div class="opt-label__media media">
+                          {%- render 'image',
+                            image: variant.featured_media,
+                            sizes: img_sizes,
+                            widths: img_widths,
+                            custom_aspect_ratio: img_aspect_ratio,
+                            custom_crop: img_crop_align
+                          -%}
+                        </div>
+                        <span class="{% if settings.swatch_style != 'listed' %}visually-hidden {% endif %}js-value">
+                          {{- value -}}
+                        </span>
+                      </label>
+                      {%- break -%}
+                    {%- endif -%}
+                  {%- endfor -%}
+                {%- else -%}
+                  {%- liquid
+                    assign is_swatch = false
+                    if is_color_selector and settings.swatch_method == 'swatches'
+                      assign is_swatch = true
+                    endif
+                  -%}
+                  <label
+                    class="opt-label tp-{{ optionTitle }}-{{ optionTitle[0] }}-here-{{ optionTitle[1] }} {% if is_swatch %}opt-label--swatch{% else %}opt-label--btn{% endif %} btn relative text-center"
+                    {% if is_swatch %}
+                      data-swatch="{{ value | replace: '"', '' | downcase }}"
+                    {% endif %}
+                    for="{{ option_id }}-opt-{{ value_index0 }}"
+                  >
+                    {% assign optionTitle = value | split: ' ' %}
+                    <span class="test {% if is_swatch and settings.swatch_style != 'listed' %}visually-hidden {% endif %}js-value">
+                      {{- value -}}
+                    </span>
+                    {%- if optionTitle[0] == '10K' or optionTitle[0] == '14K' or optionTitle[0] == '18K' or optionTitle[0] == 'Platinum' or optionTitle[0] == 'Sterling' or optionTitle[0] == 'sterling' or optionTitle[0] == 'Gold' -%}
+                     <span class="custom-swatch-text">{{ optionTitle[0] | replace : 'Platinum','PT' | replace : '950', 'PT' | replace: 'Sterling' , 'SS' | replace: 'Gold' , 'GV' }}</span>
+                    {%- endif -%}
+                    </label>
+                {%- endif -%}
+              {%- endfor -%}
+            </div>
+          </fieldset>
+        {%- endif -%}
+      {%- endfor -%}
+
+      <script type="application/json">
+        {"variants": {{- product.variants | json -}},"formatted": {
+          {%- for variant in product.variants -%}
+            "{{ variant.id }}":{"price":{% if settings.product_currency_code_enabled %}{{ variant.price | money_with_currency | json }}{% else %}{{ variant.price | money | json }}{% endif %}
+              {%- if variant.compare_at_price > variant.price -%}
+                ,"compareAtPrice":{{ variant.compare_at_price | money | json -}}
+              {%- endif -%}
+              {%- if variant.unit_price_measurement -%}
+                ,"unitPrice":{{ variant.unit_price | money | json -}}
+              {%- endif -%}
+                ,"inventory":{{ variant.inventory_quantity }}
+            }{%- unless forloop.last %},{% endunless -%}
+          {%- endfor -%}
+        }}
+      </script>
+      {%- for variant in product.variants -%}
+        <script
+          type="text/template"
+          data-variant="{{ variant.id }}"
+          data-quantity="{{ variant.inventory_quantity }}"
+        ></script>
+      {%- endfor -%}
+    </variant-picker>
+
+    <noscript>
+      <div
+        class="product-info__select"
+        {% if product.has_only_default_variant %}
+          hidden
+        {% endif %}
+      >
+        <label class="label" for="variants-{{ product.id }}-{{ section.id }}">
+          {{- 'products.product.product_variants' | t -}}
+        </label>
+        <div class="select relative">
+          <select
+            class="select w-full"
+            id="variants-{{ product.id }}-{{ section.id }}"
+            name="id"
+            form="{{ product_form_id }}"
+          >
+            {%- for variant in product.variants -%}
+              <option
+                value="{{ variant.id }}"
+                {% if variant == current_variant %}
+                  selected
+                {% endif %}
+                {% if variant.available == false %}
+                  disabled
+                {% endif %}
+              >
+                {{- variant.title -}}
+                {%- if variant.available == false %} - {{ 'products.product.sold_out' | t }}{% endif %}
+                - {{ variant.price | money | strip_html }}
+              </option>
+            {%- endfor -%}
+          </select>
+        </div>
+      </div>
+    </noscript>
+  {%- endif -%}
+{%- endunless -%}
+
+
+<script>
+  const parentElement = document.querySelector('.tp-type-option');
+  if(parentElement){
+    const listbox = parentElement.querySelector('.custom-select__listbox');
+    if(listbox){
+      const selectedOption = listbox.querySelector('[aria-selected="true"]');
+      const selectedValue = selectedOption ? selectedOption.getAttribute('data-value') : null;
+      const selectedTypeSpan = parentElement.querySelector('.tp-selected-type');
+
+      if (selectedValue) {
+          selectedTypeSpan.textContent = selectedValue;
+      }
+
+      const options = parentElement.querySelectorAll('.custom-select__option');
+
+      options.forEach(option => {
+          option.addEventListener('click', function() {
+              const selectedValue = this.getAttribute('data-value');
+              const selectedTypeSpan = parentElement.querySelector('.tp-selected-type');
+              if (selectedValue) {
+                  selectedTypeSpan.textContent = selectedValue;
+              }
+          });
+      });
+    }
+
+
+    const optionbox = parentElement.querySelector('.option-selector__btns');
+    if(optionbox){
+      const selectedOptionRadio = parentElement.querySelector('.opt-btn:checked');
+      const selectedTypeSpan = parentElement.querySelector('.tp-selected-type');
+      if (selectedOptionRadio) {
+          selectedTypeSpan.textContent = selectedOptionRadio.value;
+      }
+      
+      const radioButtons = parentElement.querySelectorAll('.opt-btn');
+      radioButtons.forEach(function(radio) {
+          radio.addEventListener('click', function() {
+             console.log('radio button clicked');
+             selectedTypeSpan.textContent = this.value;
+          });
+      });
+    }
+  }
+</script>

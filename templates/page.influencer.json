@@ -1,0 +1,418 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "show_page_title": true,
+        "full_width": false
+      }
+    },
+    "image_with_text_overlay_8M7Dd8": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "heading_MGbXQY": {
+          "type": "heading",
+          "settings": {
+            "title": "15 Years of Style <br> with  <br> Christine Kesteloo",
+            "heading_max_width": 22,
+            "title_size": 40,
+            "title_size_mobile": 26,
+            "use_h1": true
+          }
+        },
+        "button_rnrmFU": {
+          "type": "button",
+          "settings": {
+            "button_label": "DISCOVER HER FAVORITES",
+            "button_link": "shopify://collections/christines-picks",
+            "button_style": "primary"
+          }
+        },
+        "subheading_tYDRKn": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "subheading": "A collection of timeless pieces worn through travel, memories, and everyday elegance."
+          }
+        }
+      },
+      "block_order": [
+        "heading_MGbXQY",
+        "button_rnrmFU",
+        "subheading_tYDRKn"
+      ],
+      "name": "Image with text overlay",
+      "settings": {
+        "image": "shopify://shop_images/Christine_Page_Banner.png",
+        "mobile_image": "shopify://shop_images/Christine_Page_Mobile_Banner_1024_x_1024_px.png",
+        "height": "adapt",
+        "height_desktop": 600,
+        "height_mobile": 460,
+        "image_link": "",
+        "full_width": true,
+        "text_alignment": "bottom right",
+        "mobile_overlay_under": true,
+        "overlay_style": "full image-overlay--bg-shadow"
+      }
+    },
+    "rich_text_QaELfF": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_zcKtnY": {
+          "type": "heading",
+          "settings": {
+            "title": "A Journey Worn Through Life",
+            "use_h1": false
+          }
+        },
+        "text_U8GDkT": {
+          "type": "text",
+          "settings": {
+            "text": "<p>What began with a Milano piece discovered in Alaska evolved into a 15-year relationship rooted in timeless style and meaningful memories. From life at sea to travels across the world, Christine’s jewelry collection reflects effortless elegance designed to be worn every day.</p>",
+            "enlarge_text": false
+          }
+        },
+        "text_j9WVLf": {
+          "type": "text",
+          "settings": {
+            "text": "<p>“Jewelry becomes part of your story the longer you wear it.”</p><p>— Christine Kesteloo</p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_zcKtnY",
+        "text_U8GDkT",
+        "text_j9WVLf"
+      ],
+      "disabled": true,
+      "name": "Rich text",
+      "settings": {
+        "height": "small",
+        "text_alignment": "left",
+        "full_width": true,
+        "color_scheme": "default"
+      }
+    },
+    "slideshow_9BdgLG": {
+      "type": "slideshow",
+      "blocks": {
+        "image_8mWNg3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Chrstine_Kesteloo_Banner.jpg",
+            "mobile_image": "shopify://shop_images/Christine_Kesteloo_ec7dff0c-90b8-41ce-a7e7-371a91bb994f.jpg",
+            "slide_link": "",
+            "subheading": "",
+            "title": "",
+            "heading_max_width": 15,
+            "title_size": 84,
+            "title_size_mobile": 46,
+            "use_h1": false,
+            "text": "",
+            "enlarge_text": true,
+            "button_label_1": "",
+            "button_url_1": "",
+            "button_label_2": "",
+            "button_url_2": "",
+            "text_alignment": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "image_8mWNg3"
+      ],
+      "disabled": true,
+      "settings": {
+        "height": "fixed",
+        "height_desktop": 600,
+        "height_mobile": 460,
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style": "shadow",
+        "transition": "fade",
+        "navigation": "arrows",
+        "autoplay": true,
+        "autoplay_speed": 7,
+        "accessibility_info": ""
+      }
+    },
+    "multi_column_MdnKG9": {
+      "type": "multi-column",
+      "blocks": {
+        "text_block_j3EdhE": {
+          "type": "text_block",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify://shop_images/KPM3325.jpg",
+            "title": "Dancing Diamond Whale Tail",
+            "text": "<p><strong>$299.00 USD</strong></p>",
+            "button_label": "",
+            "link": "https://shopmilano.com/discount/WhaleTail?redirect=%2Fproducts%2Fdancing-diamond-whale-tail"
+          }
+        },
+        "text_block_HhJzKL": {
+          "type": "text_block",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify://shop_images/YG_-_1.00_-_01_ae5cbb19-32b3-4457-9685-d2cf8ee406bc.jpg",
+            "title": "Round Martini Lab Diamond Studs",
+            "text": "<p><strong>$695 USD</strong></p>",
+            "button_label": "",
+            "link": ""
+          }
+        },
+        "text_block_kbKhe6": {
+          "type": "text_block",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify://shop_images/KP-4398-W1_149a45f3-07c4-4f77-8e07-114e3af695e3.jpg",
+            "title": "Lab Diamond Dancing Key",
+            "text": "<p><strong>$399.00 USD</strong></p>",
+            "button_label": "",
+            "link": "shopify://products/sterling-silver-lab-diamond-key-pendant"
+          }
+        },
+        "text_block_87Dnaj": {
+          "type": "text_block",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify://shop_images/KR-7848-W1.jpg",
+            "title": "Three Row Lab Diamond Ring",
+            "text": "<p><strong>$899 USD</strong></p>",
+            "button_label": "",
+            "link": "shopify://products/paperclip-diamond-earrings"
+          }
+        }
+      },
+      "block_order": [
+        "text_block_j3EdhE",
+        "text_block_HhJzKL",
+        "text_block_kbKhe6",
+        "text_block_87Dnaj"
+      ],
+      "custom_css": [
+        "h2 {font-size: 32px;}"
+      ],
+      "settings": {
+        "title": "Christine's Holiday Picks",
+        "media_aspect_ratio": "1",
+        "media_width": 700,
+        "text_alignment": "center",
+        "button_style": "primary",
+        "color_scheme": "default"
+      }
+    },
+    "featured_collection_BKhnXa": {
+      "type": "featured-collection",
+      "custom_css": [
+        "h3 {font-size: 32px;}"
+      ],
+      "settings": {
+        "title": "Christine's Favorites",
+        "collection": "christines-picks",
+        "show_vendor": false,
+        "enable_carousel": true,
+        "grid": 4,
+        "rows": 1,
+        "color_scheme": "default",
+        "show_view_all": true,
+        "full_width": false
+      }
+    },
+    "influencer_testimonial_M4cxCw": {
+      "type": "influencer-testimonial",
+      "settings": {
+        "heading": "Christine Kesteloo",
+        "content": "<p>“I’ve been to 109 countries and collect memories through jewelry. Fourteen years ago I purchased my first piece from Milano in Ketchikan, Alaska and now I get to represent and collaborate with the company I purchased from years ago. It’s a full circle moment and I look forward to welcoming my friends to the Milano Family throughout our ports of Alaska and the Caribbean.”</p>",
+        "placeholder_image": "shopify://shop_images/Christine-Kesteloo-x-Dune_08761163-a34d-4499-ad2b-8b34dcd9ccdd.jpg"
+      }
+    },
+    "influencer_collections_Ai9hLq": {
+      "type": "influencer-collections",
+      "blocks": {
+        "collection_NVdVqx": {
+          "type": "collection",
+          "settings": {
+            "heading": "Necklace & Pendants",
+            "content": "",
+            "placeholder_image": "shopify://shop_images/image.png",
+            "collection": "necklace-and-charms"
+          }
+        },
+        "collection_DjjNGi": {
+          "type": "collection",
+          "settings": {
+            "heading": "Ring Collection",
+            "content": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy a type specimen book.</p>",
+            "placeholder_image": "shopify://shop_images/image_1.png",
+            "collection": "ring"
+          }
+        },
+        "collection_x94Jcx": {
+          "type": "collection",
+          "settings": {
+            "heading": "Earrings",
+            "content": "",
+            "placeholder_image": "shopify://shop_images/image_3.png",
+            "collection": "earrings"
+          }
+        }
+      },
+      "block_order": [
+        "collection_NVdVqx",
+        "collection_DjjNGi",
+        "collection_x94Jcx"
+      ],
+      "disabled": true,
+      "settings": {
+        "background-color": "#f6f6f6",
+        "button_title": "View all collection",
+        "button_link": "#"
+      }
+    },
+    "influencer_shop_the_collection_PqnDDM": {
+      "type": "influencer-shop-the-collection",
+      "blocks": {
+        "collection_DX7zmA": {
+          "type": "collection",
+          "settings": {
+            "heading": "Lorem Ipsum is simply dummy text of the printing and typesetting",
+            "content": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>",
+            "button_title": "Shop the collection",
+            "button_link": "#",
+            "placeholder_image": "shopify://shop_images/Mask_group_2.png"
+          }
+        },
+        "collection_YXtgng": {
+          "type": "collection",
+          "settings": {
+            "heading": "Lorem Ipsum is simply dummy text of the printing and typesetting",
+            "content": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>",
+            "button_title": "Shop the collection",
+            "button_link": "#",
+            "placeholder_image": "shopify://shop_images/Mask_group_3.png"
+          }
+        }
+      },
+      "block_order": [
+        "collection_DX7zmA",
+        "collection_YXtgng"
+      ],
+      "disabled": true,
+      "settings": {}
+    },
+    "influencer_faq_T3XwU9": {
+      "type": "influencer-faq",
+      "blocks": {
+        "faq_igaJhp": {
+          "type": "faq",
+          "settings": {
+            "question": "Lorem Ipsum is simply dummy text of the printing?",
+            "answer": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the unknown printer took.</p>"
+          }
+        },
+        "faq_AHPkVL": {
+          "type": "faq",
+          "settings": {
+            "question": "The point of using Lorem Ipsum?",
+            "answer": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the unknown printer took.</p>"
+          }
+        },
+        "faq_FeGH66": {
+          "type": "faq",
+          "settings": {
+            "question": "If you are going to use a passage of Lorem Ipsum you need?",
+            "answer": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the unknown printer took.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq_igaJhp",
+        "faq_AHPkVL",
+        "faq_FeGH66"
+      ],
+      "disabled": true,
+      "settings": {
+        "background-color": "#f6f6f6",
+        "heading": "Frequently Asked Questions",
+        "placeholder_image": "shopify://shop_images/Mask_group_1.png"
+      }
+    },
+    "influencer_explore_R4dpQE": {
+      "type": "influencer-explore",
+      "blocks": {
+        "collection_nYEcNk": {
+          "type": "collection",
+          "settings": {
+            "collection": "ring",
+            "heading": "Rings",
+            "content": "",
+            "collection_image": "shopify://shop_images/image_1.png"
+          }
+        },
+        "collection_XPWYLm": {
+          "type": "collection",
+          "settings": {
+            "collection": "earrings",
+            "heading": "Earrings",
+            "content": "",
+            "collection_image": "shopify://shop_images/image_3.png"
+          }
+        },
+        "collection_7iUnJz": {
+          "type": "collection",
+          "settings": {
+            "collection": "necklace-and-charms",
+            "heading": "Necklace & Pendants",
+            "content": "",
+            "collection_image": "shopify://shop_images/image.png"
+          }
+        },
+        "collection_KUcG78": {
+          "type": "collection",
+          "settings": {
+            "collection": "bracelets",
+            "heading": "Bracelets",
+            "content": "",
+            "collection_image": "shopify://shop_images/Bracelets-min.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "collection_nYEcNk",
+        "collection_XPWYLm",
+        "collection_7iUnJz",
+        "collection_KUcG78"
+      ],
+      "settings": {
+        "heading": "Explore Our Jewelry",
+        "button_title": "View Best Sellers",
+        "button_link": "shopify://collections/best-sellers"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_with_text_overlay_8M7Dd8",
+    "rich_text_QaELfF",
+    "slideshow_9BdgLG",
+    "multi_column_MdnKG9",
+    "featured_collection_BKhnXa",
+    "influencer_testimonial_M4cxCw",
+    "influencer_collections_Ai9hLq",
+    "influencer_shop_the_collection_PqnDDM",
+    "influencer_faq_T3XwU9",
+    "influencer_explore_R4dpQE"
+  ]
+}

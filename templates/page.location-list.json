@@ -1,0 +1,508 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "wrapper": "div.page-location-list",
+  "sections": {
+    "slideshow_gEPh39": {
+      "type": "slideshow",
+      "blocks": {
+        "image_NfX4rX": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/new-york-skyscrapers-at-dusk.jpg",
+            "slide_link": "",
+            "subheading": "",
+            "title": "Book an Appointment",
+            "heading_max_width": 15,
+            "title_size": 50,
+            "title_size_mobile": 46,
+            "use_h1": true,
+            "text": "",
+            "enlarge_text": true,
+            "button_label_1": "Book Here",
+            "button_url_1": "https://outlook.office.com/book/VirtualAppointment@milanodg.com/?ismsaljsauthenabled",
+            "button_label_2": "",
+            "button_url_2": "",
+            "text_alignment": "center left"
+          }
+        }
+      },
+      "block_order": [
+        "image_NfX4rX"
+      ],
+      "name": "Slideshow",
+      "settings": {
+        "height": "fixed",
+        "height_desktop": 600,
+        "height_mobile": 460,
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style": "shadow",
+        "transition": "fade",
+        "navigation": "arrows",
+        "autoplay": true,
+        "autoplay_speed": 7,
+        "accessibility_info": ""
+      }
+    },
+    "main": {
+      "type": "page-story-template",
+      "disabled": true,
+      "settings": {
+        "show_page_content": true
+      }
+    },
+    "rich_text_96Kjy9": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_7hNJBn": {
+          "type": "heading",
+          "settings": {
+            "title": "Every Detail, Designed for You",
+            "use_h1": false
+          }
+        },
+        "text_E3EcDe": {
+          "type": "text",
+          "settings": {
+            "text": "<h5>Whether you are looking for a special piece or need help styling, we offer a jewelry experience that’s tailored to you. Our expert team will guide you through a curated selection — or help you create something entirely custom. From engagement rings to everyday elegance, we make it easy to find (or design) the perfect piece. Book your private appointment today, online or in-person.<br/><br/></h5>",
+            "enlarge_text": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_7hNJBn",
+        "text_E3EcDe"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "height": "medium",
+        "text_alignment": "center",
+        "full_width": false,
+        "color_scheme": "default"
+      }
+    },
+    "ef413958-7768-4ee8-8be8-bf3230f5d29a": {
+      "type": "location-image-text-overlay",
+      "blocks": {
+        "heading_7QPJ8z": {
+          "type": "heading",
+          "settings": {
+            "title": "Our Retail Locations",
+            "heading_max_width": 15,
+            "title_size": 46,
+            "title_size_mobile": 32,
+            "use_h1": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_7QPJ8z"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/canon-beach-haystack.jpg",
+        "height": "fixed",
+        "height_desktop": 400,
+        "height_mobile": 360,
+        "image_link": "",
+        "full_width": true,
+        "text_alignment": "center center",
+        "mobile_overlay_under": false,
+        "overlay_style": "full"
+      }
+    },
+    "f39fdf3e-8e71-492d-a008-647844779d6f": {
+      "type": "location-text-with-images",
+      "blocks": {
+        "template--14659154903173__f39fdf3e-8e71-492d-a008-647844779d6f-text_block-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/Rectangle_25_baa469df-881c-497d-882a-1b92863dae73.png",
+            "image_width": 450,
+            "title": "Skagway",
+            "text": "<p>Alaska · 204 4th Ave, Skagway, AK 99840</p>",
+            "link": "shopify://pages/location-detail-of-skagway"
+          }
+        },
+        "template--14659154903173__f39fdf3e-8e71-492d-a008-647844779d6f-text_block-2": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/location-detail.png",
+            "image_width": 450,
+            "title": "Juneau",
+            "text": "<p>Alaska · 469 South Franklin Street, Juneau 99801</p>",
+            "link": "shopify://pages/location-detail-of-juneau"
+          }
+        },
+        "template--14659154903173__f39fdf3e-8e71-492d-a008-647844779d6f-text_block-3": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/3.png",
+            "image_width": 450,
+            "title": "Ketchikan",
+            "text": "<p>Alaska · 132 Front Street, Ketchikan 99901</p>",
+            "link": "shopify://pages/location-detail-of-ketchikan"
+          }
+        },
+        "93934df4-f406-4e2b-8517-67bc681a772a": {
+          "type": "text_block",
+          "disabled": true,
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/6.png",
+            "image_width": 450,
+            "title": "Nassau - Kings Court",
+            "text": "<p>Nassau · Shop 2, Kings Court Building Bay Street. Nassau, New Providence, Bahamas</p>",
+            "link": "shopify://pages/location-detail-of-nassau"
+          }
+        },
+        "80d0e82a-16ca-42b7-8c2c-5fa049dbed49": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/7.png",
+            "image_width": 450,
+            "title": "Curacao",
+            "text": "<p>Curacao · Breedestrat 39, Punda, Willemstaad, Curacao</p>",
+            "link": "shopify://pages/location-detail-of-curacao"
+          }
+        },
+        "33f00580-57f2-454b-84f2-4e7e90b1a96a": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/8.png",
+            "image_width": 450,
+            "title": "Aruba",
+            "text": "<p>Aruba · L.G. Smith Bldv 15, Oranjestaad, Aruba</p>",
+            "link": "shopify://pages/location-detail-of-aruba"
+          }
+        },
+        "4d2fa434-a91c-4b6d-ad2c-1637876b152f": {
+          "type": "text_block",
+          "disabled": true,
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/9.png",
+            "image_width": 450,
+            "title": "Barbados",
+            "text": "<p>Barbados · Corner of McGregor and Broad Street, Bridgetown</p>",
+            "link": "shopify://pages/location-detail-of-barbados"
+          }
+        },
+        "2ea16608-50d3-400f-b7c5-c249983cf430": {
+          "type": "text_block",
+          "disabled": true,
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/10.png",
+            "image_width": 450,
+            "title": "Milano Diamond Gallery Puerto Rico",
+            "text": "<p>Puerto Rico · 205 Fortaleza Street, Old San Juan, Puerto Rico</p>",
+            "link": "shopify://pages/location-detail-of-puerto-rico"
+          }
+        },
+        "45f6d798-5bf6-45fd-8f1a-4471ceaa0c2b": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/George_Town_4ee4543c-d4b2-4eb0-a2f4-dfbbf176d945.png",
+            "image_width": 450,
+            "title": "George Town - DMS Building",
+            "text": "<p>George Town · DMS Building, 18 Fort Street, George Town, Grand Cayman, Cayman Islands</p>",
+            "link": "shopify://pages/location-detail-of-george-town"
+          }
+        },
+        "788ade31-91ad-42ee-968a-bc4ce7d070f4": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/Jamaicanew.png",
+            "image_width": 450,
+            "title": "Jamaica - Tajmahal Shopping Center",
+            "text": "<p>Jamaica · 17 Tajmahal Shopping Center, St.Ann, Jamaica</p>",
+            "link": "shopify://pages/location-detail-of-jamaica"
+          }
+        },
+        "ea3f8576-9b21-4595-ab22-dc9088e20159": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/Cozumel.png",
+            "image_width": 450,
+            "title": "Cozumel",
+            "text": "<p>Mexico · International Pier Shopping Mall, Location 21, Cozumel, Q.Roo</p>",
+            "link": "shopify://pages/location-detail-of-cozumel-international-pier"
+          }
+        },
+        "ad26aadd-d6de-4c04-8c42-6e7e8067a4a6": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/bonaire_f75fadcb-13f3-4b43-8e1a-d2b4009d5aad.png",
+            "image_width": 450,
+            "title": "Bonaire",
+            "text": "<p>Bonaire · Shop #38 Kaya Grandi, Kralendijk, 599, Netherland Antilles</p>",
+            "link": "shopify://pages/location-detail-of-bonaire-kaya-grandi"
+          }
+        },
+        "b53de8c5-56fe-4ccf-b0a7-ad5959009deb": {
+          "type": "text_block",
+          "disabled": true,
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/St_b0c54e79-f544-4a44-a627-1bc28e4fab9b.png",
+            "image_width": 450,
+            "title": "St.Kitts & Nevis",
+            "text": "<p>St.Kitts & Nevis · Unit #29 Shop #3, Port Zante, Basseterre, Kn0101</p>",
+            "link": "shopify://pages/location-detail-of-st-kitts-nevis"
+          }
+        },
+        "81f184f0-d7cb-45a3-9ff6-5731821ab318": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/stm.png",
+            "image_width": 450,
+            "title": "St.Maarten - Front Street",
+            "text": "<p>St.Maarten · Unit # 53, Front Street, Philipsburg</p>",
+            "link": "shopify://pages/location-detail-of-st-maarten-front-street"
+          }
+        },
+        "967982c2-eefd-49ac-9946-b446390cf6f2": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/Stt.png",
+            "image_width": 450,
+            "title": "St.Thomas",
+            "text": "<p>St.Thomas · 161 Crown Bay, VI, 00802</p>",
+            "link": "shopify://pages/location-detail-of-st-thomas-crown-bay"
+          }
+        },
+        "fea8a980-12df-4063-8396-cb39aa78bff1": {
+          "type": "text_block",
+          "disabled": true,
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/Stt.png",
+            "image_width": 450,
+            "title": "Milano Diamond Gallery St.Thomas",
+            "text": "<p>St.Thomas · 5186 Dronningens Gade Suite # 1, VI, 00802</p>",
+            "link": "shopify://pages/location-detail-of-st-thomas-dronningens"
+          }
+        },
+        "192f4e97-816f-4168-9132-9bbc482aea79": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/Cozumel.png",
+            "image_width": 450,
+            "title": "Cozumel - Puerta Maya Shopping Mall",
+            "text": "<p>Mexico · Puerta Maya Shopping Mall, Location 13B-C-D, Q.Roo, 77600</p>",
+            "link": "shopify://pages/location-detail-of-cozumel-puerta-maya"
+          }
+        },
+        "ac92af70-f966-4a5e-a9a5-cf973a52b2f8": {
+          "type": "text_block",
+          "disabled": true,
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/Cozumel.png",
+            "image_width": 450,
+            "title": "Cozumel - Av Rafael Melgar",
+            "text": "<p>Mexico · Av Rafael Melgar, between 2 & 4, No: 125, Q.Roo, 77600</p>",
+            "link": "shopify://pages/location-detail-of-cozumel-downtown2"
+          }
+        },
+        "0e097139-c323-407e-a377-1ea22980a91a": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/Photo_of_beach_b5a06e90-0a6d-4ec9-af4b-c9f22c1ff9f7.png",
+            "image_width": 450,
+            "title": "Jamaica - Ocho Rios",
+            "text": "<p>Jamaica · 5/11 Island Village, Shopping Centre, Ocho Rios, St. Ann, Jamaica</p>",
+            "link": "shopify://pages/location-detail-of-jamaica-ocho-rios2"
+          }
+        },
+        "d3d65e10-ba27-4919-9e86-0ff4f64b325c": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/Jamaicanew.png",
+            "image_width": 450,
+            "title": "Jamaica - Ocho Rios",
+            "text": "<p>Jamaica · 16 Tajmahal Shopping Center, Ocho Rios, St.Ann, Jamaica</p>",
+            "link": "shopify://pages/location-detail-of-jamaica-ocho-rios3"
+          }
+        },
+        "94ab49f8-4322-41ed-af28-388ed095c53b": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/Jamaicanew.png",
+            "image_width": 450,
+            "title": "Jamaica - Ocho Rios",
+            "text": "<p>Jamaica · 12 Tajmahal Shopping Center, Ocho Rios, St.Ann, Jamaica</p>",
+            "link": "shopify://pages/location-detail-of-jamaica-ocho-rios4"
+          }
+        },
+        "4051f0f1-0cc8-4774-85d7-65e238da75fc": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/jama12.png",
+            "image_width": 450,
+            "title": "Jamaica - Falmouth",
+            "text": "<p>Jamaica · 306 Terminal Plaza, Falmouth, Trelawny, Jamaica</p>",
+            "link": "shopify://pages/location-detail-of-jamaica-falmouth"
+          }
+        },
+        "793a9270-2876-4d0b-ae7e-07dc980983ad": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/jamaica123.png",
+            "image_width": 450,
+            "title": "Jamaica - Ocho Rios",
+            "text": "<p>Jamaica · 3 Milford Road, Ocho Rios, St.Ann, Jamaica</p>",
+            "link": "shopify://pages/location-detail-of-jamaica-ocho-rios5"
+          }
+        },
+        "586dce1f-1a34-464f-99a1-9f91cbd8a553": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/stm.png",
+            "image_width": 450,
+            "title": "St.Maarten - Cyrus Wathey Square",
+            "text": "<p>St.Maarten · Unit # 3, Cyrus Wathey Square, Philipsburg</p>",
+            "link": "shopify://pages/location-detail-of-st-maarten-cyrus-wathey"
+          }
+        },
+        "073f6c76-43f4-4fb9-aac0-e2a54b5b2454": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/stm.png",
+            "image_width": 450,
+            "title": "St.Maarten - A.C Wathey Port Facility",
+            "text": "<p>St.Maarten · Unit # 9, A.C Wathey Port Facility, Philipsburg</p>",
+            "link": "shopify://pages/location-detail-of-st-maarten-a-c-wathey"
+          }
+        },
+        "519034f3-2274-4889-8c69-edfb220debac": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/Turk_and_Caicos.png",
+            "image_width": 450,
+            "title": "Turk and Caicos - Carnival Cruise Terminal 10A",
+            "text": "<p>Turk and Caicos · Carnival Cruise Terminal 10A, Grand Turk, Tkca 1zz</p>",
+            "link": "shopify://pages/location-detail-of-turk-and-caicos-10a"
+          }
+        },
+        "f3834ad3-cf5b-402c-b592-f1c712b78ea0": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/Turk_and_Caicos.png",
+            "image_width": 450,
+            "title": "Turk and Caicos - Carnival Cruise Terminal 5D",
+            "text": "<p>Turk and Caicos · Carnival Cruise Terminal 5D, Grand Turk, Tkca 1zz </p>",
+            "link": "shopify://pages/location-detail-of-turk-and-caicos-5d"
+          }
+        },
+        "c89ec464-b2dc-4a09-9352-caab08ed524e": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/6.png",
+            "image_width": 450,
+            "title": "Nassau - Bay Street",
+            "text": "<p>Nassau · Unit 329 Bay Street, Opposite RBC Bank, Nassau, New Providence, Bahamas</p>",
+            "link": "shopify://pages/location-detail-of-nassau-bay-street-329"
+          }
+        },
+        "0485005c-3e70-410c-b719-a3bda1084720": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/bonaire_f75fadcb-13f3-4b43-8e1a-d2b4009d5aad.png",
+            "image_width": 450,
+            "title": "Bonaire",
+            "text": "<p>Bonaire · Unit B shop #6 South Peir Mall, Kralendijk, 599, Netherland Antilles</p>",
+            "link": "shopify://pages/location-detail-of-bonaire-peir-mall"
+          }
+        },
+        "21c16d09-a49b-4cdb-9321-f4f647caf507": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/George_Town_4ee4543c-d4b2-4eb0-a2f4-dfbbf176d945.png",
+            "image_width": 450,
+            "title": "George Town - 16 Cardinal Avenue",
+            "text": "<p>George Town · 16 Cardinal Avenue, George Town, Grand Cayman,Cayman Islands</p>",
+            "link": "shopify://pages/location-detail-of-george-town1"
+          }
+        }
+      },
+      "block_order": [
+        "template--14659154903173__f39fdf3e-8e71-492d-a008-647844779d6f-text_block-1",
+        "template--14659154903173__f39fdf3e-8e71-492d-a008-647844779d6f-text_block-2",
+        "template--14659154903173__f39fdf3e-8e71-492d-a008-647844779d6f-text_block-3",
+        "93934df4-f406-4e2b-8517-67bc681a772a",
+        "80d0e82a-16ca-42b7-8c2c-5fa049dbed49",
+        "33f00580-57f2-454b-84f2-4e7e90b1a96a",
+        "4d2fa434-a91c-4b6d-ad2c-1637876b152f",
+        "2ea16608-50d3-400f-b7c5-c249983cf430",
+        "45f6d798-5bf6-45fd-8f1a-4471ceaa0c2b",
+        "788ade31-91ad-42ee-968a-bc4ce7d070f4",
+        "ea3f8576-9b21-4595-ab22-dc9088e20159",
+        "ad26aadd-d6de-4c04-8c42-6e7e8067a4a6",
+        "b53de8c5-56fe-4ccf-b0a7-ad5959009deb",
+        "81f184f0-d7cb-45a3-9ff6-5731821ab318",
+        "967982c2-eefd-49ac-9946-b446390cf6f2",
+        "fea8a980-12df-4063-8396-cb39aa78bff1",
+        "192f4e97-816f-4168-9132-9bbc482aea79",
+        "ac92af70-f966-4a5e-a9a5-cf973a52b2f8",
+        "0e097139-c323-407e-a377-1ea22980a91a",
+        "d3d65e10-ba27-4919-9e86-0ff4f64b325c",
+        "94ab49f8-4322-41ed-af28-388ed095c53b",
+        "4051f0f1-0cc8-4774-85d7-65e238da75fc",
+        "793a9270-2876-4d0b-ae7e-07dc980983ad",
+        "586dce1f-1a34-464f-99a1-9f91cbd8a553",
+        "073f6c76-43f4-4fb9-aac0-e2a54b5b2454",
+        "519034f3-2274-4889-8c69-edfb220debac",
+        "f3834ad3-cf5b-402c-b592-f1c712b78ea0",
+        "c89ec464-b2dc-4a09-9352-caab08ed524e",
+        "0485005c-3e70-410c-b719-a3bda1084720",
+        "21c16d09-a49b-4cdb-9321-f4f647caf507"
+      ],
+      "settings": {
+        "title": "",
+        "text_alignment": "left",
+        "button_style": "primary",
+        "use_alt_bg": false
+      }
+    }
+  },
+  "order": [
+    "slideshow_gEPh39",
+    "main",
+    "rich_text_96Kjy9",
+    "ef413958-7768-4ee8-8be8-bf3230f5d29a",
+    "f39fdf3e-8e71-492d-a008-647844779d6f"
+  ]
+}

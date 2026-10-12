@@ -1,0 +1,1452 @@
+.template-suffix-influencer .container.not-in-quickbuy{display:none;}
+/* BV - To display banner in full width if no text found - start */
+.tp-section-banner .tp-section-banner-container-wrapper .tp-section-banner-container.tp-no-content .tp-banner-content {
+    display: none;
+    width: 0 %;
+}
+
+.tp-section-banner .tp-section-banner-container-wrapper .tp-section-banner-container.tp-no-content .tp-banner-image{
+    width: 100%;
+}
+
+.tp-section-banner .tp-section-banner-container-wrapper .tp-section-banner-container.tp-no-content .tp-banner-image img{
+    width: 100%;
+}
+.tp-section-banner .tp-section-banner-container-wrapper .tp-section-banner-container.tp-no-content{
+    min-height: 640px;
+  padding: 0 !important;
+}
+/* BV - To display banner in full width if no text found - end */
+
+/* white button  */
+.white-btn {
+  color: #008cc3;
+  border: 1px solid;
+  background-color: #ffffff !important;
+  border-color: #008cc3;
+}
+.white-btn:hover {
+  color: #ffffff;
+  border: 1px solid;
+  background-color: #008cc3 !important;
+  border-color: #008cc3;
+}
+
+/* Font size 32px with bold */
+
+.section-featured-collection .collection-slider .hometitle,
+.tp-influencer-magazine
+  .tp-influencer-magazine-container
+  .tp-influencer-magazine-content
+  .banner-content-title,
+.tp-influencer-faq
+  .tp-influencer-faq-container
+  .tp-influencer-faq
+  .banner-content-title,
+.tp-influencer-explore
+  .tp-influencer-explore-container
+  .tp-explore-header
+  .banner-content-title {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.125;
+}
+
+/* Font size 26px Bold*/
+
+.tp-influencer-collections
+  .tp-influencer-collection-container
+  .tp-influencer-collections
+  .tp-influncer-collection-card
+  .influencer-collections-content
+  .tp-influncer-collection-card-title,
+.tp-influencer-testimonial
+  .tp-influencer-testimonial-wrapper
+  .tp-influencer-testimonial-container
+  .tp-influencer-testimonial-content
+  p,
+.tp-influencer-faq
+  .tp-influencer-faq-container
+  .tp-influencer-faq
+  .tp-influencer-faq-details
+  .tp-influencer-faq-details-title,
+.tp-influencer-stc
+  .tp-influencer-stc
+  .tp-influencer-stc-details
+  .banner-content-title,
+.tp-influencer-explore
+  .tp-influencer-explore-container
+  .tp-influencer-explore-collections-wrapper
+  .tp-influencer-explore-collections
+  .tp-influencer-explore-collections-card
+  .tp-influencer-explore-collections-title {
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.18;
+}
+
+/* Font size 16 with line height 24px */
+
+.tp-influencer-stc .tp-influencer-stc .tp-influencer-stc-details p,
+.tp-influencer-faq
+  .tp-influencer-faq-container
+  .tp-influencer-faq
+  .tp-influencer-faq-details
+  p,
+.tp-influencer-magazine
+  .tp-influencer-magazine-container
+  .tp-influencer-magazine-content
+  p,
+.tp-influencer-collections
+  .tp-influencer-collection-container
+  .tp-influencer-collections
+  .tp-influncer-collection-card
+  .influencer-collections-content
+  p,
+.tp-influencer-explore
+  .tp-influencer-explore-container
+  .tp-influencer-explore-collections-wrapper
+  .tp-influencer-explore-collections
+  .tp-influencer-explore-collections-card
+  p {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.tp-section-banner,
+.section-featured-collection,
+.tp-influencer-collections,
+.tp-influencer-magazine,
+.tp-influencer-testimonial,
+.tp-influencer-faq,
+.tp-influencer-stc,
+.tp-influencer-explore {
+  overflow-x: hidden;
+}
+/* section 1 */
+
+.tp-section-banner .tp-section-banner-container-wrapper {
+  position: relative;
+}
+.tp-section-banner
+  .tp-section-banner-container-wrapper
+  .tp-section-banner-container {
+  display: flex;
+  padding: 120px 0;
+}
+.tp-section-banner
+  .tp-section-banner-container-wrapper
+  .tp-section-banner-container
+  .tp-banner-content {
+  width: 50%;
+  padding-right: 160px;
+}
+.tp-section-banner
+  .tp-section-banner-container-wrapper
+  .tp-section-banner-container
+  .tp-banner-content
+  .banner-content-title {
+  font-size: 80px;
+  margin-bottom: 30px;
+  line-height: 1.154;
+}
+.tp-section-banner
+  .tp-section-banner-container-wrapper
+  .tp-section-banner-container
+  .tp-banner-content
+  p {
+  font-size: 32px;
+  line-height: 1.154;
+  margin-bottom: 0;
+}
+.tp-section-banner
+  .tp-section-banner-container-wrapper
+  .tp-section-banner-container
+  .tp-banner-image {
+  position: absolute;
+  top: 50%;
+  left: auto;
+  right: 0;
+  transform: translateY(-50%);
+  width: 50%;
+  height: 100%;
+}
+.tp-section-banner
+  .tp-section-banner-container-wrapper
+  .tp-section-banner-container
+  .tp-banner-image
+  img {
+  height: 100%;
+  display: block;
+}
+
+/* section 2 */
+
+.section-featured-collection {
+  padding: 50px 0;
+}
+
+.section-featured-collection .collection-slider-row {
+  margin-top: 0;
+}
+
+.section-featured-collection .view-all {
+  margin-bottom: 0;
+}
+
+/*  section 3*/
+
+.tp-influencer-collections {
+  padding: 100px 0;
+  background-color: #f6f6f6;
+}
+
+.tp-influencer-collections .tp-influencer-collection-container {
+  display: flex;
+  column-gap: 20px;
+  flex-wrap: wrap;
+}
+
+.tp-influencer-collections .tp-influencer-collection-container {
+  display: flex;
+  gap: 40px 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.tp-influencer-collections
+  .tp-influencer-collection-container
+  .tp-influencer-collections {
+  width: auto;
+  max-width: calc(33.33% - 13.33px);
+  flex: 0 0 calc(33.33% - 13.33px);
+}
+
+.tp-influencer-collections
+  .tp-influencer-collection-container
+  .tp-influencer-collections
+  .tp-influncer-collection-card {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+
+.tp-influencer-collections
+  .tp-influencer-collection-container
+  .tp-influencer-collections:nth-child(1)
+  .tp-influncer-collection-card,
+.tp-influencer-collections
+  .tp-influencer-collection-container
+  .tp-influencer-collections:nth-child(3)
+  .tp-influncer-collection-card {
+  flex-direction: column-reverse;
+  padding-top: 83px;
+}
+
+.tp-influencer-collections
+  .tp-influencer-collection-container
+  .tp-influencer-collections
+  .tp-influncer-collection-card
+  .influencer-collections-content
+  > * {
+  margin-bottom: 0;
+}
+.tp-influencer-collections
+  .tp-influencer-collection-container
+  .tp-influencer-collections
+  .tp-influncer-collection-card
+  .influencer-collections-content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.tp-influencer-collections
+  .tp-influencer-collection-container
+  .tp-influencer-collections
+  .tp-influncer-collection-card
+  .influencer-collections-content
+  p {
+  color: #363636;
+}
+
+.tp-influencer-collections
+  .tp-influencer-collection-container
+  .tp-influencer-collection-container {
+  width: auto;
+  max-width: 100%;
+  flex: 0 0 100%;
+}
+
+/* section 4 */
+
+.tp-influencer-magazine {
+  padding: 100px 0;
+}
+.tp-influencer-magazine .tp-influencer-magazine-container {
+  display: flex;
+  position: relative;
+}
+.tp-influencer-magazine
+  .tp-influencer-magazine-container
+  .tp-influencer-magazine-content {
+  width: auto;
+  max-width: 57.75%;
+  flex: 0 0 57.75%;
+  margin-top: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 190px 220px 190px 140px;
+  background-color: #f6f6f6;
+}
+.tp-influencer-magazine
+  .tp-influencer-magazine-container
+  .tp-influencer-magazine-content
+  .banner-content-title {
+  margin-bottom: 20px;
+}
+.tp-influencer-magazine
+  .tp-influencer-magazine-container
+  .tp-influencer-magazine-content
+  p {
+  margin-bottom: 0;
+}
+.tp-influencer-magazine
+  .tp-influencer-magazine-container
+  .tp-influencer-magazine-image {
+  position: absolute;
+  top: 0;
+  left: auto;
+  right: 0;
+  width: 50%;
+}
+.tp-influencer-magazine
+  .tp-influencer-magazine-container
+  .tp-influencer-magazine-image
+  img {
+  display: block;
+  width: 100%;
+}
+
+/* section 5 */
+
+.tp-influencer-testimonial {
+  padding-bottom: 100px;
+}
+.tp-influencer-testimonial .tp-influencer-testimonial-wrapper {
+  padding: 0 120px;
+}
+
+.tp-influencer-testimonial .tp-influencer-testimonial-wrapper .divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tp-influencer-testimonial
+  .tp-influencer-testimonial-wrapper
+  .divider
+  .divider-line {
+  flex-grow: 1;
+  height: 1px;
+  background-color: #36363680;
+}
+
+.tp-influencer-testimonial
+  .tp-influencer-testimonial-wrapper
+  .divider
+  .divider-circle {
+  width: 60px;
+  height: 60px;
+}
+.tp-influencer-testimonial
+  .tp-influencer-testimonial-wrapper
+  .divider
+  .divider-circle
+  img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.tp-influencer-testimonial
+  .tp-influencer-testimonial-wrapper
+  .tp-influencer-testimonial-container {
+  border-bottom: 1px solid #36363680;
+  padding: 30px 80px 60px;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 100px;
+}
+.tp-influencer-testimonial
+  .tp-influencer-testimonial-wrapper
+  .tp-influencer-testimonial-container
+  .tp-influencer-testimonial-image {
+  width: auto;
+  max-width: 220px;
+  flex: 0 0 220px;
+}
+.tp-influencer-testimonial
+  .tp-influencer-testimonial-wrapper
+  .tp-influencer-testimonial-container
+  .tp-influencer-testimonial-image
+  img {
+  display: block;
+}
+.tp-influencer-testimonial
+  .tp-influencer-testimonial-wrapper
+  .tp-influencer-testimonial-container
+  .tp-influencer-testimonial-content {
+  width: auto;
+  max-width: calc(100% - 360px);
+  flex: 0 0 calc(100% - 360px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 20px;
+  padding: 10px 0;
+}
+.tp-influencer-testimonial
+  .tp-influencer-testimonial-wrapper
+  .tp-influencer-testimonial-container
+  .tp-influencer-testimonial-content
+  p {
+  margin-bottom: 0;
+}
+.tp-influencer-testimonial
+  .tp-influencer-testimonial-wrapper
+  .tp-influencer-testimonial-container
+  .tp-influencer-testimonial-content
+  .tp-influencer-testimonial-content-title {
+  margin-bottom: 0;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.364;
+}
+
+/* section 6 */
+
+.tp-influencer-faq {
+  padding: 100px 0;
+  background-color: #f6f6f6;
+}
+.tp-influencer-faq .tp-influencer-faq-container {
+  padding: 0 120px;
+  display: flex;
+  justify-content: space-between;
+  column-gap: 130px;
+}
+.tp-influencer-faq .tp-influencer-faq-container .tp-influencer-faq {
+  width: auto;
+  max-width: calc(44.5% - 65px);
+  flex: 0 0 calc(44.5% - 65px);
+}
+.tp-influencer-faq .tp-influencer-faq-container .tp-influencer-faq-image {
+  width: auto;
+  max-width: calc(55.5% - 65px);
+  flex: 0 0 calc(55.5% - 65px);
+}
+.tp-influencer-faq .tp-influencer-faq-container .tp-influencer-faq-image img {
+  display: block;
+  width: 100%;
+}
+
+.tp-influencer-faq
+  .tp-influencer-faq-container
+  .tp-influencer-faq
+  .banner-content-title {
+  margin-bottom: 30px;
+}
+.tp-influencer-faq
+  .tp-influencer-faq-container
+  .tp-influencer-faq
+  .tp-influencer-faq-details
+  .tp-influencer-faq-details-title {
+  margin-bottom: 20px;
+}
+.tp-influencer-faq
+  .tp-influencer-faq-container
+  .tp-influencer-faq
+  .tp-influencer-faq-details
+  p {
+  margin-bottom: 0;
+  color: #363636b3;
+}
+.tp-influencer-faq
+  .tp-influencer-faq-container
+  .tp-influencer-faq
+  .tp-influencer-faq-details:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+/* section 7 */
+
+.tp-influencer-stc {
+  padding: 100px 0;
+}
+
+.tp-influencer-stc .tp-influencer-stc {
+  position: relative;
+  min-height: 710px;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1920px;
+}
+.tp-influencer-stc .tp-influencer-stc .container {
+  display: flex;
+  column-gap: 10px;
+}
+
+.tp-influencer-stc .tp-influencer-stc:first-child .container {
+  flex-direction: row-reverse;
+}
+
+.tp-influencer-stc .tp-influencer-stc:nth-child(2) .container {
+  flex-direction: row;
+}
+
+.tp-influencer-stc .tp-influencer-stc .tp-influencer-stc-image {
+  position: absolute;
+  top: 0;
+  width: 50%;
+  height: 100%;
+}
+.tp-influencer-stc .tp-influencer-stc:first-child .tp-influencer-stc-image {
+  left: 0;
+}
+.tp-influencer-stc .tp-influencer-stc:nth-child(2) .tp-influencer-stc-image {
+  left: auto;
+  right: 0;
+}
+
+.tp-influencer-stc .tp-influencer-stc .tp-influencer-stc-image img {
+  display: block;
+  height: 100%;
+}
+
+.tp-influencer-stc .tp-influencer-stc .tp-influencer-stc-details {
+  padding: 20px 120px;
+  width: calc(50% - 5px);
+}
+.tp-influencer-stc
+  .tp-influencer-stc
+  .tp-influencer-stc-details
+  .banner-content-title {
+  margin-bottom: 0;
+}
+.tp-influencer-stc .tp-influencer-stc .tp-influencer-stc-details p {
+  margin: 20px 0 30px;
+}
+
+/* section 8 */
+
+.tp-influencer-explore {
+  padding-bottom: 100px;
+}
+.tp-influencer-explore .container {
+  max-width: 1920px;
+}
+.tp-influencer-explore .tp-influencer-explore-container .tp-explore-header {
+  text-align: center;
+}
+.tp-influencer-explore
+  .tp-influencer-explore-container
+  .tp-explore-header
+  .banner-content-title {
+  margin-bottom: 0;
+}
+.tp-influencer-explore
+  .tp-influencer-explore-container
+  .tp-influencer-explore-collections-wrapper {
+  margin: 30px 0 40px;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 26px;
+}
+.tp-influencer-explore
+  .tp-influencer-explore-container
+  .tp-influencer-explore-collections-wrapper
+  .tp-influencer-explore-collections {
+  width: auto;
+  max-width: calc(25% - 19.5px);
+  flex: 0 0 calc(25% - 19.5px);
+}
+.tp-influencer-explore
+  .tp-influencer-explore-container
+  .tp-influencer-explore-collections-wrapper
+  .tp-influencer-explore-collections
+  .tp-influencer-explore-collections-card {
+  display: block;
+}
+.tp-influencer-explore
+  .tp-influencer-explore-container
+  .tp-influencer-explore-collections-wrapper
+  .tp-influencer-explore-collections
+  .tp-influencer-explore-collections-card
+  img {
+  display: block;
+  width: 100%;
+}
+.tp-influencer-explore
+  .tp-influencer-explore-container
+  .tp-influencer-explore-collections-wrapper
+  .tp-influencer-explore-collections
+  .tp-influencer-explore-collections-card
+  .tp-influencer-explore-collections-title {
+  margin: 30px 0 20px;
+}
+.tp-influencer-explore
+  .tp-influencer-explore-container
+  .tp-influencer-explore-collections-wrapper
+  .tp-influencer-explore-collections
+  .tp-influencer-explore-collections-card
+  p {
+  color: #363636;
+  margin-bottom: 0;
+}
+.tp-influencer-explore
+  .tp-influencer-explore-container
+  .tp-influencer-explore-buttons {
+  text-align: center;
+}
+
+.tp-influencer-explore .scrolling-image-list,
+.tp-influencer-explore .tp-influencer-collection-container {
+  display: none;
+}
+
+@media only screen and (max-width: 1280px) {
+  /* font size 26px bold to 22px */
+
+  .tp-influencer-collections
+    .tp-influencer-collection-container
+    .tp-influencer-collections
+    .tp-influncer-collection-card
+    .influencer-collections-content
+    .tp-influncer-collection-card-title,
+  .tp-influencer-testimonial
+    .tp-influencer-testimonial-wrapper
+    .tp-influencer-testimonial-container
+    .tp-influencer-testimonial-content
+    p,
+  .tp-influencer-faq
+    .tp-influencer-faq-container
+    .tp-influencer-faq
+    .tp-influencer-faq-details
+    .tp-influencer-faq-details-title,
+  .tp-influencer-stc
+    .tp-influencer-stc
+    .tp-influencer-stc-details
+    .banner-content-title,
+  .tp-influencer-explore
+    .tp-influencer-explore-container
+    .tp-influencer-explore-collections-wrapper
+    .tp-influencer-explore-collections
+    .tp-influencer-explore-collections-card
+    .tp-influencer-explore-collections-title {
+    font-size: 22px;
+  }
+
+  /* Font size 32px with bold to 26px */
+
+  .section-featured-collection .collection-slider .hometitle,
+  .tp-influencer-magazine
+    .tp-influencer-magazine-container
+    .tp-influencer-magazine-content
+    .banner-content-title,
+  .tp-influencer-faq
+    .tp-influencer-faq-container
+    .tp-influencer-faq
+    .banner-content-title,
+  .tp-influencer-explore
+    .tp-influencer-explore-container
+    .tp-explore-header
+    .banner-content-title {
+    font-size: 26px;
+  }
+
+  /* section 1 */
+
+  .tp-section-banner
+    .tp-section-banner-container-wrapper
+    .tp-section-banner-container {
+    padding: 80px 0;
+  }
+  .tp-section-banner
+    .tp-section-banner-container-wrapper
+    .tp-section-banner-container
+    .tp-banner-content {
+    padding-right: 120px;
+  }
+  .tp-section-banner
+    .tp-section-banner-container-wrapper
+    .tp-section-banner-container
+    .tp-banner-content
+    .banner-content-title {
+    font-size: 60px;
+  }
+  .tp-section-banner
+    .tp-section-banner-container-wrapper
+    .tp-section-banner-container
+    .tp-banner-content
+    p {
+    font-size: 26px;
+  }
+
+  /* section 2 */
+
+  .section-featured-collection {
+    padding: 70px 0;
+  }
+  .section-featured-collection .collection-slider .hometitle {
+    font-size: 26px;
+  }
+
+  /* section 3 */
+  .tp-influencer-collections {
+    padding: 70px 0;
+  }
+
+  /* section 4 */
+
+  .tp-influencer-magazine {
+    padding: 70px 0;
+  }
+
+  .tp-influencer-magazine
+    .tp-influencer-magazine-container
+    .tp-influencer-magazine-content {
+    margin-top: 80px;
+    padding: 140px 150px 140px 80px;
+  }
+
+  /* section 5 */
+
+  .tp-influencer-testimonial {
+    padding-bottom: 70px;
+  }
+  .tp-influencer-testimonial .tp-influencer-testimonial-wrapper {
+    padding: 0 80px;
+  }
+
+  .tp-influencer-testimonial
+    .tp-influencer-testimonial-wrapper
+    .divider
+    .divider-circle {
+    width: 40px;
+    height: 40px;
+  }
+  .tp-influencer-testimonial
+    .tp-influencer-testimonial-wrapper
+    .tp-influencer-testimonial-container {
+    padding: 30px 40px 40px;
+    column-gap: 60px;
+  }
+
+  .tp-influencer-testimonial
+    .tp-influencer-testimonial-wrapper
+    .tp-influencer-testimonial-container
+    .tp-influencer-testimonial-content {
+    max-width: calc(100% - 280px);
+    flex: 0 0 calc(100% - 280px);
+  }
+  .tp-influencer-testimonial
+    .tp-influencer-testimonial-wrapper
+    .tp-influencer-testimonial-container
+    .tp-influencer-testimonial-content
+    .tp-influencer-testimonial-content-title {
+    font-size: 16px;
+  }
+
+  /* section 6 */
+
+  .tp-influencer-faq {
+    padding: 70px 0;
+  }
+  .tp-influencer-faq .tp-influencer-faq-container {
+    padding: 0 80px;
+    column-gap: 80px;
+  }
+  .tp-influencer-faq .tp-influencer-faq-container .tp-influencer-faq {
+    max-width: calc(50% - 40px);
+    flex: 0 0 calc(50% - 40px);
+  }
+  .tp-influencer-faq .tp-influencer-faq-container .tp-influencer-faq-image {
+    width: auto;
+    max-width: calc(50% - 40px);
+    flex: 0 0 calc(50% - 40px);
+  }
+
+  .tp-influencer-faq
+    .tp-influencer-faq-container
+    .tp-influencer-faq
+    .banner-content-title {
+    margin-bottom: 20px;
+  }
+
+  .tp-influencer-faq
+    .tp-influencer-faq-container
+    .tp-influencer-faq
+    .tp-influencer-faq-details:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  /* section 7 */
+
+  .tp-influencer-stc {
+    padding: 70px 0;
+  }
+
+  .tp-influencer-stc .tp-influencer-stc {
+    min-height: 500px;
+  }
+
+  .tp-influencer-stc .tp-influencer-stc .tp-influencer-stc-details {
+    padding: 20px 60px;
+  }
+
+  .tp-influencer-stc .tp-influencer-stc .tp-influencer-stc-details p {
+    margin: 20px 0;
+  }
+
+  /* section 8 */
+
+  .tp-influencer-explore {
+    padding-bottom: 70px;
+  }
+
+  .tp-influencer-explore
+    .tp-influencer-explore-container
+    .tp-influencer-explore-collections-wrapper {
+    margin: 20px 0 30px;
+    column-gap: 20px;
+  }
+  .tp-influencer-explore
+    .tp-influencer-explore-container
+    .tp-influencer-explore-collections-wrapper
+    .tp-influencer-explore-collections {
+    max-width: calc(25% - 15px);
+    flex: 0 0 calc(25% - 15px);
+  }
+
+  .tp-influencer-explore
+    .tp-influencer-explore-container
+    .tp-influencer-explore-collections-wrapper
+    .tp-influencer-explore-collections
+    .tp-influencer-explore-collections-card
+    .tp-influencer-explore-collections-title {
+    margin: 20px 0;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  /* section 1 */
+  .tp-section-banner
+    .tp-section-banner-container-wrapper
+    .tp-section-banner-container {
+    padding: 40px 0;
+  }
+  .tp-section-banner
+    .tp-section-banner-container-wrapper
+    .tp-section-banner-container
+    .tp-banner-content {
+    padding-right: 80px;
+  }
+
+  /* section 2 */
+
+  .section-featured-collection {
+    padding: 40px 0;
+  }
+
+  /* section 3 */
+
+  .tp-influencer-collections {
+    padding: 40px 0;
+  }
+
+  .tp-influencer-collections
+    .tp-influencer-collection-container
+    .tp-influencer-collections {
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
+
+  .tp-influencer-collections
+    .tp-influencer-collection-container
+    .tp-influencer-collections
+    .tp-influncer-collection-card {
+    flex-direction: row;
+    column-gap: 30px;
+  }
+  .tp-influencer-collections
+    .tp-influencer-collection-container
+    .tp-influencer-collections
+    .tp-influncer-collection-card
+    img {
+    width: auto;
+    max-width: 50%;
+    flex: 0 0 50%;
+  }
+
+  .tp-influencer-collections
+    .tp-influencer-collection-container
+    .tp-influencer-collections
+    .tp-influncer-collection-card
+    .influencer-collections-content {
+    justify-content: center;
+    padding: 20px 0;
+  }
+
+  .tp-influencer-collections
+    .tp-influencer-collection-container
+    .tp-influencer-collections:nth-child(1)
+    .tp-influncer-collection-card,
+  .tp-influencer-collections
+    .tp-influencer-collection-container
+    .tp-influencer-collections:nth-child(3)
+    .tp-influncer-collection-card {
+    flex-direction: row-reverse;
+    padding-top: 0;
+  }
+
+  .tp-influencer-collections .tp-influencer-collection-container {
+    gap: 0;
+  }
+  .tp-influencer-collections
+    .tp-influencer-collection-container
+    .tp-influencer-collection-container {
+    margin-top: 40px;
+  }
+
+  /* section 4 */
+
+  .tp-influencer-magazine {
+    padding: 40px 0;
+  }
+
+  .tp-influencer-magazine
+    .tp-influencer-magazine-container
+    .tp-influencer-magazine-content {
+    margin-top: 100px;
+    padding: 80px 100px 81px 40px;
+  }
+
+  /* section 5 */
+
+  .tp-influencer-testimonial {
+    padding-bottom: 40px;
+  }
+  .tp-influencer-testimonial .tp-influencer-testimonial-wrapper {
+    padding: 0 40px;
+  }
+  .tp-influencer-testimonial
+    .tp-influencer-testimonial-wrapper
+    .divider
+    .divider-circle {
+    width: 30px;
+    height: 30px;
+  }
+
+  .tp-influencer-testimonial
+    .tp-influencer-testimonial-wrapper
+    .tp-influencer-testimonial-container
+    .tp-influencer-testimonial-content
+    .tp-influencer-testimonial-content-title {
+    font-size: 14px;
+  }
+  .tp-influencer-testimonial
+    .tp-influencer-testimonial-wrapper
+    .tp-influencer-testimonial-container {
+    padding: 20px 30px 30px;
+    column-gap: 40px;
+  }
+
+  .tp-influencer-testimonial
+    .tp-influencer-testimonial-wrapper
+    .tp-influencer-testimonial-container
+    .tp-influencer-testimonial-content {
+    max-width: calc(100% - 260px);
+    flex: 0 0 calc(100% - 260px);
+  }
+
+  /* section 6 */
+
+  .tp-influencer-faq {
+    padding: 40px 0;
+  }
+
+  .tp-influencer-faq
+    .container.mobile-full-container:has(> .tp-influencer-faq-container) {
+    margin: 0 -20px;
+    padding: 0 20px;
+  }
+  .tp-influencer-faq .tp-influencer-faq-container {
+    padding: 0;
+    flex-direction: column-reverse;
+    gap: 40px 0;
+  }
+  .tp-influencer-faq .tp-influencer-faq-container .tp-influencer-faq {
+    max-width: 100%;
+    flex: 0 0 100%;
+    padding: 0 20px;
+  }
+  .tp-influencer-faq .tp-influencer-faq-container .tp-influencer-faq-image {
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
+
+  .tp-influencer-faq
+    .tp-influencer-faq-container
+    .tp-influencer-faq
+    .banner-content-title {
+    margin-bottom: 30px;
+  }
+  .tp-influencer-faq
+    .tp-influencer-faq-container
+    .tp-influencer-faq
+    .tp-influencer-faq-details
+    .tp-influencer-faq-details-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .tp-influencer-faq
+    .tp-influencer-faq-container
+    .tp-influencer-faq
+    .tp-influencer-faq-details:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  /* section 7 */
+
+  .tp-influencer-stc {
+    padding: 40px 0;
+  }
+
+  .tp-influencer-stc .tp-influencer-stc {
+    min-height: 450px;
+  }
+
+  .tp-influencer-stc .tp-influencer-stc .tp-influencer-stc-details {
+    padding: 20px;
+  }
+
+  /* section 8 */
+
+  .tp-influencer-explore {
+    padding-bottom: 40px;
+  }
+  .tp-influencer-explore
+    .tp-influencer-explore-container
+    .tp-influencer-explore-collections-wrapper {
+    gap: 40px 20px;
+  }
+  .tp-influencer-explore
+    .tp-influencer-explore-container
+    .tp-influencer-explore-collections-wrapper
+    .tp-influencer-explore-collections {
+    max-width: calc(50% - 10px);
+    flex: 0 0 calc(50% - 10px);
+  }
+}
+@media only screen and (max-width: 768px) {
+   .tp-section-banner .tp-section-banner-container-wrapper .tp-section-banner-container.tp-no-content{
+        min-height: auto;
+    }
+  /* Mobile Full container for images  */
+  .container.mobile-full-container {
+    margin: 0 0 0 -20px;
+    padding: 0 0 0 20px;
+  }
+
+  /* Font size 32px with bold to 26px and at mobile 20px */
+
+  .section-featured-collection .collection-slider .hometitle,
+  .tp-influencer-magazine
+    .tp-influencer-magazine-container
+    .tp-influencer-magazine-content
+    .banner-content-title,
+  .tp-influencer-faq
+    .tp-influencer-faq-container
+    .tp-influencer-faq
+    .banner-content-title,
+  .tp-influencer-explore
+    .tp-influencer-explore-container
+    .tp-explore-header
+    .banner-content-title {
+    font-size: 20px;
+  }
+
+  /* font size 26px bold to 22px and at mobile 18px */
+
+  .tp-influencer-collections
+    .tp-influencer-collection-container
+    .tp-influencer-collections
+    .tp-influncer-collection-card
+    .influencer-collections-content
+    .tp-influncer-collection-card-title,
+  .tp-influencer-testimonial
+    .tp-influencer-testimonial-wrapper
+    .tp-influencer-testimonial-container
+    .tp-influencer-testimonial-content
+    p,
+  .tp-influencer-faq
+    .tp-influencer-faq-container
+    .tp-influencer-faq
+    .tp-influencer-faq-details
+    .tp-influencer-faq-details-title,
+  .tp-influencer-stc
+    .tp-influencer-stc
+    .tp-influencer-stc-details
+    .banner-content-title,
+  .tp-influencer-explore
+    .tp-influencer-explore-container
+    .tp-influencer-explore-collections-wrapper
+    .tp-influencer-explore-collections
+    .tp-influencer-explore-collections-card
+    .tp-influencer-explore-collections-title {
+    font-size: 18px;
+  }
+
+  /* font size 16px to 14px with line height 24px to 22px */
+
+  .tp-influencer-stc .tp-influencer-stc .tp-influencer-stc-details p,
+  .tp-influencer-faq
+    .tp-influencer-faq-container
+    .tp-influencer-faq
+    .tp-influencer-faq-details
+    p,
+  .tp-influencer-magazine
+    .tp-influencer-magazine-container
+    .tp-influencer-magazine-content
+    p,
+  .tp-influencer-collections
+    .tp-influencer-collection-container
+    .tp-influencer-collections
+    .tp-influncer-collection-card
+    .influencer-collections-content
+    p,
+  .tp-influencer-explore
+    .tp-influencer-explore-container
+    .tp-influencer-explore-collections-wrapper
+    .tp-influencer-explore-collections
+    .tp-influencer-explore-collections-card
+    p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  /* section 1 */
+
+  .tp-section-banner
+    .tp-section-banner-container-wrapper
+    .tp-section-banner-container {
+    flex-direction: column;
+  }
+  .tp-section-banner
+    .tp-section-banner-container-wrapper
+    .tp-section-banner-container
+    .tp-banner-image {
+    width: 100%;
+    transform: none;
+    position: static;
+  }
+  .tp-section-banner
+    .tp-section-banner-container-wrapper
+    .tp-section-banner-container
+    .tp-banner-content {
+    width: 100%;
+  }
+  .tp-section-banner
+    .tp-section-banner-container-wrapper
+    .tp-section-banner-container
+    .tp-banner-content {
+    padding: 0 20px 40px;
+  }
+
+  .tp-section-banner
+    .tp-section-banner-container-wrapper
+    .tp-section-banner-container
+    .tp-banner-content
+    .banner-content-title {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+
+  .tp-section-banner
+    .tp-section-banner-container-wrapper
+    .tp-section-banner-container
+    .tp-banner-content
+    p {
+    font-size: 20px;
+  }
+
+  /* section 2 */
+  .section-featured-collection {
+    padding-top: 40px;
+  }
+
+  /* section 3 */
+
+  .tp-influencer-collections {
+    padding-top: 0;
+  }
+
+  .tp-influencer-collections
+    .tp-influencer-collection-container
+    .tp-influencer-collections
+    .tp-influncer-collection-card,
+  .tp-influencer-collections
+    .tp-influencer-collection-container
+    .tp-influencer-collections:nth-child(1)
+    .tp-influncer-collection-card,
+  .tp-influencer-collections
+    .tp-influencer-collection-container
+    .tp-influencer-collections:nth-child(3)
+    .tp-influncer-collection-card {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+
+  .tp-influencer-collections
+    .tp-influencer-collection-container
+    .tp-influencer-collections
+    .tp-influncer-collection-card
+    .influencer-collections-content {
+    row-gap: 10px;
+    padding: 0 20px;
+    justify-content: center;
+  }
+
+  .tp-influencer-collections
+    .tp-influencer-collection-container
+    .tp-influencer-collections
+    .tp-influncer-collection-card
+    img {
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
+
+  .tp-influencer-collections .tp-influencer-collection-container {
+    row-gap: 20px;
+  }
+
+  .tp-influencer-collections
+    .tp-influencer-collection-container
+    .tp-influencer-collection-container {
+    margin-top: 0;
+  }
+
+  /* section 4 */
+
+  .tp-influencer-magazine .tp-influencer-magazine-container {
+    flex-direction: column-reverse;
+    row-gap: 0;
+  }
+
+  .tp-influencer-magazine
+    .tp-influencer-magazine-container
+    .tp-influencer-magazine-image {
+    position: static;
+    width: 100%;
+  }
+
+  .tp-influencer-magazine
+    .tp-influencer-magazine-container
+    .tp-influencer-magazine-content {
+    margin-top: 0;
+    padding: 40px 20px;
+    max-width: 100%;
+    flex: 0 0 100%;
+    text-align: center;
+  }
+
+  /* section 5 */
+  .tp-influencer-testimonial .tp-influencer-testimonial-wrapper {
+    padding: 0 20px;
+  }
+  .tp-influencer-testimonial
+    .tp-influencer-testimonial-wrapper
+    .tp-influencer-testimonial-container
+    .tp-influencer-testimonial-image {
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
+
+  .tp-influencer-testimonial
+    .tp-influencer-testimonial-wrapper
+    .tp-influencer-testimonial-container
+    .tp-influencer-testimonial-content {
+    max-width: 100%;
+    flex: 0 0 100%;
+    padding: 0;
+    row-gap: 10px;
+  }
+
+  .tp-influencer-testimonial
+    .tp-influencer-testimonial-wrapper
+    .tp-influencer-testimonial-container {
+    row-gap: 20px;
+    padding: 20px 0;
+  }
+
+  .tp-influencer-testimonial
+    .tp-influencer-testimonial-wrapper
+    .tp-influencer-testimonial-container
+    .tp-influencer-testimonial-image
+    img {
+    width: 100%;
+  }
+
+  .tp-influencer-testimonial
+    .tp-influencer-testimonial-wrapper
+    .tp-influencer-testimonial-container
+    .tp-influencer-testimonial-content
+    p {
+    font-size: 14px;
+  }
+
+  /* section 7 */
+
+  .tp-influencer-stc .tp-influencer-stc .container {
+    gap: 20px 0;
+  }
+
+  .tp-influencer-stc .tp-influencer-stc:first-child .container,
+  .tp-influencer-stc .tp-influencer-stc:nth-child(2) .container {
+    flex-direction: column-reverse;
+  }
+
+  .tp-influencer-stc .tp-influencer-stc .tp-influencer-stc-image {
+    position: static;
+    width: 100%;
+    height: auto;
+  }
+
+  .tp-influencer-stc .tp-influencer-stc:first-child {
+    margin-bottom: 40px;
+  }
+
+  .tp-influencer-stc .tp-influencer-stc .tp-influencer-stc-details {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  /* section 8 */
+
+  .tp-influencer-explore
+    .tp-influencer-explore-container
+    .tp-influencer-explore-collections-wrapper
+    .tp-influencer-explore-collections
+    .tp-influencer-explore-collections-card
+    .tp-influencer-explore-collections-title {
+    margin: 20px 0 10px;
+  }
+  .tp-influencer-explore
+    .tp-influencer-explore-container
+    .tp-influencer-explore-collections-wrapper {
+    padding: 0 20px;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  /* section 8 */
+
+  .tp-influencer-explore
+    .tp-influencer-explore-container
+    .tp-influencer-explore-collections-wrapper
+    .tp-influencer-explore-collections {
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
+  .tp-influencer-explore
+    > .container.mobile-full-container
+    .tp-influencer-explore-collections-wrapper,
+  .tp-influencer-explore
+    > .container.mobile-full-container
+    .tp-influencer-explore-buttons {
+    display: none;
+  }
+  .tp-influencer-explore .scrolling-image-list,
+  .tp-influencer-explore .tp-influencer-collection-container {
+    display: block;
+  }
+
+  .tp-influencer-explore .scrolling-image-list {
+    padding: 20px 0 30px;
+  }
+  .tp-influencer-explore .tp-influencer-collection-container {
+    text-align: center;
+  }
+  .tp-influencer-explore
+    .scrolling-image-list
+    .scrolling-image-list__image
+    img {
+    width: 100%;
+    display: block;
+  }
+  .tp-influencer-explore .scrolling-image-list .scrolling-image-list__content {
+    margin: 20px 0 20px;
+    padding: 0;
+  }
+  .tp-influencer-explore
+    .scrolling-image-list
+    .scrolling-image-list__content
+    * {
+    margin: 0;
+  }
+  .tp-influencer-explore
+    .scrolling-image-list
+    .scrolling-image-list__content
+    .subheading {
+    text-transform: none;
+  }
+  .tp-influencer-explore
+    .scrolling-image-list
+    .scrolling-image-list__content
+    .subheading
+    > p {
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  .tp-influencer-explore
+    .scrolling-image-list
+    .scrolling-image-list__content
+    .heading {
+    font-size: 18px;
+    line-height: 1.125;
+    font-weight: 700;
+  }
+  .tp-influencer-explore .scrolling-image-list .scrolling-image-list-dots {
+    margin: 0;
+  }
+}
+
+.spaced-column.gap-column {
+    margin-top: var(--section-padding) !important;
+}
+
+.logo-area__right .icon, .logo-area__left .icon {
+    /* color: #008cc2; */
+    color: #091350;
+}
+
+label.boost-sd__radio-label.boost-sd__radio-label--non-radius.boost-sd__radio-label--hide-text {
+    width: 28px;
+    height: 28px;
+}
+
+.boost-sd__radio-label--hide-text::before {
+    opacity: 2 !important;
+    content: "" !important;
+}
+
+span.swatch-lable.swatch-color:before {
+    content: "Metal ";
+}
+
+.shopify-section.shopify-section-group-footer-group.section-footer {
+    border-top: 15px solid #32a3ce;
+}
+

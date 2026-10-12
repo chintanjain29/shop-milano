@@ -1,0 +1,292 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "show_page_title": true,
+        "full_width": false
+      }
+    },
+    "video_8ACbGL": {
+      "type": "video",
+      "settings": {
+        "video_external": "https://youtu.be/YXKiaAaB8j0",
+        "video_description": "",
+        "placeholder_image": "shopify://shop_images/Diamonds.png",
+        "text_alignment": "center center",
+        "full_width": false,
+        "overlay_style": "shadow"
+      }
+    },
+    "rich_text_UwWxNr": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_KBDikh": {
+          "type": "heading",
+          "settings": {
+            "title": "OUR OWN FACTORY",
+            "use_h1": false
+          }
+        },
+        "text_AHEnq4": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Most brands claim it, we own it. Milano is one of the very few truly Direct to Consumer retailers that straddles E-Commerce and Brick and Mortar. Our NYC based design studio is nestled in the heart of the diamond district and our cutting-edge manufacturing facility is based in India. Every Milano piece is meticulously crafted bringing quality products directly to consumers online and through our over 40 retail locations.</p>",
+            "enlarge_text": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_KBDikh",
+        "text_AHEnq4"
+      ],
+      "settings": {
+        "height": "medium",
+        "text_alignment": "center",
+        "full_width": false,
+        "color_scheme": "default"
+      }
+    },
+    "image_with_text_overlay_e3P9YC": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "image": "shopify://shop_images/Pricing_Desktop_2614cc19-5597-4074-aab2-b9f9f3355c3e.jpg",
+        "mobile_image": "shopify://shop_images/Pricing_Mobile_f1919a5a-90fd-4efd-8c5b-f5de55b124b6.jpg",
+        "height": "adapt",
+        "height_desktop": 600,
+        "height_mobile": 460,
+        "image_link": "",
+        "full_width": true,
+        "text_alignment": "center center",
+        "mobile_overlay_under": false,
+        "overlay_style": "shadow"
+      }
+    },
+    "rich_text_w9DLMH": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_Qef8TR": {
+          "type": "heading",
+          "settings": {
+            "title": "OUR PROCESS",
+            "use_h1": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_Qef8TR"
+      ],
+      "settings": {
+        "height": "small",
+        "text_alignment": "center",
+        "full_width": false,
+        "color_scheme": "default"
+      }
+    },
+    "key_features_Vnj8Rk": {
+      "type": "key-features",
+      "blocks": {
+        "feature_37gXEm": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/Designing.png",
+            "bg_color": "#ffffff",
+            "bg_gradient": "",
+            "text_color": "#505050",
+            "heading": "Design & Sourcing",
+            "text": "<p>Our process begins with capturing inspiration from the latest fashion trends, nature and frequent travels to beautiful Caribbean Islands. Once the design is finalized, our buyers than search meticulously for the most exquisite diamonds & gemstones required to bring it to life.</p>",
+            "show_segments": true,
+            "segments": 5,
+            "active_segment": "1",
+            "fill_segments": true,
+            "show_labels": true,
+            "label_left": "",
+            "label_middle": "",
+            "label_right": "",
+            "show_icon": false,
+            "icon": "star"
+          }
+        },
+        "feature_LF9aLR": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/CAD_Rendering.png",
+            "bg_color": "#ffffff",
+            "bg_gradient": "",
+            "text_color": "#505050",
+            "heading": "3D Designs & Molds",
+            "text": "<p>The designs are then either either transformed into 3D digital renderings or hand-carved into wax molds. This fusion of traditional craftsmanship with modern technology results in unique, timeless jewelry pieces.</p>",
+            "show_segments": true,
+            "segments": 5,
+            "active_segment": "2",
+            "fill_segments": true,
+            "show_labels": true,
+            "label_left": "",
+            "label_middle": "",
+            "label_right": "",
+            "show_icon": false,
+            "icon": "star"
+          }
+        },
+        "feature_Qqmhwd": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/Casting.png",
+            "bg_color": "#ffffff",
+            "bg_gradient": "",
+            "text_color": "#505050",
+            "heading": "Casting & Metallurgy",
+            "text": "<p>This is the enchanting phase where the alchemy of lost wax casting unfolds. Wax is encased in a flask and surrounded by plaster. When molten gold is poured into the flask, the wax dissolves, leaving behind voids in the plaster that are filled by the gold, giving birth to the intricate jewelry piece.</p><p>While this is the standard process for most items. We also utilize rolling mills, CNC and Laser machines to produce or finish your jewelry.</p>",
+            "show_segments": true,
+            "segments": 5,
+            "active_segment": "3",
+            "fill_segments": true,
+            "show_labels": true,
+            "label_left": "",
+            "label_middle": "",
+            "label_right": "",
+            "show_icon": false,
+            "icon": "star"
+          }
+        },
+        "feature_9iRY8V": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/Setting.png",
+            "bg_color": "#ffffff",
+            "bg_gradient": "",
+            "text_color": "#505050",
+            "heading": "Crafting, Setting & Finishing",
+            "text": "<p>Once the piece is casted, it's then brough to one of our many skilled Artisans who then prep the casted piece for setting. The artisans then hand set the diamonds or gemstones using microscopes to ensure perfection. </p><p>After the setting process each piece is polished and cleaned to ensure it shines and sparkles when you receive it.</p>",
+            "show_segments": true,
+            "segments": 5,
+            "active_segment": "4",
+            "fill_segments": true,
+            "show_labels": true,
+            "label_left": "",
+            "label_middle": "",
+            "label_right": "",
+            "show_icon": false,
+            "icon": "star"
+          }
+        },
+        "feature_jmH8Xt": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/pexels-photo-6263113.jpg",
+            "bg_color": "#ffffff",
+            "bg_gradient": "",
+            "text_color": "#505050",
+            "heading": "Quality Control & Delivery",
+            "text": "<p>The final stage of our manufacturing process is the ensure that each finished piece of jewelry meets the stringent quality requirements set by us. Each item is thoroughly inspected through a microscope.</p><p>After passing our high standards, each piece is that packaged and ready to be shipped to our customers. Be sure to check out our instructions on how to properly care for your Jewelry to ensure it maintains it's carefully crafted Shine!</p>",
+            "show_segments": true,
+            "segments": 5,
+            "active_segment": "5",
+            "fill_segments": true,
+            "show_labels": true,
+            "label_left": "",
+            "label_middle": "",
+            "label_right": "",
+            "show_icon": false,
+            "icon": "star"
+          }
+        }
+      },
+      "block_order": [
+        "feature_37gXEm",
+        "feature_LF9aLR",
+        "feature_Qqmhwd",
+        "feature_9iRY8V",
+        "feature_jmH8Xt"
+      ],
+      "settings": {
+        "heading": "",
+        "image_max_width": 640,
+        "media_aspect_ratio": "1",
+        "image_position": "left",
+        "segment_position": "under-text"
+      }
+    },
+    "rich_text_dNGVBi": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_XiCR6K": {
+          "type": "heading",
+          "settings": {
+            "title": "RESPONSIBLE SOURCING",
+            "use_h1": false
+          }
+        },
+        "text_XtcPLn": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We collaborate with a select group of exclusive gemstone and diamond suppliers who align with our values. These suppliers prioritize sourcing from countries committed to land conservation, safer mining practices, and enhanced working conditions, while also adhering to the Kimberley Process standard of \"conflict-free\" which is defined as diamonds that do not finance wars against legitimate governments. We also actively support fair trade markets, advocate for safer work environments, and champion responsible mining practices.</p>",
+            "enlarge_text": false
+          }
+        },
+        "heading_VXT9Ei": {
+          "type": "heading",
+          "settings": {
+            "title": "WHERE WE SOURCE",
+            "use_h1": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_XiCR6K",
+        "text_XtcPLn",
+        "heading_VXT9Ei"
+      ],
+      "settings": {
+        "height": "small",
+        "text_alignment": "center",
+        "full_width": false,
+        "color_scheme": "default"
+      }
+    },
+    "hotspots_kbbDzh": {
+      "type": "hotspots",
+      "settings": {
+        "image": "shopify://shop_images/Location_Desktop_07e2537f-6104-4d46-93f9-9fc59657973b.jpg",
+        "mobile_image": "shopify://shop_images/Location_Mobile_a3590816-3417-4f24-ab1d-d742a0a05a7e.jpg",
+        "hotspot_color": "#070707",
+        "button_content": "plus",
+        "outer_circle": "pulse",
+        "full_width": true,
+        "text_alignment": "top left",
+        "overlay_style": "full",
+        "subheading": "",
+        "title": "",
+        "use_h1": false,
+        "heading_max_width": 10,
+        "text": "",
+        "button_1_label": "",
+        "button_1_link": "",
+        "button_1_style": "secondary",
+        "button_2_label": "",
+        "button_2_link": "",
+        "button_2_style": "primary"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "video_8ACbGL",
+    "rich_text_UwWxNr",
+    "image_with_text_overlay_e3P9YC",
+    "rich_text_w9DLMH",
+    "key_features_Vnj8Rk",
+    "rich_text_dNGVBi",
+    "hotspots_kbbDzh"
+  ]
+}

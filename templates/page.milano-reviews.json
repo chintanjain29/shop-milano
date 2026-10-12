@@ -1,0 +1,114 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "show_page_title": true,
+        "full_width": false
+      }
+    },
+    "image_with_text_zWw77c": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_XDaALE": {
+          "type": "heading",
+          "settings": {
+            "title": "Milano Jewelry Reviews",
+            "use_h1": true
+          }
+        },
+        "text_fqY8zN": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Every Milano piece is handcrafted with care, precision, and purpose. From <a href=\"https://www.milanojewelry.com/collections/lab-grown-diamonds\" title=\"https://www.milanojewelry.com/collections/lab-grown-diamonds\">lab-grown diamond jewelry</a> to timeless <a href=\"https://www.milanojewelry.com/collections/gemstone-jewelry\" title=\"https://www.milanojewelry.com/collections/gemstone-jewelry\">gemstone designs</a>, our collections are created to celebrate life’s most meaningful moments.</p><p>We believe the true measure of our work is the trust our customers place in us. Explore verified Milano Jewelry reviews and discover why thousands choose us for quality, service, and lasting beauty. From complimentary shipping to our lifetime guarantee, your satisfaction is always at the heart of what we do.<br/><br/>Proudly recognized on TripAdvisor for exceptional customer experiences. Explore our <a href=\"https://www.tripadvisor.com/Attraction_Review-g150809-d13553958-Reviews-Milano_Jewelry-Cozumel_Yucatan_Peninsula.html\" title=\"https://www.tripadvisor.com/Attraction_Review-g150809-d13553958-Reviews-Milano_Jewelry-Cozumel_Yucatan_Peninsula.html\">Cozumel</a> and <a href=\"https://www.tripadvisor.com/Attraction_Review-g147347-d24149909-Reviews-Milano_Diamond_Gallery-Philipsburg_Sint_Maarten_St_Martin_St_Maarten.html\" title=\"https://www.tripadvisor.com/Attraction_Review-g147347-d24149909-Reviews-Milano_Diamond_Gallery-Philipsburg_Sint_Maarten_St_Martin_St_Maarten.html\">St.Maarten </a>boutiques.</p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_XDaALE",
+        "text_fqY8zN"
+      ],
+      "name": "Image with text",
+      "settings": {
+        "image": "shopify://shop_images/milano10.22final-59.jpg",
+        "image_width": 700,
+        "image_link": "",
+        "image_position": "left",
+        "text_alignment": "left",
+        "color_scheme": "default"
+      }
+    },
+    "1765806040a6c11941": {
+      "type": "apps",
+      "blocks": {
+        "klaviyo_reviews_all_reviews_WhnYHR": {
+          "type": "shopify://apps/klaviyo-reviews/blocks/all-reviews/db20e365-d984-4ac4-9655-e1588d951ca9",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "klaviyo_reviews_all_reviews_WhnYHR"
+      ],
+      "settings": {
+        "full_width": false
+      }
+    },
+    "multi_column_yTdKtJ": {
+      "type": "multi-column",
+      "blocks": {
+        "text_block_XUcPwg": {
+          "type": "text_block",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify://shop_images/pexels-coralie-fritzenwanker-18216435.jpg",
+            "title": "MEET WITH A SPECIALIST",
+            "text": "<p>Book a complimentary appointment with our jewelry specialist for assistance</p>",
+            "button_label": "BOOK AN APPOINTMENT",
+            "link": "https://outlook.office.com/book/VirtualAppointment@milanodg.com/?ismsaljsauthenabled"
+          }
+        },
+        "text_block_AiDRbV": {
+          "type": "text_block",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify://shop_images/pexels-say-straight-2735970.jpg",
+            "title": "THE MILANO STORY",
+            "text": "<p>Uniquely crafted fine jewelry using ethically sourced diamonds and gemstones.<br/></p>",
+            "button_label": "ABOUT US",
+            "link": "https://www.milanojewelry.com/pages/our-story"
+          }
+        }
+      },
+      "block_order": [
+        "text_block_XUcPwg",
+        "text_block_AiDRbV"
+      ],
+      "name": "Multi-column",
+      "settings": {
+        "title": "",
+        "media_aspect_ratio": "1",
+        "media_width": 700,
+        "text_alignment": "center",
+        "button_style": "primary",
+        "color_scheme": "default"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_with_text_zWw77c",
+    "1765806040a6c11941",
+    "multi_column_yTdKtJ"
+  ]
+}

@@ -1,0 +1,167 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "type": "footer",
+  "name": "Footer Group",
+  "sections": {
+    "cross-page-promos": {
+      "type": "cross-page-promos",
+      "blocks": {
+        "1478526632862": {
+          "type": "icon",
+          "settings": {
+            "icon": "truck",
+            "text": "Free delivery!",
+            "link_url": ""
+          }
+        },
+        "1478526645605": {
+          "type": "icon",
+          "settings": {
+            "icon": "credit_card",
+            "text": "Easy Financing Options",
+            "link_url": ""
+          }
+        },
+        "1478526647261": {
+          "type": "icon",
+          "settings": {
+            "icon": "return",
+            "text": "Hassle Free Returns",
+            "link_url": ""
+          }
+        },
+        "1478527611164": {
+          "type": "icon",
+          "settings": {
+            "icon": "check_mark_in_circle",
+            "text": "Conflict Free Diamonds",
+            "link_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "1478526632862",
+        "1478526645605",
+        "1478526647261",
+        "1478527611164"
+      ],
+      "settings": {
+        "cross_page_promo_bg": "#00205b",
+        "cross_page_promo_color": "#ffffff",
+        "show_on_home_page": false
+      }
+    },
+    "compact_messages_6TAQeF": {
+      "type": "compact-messages",
+      "blocks": {
+        "message_KNGVcm": {
+          "type": "message",
+          "settings": {
+            "heading": "Easy Financing Options",
+            "subheading": "",
+            "link_url": ""
+          }
+        },
+        "message_EdBEBq": {
+          "type": "message",
+          "settings": {
+            "heading": "Lifetime Warranty",
+            "subheading": "",
+            "link_url": ""
+          }
+        },
+        "message_gF6a3t": {
+          "type": "message",
+          "settings": {
+            "heading": "Hassle Free Returns",
+            "subheading": "",
+            "link_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "message_KNGVcm",
+        "message_EdBEBq",
+        "message_gF6a3t"
+      ],
+      "disabled": true,
+      "custom_css": [],
+      "settings": {
+        "head_not_col_bg": "#f4f6f8",
+        "head_not_col_txt1": "#171717",
+        "head_not_col_txt2": "#4c4c4b",
+        "head_not_mob_show": true,
+        "head_not_mob_text": "",
+        "head_not_mob_url": ""
+      }
+    },
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "text_P8YGRJ": {
+          "type": "text",
+          "settings": {
+            "title": "",
+            "text": "<p>Milano is more than a jewelry brand – we’re a vertically integrated sustainable fine jewelry manufacturer. Explore our hand-crafted fine diamond and gemstone jewelry. Each piece is crafted with love and dedication. Enjoy complimentary shipping and a lifetime guarantee.</p>",
+            "image": "shopify://shop_images/Blue_Wordmark_1_d7cee542-70bd-47e2-a3a7-d43b448480e6.png",
+            "image_width": 180,
+            "show_social_icons": true,
+            "soc_icons_large": true,
+            "enable_follow_on_shop": false
+          }
+        },
+        "1601308671932": {
+          "type": "menu",
+          "settings": {
+            "title": "Company",
+            "menu": "footer-menu-2-new"
+          }
+        },
+        "menu_6wytPT": {
+          "type": "menu",
+          "settings": {
+            "title": "Services & Help",
+            "menu": "footer-menu-2-duplicate"
+          }
+        },
+        "1601308656020": {
+          "type": "newsletter",
+          "settings": {
+            "title": "Join the Milano Family",
+            "text": "<p>Get on the Guest List for advanced notice of sales, exclusive deals, and more!</p>",
+            "button_style": "secondary",
+            "show_social_icons": false,
+            "soc_icons_large": true
+          }
+        }
+      },
+      "block_order": [
+        "text_P8YGRJ",
+        "1601308671932",
+        "menu_6wytPT",
+        "1601308656020"
+      ],
+      "custom_css": [],
+      "settings": {
+        "lower_menu": "",
+        "show_powered_by": false,
+        "show_payment_icons": false,
+        "enable_country_selector": false,
+        "enable_language_selector": false
+      }
+    }
+  },
+  "order": [
+    "cross-page-promos",
+    "compact_messages_6TAQeF",
+    "footer"
+  ]
+}

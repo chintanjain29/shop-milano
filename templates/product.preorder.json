@@ -1,0 +1,250 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "show_tax_and_shipping": false,
+            "enable_product_reviews_by_price": true
+          }
+        },
+        "vendor": {
+          "type": "vendor",
+          "disabled": true,
+          "settings": {}
+        },
+        "divider": {
+          "type": "divider",
+          "settings": {
+            "show_in_quickbuy": false
+          }
+        },
+        "variant-picker": {
+          "type": "variant-picker",
+          "settings": {
+            "choose_type_style": true,
+            "show_single": false,
+            "select_first_variant": true,
+            "selector_style": "listed",
+            "enable_dynamic_availability": true,
+            "enable_size_chart": false,
+            "size_chart_variant": "Size",
+            "size_chart_page": ""
+          }
+        },
+        "buy-buttons": {
+          "type": "buy-buttons",
+          "settings": {
+            "show_quantity_selector": true,
+            "enable_payment_button": true,
+            "show_backorder_text": false,
+            "show_pickup_availability": true,
+            "show_gift_card_recipient": false
+          }
+        },
+        "custom_liquid_JDgQCG": {
+          "type": "custom-liquid",
+          "settings": {
+            "custom_liquid": "<div class=\"tp-estimated-date\">\n<span class=\"tp-made-to-order\">Pre-Order: Ships in 3-4 Weeks</span> <span class=\"tp-in-stock\">Pre-Order: Ships in 3–4 Weeks</span></div>",
+            "show_in_quickbuy": false
+          }
+        },
+        "custom_liquid_48Da4A": {
+          "type": "custom-liquid",
+          "settings": {
+            "custom_liquid": "<div id='ss-trust-badge'></div>",
+            "show_in_quickbuy": false
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "show_in_tab": false,
+            "open_tab": false,
+            "icon": "",
+            "show_in_quickbuy": false
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "price",
+        "vendor",
+        "divider",
+        "variant-picker",
+        "buy-buttons",
+        "custom_liquid_JDgQCG",
+        "custom_liquid_48Da4A",
+        "description"
+      ],
+      "settings": {
+        "show_breadcrumbs": true,
+        "show_location_underneath": false,
+        "show_add_ons": false,
+        "inventory_transfers_enable": true,
+        "enable_sticky_columns": false,
+        "gallery_size": "medium",
+        "gallery_layout": "carousel-under",
+        "enable_zoom": true,
+        "show_alt_text": false,
+        "alt_text_icon": "",
+        "enable_video_autoplay": false,
+        "enable_video_looping": false,
+        "enable_media_grouping": false,
+        "media_grouping_option": "Color,Colour,Couleur,Farbe"
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "settings": {
+        "title": "You may also like",
+        "show_vendor": false,
+        "grid": 4
+      }
+    },
+    "ss_trust_badges_pro_d6fwnr": {
+      "type": "ss-trust-badges-pro",
+      "blocks": {
+        "item_FGEe3D": {
+          "type": "item",
+          "settings": {
+            "icon": "shield",
+            "text": "Lifetime Warranty",
+            "url": "https://shopmilano.com/pages/warranty",
+            "action": false,
+            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "controls": true,
+            "autoplay": true,
+            "loop": true
+          }
+        },
+        "item_cBYkpM": {
+          "type": "item",
+          "settings": {
+            "icon": "globe",
+            "text": "Sustainable Manufacturing",
+            "url": "https://shopmilano.com/pages/our-factory",
+            "action": false,
+            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "controls": true,
+            "autoplay": true,
+            "loop": true
+          }
+        },
+        "item_kUxUqk": {
+          "type": "item",
+          "settings": {
+            "icon": "truck",
+            "text": "Free US Shipping Fully Insured",
+            "url": "https://shopmilano.com/pages/faq",
+            "action": false,
+            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "controls": true,
+            "autoplay": true,
+            "loop": true
+          }
+        },
+        "item_Pka9NB": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Circle_Arrow.png",
+            "icon": "return_arrow",
+            "text": "Easy Returns & Exchanges",
+            "url": "",
+            "action": false,
+            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "controls": true,
+            "autoplay": true,
+            "loop": true
+          }
+        }
+      },
+      "block_order": [
+        "item_FGEe3D",
+        "item_cBYkpM",
+        "item_kUxUqk",
+        "item_Pka9NB"
+      ],
+      "name": "SS - Trust Badges Pro",
+      "settings": {
+        "badge_position": "below_buy",
+        "heading": "",
+        "heading_custom": false,
+        "heading_font": "assistant_n4",
+        "heading_size": 48,
+        "heading_size_mobile": 32,
+        "heading_height": 130,
+        "heading_align": "center",
+        "heading_align_mobile": "center",
+        "items_row": 4,
+        "items_row_mobile": 4,
+        "items_gap": 10,
+        "items_gap_mobile": 10,
+        "items_mt": 0,
+        "badge_icon_size": 26,
+        "badge_icon_size_mobile": 26,
+        "icon_align": "center",
+        "icon_align_mobile": "center",
+        "text_custom": false,
+        "text_font": "assistant_n4",
+        "text_size": 12,
+        "text_size_mobile": 12,
+        "text_height": 130,
+        "text_align": "center",
+        "text_align_mobile": "center",
+        "text_mt": 6,
+        "modal_width": 70,
+        "modal_width_mobile": 100,
+        "modal_padding_vertical": 0,
+        "modal_padding_vertical_mobile": 0,
+        "modal_padding_horizontal": 0,
+        "modal_padding_horizontal_mobile": 0,
+        "modal_radius": 16,
+        "modal_border_thickness": 0,
+        "modal_overlay": 50,
+        "close_size": 42,
+        "close_size_mobile": 42,
+        "close_icon_size": 16,
+        "close_icon_size_mobile": 16,
+        "modal_video_ratio": "landscape",
+        "modal_video_ratio_mobile": "landscape",
+        "text_color": "#121212",
+        "icon_color": "#121212",
+        "close_bg": "#000000",
+        "close_icon": "#ffffff",
+        "heading_color": "#232323",
+        "background_color": "#ffffff",
+        "background_gradient": "",
+        "border_color": "#000000",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding_top": 12,
+        "padding_bottom": 12,
+        "padding_horizontal": 0,
+        "padding_horizontal_mobile": 0,
+        "border_thickness": 0,
+        "lazy": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "related-products",
+    "ss_trust_badges_pro_d6fwnr"
+  ]
+}

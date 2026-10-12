@@ -1,0 +1,79 @@
+{%- comment -%}
+  Parameters:
+    - block {Object} - FAQ section block object.
+    - section {Object} - Parent section object.
+    - block_offset {Number} - 1-based index of the FAQ block in section.blocks.
+{%- endcomment -%}
+{%- liquid
+  assign has_heading = false
+  if block.settings.heading != blank
+    assign has_heading = true
+  endif
+
+  assign has_intro = false
+  if block.settings.intro != blank
+    assign has_intro = true
+  endif
+
+  assign faq_background = block.settings.background_color
+  if faq_background == blank or faq_background == 'rgba(0,0,0,0)'
+    assign faq_background = 'rgb(var(--bg-color))'
+  endif
+
+  assign faq_border = block.settings.border_top_color
+  if faq_border == blank or faq_border == 'rgba(0,0,0,0)'
+    assign faq_border = 'rgb(var(--btn-bg-color))'
+  endif
+
+  assign has_questions = false
+  for inner_block in section.blocks offset: block_offset
+    if inner_block.type != 'faq_question'
+      break
+    endif
+    assign has_questions = true
+    break
+  endfor
+-%}
+
+{%- if has_heading or has_intro or has_questions -%}
+  <div
+    class="article-editorial__faq"
+    style="--article-editorial-faq-bg: {{ faq_background }}; --article-editorial-faq-border: {{ faq_border }};"
+    {{ block.shopify_attributes }}
+  >
+    {%- if has_heading -%}
+      <h2 class="article-editorial__faq-heading">{{ block.settings.heading | escape }}</h2>
+    {%- endif -%}
+
+    {%- if has_intro -%}
+      <div class="article-editorial__faq-intro rte cf">
+        {{ block.settings.intro }}
+      </div>
+    {%- endif -%}
+
+    {%- if has_questions -%}
+      <div class="article-editorial__faq-list">
+        {%- for inner_block in section.blocks offset: block_offset -%}
+          {%- if inner_block.type != 'faq_question' -%}
+            {%- break -%}
+          {%- endif -%}
+
+          <div class="article-editorial__faq-item" {{ inner_block.shopify_attributes }}>
+            <details-disclosure>
+              <details class="disclosure">
+                <summary class="disclosure__title">
+                  {{- inner_block.settings.title | escape -}}
+                </summary>
+                <div class="disclosure__panel has-motion">
+                  <div class="disclosure__content rte cf">
+                    {{- inner_block.settings.answer -}}
+                  </div>
+                </div>
+              </details>
+            </details-disclosure>
+          </div>
+        {%- endfor -%}
+      </div>
+    {%- endif -%}
+  </div>
+{%- endif -%}

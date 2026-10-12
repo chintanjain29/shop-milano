@@ -1,0 +1,195 @@
+{%- liquid
+  assign has_visible_rows = false
+  assign specification_labels = block.settings.product_metafield_labels | split: '|'
+  assign specification_keys = block.settings.product_metafield_keys | split: '|'
+  assign current_variant = product.selected_or_first_available_variant
+
+  for key in specification_keys
+    assign key_parts = key | strip | split: ':'
+    assign source = key_parts[0] | strip
+    assign key_val = key_parts[1] | strip
+
+    if source == blank or key_val == blank
+      continue
+    endif
+
+    if source == 'product'
+      assign mf = product.metafields.custom[key_val]
+
+      if mf != blank and mf.value != blank
+        assign has_visible_rows = true
+        break
+      endif
+
+    elsif source == 'variant'
+      assign mf = current_variant.metafields.custom[key_val]
+
+      if mf != blank and mf.value != blank
+        assign has_visible_rows = true
+        break
+      endif
+    endif
+  endfor
+-%}
+
+<div
+  class="product-specs spaced-row-above"
+  data-product-specs
+  data-section-id="{{ section.id }}"
+  data-url="{{ product.url }}"
+  {% unless has_visible_rows %}
+    style="display: none;"
+  {% endunless %}
+>
+  <div class="">
+    <div class="product-specs__table" data-product-specs-table>
+      {%- for key in specification_keys -%}
+        {%- assign key_parts = key | strip | split: ':' -%}
+        {%- assign source = key_parts[0] | strip -%}
+        {%- assign key_val = key_parts[1] | strip -%}
+        {%- assign label = specification_labels[forloop.index0] | strip -%}
+
+        {%- if source == blank or key_val == blank -%}
+          {%- continue -%}
+        {%- endif -%}
+
+        {%- assign mf_value = blank -%}
+
+        {%- if source == 'product' -%}
+          {%- assign mf = product.metafields.custom[key_val] -%}
+
+          {%- if mf != blank and mf.value != blank -%}
+            {%- assign mf_value = mf.value -%}
+          {%- endif -%}
+
+        {%- elsif source == 'variant' -%}
+          {%- if key_val == 'sku' -%}
+            {%- assign mf_value = current_variant.sku -%}
+          {%- else -%}
+            {%- assign mf = current_variant.metafields.custom[key_val] -%}
+
+            {%- if mf != blank and mf.value != blank -%}
+              {%- assign mf_value = mf.value -%}
+            {%- endif -%}
+          {%- endif -%}
+        {%- endif -%}
+
+        {%- if mf_value != blank -%}
+          <div class="product-specs__row">
+            <div class="product-specs__label">
+              {{ label | escape }}
+            </div>
+            <div class="product-specs__value">
+              {{ mf_value }}
+            </div>
+          </div>
+        {%- endif -%}
+      {%- endfor -%}
+    </div>
+  </div>
+</div>
+
+<style>
+  #shopify-section-{{ section.id }} .product-specs {
+    --product-specs-stripe: {{ block.settings.stripe_color }};
+  }
+
+  #shopify-section-{{ section.id }} .product-specs__row:nth-child(odd) {
+    background-color: var(--product-specs-stripe);
+  }
+
+  #shopify-section-{{ section.id }} .product-specs__table {
+    max-width: 100%;
+    border: 1px solid var(--product-specs-stripe);
+    color: rgb(var(--text-color)/1);
+  }
+
+  #shopify-section-{{ section.id }} .product-specs__row {
+    display: grid;
+    grid-template-columns: minmax(8rem, 40%) 1fr;
+    gap: 1.5rem 2rem;
+    padding: 0.75rem;
+    font-family: var(--base-font-family);
+    font-size: var(--base-text-size);
+    color: var(--text-color);
+  }
+
+  #shopify-section-{{ section.id }} .product-specs__label,
+  #shopify-section-{{ section.id }} .product-specs__value {
+    text-align: left;
+  }
+
+  #shopify-section-{{ section.id }} .product-specs__label {
+    font-weight: 600;
+  }
+
+  @media (max-width: 767.98px) {
+    #shopify-section-{{ section.id }} .product-specs__row {
+      grid-template-columns: minmax(6rem, 50%) 1fr;
+      gap: 0.5rem 0.75rem;
+      padding: 0.5rem;
+    }
+  }
+</style>
+
+<script>
+  (function () {
+    if (window.__productSpecsVariantListener) return;
+    window.__productSpecsVariantListener = true;
+
+    var controllers = new WeakMap();
+
+    function refreshProductSpecs(variantId) {
+      if (!variantId) return;
+
+      document.querySelectorAll('[data-product-specs]').forEach(function (el) {
+        var sectionId = el.dataset.sectionId;
+        var productUrl = el.dataset.url;
+        if (!sectionId || !productUrl) return;
+
+        var prev = controllers.get(el);
+        if (prev) prev.abort();
+        var controller = new AbortController();
+        controllers.set(el, controller);
+
+        var separator = productUrl.indexOf('?') >= 0 ? '&' : '?';
+        var fetchUrl =
+          productUrl +
+          separator +
+          'variant=' +
+          encodeURIComponent(variantId) +
+          '&section_id=' +
+          encodeURIComponent(sectionId);
+
+        fetch(fetchUrl, { signal: controller.signal })
+          .then(function (response) {
+            if (!response.ok) throw new Error('Section fetch failed');
+            return response.text();
+          })
+          .then(function (html) {
+            var doc = new DOMParser().parseFromString(html, 'text/html');
+            var incoming =
+              doc.querySelector('[data-product-specs][data-section-id="' + sectionId + '"]') ||
+              doc.querySelector('[data-product-specs]');
+            if (!incoming) return;
+
+            el.innerHTML = incoming.innerHTML;
+            if (incoming.getAttribute('style')) {
+              el.setAttribute('style', incoming.getAttribute('style'));
+            } else {
+              el.removeAttribute('style');
+            }
+          })
+          .catch(function (err) {
+            if (err && err.name === 'AbortError') return;
+          });
+      });
+    }
+
+    document.addEventListener('on:variant:change', function (event) {
+      var variant = event.detail && event.detail.variant;
+      if (!variant || !variant.id) return;
+      refreshProductSpecs(variant.id);
+    });
+  })();
+</script>

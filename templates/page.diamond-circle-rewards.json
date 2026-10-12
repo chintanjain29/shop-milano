@@ -1,0 +1,323 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "show_page_title": true,
+        "full_width": false
+      }
+    },
+    "gem_find_iwto_apyaGx": {
+      "type": "gem-find-iwto",
+      "disabled": true,
+      "settings": {
+        "image": "shopify://shop_images/Hero_Reward.jpg",
+        "mobile_image": "shopify://shop_images/Mobile_Hero_reward.jpg",
+        "height": "fixed",
+        "height_desktop": 640,
+        "height_mobile": 420,
+        "image_link": "",
+        "full_width": true,
+        "text_alignment": "center center",
+        "mobile_overlay_under": false,
+        "overlay_style": "shadow"
+      }
+    },
+    "1779091707d4079676": {
+      "type": "apps",
+      "blocks": {
+        "smile_io_smile_landing_page_header_jqLYXx": {
+          "type": "shopify://apps/smile-io/blocks/smile-landing-page-header/2fae4e25-1841-4ea2-bc02-bd548478c4f6",
+          "settings": {
+            "primary_colour": "#00205b",
+            "secondary_colour": "#f0f0f0",
+            "background_image": "shopify://shop_images/milano10.22final-39.jpg",
+            "title_text": "Welcome to Milano Diamond Circle Rewards Program",
+            "description_text": "",
+            "join_button_text": "JOIN NOW",
+            "login_button_text": "LOG IN",
+            "is_previewing_logged_in_state": true,
+            "discover_button_text": "DISCOVER THE LOYALTY PROGRAM"
+          }
+        }
+      },
+      "block_order": [
+        "smile_io_smile_landing_page_header_jqLYXx"
+      ],
+      "settings": {
+        "full_width": false
+      }
+    },
+    "17790917533120a40a": {
+      "type": "apps",
+      "blocks": {
+        "smile_io_smile_landing_page_how_it_works_P7LTJc": {
+          "type": "shopify://apps/smile-io/blocks/smile-landing-page-how-it-works/2fae4e25-1841-4ea2-bc02-bd548478c4f6",
+          "settings": {
+            "primary_colour": "#00205b",
+            "secondary_colour": "#ffffff",
+            "title_text": "",
+            "step1_heading_text": "",
+            "step1_description_text": "",
+            "step2_heading_text": "",
+            "step2_description_text": "",
+            "step3_heading_text": "",
+            "step3_description_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "smile_io_smile_landing_page_how_it_works_P7LTJc"
+      ],
+      "settings": {
+        "full_width": false
+      }
+    },
+    "custom_liquid_iF4Xtz": {
+      "type": "custom-liquid",
+      "name": "Custom Liquid",
+      "settings": {
+        "full_width": true,
+        "code": "<style>\n  .milano-rewards-section {\n    padding: 10px 10px;\n    background: #FFFFFF;\n    font-family: 'Geist', sans-serif;\n  }\n\n  /* HEADING */\n  .milano-rewards-heading-wrapper {\n    text-align: center;\n    margin-bottom: 50px;\n  }\n\n  .milano-rewards-heading {\n    font-size: 28px;\n    line-height: 1.1;\n    font-weight: 100;\n    letter-spacing: -0.01px;\n    color: #091350;\n    margin-bottom: 4px;\n  }\n\n  .milano-rewards-subheading {\n    font-size: 16px;\n    line-height: 1.7;\n    color: #5C5F6A;\n    max-width: 720px;\n    margin: 0 auto;\n  }\n\n  .milano-rewards-grid {\n    max-width: 1200px;\n    margin: 0 auto;\n    display: grid;\n    grid-template-columns: repeat(3, 1fr);\n    gap: 24px;\n  }\n\n  .milano-reward-card {\n    background: #F4F4F0;\n    border: 1px solid #EBEBDF;\n    border-radius: 20px;\n    padding: 38px 28px;\n    transition: all 0.3s ease;\n    text-align: center;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center;\n    min-height: 280px;\n  }\n\n  .milano-reward-card:hover {\n    transform: translateY(-4px);\n    border-color: #091350;\n    box-shadow: 0 10px 25px rgba(9, 19, 80, 0.06);\n  }\n\n  .milano-reward-icon {\n    width: 64px;\n    height: 64px;\n    border-radius: 50%;\n    background: #FFFFFF;\n    border: 1px solid #EBEBDF;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    margin-bottom: 24px;\n  }\n\n  .milano-reward-icon svg {\n    width: 28px;\n    height: 28px;\n    stroke: #091350;\n  }\n\n  .milano-reward-title {\n    font-size: 18px;\n    line-height: 1.25;\n    font-weight: 500;\n    color: #101820;\n    margin-bottom: 14px;\n    letter-spacing: -0.5px;\n  }\n\n  .milano-reward-description {\n    font-size: 15px;\n    line-height: 1.7;\n    color: #5C5F6A;\n    max-width: 300px;\n    margin-bottom: 24px;\n  }\n\n  .milano-reward-points {\n    font-size: 13px;\n    font-weight: 600;\n    letter-spacing: 1.2px;\n    text-transform: uppercase;\n    color: #091350;\n  }\n\n  @media screen and (max-width: 990px) {\n    .milano-rewards-grid {\n      grid-template-columns: repeat(2, 1fr);\n    }\n  }\n\n  @media screen and (max-width: 768px) {\n\n    .milano-rewards-heading {\n      font-size: 24px;\n    }\n\n    .milano-rewards-subheading {\n      font-size: 15px;\n    }\n\n    .milano-rewards-grid {\n      grid-template-columns: 1fr;\n    }\n\n    .milano-reward-card {\n      min-height: auto;\n      padding: 32px 24px;\n    }\n\n    .milano-reward-title {\n      font-size: 18px;\n    }\n  }\n</style>\n\n<div class=\"milano-rewards-section\">\n\n  <!-- HEADING -->\n  <div class=\"milano-rewards-heading-wrapper\">\n    <h2 class=\"milano-rewards-heading\">\n      Ways to Earn\n    </h2>\n\n    <p class=\"milano-rewards-subheading\">\n      Earn Diamond Circle Points through shopping, engagement, and exclusive member activities.\n    </p>\n  </div>\n\n  <div class=\"milano-rewards-grid\">\n\n    <!-- Create Account -->\n    <div class=\"milano-reward-card\">\n      <div class=\"milano-reward-icon\">\n        <svg fill=\"none\" stroke-width=\"1.8\" viewBox=\"0 0 24 24\">\n          <path d=\"M12 12c2.761 0 5-2.239 5-5s-2.239-5-5-5-5 2.239-5 5 2.239 5 5 5z\"/>\n          <path d=\"M4 22c0-4 3-7 8-7s8 3 8 7\"/>\n        </svg>\n      </div>\n      <div class=\"milano-reward-title\">Create an Account</div>\n      <div class=\"milano-reward-description\">\n        Join the Milano Diamond Circle and unlock exclusive member rewards.\n      </div>\n      <div class=\"milano-reward-points\">\n        200 Diamond Circle Points\n      </div>\n    </div>\n\n    <!-- Order -->\n    <div class=\"milano-reward-card\">\n      <div class=\"milano-reward-icon\">\n        <svg fill=\"none\" stroke-width=\"1.8\" viewBox=\"0 0 24 24\">\n          <path d=\"M6 6h15l-1.5 9h-12z\"/>\n          <path d=\"M6 6L4 2H1\"/>\n          <circle cx=\"9\" cy=\"20\" r=\"1\"/>\n          <circle cx=\"18\" cy=\"20\" r=\"1\"/>\n        </svg>\n      </div>\n      <div class=\"milano-reward-title\">Place an Order</div>\n      <div class=\"milano-reward-description\">\n        Earn rewards every time you shop your favorite Milano pieces.\n      </div>\n      <div class=\"milano-reward-points\">\n        1 Point for Every $1 Spent\n      </div>\n    </div>\n\n    <!-- Instagram -->\n    <div class=\"milano-reward-card\">\n      <div class=\"milano-reward-icon\">\n        <svg fill=\"none\" stroke-width=\"1.8\" viewBox=\"0 0 24 24\">\n          <rect x=\"3\" y=\"3\" width=\"18\" height=\"18\" rx=\"5\"/>\n          <circle cx=\"12\" cy=\"12\" r=\"4\"/>\n          <circle cx=\"17.5\" cy=\"6.5\" r=\"1\"/>\n        </svg>\n      </div>\n      <div class=\"milano-reward-title\">Follow on Instagram</div>\n      <div class=\"milano-reward-description\">\n        Stay inspired with exclusive launches, styling moments, and more.\n      </div>\n      <div class=\"milano-reward-points\">\n        100 Diamond Circle Points\n      </div>\n    </div>\n\n    <!-- Facebook -->\n    <div class=\"milano-reward-card\">\n      <div class=\"milano-reward-icon\">\n        <svg fill=\"none\" stroke-width=\"1.8\" viewBox=\"0 0 24 24\">\n          <path d=\"M15 3h-3a4 4 0 0 0-4 4v3H5v4h3v7h4v-7h3l1-4h-4V7a1 1 0 0 1 1-1h3z\"/>\n        </svg>\n      </div>\n      <div class=\"milano-reward-title\">Like us on Facebook</div>\n      <div class=\"milano-reward-description\">\n        Be part of our community and discover member-only updates.\n      </div>\n      <div class=\"milano-reward-points\">\n        100 Diamond Circle Points\n      </div>\n    </div>\n\n    <!-- Review -->\n    <div class=\"milano-reward-card\">\n      <div class=\"milano-reward-icon\">\n        <svg fill=\"none\" stroke-width=\"1.8\" viewBox=\"0 0 24 24\">\n          <path d=\"M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z\"/>\n        </svg>\n      </div>\n      <div class=\"milano-reward-title\">Review a Product</div>\n      <div class=\"milano-reward-description\">\n        Share your experience and help others discover timeless jewelry.\n      </div>\n      <div class=\"milano-reward-points\">\n        500 Diamond Circle Points\n      </div>\n    </div>\n\n    <!-- Birthday -->\n    <div class=\"milano-reward-card\">\n      <div class=\"milano-reward-icon\">\n        <svg fill=\"none\" stroke-width=\"1.8\" viewBox=\"0 0 24 24\">\n          <path d=\"M12 7v14\"/>\n          <path d=\"M5 11h14\"/>\n          <path d=\"M7 11V9a2 2 0 1 1 4 0v2\"/>\n          <path d=\"M13 11V9a2 2 0 1 1 4 0v2\"/>\n          <rect x=\"3\" y=\"11\" width=\"18\" height=\"10\" rx=\"2\"/>\n        </svg>\n      </div>\n      <div class=\"milano-reward-title\">Celebrate Your Birthday</div>\n      <div class=\"milano-reward-description\">\n        Receive a special birthday reward from the Milano Diamond Circle.\n      </div>\n      <div class=\"milano-reward-points\">\n        300 Diamond Circle Points\n      </div>\n    </div>\n\n  </div>\n</div>"
+      }
+    },
+    "1779092088975d6239": {
+      "type": "apps",
+      "settings": {
+        "full_width": false
+      }
+    },
+    "1779092592a16f1d7b": {
+      "type": "apps",
+      "blocks": {
+        "smile_io_smile_landing_page_redeeming_rule_highlight_JQJU7k": {
+          "type": "shopify://apps/smile-io/blocks/smile-landing-page-redeeming-rule-highlight/2fae4e25-1841-4ea2-bc02-bd548478c4f6",
+          "settings": {
+            "primary_colour": "#00205b",
+            "secondary_colour": "#f0f0f0",
+            "image": "shopify://shop_images/milano10.22final-25-com.jpg",
+            "title_text": "",
+            "description_text": "",
+            "button_text": "EXPLORE NOW"
+          }
+        }
+      },
+      "block_order": [
+        "smile_io_smile_landing_page_redeeming_rule_highlight_JQJU7k"
+      ],
+      "settings": {
+        "full_width": false
+      }
+    },
+    "custom_liquid_A7Xxk8": {
+      "type": "custom-liquid",
+      "name": "Custom Liquid",
+      "settings": {
+        "full_width": true,
+        "code": "<style>\n  .milano-redeem-strip {\n    padding: 28px 20px 70px;\n    font-family: 'Geist', sans-serif;\n    background: #00205B;\n    overflow: hidden;\n  }\n\n  .milano-redeem-grid {\n    max-width: 1150px;\n    margin: 0 auto;\n    display: grid;\n    grid-template-columns: repeat(3, 1fr);\n    align-items: center;\n  }\n\n  .milano-redeem-card {\n    text-align: center;\n    padding: 14px 40px;\n    position: relative;\n  }\n\n  .milano-redeem-card:not(:last-child)::after {\n    content: \"\";\n    position: absolute;\n    top: 50%;\n    right: 0;\n    transform: translateY(-50%);\n    width: 1px;\n    height: 110px;\n    background: rgba(255,255,255,0.15);\n  }\n\n  .milano-redeem-icon {\n    margin-bottom: 18px;\n    display: flex;\n    justify-content: center;\n  }\n\n  .milano-redeem-icon svg {\n    width: 38px;\n    height: 38px;\n    stroke: #FFFFFF;\n  }\n\n  .milano-redeem-title {\n    font-size: 18px;\n    line-height: 1.3;\n    font-weight: 500;\n    color: #FFFFFF;\n    margin-bottom: 8px;\n    letter-spacing: -0.2px;\n  }\n\n  .milano-redeem-points {\n    font-size: 15px;\n    line-height: 1.5;\n    color: rgba(255,255,255,0.72);\n    font-weight: 400;\n  }\n\n  @media screen and (max-width: 768px) {\n\n    .milano-redeem-grid {\n      grid-template-columns: 1fr;\n      gap: 42px;\n    }\n\n    .milano-redeem-card:not(:last-child)::after {\n      display: none;\n    }\n\n    .milano-redeem-card {\n      padding: 0;\n    }\n  }\n</style>\n\n<div class=\"milano-redeem-strip\">\n\n  <div class=\"milano-redeem-grid\">\n\n    <!-- $100 -->\n    <div class=\"milano-redeem-card\">\n\n      <div class=\"milano-redeem-icon\">\n        <svg fill=\"none\" stroke-width=\"1.7\" viewBox=\"0 0 24 24\">\n          <rect x=\"3\" y=\"6\" width=\"18\" height=\"12\" rx=\"2\"/>\n          <circle cx=\"12\" cy=\"12\" r=\"2.5\"/>\n          <path d=\"M7 10h.01\"/>\n          <path d=\"M17 14h.01\"/>\n        </svg>\n      </div>\n\n      <div class=\"milano-redeem-title\">\n        $100 off coupon\n      </div>\n\n      <div class=\"milano-redeem-points\">\n        2000 Diamond Circle Points\n      </div>\n\n    </div>\n\n    <!-- $250 -->\n    <div class=\"milano-redeem-card\">\n\n      <div class=\"milano-redeem-icon\">\n        <svg fill=\"none\" stroke-width=\"1.7\" viewBox=\"0 0 24 24\">\n          <rect x=\"3\" y=\"6\" width=\"18\" height=\"12\" rx=\"2\"/>\n          <circle cx=\"12\" cy=\"12\" r=\"2.5\"/>\n          <path d=\"M7 10h.01\"/>\n          <path d=\"M17 14h.01\"/>\n        </svg>\n      </div>\n\n      <div class=\"milano-redeem-title\">\n        $250 off coupon\n      </div>\n\n      <div class=\"milano-redeem-points\">\n        5000 Diamond Circle Points\n      </div>\n\n    </div>\n\n    <!-- $500 -->\n    <div class=\"milano-redeem-card\">\n\n      <div class=\"milano-redeem-icon\">\n        <svg fill=\"none\" stroke-width=\"1.7\" viewBox=\"0 0 24 24\">\n          <rect x=\"3\" y=\"6\" width=\"18\" height=\"12\" rx=\"2\"/>\n          <circle cx=\"12\" cy=\"12\" r=\"2.5\"/>\n          <path d=\"M7 10h.01\"/>\n          <path d=\"M17 14h.01\"/>\n        </svg>\n      </div>\n\n      <div class=\"milano-redeem-title\">\n        $500 off coupon\n      </div>\n\n      <div class=\"milano-redeem-points\">\n        10000 Diamond Circle Points\n      </div>\n\n    </div>\n\n  </div>\n</div>"
+      }
+    },
+    "custom_liquid_LtApP8": {
+      "type": "custom-liquid",
+      "name": "Custom Liquid",
+      "settings": {
+        "full_width": true,
+        "code": "<style>\n  .milano-vip-section {\n    padding: 8px 8px;\n    background: #FFFFFF;\n    font-family: 'Geist', sans-serif;\n  }\n\n  .milano-vip-heading {\n    text-align: center;\n    margin-bottom: 30px;\n  }\n\n  .milano-vip-heading h2 {\n    font-size: 28px;\n    line-height: 1.1;\n    font-weight: 500;\n    letter-spacing: -0.01px;\n    color: #091350;\n    margin-bottom: 12px;\n  }\n\n  .milano-vip-heading p {\n    font-size: 14px;\n    line-height: 1.7;\n    color: #5C5F6A;\n    max-width: 720px;\n    margin: 0 auto;\n  }\n\n  .milano-vip-grid {\n    max-width: 1250px;\n    margin: 0 auto;\n    display: grid;\n    grid-template-columns: repeat(3, 1fr);\n    gap: 15px;\n  }\n\n  .milano-vip-card {\n    background: #F4F4F0;\n    border: 1px solid #EBEBDF;\n    overflow: hidden;\n    transition: all 0.3s ease;\n  }\n\n  .milano-vip-card:hover {\n    transform: translateY(-4px);\n    border-color: #091350;\n    box-shadow: 0 12px 28px rgba(9, 19, 80, 0.06);\n  }\n\n  .milano-vip-image img {\n    width: 100%;\n    height: 320px;\n    object-fit: cover;\n    display: block;\n  }\n\n  .milano-vip-content {\n    padding: 30px 30px;\n    text-align: center;\n  }\n\n  .milano-vip-tier {\n    font-size: 32px;\n    line-height: 1.1;\n    font-weight: 500;\n    color: #091350;\n    margin-bottom: 14px;\n    letter-spacing: -1px;\n  }\n\n  .milano-vip-points {\n    font-size: 15px;\n    font-weight: 500;\n    color: #101820;\n    margin-bottom: 16px;\n    text-transform: uppercase;\n    letter-spacing: 1px;\n  }\n\n  .milano-vip-description {\n    font-size: 15px;\n    line-height: 1.7;\n    color: #5C5F6A;\n  }\n\n  @media screen and (max-width: 990px) {\n    .milano-vip-grid {\n      grid-template-columns: 1fr;\n    }\n\n    .milano-vip-image img {\n      height: 280px;\n    }\n  }\n\n  @media screen and (max-width: 768px) {\n\n    .milano-vip-heading h2 {\n      font-size: 24px;\n    }\n\n    .milano-vip-heading p {\n      font-size: 15px;\n    }\n\n    .milano-vip-tier {\n      font-size: 28px;\n    }\n  }\n</style>\n\n<div class=\"milano-vip-section\">\n\n  <div class=\"milano-vip-heading\">\n    <h2>VIP Tiers</h2>\n\n    <p>\n      Unlock elevated rewards, exclusive benefits, and premium experiences as you move through the Milano Diamond Circle.\n    </p>\n  </div>\n\n  <div class=\"milano-vip-grid\">\n\n    <!-- SILVER -->\n    <div class=\"milano-vip-card\">\n\n      <div class=\"milano-vip-image\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0367/6287/8085/files/milano10.22final-42-com.jpg?v=1770392541\" alt=\"Silver Tier\">\n      </div>\n\n      <div class=\"milano-vip-content\">\n\n        <div class=\"milano-vip-tier\">\n          Silver\n        </div>\n\n        <div class=\"milano-vip-points\">\n          0+ Diamond Circle Points\n        </div>\n\n        <div class=\"milano-vip-description\">\n          Begin your Milano Diamond Circle journey with member-only rewards, birthday gifts, and referral benefits.\n        </div>\n\n      </div>\n    </div>\n\n    <!-- GOLD -->\n    <div class=\"milano-vip-card\">\n\n      <div class=\"milano-vip-image\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0367/6287/8085/files/milano10.22final-36-com.jpg?v=1770470704L\" alt=\"Gold Tier\">\n      </div>\n\n      <div class=\"milano-vip-content\">\n\n        <div class=\"milano-vip-tier\">\n          Gold\n        </div>\n\n        <div class=\"milano-vip-points\">\n          5,000+ Diamond Circle Points\n        </div>\n\n        <div class=\"milano-vip-description\">\n          Enjoy elevated rewards, priority access to launches, and exclusive member experiences curated for our loyal collectors.\n        </div>\n\n      </div>\n    </div>\n\n    <!-- PLATINUM -->\n    <div class=\"milano-vip-card\">\n\n      <div class=\"milano-vip-image\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0367/6287/8085/files/milano10.22final-33.jpg?v=1764855836\" alt=\"Platinum Tier\">\n      </div>\n\n      <div class=\"milano-vip-content\">\n\n        <div class=\"milano-vip-tier\">\n          Platinum\n        </div>\n\n        <div class=\"milano-vip-points\">\n          10,000+ Diamond Circle Points\n        </div>\n\n        <div class=\"milano-vip-description\">\n          Experience the highest level of Milano Diamond Circle with exclusive perks, VIP access, and luxury rewards.\n        </div>\n\n      </div>\n    </div>\n\n  </div>\n</div>"
+      }
+    },
+    "custom_liquid_HKGnGb": {
+      "type": "custom-liquid",
+      "name": "Custom Liquid",
+      "settings": {
+        "full_width": true,
+        "code": "<style>\n  .milano-referral-section {\n    font-family: 'Geist', sans-serif;\n    background: #F4F4F0;\n    overflow: hidden;\n    max-width: 100%;\n    margin: 60px auto;\nmax-height: 60%;\n  }\n\n  .milano-referral-wrapper {\n    display: grid;\n    grid-template-columns: 1fr 1fr;\n    align-items: stretch;\n  }\n\n  .milano-referral-content {\n    padding: 40px 60px;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n  }\n\n  .milano-referral-inner {\n    max-width: 520px;\n    text-align: center;\n  }\n\n  .milano-referral-subtitle {\n    font-size: 15px;\n    color: #5C5F6A;\n    margin-bottom: 18px;\n    letter-spacing: 0.4px;\n  }\n\n  .milano-referral-title {\n    font-size: 42px;\n    line-height: 1.05;\n    font-weight: 500;\n    color: #091350;\n    margin-bottom: 24px;\n    letter-spacing: -1px;\n  }\n\n  .milano-referral-description {\n    font-size: 14px;\n    line-height: 1.8;\n    color: #5C5F6A;\n    margin-bottom: 36px;\n  }\n\n  .milano-referral-highlight {\n    color: #091350;\n    font-weight: 600;\n  }\n\n  .milano-referral-note {\n    font-size: 13px;\n    color: #7B7E87;\n  }\n\n  .milano-referral-image {\n    position: relative;\n    height: 650px;\n  }\n\n  .milano-referral-image img {\n    width: 100%;\n    height: 100%;\n    object-fit: cover;\n    display: block;\n  }\n\n  @media screen and (max-width: 1024px) {\n\n    .milano-referral-wrapper {\n      grid-template-columns: 1fr;\n    }\n\n    .milano-referral-image {\n      min-height: 420px;\n    }\n\n    .milano-referral-content {\n      padding: 60px 30px;\n    }\n\n    .milano-referral-title {\n      font-size: 42px;\n    }\n  }\n\n  @media screen and (max-width: 768px) {\n\n    .milano-referral-title {\n      font-size: 36px;\n    }\n\n    .milano-referral-description {\n      font-size: 14px;\n    }\n  }\n</style>\n\n<div class=\"milano-referral-section\">\n\n  <div class=\"milano-referral-wrapper\">\n\n    <!-- LEFT CONTENT -->\n    <div class=\"milano-referral-content\">\n\n      <div class=\"milano-referral-inner\">\n\n        <div class=\"milano-referral-subtitle\">\n          Refer a Friend\n        </div>\n\n        <h2 class=\"milano-referral-title\">\n          GIVE $100,<br>\n          GET $100\n        </h2>\n\n        <div class=\"milano-referral-description\">\n          Invite your friends to discover Milano Jewelry and enjoy exclusive rewards together.\n          Your friend receives <span class=\"milano-referral-highlight\">$100 OFF</span> their first purchase, and you receive <span class=\"milano-referral-highlight\">$100 OFF</span> once they complete their order.\n        </div>\n\n        <div class=\"milano-referral-note\">\n          Share timeless luxury with the people you love.\n        </div>\n\n      </div>\n\n    </div>\n\n    <!-- RIGHT IMAGE -->\n    <div class=\"milano-referral-image\">\n\n      <img \n        src=\"https://cdn.shopify.com/s/files/1/0367/6287/8085/files/Mothers_day_mobile_banner.png?v=1776101467\"\n        alt=\"Milano Jewelry Referral Program\"\n      >\n\n    </div>\n\n  </div>\n\n</div>"
+      }
+    },
+    "gem_find_iwto_LNV4ej": {
+      "type": "gem-find-iwto",
+      "disabled": true,
+      "settings": {
+        "image": "shopify://shop_images/How_it_Works_0d33d871-12ee-4f66-8809-eb8b385d109a.jpg",
+        "mobile_image": "shopify://shop_images/Mobile_How_it_Works.jpg",
+        "height": "adapt",
+        "height_desktop": 600,
+        "height_mobile": 700,
+        "image_link": "",
+        "full_width": true,
+        "text_alignment": "center center",
+        "mobile_overlay_under": false,
+        "overlay_style": "shadow"
+      }
+    },
+    "gem_find_iwto_QtLd9x": {
+      "type": "gem-find-iwto",
+      "disabled": true,
+      "settings": {
+        "image": "shopify://shop_images/Earn_Points.jpg",
+        "mobile_image": "shopify://shop_images/Mobile_Earn_Points.jpg",
+        "height": "adapt",
+        "height_desktop": 600,
+        "height_mobile": 460,
+        "image_link": "",
+        "full_width": true,
+        "text_alignment": "center center",
+        "mobile_overlay_under": false,
+        "overlay_style": "shadow"
+      }
+    },
+    "gem_find_iwto_dmqKUY": {
+      "type": "gem-find-iwto",
+      "disabled": true,
+      "settings": {
+        "image": "shopify://shop_images/Redeem_Points.jpg",
+        "mobile_image": "shopify://shop_images/Mobile_Redeem_d155177a-9a76-46b2-953b-1fe88661c47b.jpg",
+        "height": "adapt",
+        "height_desktop": 600,
+        "height_mobile": 760,
+        "image_link": "",
+        "full_width": true,
+        "text_alignment": "center center",
+        "mobile_overlay_under": false,
+        "overlay_style": "shadow"
+      }
+    },
+    "collapsible_tabs_AV7mkG": {
+      "type": "collapsible-tabs",
+      "blocks": {
+        "question_UCbnKi": {
+          "type": "question",
+          "settings": {
+            "title": "Is Diamond Circle Available in Stores?",
+            "answer": "<p>Yes, any purchases in stores within the last 12 months are eligible to earn Diamond Circle Points. In order to add your purchase, please submit a request with a copy of your receipt here: <a href=\"https://contact.gorgias.help/forms/bowuvttr\" title=\"https://contact.gorgias.help/forms/bowuvttr\">Submit Request.<br/></a>Please note, Diamond Circle points or rewards cannot be redeemed in stores. </p>"
+          }
+        },
+        "question_AWURVr": {
+          "type": "question",
+          "settings": {
+            "title": "Can I redeem Diamond Circle Rewards in Stores?",
+            "answer": "<p>Diamond Circle Rewards are only redeemable online. </p><p>You are able to earn points for instore purchases within 12 months of purchase. </p>"
+          }
+        },
+        "question_EeQHaC": {
+          "type": "question",
+          "settings": {
+            "title": "Do Diamond Circle Points Expire?",
+            "answer": "<p>No, your Diamond Circle Points do not expire. Once you've redeemed your Diamond Circle Points for Cash Coupon, you have 1 year from the date of redemption to utilize that Coupon.</p>"
+          }
+        },
+        "question_LbJ8nG": {
+          "type": "question",
+          "settings": {
+            "title": "Do I need a Milano account to use Diamond Circle?",
+            "answer": "<p>Yes, you must have or create an account at  https://shopmilano.com/account/register before or at the time of purchase in order to participate.</p>"
+          }
+        },
+        "question_BAfEJC": {
+          "type": "question",
+          "settings": {
+            "title": "What can I redeem my points for?",
+            "answer": "<ul><li>2,000 Points for $100 Off, min purchase of $300</li><li>5,000 Points for $250 Off, min purchase of $750</li><li>10,000 Points for $500 Off, min purchase of $1500</li></ul>"
+          }
+        },
+        "question_7LiNnG": {
+          "type": "question",
+          "settings": {
+            "title": "How do I check my points balance?",
+            "answer": "<p>Sign in to your account and click on the ‘Rewards’ button appearing at the bottom left corner of your screen. You would be able to see your Points balance.</p>"
+          }
+        },
+        "question_NW4z6H": {
+          "type": "question",
+          "settings": {
+            "title": "What happens to my points if I return the product?",
+            "answer": "<p>When you return an item, you lose the associated points you originally earned by buying the item.</p>"
+          }
+        },
+        "question_MQgK76": {
+          "type": "question",
+          "settings": {
+            "title": "What is the referral program?",
+            "answer": "<p>Diamond Circle Members have the ability to refer their friends and family with personalized offers and earn points and rewards.</p>"
+          }
+        },
+        "question_jyzWff": {
+          "type": "question",
+          "settings": {
+            "title": "How do referrals work?",
+            "answer": "<p>Diamond Circle members can refer a friend or family, and we will send them a link to a personalized coupon code. When the friend or family completes a purchase using that code, they will save $50 on their first order, and the Diamond Circle member will receive $100 to use towards future jewelry purchase online.</p>"
+          }
+        },
+        "question_dix4KN": {
+          "type": "question",
+          "settings": {
+            "title": "Can I combine Diamond Circle Rewards with other promotions?",
+            "answer": "<p>Absolutely! Diamond Circle Rewards can be redeemed for cash coupons. They are just as good as cash.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_UCbnKi",
+        "question_AWURVr",
+        "question_EeQHaC",
+        "question_LbJ8nG",
+        "question_BAfEJC",
+        "question_7LiNnG",
+        "question_NW4z6H",
+        "question_MQgK76",
+        "question_jyzWff",
+        "question_dix4KN"
+      ],
+      "custom_css": [
+        "h2 {font-size: 30px;}"
+      ],
+      "settings": {
+        "title": "DIAMOND CIRCLE FAQ'S"
+      }
+    },
+    "collapsible_tabs_GQL4Tn": {
+      "type": "collapsible-tabs",
+      "blocks": {
+        "question_frHHFR": {
+          "type": "question",
+          "settings": {
+            "title": "Terms & Conditions",
+            "answer": "<h3></h3><p><strong>Eligibility and Enrollment</strong><br/>Milano Diamond Circle is available to all https://www.milanojewelry.com/ customers in the United States. Participation requires no initial purchase; however, rewards earned through the program may only be used on future purchases. To join, customers must create an account at <a>www.shopmilano.com/register</a>. Enrollment can occur during checkout or through the account creation page. Customers with existing accounts are automatically enrolled. Signing up for the Milano Diamond Circle does not require email or SMS subscription, but opting out of these communications may limit updates about eligible rewards and special offers. Customers who prefer not to participate can use the \"checkout as guest\" feature.</p><p><strong>Earning Milano Cash Rewards</strong><br/>Milano Jewelry may award Milano Cash for customer activities such as engaging on social media, referring friends, submitting product reviews, or other eligible actions specified by https://www.milanojewelry.com/. Details on earning opportunities and rewards will be provided on the <strong>Milano Diamond Circle page</strong> at https://www.milanojewelry.com/pages/milano-diamond-circle</p><p><strong>Program Modifications</strong><br/>Milano Jewelry reserves the right to amend or cancel the Milano Diamond Circle program at its discretion. Members found violating program terms may be removed.</p><p><strong>Eligibility Restrictions</strong><br/>The program is open to customers with U.S. shipping addresses only. International customers are currently ineligible.</p><h3>Milano Diamond Circle Benefits</h3><p>Members are rewarded Milano Cash to use on future Milano Jewelry purchases. Additional benefits may be introduced and communicated to eligible members. The earning rates and reward amounts are determined by Milano Jewelry and are subject to change. Rewards are valid for 1 year from the issue date.</p><p><strong>Milano Cash Terms and Conditions</strong></p><ul><li>Milano Cash discounts apply to the merchandise subtotal after applicable discounts but before tax, shipping, or handling charges.</li><li>Milano Cash cannot cover shipping, handling, or taxes and may not be retroactively applied to past purchases.</li><li>Members must log in to their accounts to redeem Milano Cash at checkout. Unused rewards cannot be applied post-checkout.</li><li>Milano Cash has no cash value and can only be used as discounts on new jewelry purchases from https://www.milanojewelry.com/ with a minimum purchase requirement</li></ul><p>The minimum purchase requirement to use the coupons is as follows:<br/><br/>$100 OFF - applies over $300<br/>$250 OFF - applies over $750<br/>$500 OFF - applies over $1500</p><p>Returns made using Milano Cash will result in the refund of the original payment method, with the used Milano Cash reinstated and the earned Milano Cash deducted.</p><p><strong>Exclusions</strong><br/>Milano Cash can only be redeemed on jewelry and loose diamond purchases. It cannot be applied to warranties, taxes, shipping, or other fees. Some coupon codes may be ineligible for use with Milano Cash and will be indicated during checkout.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_frHHFR"
+      ],
+      "settings": {
+        "title": "Milano Diamond Circle T&C"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "gem_find_iwto_apyaGx",
+    "1779091707d4079676",
+    "17790917533120a40a",
+    "custom_liquid_iF4Xtz",
+    "1779092088975d6239",
+    "1779092592a16f1d7b",
+    "custom_liquid_A7Xxk8",
+    "custom_liquid_LtApP8",
+    "custom_liquid_HKGnGb",
+    "gem_find_iwto_LNV4ej",
+    "gem_find_iwto_QtLd9x",
+    "gem_find_iwto_dmqKUY",
+    "collapsible_tabs_AV7mkG",
+    "collapsible_tabs_GQL4Tn"
+  ]
+}

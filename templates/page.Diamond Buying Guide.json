@@ -1,0 +1,453 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "show_page_title": true,
+        "full_width": false
+      }
+    },
+    "image_with_text_overlay_e3P9YC": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "image": "shopify://shop_images/pexels-plato-terentev-5912127.jpg",
+        "height": "fixed",
+        "height_desktop": 600,
+        "height_mobile": 460,
+        "image_link": "",
+        "full_width": true,
+        "text_alignment": "center center",
+        "mobile_overlay_under": false,
+        "overlay_style": "shadow"
+      }
+    },
+    "rich_text_UwWxNr": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_KBDikh": {
+          "type": "heading",
+          "settings": {
+            "title": "Diamond Buying Guide",
+            "use_h1": false
+          }
+        },
+        "text_AHEnq4": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Welcome to our Diamond Buying Guide! Investing in a diamond is a significant decision, and we want to ensure you have all the information you need to make an informed purchase. This guide covers the essential aspects of diamonds, including their 4Cs (Cut, Color, Clarity, and Carat Weight), diamond certification, and tips for selecting the perfect diamond for your needs and budget.</p>",
+            "enlarge_text": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_KBDikh",
+        "text_AHEnq4"
+      ],
+      "settings": {
+        "height": "medium",
+        "text_alignment": "left",
+        "full_width": false,
+        "color_scheme": "default"
+      }
+    },
+    "rich_text_YLUJGg": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_ppxitK": {
+          "type": "heading",
+          "settings": {
+            "title": "What Are Diamonds?",
+            "use_h1": false
+          }
+        },
+        "text_Pbxqta": {
+          "type": "text",
+          "settings": {
+            "text": "<p>A diamond is a naturally occurring gemstone composed of carbon atoms arranged in a specific crystalline structure. It is renowned for its exceptional hardness, brilliance, and rarity, making it one of the most sought-after gemstones in the world. Diamonds are formed deep within the Earth's mantle under high pressure and temperature conditions and are brought to the surface through volcanic eruptions. </p><p></p><p>The earliest recorded discovery of diamonds dates back to the 4th Century BC in India, marking the beginning of their storied history. Today, diamonds maintain their allure and prestige, standing as timeless symbols of beauty and luxury on Earth.</p>",
+            "enlarge_text": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_ppxitK",
+        "text_Pbxqta"
+      ],
+      "settings": {
+        "height": "medium",
+        "text_alignment": "left",
+        "full_width": false,
+        "color_scheme": "default"
+      }
+    },
+    "rich_text_3PKKyF": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_qCzG8r": {
+          "type": "heading",
+          "settings": {
+            "title": "TYPES OF DIAMONDS",
+            "use_h1": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_qCzG8r"
+      ],
+      "settings": {
+        "height": "medium",
+        "text_alignment": "center",
+        "full_width": false,
+        "color_scheme": "default"
+      }
+    },
+    "key_features_cYqADq": {
+      "type": "key-features",
+      "blocks": {
+        "feature_8xNxtg": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/Diamond_Rough.jpg",
+            "bg_color": "#e3e3e3",
+            "bg_gradient": "",
+            "text_color": "#505050",
+            "heading": "NATURAL DIAMONDS",
+            "text": "<p>Natural diamonds are formed deep within the Earth's mantle over millions to billions of years under high pressure and temperature conditions. They are the most common type of  diamonds found in nature and are prized for their beauty, rarity, and durability. Natural diamonds generally form in a tetrahedron shape.</p>",
+            "show_segments": false,
+            "segments": 4,
+            "active_segment": "4",
+            "fill_segments": true,
+            "show_labels": true,
+            "label_left": "",
+            "label_middle": "",
+            "label_right": "",
+            "show_icon": false,
+            "icon": "star"
+          }
+        },
+        "feature_XTPAHm": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/Large_synthetic_diamond.png",
+            "bg_color": "#e3e3e3",
+            "bg_gradient": "",
+            "text_color": "#505050",
+            "heading": "LAB-GROWN DIAMONDS",
+            "text": "<p>Lab-Grown Diamonds, also known as lab-created or<br/>synthetic diamonds, are produced in a controlled laboratory setting using advanced technology that replicates the natural diamond-growing process. These diamonds have the same chemical composition, physical properties, and optical characteristics as natural diamonds but are typically more affordable.</p>",
+            "show_segments": false,
+            "segments": 5,
+            "active_segment": "4",
+            "fill_segments": true,
+            "show_labels": true,
+            "label_left": "",
+            "label_middle": "",
+            "label_right": "",
+            "show_icon": false,
+            "icon": "star"
+          }
+        },
+        "feature_WcHe8J": {
+          "type": "feature",
+          "disabled": true,
+          "settings": {
+            "bg_color": "#e3e3e3",
+            "bg_gradient": "",
+            "text_color": "#505050",
+            "heading": "TREATED DIAMONDS",
+            "text": "<p>Treated diamonds are natural or synthetic diamonds that have undergone enhancement treatments to improve their color, clarity, or overall appearance. Common treatments include laser drilling to remove inclusions, fracture filling to improve clarity, and high-pressure, high-temperature (HPHT) and chemical vapor deposition (CVD) processes to alter the diamond's color.</p>",
+            "show_segments": false,
+            "segments": 4,
+            "active_segment": "4",
+            "fill_segments": true,
+            "show_labels": true,
+            "label_left": "",
+            "label_middle": "",
+            "label_right": "",
+            "show_icon": false,
+            "icon": "star"
+          }
+        },
+        "feature_fmahzy": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/5512352220_6d6fef8a1b_o.jpg",
+            "bg_color": "#e3e3e3",
+            "bg_gradient": "",
+            "text_color": "#505050",
+            "heading": "FANCY COLOR DIAMONDS",
+            "text": "<p>Fancy color diamonds are natural or synthetic diamonds<br/>that exhibit intense and distinct colors, such as yellow, blue, pink, red, green, and black. These diamonds are rare and highly valued for their unique and vibrant hues. The color intensity and distribution within the diamond determine its value, with vivid and evenly distributed colors commanding higher prices.</p>",
+            "show_segments": false,
+            "segments": 4,
+            "active_segment": "4",
+            "fill_segments": true,
+            "show_labels": true,
+            "label_left": "",
+            "label_middle": "",
+            "label_right": "",
+            "show_icon": false,
+            "icon": "star"
+          }
+        }
+      },
+      "block_order": [
+        "feature_8xNxtg",
+        "feature_XTPAHm",
+        "feature_WcHe8J",
+        "feature_fmahzy"
+      ],
+      "settings": {
+        "heading": "",
+        "image_max_width": 700,
+        "media_aspect_ratio": "1",
+        "image_position": "right",
+        "segment_position": "over-text"
+      }
+    },
+    "rich_text_nWrr9P": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_XUq7q7": {
+          "type": "heading",
+          "settings": {
+            "title": "4 C'S OF DIAMONDS",
+            "use_h1": false
+          }
+        },
+        "text_8r79CN": {
+          "type": "text",
+          "settings": {
+            "text": "<p>When looking for and understanding a diamond, the best place to start are the 4 C's: cut for sparkle, color for purity, clarity for transparency, and carat weight for size. </p>",
+            "enlarge_text": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_XUq7q7",
+        "text_8r79CN"
+      ],
+      "settings": {
+        "height": "medium",
+        "text_alignment": "left",
+        "full_width": false,
+        "color_scheme": "default"
+      }
+    },
+    "gem_find_iwto_RmPdAh": {
+      "type": "gem-find-iwto",
+      "settings": {
+        "image": "shopify://shop_images/Cut_4C_Desktop.jpg",
+        "mobile_image": "shopify://shop_images/Cut_4C_Mobile.jpg",
+        "height": "fixed",
+        "height_desktop": 600,
+        "height_mobile": 460,
+        "image_link": "",
+        "full_width": true,
+        "text_alignment": "center center",
+        "mobile_overlay_under": false,
+        "overlay_style": "shadow"
+      }
+    },
+    "gem_find_iwto_UFXbRA": {
+      "type": "gem-find-iwto",
+      "settings": {
+        "image": "shopify://shop_images/Color_4C_Desktop.jpg",
+        "mobile_image": "shopify://shop_images/Color_4C_Mobile.jpg",
+        "height": "fixed",
+        "height_desktop": 600,
+        "height_mobile": 460,
+        "image_link": "",
+        "full_width": true,
+        "text_alignment": "center center",
+        "mobile_overlay_under": false,
+        "overlay_style": "shadow"
+      }
+    },
+    "gem_find_iwto_LfnTNR": {
+      "type": "gem-find-iwto",
+      "settings": {
+        "image": "shopify://shop_images/Clarity_4C_Desktop.jpg",
+        "mobile_image": "shopify://shop_images/Clarity_4C_Moile.jpg",
+        "height": "fixed",
+        "height_desktop": 600,
+        "height_mobile": 460,
+        "image_link": "",
+        "full_width": true,
+        "text_alignment": "center center",
+        "mobile_overlay_under": false,
+        "overlay_style": "shadow"
+      }
+    },
+    "gem_find_iwto_kWmrFP": {
+      "type": "gem-find-iwto",
+      "settings": {
+        "image": "shopify://shop_images/Carat_Weight_4C_Desktop.jpg",
+        "mobile_image": "shopify://shop_images/Carat_Weight_4C_Mobile.jpg",
+        "height": "fixed",
+        "height_desktop": 600,
+        "height_mobile": 460,
+        "image_link": "",
+        "full_width": true,
+        "text_alignment": "center center",
+        "mobile_overlay_under": false,
+        "overlay_style": "shadow"
+      }
+    },
+    "gem_find_iwto_fCDJyz": {
+      "type": "gem-find-iwto",
+      "settings": {
+        "image": "shopify://shop_images/Diamond_shape_Desktop_69e218c3-7808-46f2-8b6a-454247153da1.jpg",
+        "mobile_image": "shopify://shop_images/Diamond_shape_Mobile_17f9e2da-da1b-4dc9-8fbc-9726cae3514b.jpg",
+        "height": "fixed",
+        "height_desktop": 600,
+        "height_mobile": 460,
+        "image_link": "",
+        "full_width": true,
+        "text_alignment": "center center",
+        "mobile_overlay_under": false,
+        "overlay_style": "shadow"
+      }
+    },
+    "multi_column_kTT6qT": {
+      "type": "multi-column",
+      "blocks": {
+        "text_block_w6maqT": {
+          "type": "text_block",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify://shop_images/215417-690x460-shape-symmetry.jpg",
+            "title": "DIAMOND SYMMETRY",
+            "text": "<p>Symmetry refers to the quality of the diamond facets in terms of their proportion and alignment. Diamonds with a high-quality cut typically also exhibit excellent symmetry, making these two attributes closely related. You can find the symmetry grade listed on the IGI or GIA certificate.</p>",
+            "button_label": "",
+            "link": ""
+          }
+        },
+        "text_block_ABaPrw": {
+          "type": "text_block",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify://shop_images/Flourescence_df1dd4e4-47b7-424e-b62c-f95394eca00f.png",
+            "title": "DIAMOND FLUORESCENCE",
+            "text": "<p>Diamond fluorescence describes how a diamond reacts to ultraviolet (UV) light. This reaction is graded based on the diamond's response to long-wave UV, which is present in daylight. While fluorescence can make diamonds appear blue or yellow under UV light, it generally doesn't change their appearance under normal lighting conditions or compromise the diamond's structural integrity.</p>",
+            "button_label": "",
+            "link": ""
+          }
+        },
+        "text_block_jR8dxD": {
+          "type": "text_block",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify://shop_images/GIA_Cert.jpg",
+            "title": "DIAMOND CERTIFICATION",
+            "text": "<p>Diamonds are evaluated using a grading scale established by the Gemological Institute of America (GIA), which considers cut, color, clarity, and carat weight. These four factors, known as the 4 C's, are widely recognized as the standard criteria for assessing and determining the quality of diamonds.</p><p>Milano offers diamonds certified by GIA, EGL USA and IGI</p>",
+            "button_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_block_w6maqT",
+        "text_block_ABaPrw",
+        "text_block_jR8dxD"
+      ],
+      "settings": {
+        "title": "",
+        "media_aspect_ratio": "1.5",
+        "media_width": 700,
+        "text_alignment": "center",
+        "button_style": "primary",
+        "color_scheme": "default"
+      }
+    },
+    "collapsible_tabs_yz88GA": {
+      "type": "collapsible-tabs",
+      "blocks": {
+        "question_DGceiF": {
+          "type": "question",
+          "settings": {
+            "title": "How do I care for and clean my diamond jewelry?",
+            "answer": "<p>To maintain the beauty and shine of your diamond jewelry, it's essential to<br/>clean it regularly using mild soap and warm water. You can also use a soft<br/>toothbrush to gently scrub away dirt and debris. Avoid exposing your diamond<br/>jewelry to harsh chemicals or abrasive materials and store them separately in a<br/>jewelry box to prevent scratching.</p>"
+          }
+        },
+        "question_tN6Niy": {
+          "type": "question",
+          "settings": {
+            "title": "What are the different diamond shapes available?",
+            "answer": "<p>Diamonds come in various shapes, including round, princess, emerald,<br/>cushion, and pear, among others. Each shape has its unique characteristics and<br/>appeal, allowing customers to choose one that suits their personal style and<br/>preference.</p>"
+          }
+        },
+        "question_KRLtVX": {
+          "type": "question",
+          "settings": {
+            "title": "What are conflict-free diamonds?",
+            "answer": "<p>Conflict-free diamonds are diamonds that have been ethically sourced and<br/>mined without funding violence or exploitation. Many reputable jewelers and<br/>suppliers adhere to the Kimberley Process, an international certification<br/>scheme, to ensure that their diamonds are conflict-free.</p>"
+          }
+        },
+        "question_pjFUhA": {
+          "type": "question",
+          "settings": {
+            "title": "How does carat weight affect the price of a diamond?",
+            "answer": "<p>Carat weight measures a diamond's size and weight. Generally, as carat<br/>weight increases, so does the diamond's price, assuming all other factors (cut,<br/>color, and clarity) remain constant. Larger diamonds are rarer and therefore<br/>more valuable.</p>"
+          }
+        },
+        "question_UcpYbF": {
+          "type": "question",
+          "settings": {
+            "title": "Can I tell the difference between Natural & Lab-Grown Diamonds?",
+            "answer": "<p>Only a trained gemologist may be able to tell the difference between a natural or lab grown diamond through the use of technology. The best way to know the difference is to buy a diamond that is certified by an accredited lab like GIA, EGL or IGI.</p>"
+          }
+        },
+        "question_FyGiGq": {
+          "type": "question",
+          "settings": {
+            "title": "Can diamonds chip or scratch?",
+            "answer": "<p>Despite being one of the hardest natural substances, diamonds can still chip<br/>or scratch if subjected to sharp blows or extreme pressure. It's essential to<br/>handle diamond jewelry with care to avoid damage.</p>"
+          }
+        },
+        "question_tDzVKf": {
+          "type": "question",
+          "settings": {
+            "title": "Do all diamonds come with certifications?",
+            "answer": "<p>Not all diamonds come with certifications, but many reputable jewelers<br/>provide grading reports from recognized gemological laboratories, such as GIA<br/>(Gemological Institute of America), EGL (European Gemological Laboratory), IGI<br/>(International Gemological Institute) or AGS (American Gem Society), to verify<br/>the diamond's quality and authenticity.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_DGceiF",
+        "question_tN6Niy",
+        "question_KRLtVX",
+        "question_pjFUhA",
+        "question_UcpYbF",
+        "question_FyGiGq",
+        "question_tDzVKf"
+      ],
+      "settings": {
+        "title": "OTHER FAQ"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_with_text_overlay_e3P9YC",
+    "rich_text_UwWxNr",
+    "rich_text_YLUJGg",
+    "rich_text_3PKKyF",
+    "key_features_cYqADq",
+    "rich_text_nWrr9P",
+    "gem_find_iwto_RmPdAh",
+    "gem_find_iwto_UFXbRA",
+    "gem_find_iwto_LfnTNR",
+    "gem_find_iwto_kWmrFP",
+    "gem_find_iwto_fCDJyz",
+    "multi_column_kTT6qT",
+    "collapsible_tabs_yz88GA"
+  ]
+}

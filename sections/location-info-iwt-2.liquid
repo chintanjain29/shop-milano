@@ -1,0 +1,160 @@
+<style>
+  #shopify-section-{{ section.id }} .custom-bg {
+   background: {{ section.settings.bg_color }}
+  }
+</style>
+<div class="{% if section.settings.use_alt_bg %}use-alt-bg fully-padded-row--medium{% else %}custom-bg fully-padded-row--medium{% endif %}">
+  <div class="container">
+    <div class="flexible-layout">
+      <div class="column column--half {% if section.settings.image_position == 'right' %}column--order-push-desktop{% endif %}">
+        {% if section.settings.button_link != blank -%}
+          <a class="block-link" href="{{ section.settings.button_link }}">
+        {%- endif %}
+        <div class="image-overlap">
+          <div class="image-overlap__image image-overlap__image-1">
+            {%- if section.settings.image == blank -%}
+              <div class="placeholder-image">{{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}</div>
+            {%- else -%}
+              {%- render 'image', image: section.settings.image -%}
+            {%- endif -%}
+          </div>
+        </div>
+        {% if section.settings.button_link != blank %}</a>{% endif %}
+      </div>
+
+      <div class="column column--half align-{{ section.settings.text_alignment }}">
+        <div class="feature-text">
+          {% if section.settings.title != blank %}
+            <h1 class="majortitle in-content">{{ section.settings.title | escape }}</h1>
+          {% endif %}
+
+          <div class="user-content">{{ section.settings.text }}</div>
+
+          <div class="btn-list">
+            {% if section.settings.button_label != blank %}
+              <div class="lightly-spaced-row-above">
+                <a
+                  class="{% if section.settings.button_style != 'link' %}btn btn--{{ section.settings.button_style }}{% else %}small-feature-link{% endif %}"
+                  href="{{ section.settings.button_link }}"
+                >
+                  {{- section.settings.button_label | escape -}}
+                </a>
+              </div>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Location detail iwt 2",
+  "class": "section-image-with-text location-detail-iwt",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "use_alt_bg",
+      "label": "Use alternate section color",
+      "default": false
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Background",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading",
+      "default": "Image with text"
+    },
+    {
+      "type": "richtext",
+      "id": "text",
+      "label": "Text",
+      "default": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Button",
+      "default": "Read more"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button link"
+    },
+    {
+      "type": "select",
+      "id": "button_style",
+      "label": "Button style",
+      "default": "primary",
+      "options": [
+        {
+          "label": "Button - primary",
+          "value": "primary"
+        },
+        {
+          "label": "Button - secondary",
+          "value": "secondary"
+        },
+        {
+          "label": "Link",
+          "value": "link"
+        }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "image_position",
+      "label": "Image alignment",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "text_alignment",
+      "label": "Text alignment",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ]
+    }
+
+  ],
+  "presets": [
+    {
+      "name": "Location image with text 2",
+      "category": "Text",
+      "settings": {}
+    }
+  ]
+}
+{% endschema %}

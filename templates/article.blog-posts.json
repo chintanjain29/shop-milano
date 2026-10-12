@@ -1,0 +1,33 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-article",
+      "settings": {
+        "show_date": true,
+        "show_author": false,
+        "show_article_tags": true,
+        "show_sharing_icons": true,
+        "show_twitter": true,
+        "show_facebook": true,
+        "show_pinterest": true,
+        "show_featured_image": true,
+        "full_width_image": true,
+        "featured_image_height": "huge",
+        "enable_title_overlay": false,
+        "overlay_style": "shadow"
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

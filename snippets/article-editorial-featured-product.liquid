@@ -1,0 +1,92 @@
+{%- comment -%}
+  Parameters:
+    - product {Object} - Product object.
+{%- endcomment -%}
+{%- liquid
+  assign product_url = product.url
+
+  assign metal_option = blank
+  if settings.swatch_enabled
+    for product_option in product.options_with_values
+      if settings.swatch_option_name contains product_option.name
+        assign metal_option = product_option
+        break
+      endif
+    endfor
+  endif
+
+  assign option_limit = 5
+-%}
+
+<a class="article-editorial__product-card" href="{{ product_url }}">
+  <div class="article-editorial__product-card-media">
+    {%- if product.featured_media -%}
+      {%- render 'image' with product.featured_media.preview_image,
+        sizes: '(min-width: 768px) 160px, 120px',
+        widths: '120, 160, 240, 320',
+        loading: 'lazy'
+      -%}
+    {%- else -%}
+      <div class="article-editorial__product-card-placeholder"></div>
+    {%- endif -%}
+  </div>
+
+  <div class="article-editorial__product-card-info">
+    <span class="article-editorial__product-card-title">{{ product.title | escape }}</span>
+
+    {%- if metal_option -%}
+      <div class="article-editorial__product-card-metals">
+        <span class="article-editorial__product-card-metals-label">Metal colors:</span>
+        <div
+          class="product-block-options product-block-options--swatch article-editorial__product-card-swatches"
+          data-option-name="{{ metal_option.name | escape }}"
+        >
+          <div class="product-block-options__inner">
+            {%- assign product_option_position_0index = metal_option.position | minus: 1 -%}
+            {%- for product_option_value in metal_option.values -%}
+              {%- liquid
+                if forloop.index > option_limit
+                  break
+                endif
+
+                assign option_value_variant = false
+                for variant in product.variants
+                  if variant.options[product_option_position_0index] == product_option_value
+                    assign option_value_variant = variant
+                    break
+                  endif
+                endfor
+
+                if settings.swatch_method == 'variant-images' and option_value_variant.featured_media == blank
+                  continue
+                endif
+              -%}
+              <span
+                class="product-block-options__item"
+                data-option-item="{{ product_option_value | escape }}"
+                {% if option_value_variant.featured_media %}
+                  data-media="{{ option_value_variant.featured_media.id }}"
+                {% endif %}
+                {% if settings.swatch_method == 'swatches' %}
+                  data-swatch="{{ product_option_value | replace: '"', '' | downcase }}"
+                {% endif %}
+              >
+                <span class="product-block-options__item__text">{{ product_option_value | escape }}</span>
+                {%- if settings.swatch_method == 'variant-images' and option_value_variant.featured_media.preview_image -%}
+                  {%- render 'image' with option_value_variant.featured_media,
+                    sizes: '24px',
+                    widths: '24, 48',
+                    custom_aspect_ratio: 1,
+                    custom_crop: settings.swatch_crop_align,
+                    loading: 'lazy',
+                    fetchpriority: 'low'
+                  -%}
+                {%- endif -%}
+              </span>
+            {%- endfor -%}
+          </div>
+        </div>
+      </div>
+    {%- endif -%}
+  </div>
+</a>

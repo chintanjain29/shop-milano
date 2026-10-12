@@ -1,0 +1,289 @@
+<style>
+  #section-id-{{ section.id }} .hometitle, #section-id-{{ section.id }} .img-box{
+    background: {{ section.settings.bg_color }}
+  }
+  #section-id-{{ section.id }} .content-block{
+    background: {{ section.settings.custom_bg_color }};
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #section-id-{{ section.id }} .content-block:hover{
+    background: {{ section.settings.bg_color }};
+    color: #fff;
+  }
+  #section-id-{{ section.id }} .content-block:hover *{
+    color: inherit;
+  }
+  #section-id-{{ section.id }} .content-block:hover .text-column__button{
+    border-bottom: 1px solid #fff;
+  }
+  #section-id-{{ section.id }} .content-block:hover .img-box{
+    background: #fff;
+  }
+  #section-id-{{ section.id }} .content-block:hover .img-box svg path{
+    fill: #363636;
+  }
+</style>
+
+<div
+  id="section-id-{{ section.id }}"
+  class="{% if section.settings.use_alt_bg %}use-alt-bg fully-padded-row--medium{% else %}fully-spaced-row--medium{% endif %}"
+>
+  {% style %}
+    {%- for block in section.blocks -%}
+    #section-id-{{ section.id }} #block-id-{{ block.id }} .text-column__image {
+      max-width: {{ block.settings.image_width }}px;
+    }
+    {%- endfor -%}
+  {% endstyle %}
+
+  <div class="container">
+    {% if section.settings.title != blank %}
+      <h4 class="hometitle h4-style align-center">
+        <span class="title-content">
+          {{- section.settings.title | escape -}}
+          <span class="title-icon">
+            {% render 'icon-person-contact' %}
+          </span>
+        </span>
+      </h4>
+    {% endif %}
+    <div class="align-{{ section.settings.text_alignment }}">
+      <div class="contact-list-wrapper">
+        {% for block in section.blocks %}
+          <div id="block-id-{{ block.id }}" class="column text-column" {{ block.shopify_attributes }}>
+            <div class="content-block">
+              <div class="text-column__image lightly-spaced-row">
+                <div href="{{ block.settings.link }}" class="img-box">
+                  {%- if block.settings.image != blank -%}
+                    {{ block.settings.image }}
+                  {%- else -%}
+                    <div class="placeholder-image">
+                      {{- 'image' | placeholder_svg_tag: 'placeholder-svg' -}}
+                    </div>
+                  {%- endif -%}
+                </div>
+              </div>
+              {% if block.settings.title != blank %}
+                <h2 class="text-column__title">{{ block.settings.title }}</h2>
+              {% endif %}
+
+              {% if block.settings.text != blank %}
+                <div class="text-column__text user-content">{{ block.settings.text }}</div>
+              {% endif %}
+             
+              
+              {% if block.settings.button_label != blank %}
+                <div class="text-column__button-row text-column__button-row--{{ section.settings.button_style }}">
+                  <a 
+                    class="text-column__button {% if block.settings.title contains 'Email Us'  or  block.settings.title contains 'Bridal' %}custom-contact-form{% endif %}{% if section.settings.button_style != 'link' %}{% else %}small-feature-link{% endif %}"
+                    href="{{ block.settings.link }}" 
+                    {% if block.settings.title contains 'Virtual' %} target="_blank"
+                    {% endif %}
+                  >
+                    {{- block.settings.button_label -}}
+                  </a>
+                </div>
+              {% endif %}
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="popup" class="custom-popup-container">
+  <div id="custom-popup-content">
+    <span class="close-popup">
+      {% render 'icon-close-contact' %}
+    </span>
+    <script defer src=https://contact.gorgias.help/api/contact-forms/loader.js?uid=bowuvttr&locale=en-US data-gorgias-contact-form="script"></script>
+    <script defer src=https://contact.gorgias.help/api/contact-forms/loader.js?uid=q38a4lef&locale=en-US data-gorgias-contact-form="script"></script>
+    <div data-gorgias-contact-form="container">
+    </div>
+  </div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    document.addEventListener('click', function(event) {
+      if (event.target.tagName === 'A') {
+        if (event.target.textContent.includes('Chat with our Team')) {
+          event.preventDefault();
+          GorgiasChat.open();
+        }
+      }
+    });
+    const formSelector = document.querySelectorAll('.custom-contact-form');
+    const popups = document.querySelector('.custom-popup-container');
+    
+    const bodyElement = document.body;
+    const htmlElement = document.documentElement;
+    formSelector.forEach((box,index) => {
+      box.addEventListener('click', function handleClick(event) {
+        event.preventDefault();
+        const gorgiasFormSelector = document.getElementById('gorgias-contact-form-wrapper');
+        if(event.target.parentElement.parentElement.querySelector('h2').innerText == 'Email Us'){
+          gorgiasFormSelector.querySelectorAll('iframe')[0].style.display = 'block';
+          gorgiasFormSelector.querySelectorAll('iframe')[1].style.display = 'none';
+        }
+        else {
+          gorgiasFormSelector.querySelectorAll('iframe')[0].style.display = 'none';
+          gorgiasFormSelector.querySelectorAll('iframe')[1].style.display = 'block';
+        }
+        console.log(event)
+        popups.classList.add('active');
+        bodyElement.style.overflow = "hidden"; 
+        htmlElement.style.overflow = "hidden"; 
+      });
+    });
+      const closePopup = popup.querySelector('.close-popup');
+      closePopup.addEventListener('click', function () {
+        popups.classList.remove('active');
+        bodyElement.style.overflow = 'auto';
+        htmlElement.style.overflow = 'auto';
+      });
+  
+      bodyElement.addEventListener('click', function (evt) {
+        if (evt.target === popups) {
+          popups.classList.remove('active');
+          bodyElement.style.overflow = 'auto';
+          htmlElement.style.overflow = 'auto';
+        }
+      });
+  });
+ 
+
+ 
+</script>
+
+
+{% schema %}
+{
+  "name": "Contact logo list",
+  "class": "section-text-columns-with-images contact-logo-list",
+  "settings": [
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Background",
+      "default": "#008CC2"
+    },
+    {
+      "type": "color",
+      "id": "custom_bg_color",
+      "label": "Block Background",
+      "default": "#f8f8f8"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading",
+      "default": "Text columns with images"
+    },
+    {
+      "type": "select",
+      "id": "text_alignment",
+      "label": "Text alignment",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "left"
+    },
+    {
+      "type": "select",
+      "id": "button_style",
+      "label": "Button style",
+      "default": "primary",
+      "options": [
+        {
+          "label": "Button - primary",
+          "value": "primary"
+        },
+        {
+          "label": "Button - secondary",
+          "value": "secondary"
+        },
+        {
+          "label": "Link",
+          "value": "link"
+        }
+      ]
+    },
+    {
+      "id": "use_alt_bg",
+      "type": "checkbox",
+      "label": "Use alternate section color",
+      "default": false
+    }
+  ],
+  "blocks": [
+    {
+      "type": "text_block",
+      "name": "Column",
+      "settings": [
+        {
+          "type": "html",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Heading",
+          "default": "Add a title or tagline"
+        },
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "Text",
+          "default": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.</p>"
+        },
+        {
+          "type": "text",
+          "id": "button_label",
+          "label": "Button label"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Link"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Contact logo list",
+      "category": "Text",
+      "settings": {},
+      "blocks": [
+        {
+          "type": "text_block"
+        },
+        {
+          "type": "text_block"
+        },
+        {
+          "type": "text_block"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

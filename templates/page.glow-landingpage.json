@@ -1,0 +1,193 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "show_page_title": true,
+        "full_width": false
+      }
+    },
+    "rich_text_H3q4ky": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_iE8L3z": {
+          "type": "heading",
+          "settings": {
+            "title": "Flexible Payment Options",
+            "use_h1": true
+          }
+        },
+        "text_x33WR9": {
+          "type": "text",
+          "settings": {
+            "text": "<p>At Milano, we understand that your jewelry acquisition might commemorate life's significant milestones or simply be a delightful indulgence. We provide a range of convenient payment options, including flexible financing plans with affordable monthly installments and rates starting from 0% APR. Rest assured, we have a payment solution tailored to suit your unique purchase.</p><p>For our customers within the US, we offer an array of seamless payment options at checkout to streamline your shopping experience and expedite your purchase. Select from our preferred payment methods listed below or explore our financing alternatives for added flexibility.</p><p><strong>Payment Methods</strong></p><ul><li>Credit Cards</li><li>Venmo (Must Contact Customer Service)</li><li>Apple Pay</li><li>Google Pay</li><li>Wire Transfers (Must Contact Customer Service)</li><li>PayPal</li></ul><p></p>",
+            "enlarge_text": false
+          }
+        },
+        "heading_brEXEf": {
+          "type": "heading",
+          "settings": {
+            "title": "Financing Options",
+            "use_h1": false
+          }
+        },
+        "image_w7jW6a": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/affirm.webp",
+            "image_width": 220,
+            "url": ""
+          }
+        },
+        "text_4nKVA3": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Affirm Financing</strong><br/>Benefit from special financing with Affirm, allowing you to enjoy easy monthly payments for a period of up to 36 months, with attractive rates starting from 0% APR! Simply provide some basic details, and Affirm will promptly determine your credit limit and payment terms. Please note, Affirm financing is exclusively available to our US customers and may not be accessible in all states. To pre-qualify with Affirm, visit Affirm.com or contact them at 855-423-3729.</p><p><strong>Flexible Payment Plans</strong><br/>Opt for monthly payments spanning up to 36 months, with financing starting from 0% APR*. For instance, a $2,000 purchase could translate to monthly installments as low as $69.57 over 36 months at 15% APR. *Discover more on our Affirm Financing Page.</p><p><strong>Immediate Decision</strong><br/>Upon completing your loan application, we can promptly process your order, allowing you to select a payment schedule that aligns with your preferences.</p><p><strong>No Credit Impact</strong><br/>Rest assured, checking your eligibility with Affirm will not adversely affect your credit score.</p><p><strong>Hassle-Free Checkout</strong><br/>Simply choose Affirm at checkout and provide some essential details to receive an instant loan decision.</p><p></p>",
+            "enlarge_text": false
+          }
+        },
+        "image_WUfCBC": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Synchrony-Bank-e1517363885921.webp",
+            "image_width": 210,
+            "url": ""
+          }
+        },
+        "text_RtD7bW": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Synchrony Financing</strong></p><p>At Milano, we are pleased to offer Synchrony Financing as part of our flexible payment options to enhance your shopping experience with us. Synchrony Financing provides you with convenient financing solutions tailored to suit your needs, allowing you to spread out your payments over time with competitive rates and terms.</p><p>To take advantage of our Synchrony Financing option, use the following <a href=\"https://www.synchrony.com/mmc/LX170338000\" target=\"_blank\" title=\"https://www.synchrony.com/mmc/LX170338000\">link</a> to apply for your Synchrony Financing Milano Credit Card. Once approved, contact our dedicated Customer Service team who will be happy to assist you with the application process and provide further details on this financing solution.</p><p>Embrace the ease and flexibility of Synchrony Financing at Milano, making your dream jewelry purchase more accessible and manageable. Reach out to our Customer Service today to explore this financing option and make your desired purchase a reality.</p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_iE8L3z",
+        "text_x33WR9",
+        "heading_brEXEf",
+        "image_w7jW6a",
+        "text_4nKVA3",
+        "image_WUfCBC",
+        "text_RtD7bW"
+      ],
+      "disabled": true,
+      "settings": {
+        "height": "small",
+        "text_alignment": "left",
+        "full_width": false,
+        "color_scheme": "default"
+      }
+    },
+    "rich_text_gA6tYp": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_tedFER": {
+          "type": "heading",
+          "settings": {
+            "title": "Create Your Custom Glow of the Caribbean Jewelry",
+            "use_h1": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_tedFER"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "height": "medium",
+        "text_alignment": "center",
+        "full_width": false,
+        "color_scheme": "default"
+      }
+    },
+    "custom_content_tymJCy": {
+      "type": "custom-content",
+      "blocks": {
+        "image_ez9jDH": {
+          "type": "image",
+          "settings": {
+            "width": "half",
+            "image": "shopify://shop_images/Turtle.jpg",
+            "mobile_image": "shopify://shop_images/Turtle.jpg",
+            "height": "adapt",
+            "height_desktop": 600,
+            "height_mobile": 500,
+            "subheading": "",
+            "title": "",
+            "text": "",
+            "enlarge_text": false,
+            "button_label": "",
+            "button_style": "primary",
+            "image_link": "",
+            "text_alignment": "center center",
+            "mobile_overlay_under": false,
+            "overlay_style": "shadow"
+          }
+        },
+        "text_Ht7HQJ": {
+          "type": "text",
+          "settings": {
+            "width": "half",
+            "subheading": "",
+            "title": "",
+            "text": "<p>Glow of the Caribbean<strong> </strong>creates stunning, handcrafted jewelry inspired by the vibrant colors, natural beauty, and warm spirit of the islands. Each piece reflects the essence of sunlit shores, turquoise waters, and meaningful moments connected to the Caribbean. Every design carries a story - a feeling, a memory, or a place - captured in jewelry you can wear every day.</p><p>If you’re searching for <strong>Glow of the Caribbean jewelry</strong> or looking to place a <strong>special request</strong>, we’re here to help. While Glow of the Caribbean pieces are not sold directly on our site, we assist customers with special orders, design guidance, and availability.</p><p>Share the styles you love or <a href=\"https://www.milanojewelry.com/pages/contact\" title=\"https://www.milanojewelry.com/pages/contact\"><em>book a one-on-one appointment</em></a>. Our team will help with customization, details, and ordering your perfect Glow of the Caribbean piece.</p>",
+            "button_label": "contact us",
+            "button_link": "https://www.milanojewelry.com/pages/contact",
+            "button_style": "primary",
+            "text_alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "image_ez9jDH",
+        "text_Ht7HQJ"
+      ],
+      "name": "Custom content",
+      "settings": {
+        "alignment": "top"
+      }
+    },
+    "custom_liquid_R7WxJP": {
+      "type": "custom-liquid",
+      "name": "Custom Liquid",
+      "settings": {
+        "full_width": true,
+        "code": "<script defer src=\"https://contact.gorgias.help/api/contact-forms/loader.js?v=3\" data-gorgias-loader-contact-form data-gorgias-contact-form-uid=\"kgr62872\"></script>"
+      }
+    },
+    "featured_collection_bB86MT": {
+      "type": "featured-collection",
+      "name": "Featured collection",
+      "settings": {
+        "title": "Our Fashion Favorites",
+        "collection": "rings",
+        "show_vendor": false,
+        "enable_carousel": true,
+        "grid": 4,
+        "rows": 1,
+        "color_scheme": "default",
+        "show_view_all": true,
+        "full_width": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich_text_H3q4ky",
+    "rich_text_gA6tYp",
+    "custom_content_tymJCy",
+    "custom_liquid_R7WxJP",
+    "featured_collection_bB86MT"
+  ]
+}

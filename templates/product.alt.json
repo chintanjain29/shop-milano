@@ -1,0 +1,481 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "klaviyo_reviews_average_rating_iqWch9": {
+          "type": "shopify://apps/klaviyo-reviews/blocks/average-rating/db20e365-d984-4ac4-9655-e1588d951ca9",
+          "disabled": true,
+          "settings": {
+            "product": "{{product}}"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "show_tax_and_shipping": false,
+            "enable_product_reviews_by_price": true
+          }
+        },
+        "affirm_pay_over_time_messaging_product_block_phUTkD": {
+          "type": "shopify://apps/affirm-pay-over-time-messaging/blocks/product-block/6dce54be-130d-4d13-9636-1e8f611b3071",
+          "settings": {
+            "logo_align": "left",
+            "font_size": 12,
+            "logo_color": "blue",
+            "logo_type": "logo",
+            "public_api_key": "YEZ359BOQBE2R5TQ",
+            "price_selector": ".buy-buttons-row"
+          }
+        },
+        "vendor": {
+          "type": "vendor",
+          "disabled": true,
+          "settings": {}
+        },
+        "variant-picker": {
+          "type": "variant-picker",
+          "settings": {
+            "choose_type_style": true,
+            "show_single": false,
+            "select_first_variant": true,
+            "selector_style": "dropdown",
+            "enable_dynamic_availability": true,
+            "enable_size_chart": true,
+            "size_chart_variant": "Size",
+            "size_chart_page": "about"
+          }
+        },
+        "addon_hhaN9U": {
+          "type": "addon",
+          "settings": {
+            "show_in_quickbuy": true
+          }
+        },
+        "inventory_level_FkqPDq": {
+          "type": "inventory-level",
+          "disabled": true,
+          "settings": {
+            "show_inventory_notice": "low",
+            "show_inventory_count": "low",
+            "inventory_threshold": 10,
+            "enable_box": false,
+            "enable_pulse": true,
+            "show_in_quickbuy": true
+          }
+        },
+        "buy-buttons": {
+          "type": "buy-buttons",
+          "settings": {
+            "show_quantity_selector": true,
+            "enable_payment_button": false,
+            "show_backorder_text": false,
+            "show_pickup_availability": false,
+            "show_gift_card_recipient": true
+          }
+        },
+        "text_qMzC6m": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Made to Order: Ships in 2-3 Weeks",
+            "icon": "",
+            "icon_size": "small",
+            "enable_box": false,
+            "box_color": "#e0f4d5",
+            "show_in_quickbuy": false
+          }
+        },
+        "text_z3UkNf": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Estimated Ship Date:",
+            "icon": "calendar",
+            "icon_size": "small",
+            "enable_box": false,
+            "box_color": "#e0f4d5",
+            "show_in_quickbuy": false
+          }
+        },
+        "custom_liquid_RY7NhF": {
+          "type": "custom-liquid",
+          "settings": {
+            "custom_liquid": "<div class=\"tp-estimated-date\">\n<span class=\"tp-made-to-order\">Made to Order: Ships in 2–3 Weeks</span> <span class=\"tp-in-stock\">In Stock: Ships in 3–5 Days</span></div>",
+            "show_in_quickbuy": false
+          }
+        },
+        "custom_liquid_khMDQp": {
+          "type": "custom-liquid",
+          "settings": {
+            "custom_liquid": "<div id='ss-trust-badge'></div>",
+            "show_in_quickbuy": false
+          }
+        },
+        "text_KgrjKa": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Free Shipping | Free Returns",
+            "icon": "truck",
+            "icon_size": "small",
+            "enable_box": false,
+            "box_color": "#e0f4d5",
+            "show_in_quickbuy": false
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "show_in_tab": true,
+            "open_tab": false,
+            "icon": "",
+            "show_in_quickbuy": false
+          }
+        },
+        "accordion_zEhq7V": {
+          "type": "accordion",
+          "settings": {
+            "title": "Insured Free Shipping & Returns",
+            "icon": "",
+            "content": "<p>Milano is committed to delivering a jewelry journey that fills your heart with delight, both today and always. We provide complimentary insured shipping, granting you tranquility with tracking and a signature upon receipt. Our insurance safeguards against loss, damage, or theft while in transit. Should any of these rare incidents occur, we strive diligently to retrieve the item(s). If retrieval isn't possible, we promise a replacement of equivalent quality. Returns within 30 days are straightforward and at no cost within the US, guaranteeing an effortless and pleasant experience for our cherished clientele.</p>",
+            "page": "",
+            "open": false,
+            "show_in_quickbuy": false
+          }
+        },
+        "accordion_zh4Jfg": {
+          "type": "accordion",
+          "settings": {
+            "title": "Lifetime Warranty & Appraisal",
+            "icon": "",
+            "content": "<p><strong>Lifetime Warranty</strong></p><p>Milano is dedicated to crafting top-tier jewelry designed to stand the test of time. Our aim is to ensure your enduring satisfaction with our pieces. We provide complimentary lifetime cleaning and accept full accountability for any issues stemming from manufacturing flaws. It's important to understand that the warranty does not cover diamonds over 0.10ct, nor does it include center stone diamonds/gemstones on engagement rings. Additionally, damages, losses, and theft are excluded from coverage. Repair charges are determined by our expert jewelers based on service requirements. To maintain warranty eligibility, we advise having all services performed by Milano.</p><p><strong>Appraisal</strong></p><p>Each item with a MSRP value over $1,000 will receive an appraisal document stating the approximate monetary value of your item. This appraisal is solely for insurance purposes only.</p>",
+            "page": "",
+            "open": false,
+            "show_in_quickbuy": false
+          }
+        },
+        "custom_liquid_qejgAL": {
+          "type": "custom-liquid",
+          "settings": {
+            "custom_liquid": "<div class=\"expert-guidance\">\n  <span>Need expert guidance?</span>\n\n  <a href=\"tel:+18008882166\" class=\"phone-link\">\n    <svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" fill=\"#008cc2\" height=\"24px\" width=\"24px\" version=\"1.1\" class=\"phone-icon\" id=\"Capa_1\" viewBox=\"0 0 473.806 473.806\" xml:space=\"preserve\">\n  <g>\n  \t<g>\n  \t\t<path d=\"M374.456,293.506c-9.7-10.1-21.4-15.5-33.8-15.5c-12.3,0-24.1,5.3-34.2,15.4l-31.6,31.5c-2.6-1.4-5.2-2.7-7.7-4    c-3.6-1.8-7-3.5-9.9-5.3c-29.6-18.8-56.5-43.3-82.3-75c-12.5-15.8-20.9-29.1-27-42.6c8.2-7.5,15.8-15.3,23.2-22.8    c2.8-2.8,5.6-5.7,8.4-8.5c21-21,21-48.2,0-69.2l-27.3-27.3c-3.1-3.1-6.3-6.3-9.3-9.5c-6-6.2-12.3-12.6-18.8-18.6    c-9.7-9.6-21.3-14.7-33.5-14.7s-24,5.1-34,14.7c-0.1,0.1-0.1,0.1-0.2,0.2l-34,34.3c-12.8,12.8-20.1,28.4-21.7,46.5    c-2.4,29.2,6.2,56.4,12.8,74.2c16.2,43.7,40.4,84.2,76.5,127.6c43.8,52.3,96.5,93.6,156.7,122.7c23,10.9,53.7,23.8,88,26    c2.1,0.1,4.3,0.2,6.3,0.2c23.1,0,42.5-8.3,57.7-24.8c0.1-0.2,0.3-0.3,0.4-0.5c5.2-6.3,11.2-12,17.5-18.1c4.3-4.1,8.7-8.4,13-12.9    c9.9-10.3,15.1-22.3,15.1-34.6c0-12.4-5.3-24.3-15.4-34.3L374.456,293.506z M410.256,398.806    C410.156,398.806,410.156,398.906,410.256,398.806c-3.9,4.2-7.9,8-12.2,12.2c-6.5,6.2-13.1,12.7-19.3,20    c-10.1,10.8-22,15.9-37.6,15.9c-1.5,0-3.1,0-4.6-0.1c-29.7-1.9-57.3-13.5-78-23.4c-56.6-27.4-106.3-66.3-147.6-115.6    c-34.1-41.1-56.9-79.1-72-119.9c-9.3-24.9-12.7-44.3-11.2-62.6c1-11.7,5.5-21.4,13.8-29.7l34.1-34.1c4.9-4.6,10.1-7.1,15.2-7.1    c6.3,0,11.4,3.8,14.6,7c0.1,0.1,0.2,0.2,0.3,0.3c6.1,5.7,11.9,11.6,18,17.9c3.1,3.2,6.3,6.4,9.5,9.7l27.3,27.3    c10.6,10.6,10.6,20.4,0,31c-2.9,2.9-5.7,5.8-8.6,8.6c-8.4,8.6-16.4,16.6-25.1,24.4c-0.2,0.2-0.4,0.3-0.5,0.5    c-8.6,8.6-7,17-5.2,22.7c0.1,0.3,0.2,0.6,0.3,0.9c7.1,17.2,17.1,33.4,32.3,52.7l0.1,0.1c27.6,34,56.7,60.5,88.8,80.8    c4.1,2.6,8.3,4.7,12.3,6.7c3.6,1.8,7,3.5,9.9,5.3c0.4,0.2,0.8,0.5,1.2,0.7c3.4,1.7,6.6,2.5,9.9,2.5c8.3,0,13.5-5.2,15.2-6.9    l34.2-34.2c3.4-3.4,8.8-7.5,15.1-7.5c6.2,0,11.3,3.9,14.4,7.3c0.1,0.1,0.1,0.1,0.2,0.2l55.1,55.1    C420.456,377.706,420.456,388.206,410.256,398.806z\"></path>\n  \t\t<path d=\"M256.056,112.706c26.2,4.4,50,16.8,69,35.8s31.3,42.8,35.8,69c1.1,6.6,6.8,11.2,13.3,11.2c0.8,0,1.5-0.1,2.3-0.2    c7.4-1.2,12.3-8.2,11.1-15.6c-5.4-31.7-20.4-60.6-43.3-83.5s-51.8-37.9-83.5-43.3c-7.4-1.2-14.3,3.7-15.6,11    S248.656,111.506,256.056,112.706z\"></path>\n  \t\t<path d=\"M473.256,209.006c-8.9-52.2-33.5-99.7-71.3-137.5s-85.3-62.4-137.5-71.3c-7.3-1.3-14.2,3.7-15.5,11    c-1.2,7.4,3.7,14.3,11.1,15.6c46.6,7.9,89.1,30,122.9,63.7c33.8,33.8,55.8,76.3,63.7,122.9c1.1,6.6,6.8,11.2,13.3,11.2    c0.8,0,1.5-0.1,2.3-0.2C469.556,223.306,474.556,216.306,473.256,209.006z\"></path>\n  \t</g>\n  </g>\n</svg>\n\n    +1 (800) 888-2166\n  </a>\n\n  <span>Or</span>\n\n  <a href=\"https://bookings.cloud.microsoft/book/VirtualAppointment@milanodg.com/?ismsaljsauthenabled=&ref=christinekesteloo\" class=\"appointment-link\" target=\"_blank\">\n    Book an Appointment\n  </a>\n</div><style>.phone-link,\n.appointment-link {\n  color: #00205B;\n  text-decoration: underline;\n  text-decoration-color: #00205B;\n  text-decoration-thickness: 1px;\n  text-underline-offset: 2px;\n}\n\n.phone-link {\n  display: inline-flex;\n  align-items: center;\n  gap: 4px;\n}\n\n.phone-icon {\n  width: 12px;\n  height: 12px;\n  fill: #00205B;\n  flex-shrink: 0;\n}.expert-guidance {\n    font-size:12px;\n    display: flex;\n    gap: 3px;\n    align-items: center;\n    flex-wrap: wrap;\n    margin: 15px 0;\n}</style>",
+            "show_in_quickbuy": false
+          }
+        },
+        "complementary_VhC4zJ": {
+          "type": "complementary",
+          "settings": {
+            "heading": "",
+            "enable_carousel": true,
+            "max_products": 2
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "klaviyo_reviews_average_rating_iqWch9",
+        "price",
+        "affirm_pay_over_time_messaging_product_block_phUTkD",
+        "vendor",
+        "variant-picker",
+        "addon_hhaN9U",
+        "inventory_level_FkqPDq",
+        "buy-buttons",
+        "text_qMzC6m",
+        "text_z3UkNf",
+        "custom_liquid_RY7NhF",
+        "custom_liquid_khMDQp",
+        "text_KgrjKa",
+        "description",
+        "accordion_zEhq7V",
+        "accordion_zh4Jfg",
+        "custom_liquid_qejgAL",
+        "complementary_VhC4zJ"
+      ],
+      "settings": {
+        "show_breadcrumbs": true,
+        "show_location_underneath": false,
+        "show_add_ons": false,
+        "inventory_transfers_enable": true,
+        "enable_sticky_columns": true,
+        "gallery_size": "medium",
+        "gallery_layout": "collage-1",
+        "enable_zoom": true,
+        "show_alt_text": false,
+        "alt_text_icon": "",
+        "enable_video_autoplay": false,
+        "enable_video_looping": false,
+        "enable_media_grouping": true,
+        "media_grouping_option": "Metal Color,Color"
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "settings": {
+        "title": "You may also like",
+        "show_vendor": false,
+        "grid": 4
+      }
+    },
+    "featured_collection_rnHcF6": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Our Fashion Favorites",
+        "collection": "rings",
+        "show_vendor": false,
+        "enable_carousel": true,
+        "grid": 4,
+        "rows": 1,
+        "color_scheme": "default",
+        "show_view_all": true,
+        "full_width": true
+      }
+    },
+    "image_with_text_fCbRtP": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_VaYMrP": {
+          "type": "heading",
+          "settings": {
+            "title": "Designed and Manufactured by Milano",
+            "use_h1": false
+          }
+        },
+        "text_U6hkDK": {
+          "type": "text",
+          "settings": {
+            "text": "<h5>Every Milano piece is designed with the goal of captivating you. We pride ourselves on our ability to create made-to-order jewelry beautifully handcrafted in our own manufacturing facility. </h5><h5>Every detail is thoughtfully considered, with a focus on comfort, exceptional quality, and lasting durability, ensuring your jewelry remains a treasured keepsake for a lifetime.</h5>",
+            "enlarge_text": false
+          }
+        },
+        "button_eafkQN": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button text",
+            "button_link": "",
+            "button_style": "primary"
+          }
+        }
+      },
+      "block_order": [
+        "heading_VaYMrP",
+        "text_U6hkDK",
+        "button_eafkQN"
+      ],
+      "disabled": true,
+      "settings": {
+        "image": "shopify://shop_images/pexels-andrea-piacquadio-1050312.jpg",
+        "image_width": 700,
+        "image_link": "",
+        "image_position": "right",
+        "text_alignment": "center",
+        "color_scheme": "default"
+      }
+    },
+    "17141120212db4d4a0": {
+      "type": "apps",
+      "blocks": {
+        "affirm_pay_over_time_messaging_product_block_gBna9V": {
+          "type": "shopify://apps/affirm-pay-over-time-messaging/blocks/product-block/6dce54be-130d-4d13-9636-1e8f611b3071",
+          "settings": {
+            "logo_align": "left",
+            "font_size": 16,
+            "logo_color": "blue",
+            "logo_type": "logo",
+            "public_api_key": "",
+            "price_selector": ".price-container .price"
+          }
+        }
+      },
+      "block_order": [
+        "affirm_pay_over_time_messaging_product_block_gBna9V"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": false
+      }
+    },
+    "1729548212261885c9": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_dhmenL": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "review_data": "sample_data",
+            "max_width": 1200,
+            "show_shop_reviews": false,
+            "empty_state": "empty_widget"
+          }
+        },
+        "klaviyo_reviews_product_reviews_qrwQUr": {
+          "type": "shopify://apps/klaviyo-reviews/blocks/product-reviews/db20e365-d984-4ac4-9655-e1588d951ca9",
+          "disabled": true,
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_dhmenL",
+        "klaviyo_reviews_product_reviews_qrwQUr"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": false
+      }
+    },
+    "ss_trust_badges_pro_ij3Q8K": {
+      "type": "ss-trust-badges-pro",
+      "blocks": {
+        "item_PWYYTk": {
+          "type": "item",
+          "settings": {
+            "icon": "shield",
+            "text": "Lifetime Warranty",
+            "description": "",
+            "url": "https://shopmilano.com/pages/warranty",
+            "action": false,
+            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "controls": true,
+            "autoplay": true,
+            "loop": true
+          }
+        },
+        "item_r9Kxbq": {
+          "type": "item",
+          "settings": {
+            "icon": "globe",
+            "text": "Sustainable Manufacturing",
+            "description": "",
+            "url": "https://shopmilano.com/pages/our-factory",
+            "action": false,
+            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "controls": true,
+            "autoplay": true,
+            "loop": true
+          }
+        },
+        "item_g6CVd3": {
+          "type": "item",
+          "settings": {
+            "icon": "truck",
+            "text": "Free US Shipping Fully Insured",
+            "description": "",
+            "url": "https://shopmilano.com/pages/faq",
+            "action": false,
+            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "controls": true,
+            "autoplay": true,
+            "loop": true
+          }
+        },
+        "item_8kkxdw": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Circle_Arrow.png",
+            "icon": "guarantee",
+            "text": "Easy Returns & Exchanges",
+            "description": "",
+            "url": "",
+            "action": false,
+            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "controls": true,
+            "autoplay": true,
+            "loop": true
+          }
+        }
+      },
+      "block_order": [
+        "item_PWYYTk",
+        "item_r9Kxbq",
+        "item_g6CVd3",
+        "item_8kkxdw"
+      ],
+      "name": "SS - Trust Badges Pro",
+      "settings": {
+        "badge_position": "below_buy",
+        "heading": "",
+        "heading_custom": false,
+        "heading_font": "assistant_n4",
+        "heading_size": 48,
+        "heading_size_mobile": 32,
+        "heading_height": 130,
+        "heading_align": "center",
+        "heading_align_mobile": "center",
+        "items_row": 4,
+        "items_row_mobile": 4,
+        "items_gap": 10,
+        "items_gap_mobile": 10,
+        "items_mt": 0,
+        "badge_icon_size": 26,
+        "badge_icon_size_mobile": 26,
+        "icon_align": "center",
+        "icon_align_mobile": "center",
+        "text_custom": false,
+        "text_font": "assistant_n4",
+        "text_size": 12,
+        "text_size_mobile": 12,
+        "text_height": 130,
+        "text_align": "center",
+        "text_align_mobile": "center",
+        "text_mt": 6,
+        "modal_width": 70,
+        "modal_width_mobile": 100,
+        "modal_padding_vertical": 0,
+        "modal_padding_vertical_mobile": 0,
+        "modal_padding_horizontal": 0,
+        "modal_padding_horizontal_mobile": 0,
+        "modal_radius": 16,
+        "modal_border_thickness": 0,
+        "modal_overlay": 50,
+        "info_popup_bg_color": "#ffffff",
+        "info_popup_close_size_mobile": 36,
+        "info_popup_close_size": 36,
+        "info_popup_close_icon_size_mobile": 14,
+        "info_popup_close_icon_size": 14,
+        "close_size": 42,
+        "close_size_mobile": 42,
+        "close_icon_size": 16,
+        "close_icon_size_mobile": 16,
+        "modal_video_ratio": "landscape",
+        "modal_video_ratio_mobile": "landscape",
+        "text_color": "#121212",
+        "icon_color": "#121212",
+        "close_bg": "#000000",
+        "close_icon": "#ffffff",
+        "heading_color": "#232323",
+        "background_color": "#ffffff",
+        "background_gradient": "",
+        "border_color": "#000000",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding_top": 12,
+        "padding_bottom": 12,
+        "padding_horizontal": 0,
+        "padding_horizontal_mobile": 0,
+        "border_thickness": 0,
+        "lazy": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "related-products",
+    "featured_collection_rnHcF6",
+    "image_with_text_fCbRtP",
+    "17141120212db4d4a0",
+    "1729548212261885c9",
+    "ss_trust_badges_pro_ij3Q8K"
+  ]
+}

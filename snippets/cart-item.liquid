@@ -1,0 +1,245 @@
+{%- comment -%}
+  Parameters:
+  - item {LineItem} - Cart line item.
+  - forloop {forloop} - Cart line item for-loop iterator object.
+  - drawer {boolean} [optional] - Is this line item in a drawer? (Default is false)
+  - animate {boolean} [optional] - Apply page load animation to this item. (Default is false)
+
+  Example usage:
+  {% render 'cart-item', item: line_item, forloop: forloop, drawer: true, animate: true %}
+{%- endcomment -%}
+
+{%- liquid
+  if drawer
+    assign image_loading = 'manual'
+  else
+    assign image_loading = 'lazy'
+  endif
+-%}
+<div
+  class="cart-item product-{{ item.product.handle }}"
+  {% if animate %}
+    data-cc-animate
+  {% endif %}
+>
+  <div class="cart-item__column cart-item__image">
+    <a href="{{ item.url }}">
+      {%- render 'image', image: item.image, sizes: '100px', widths: '100, 200', loading: image_loading -%}
+    </a>
+  </div>
+
+  <div class="cart-item__not-image">
+    <div class="cart-item__column cart-item__description">
+      <div class="lightly-spaced-row">
+        <div class="cart-item__title">
+          <a class="text-current" href="{{ item.url }}">{{ item.product.title | escape_once }}</a>
+        </div>
+        <div class="small-text">
+          {%- if item.product.variants.size > 1 -%}
+            {%- for option in item.product.options -%}
+              <div class="cart-item__variant">
+                <span class="cart-item__variant-label">{{ option | escape_once }}:</span>
+                <span class="cart-item__variant-value">{{ item.variant.options[forloop.index0] | escape_once }}</span>
+              </div>
+            {%- endfor -%}
+          {%- endif -%}
+
+          {%- for property in item.properties -%}
+            {%- assign property_first_char = property.first | slice: 0 -%}
+            {% if property.last != blank and property_first_char != '_' %}
+              <div class="line-item-property">
+                <span class="line-item-property__label">{{ property.first | escape_once }}:</span>
+                <span class="line-item-property__value">
+                  {%- if property.last contains '/uploads/' -%}
+                    <a href="{{ property.last }}">
+{% assign file_type = property.last | split: '.' | last | downcase %}
+{% assign file_types = 'jpg,jpeg,webp,gif,png,apng,avif,svg,bmp,ico,tiff' | split: ',' %}
+{% if file_types contains file_type %}
+  <div class="bcpo-cart-file"><img src="{{ property.last }}" style="max-width: 50px; height: auto;"></div>
+{% else %}
+  <span class="bcpo-cart-file">Uploaded file</span>
+{% endif %}
+</a>
+                  {%- else -%}
+                    {{- property.last | escape_once -}}
+                  {%- endif -%}
+                </span>
+              </div>
+            {% endif %}
+          {%- endfor -%}
+
+          {% if item.selling_plan_allocation %}
+            <div class="subscription-description">
+              {{ item.selling_plan_allocation.selling_plan.name | escape_once }}
+            </div>
+          {% endif %}
+
+          {% if section.settings.show_backorder_text == true %}
+            {% render 'backorder', product: item.product, variant: item.variant %}
+          {% endif %}
+
+          {% if settings.prod_pre_order_label_show and item.product.template_suffix contains 'preorder' %}
+            <div class="price-label price-label--preorder">{{ 'products.product.preorder' | t }}</div>
+          {% endif %}
+        </div>
+
+        {%- if item.variant.inventory_management != blank
+          and item.variant.inventory_quantity > 0
+          and section.settings.show_inventory_notice != 'never'
+        -%}
+          {%- if section.settings.show_inventory_notice == 'always'
+            or item.variant.inventory_quantity <= section.settings.inventory_threshold
+          -%}
+            {%- liquid
+              assign show_inventory_count = false
+              if section.settings.show_inventory_count == 'always'
+                assign show_inventory_count = true
+              endif
+              if section.settings.show_inventory_count == 'low' and item.variant.inventory_quantity <= section.settings.inventory_threshold
+                assign show_inventory_count = true
+              endif
+
+              if show_inventory_count
+                if item.variant.inventory_quantity <= section.settings.inventory_threshold
+                  assign notice = 'products.inventory.only_x_left' | t: quantity: item.variant.inventory_quantity
+                else
+                  assign notice = 'products.inventory.x_left' | t: quantity: item.variant.inventory_quantity
+                endif
+              else
+                if item.variant.inventory_quantity <= section.settings.inventory_threshold
+                  assign notice = 'products.inventory.low_stock' | t
+                else
+                  assign notice = 'products.inventory.in_stock' | t
+                endif
+              endif
+            -%}
+            <div class="very-lightly-spaced-row">
+              <div class="product-info-block product-inventory product-inventory--small product-inventory--{% if item.variant.inventory_quantity <= section.settings.inventory_threshold %}low{% else %}ok{% endif %}">
+                {{- notice -}}
+              </div>
+            </div>
+          {%- endif -%}
+        {%- endif -%}
+      </div>
+    </div>
+
+    <div class="cart-item__column cart-item__price">
+      <span class="theme-money cart-item__selling-price">{{ item.final_price | money }}</span>
+      {% if item.variant.compare_at_price > item.variant.price %}
+        <span class="struck-out-price small-text"
+          ><span class="theme-money">{{ item.variant.compare_at_price | money }}</span></span
+        >
+      {% elsif item.original_line_price > item.final_line_price %}
+        <span class="struck-out-price small-text"
+          ><span class="theme-money">{{ item.original_price | money }}</span></span
+        >
+      {% endif %}
+
+      {% render 'unit-price', variant: item %}
+
+      {%- unless drawer -%}
+        {{- line_item_discounts -}}
+      {%- endunless -%}
+    </div>
+
+    {% liquid
+      if item.variant.inventory_management != blank and item.variant.inventory_policy == 'deny'
+        assign quantity = item.quantity | at_most: item.variant.inventory_quantity | at_least: 1
+      else
+        assign quantity = item.quantity | at_least: 1
+      endif
+
+      if item.variant.inventory_management != blank and item.variant.inventory_policy == 'deny' and item.variant.inventory_quantity <= quantity
+        assign can_increase = false
+      else
+        assign can_increase = true
+      endif
+    %}
+    <div class="cart-item__column cart-item__quantity">
+      <div class="quantity buttoned-input">
+        <a
+          id="updates_dec_{{ forloop.index }}"
+          class="quantity-down"
+          href="{{ routes.cart_change_url }}?id={{ item.key }}&quantity={{ quantity | minus: 1 }}"
+          aria-label="{{ 'cart.items.decrease_quantity' | t | escape }}"
+        >
+          {%- render 'icon-minus' -%}
+        </a>
+        <input
+          class="cart-item__quantity-input"
+          type="number"
+          size="2"
+          id="updates_{{ forloop.index }}"
+          name="updates[]"
+          data-initial-value="{{ quantity }}"
+          data-key="{{ item.key }}"
+          min="0"
+          {% if item.variant.inventory_management != blank
+            and item.variant.inventory_policy == 'deny'
+            and item.variant.inventory_quantity > 0
+          %}
+            max="{{ item.variant.inventory_quantity }}"
+            value="{{ quantity }}"
+          {% else %}
+            value="{{ quantity }}"
+          {% endif %}
+          aria-label="{{ 'cart.items.quantity' | t | escape }}"
+        >
+        <a
+          id="updates_inc_{{ forloop.index }}"
+          class="quantity-up {% unless can_increase %}unusable{% endunless %}"
+          href="{{ routes.cart_change_url }}?id={{ item.key }}&quantity={{ quantity | plus: 1 }}"
+          aria-label="{{ 'cart.items.increase_quantity' | t | escape }}"
+        >
+          {%- render 'icon-plus' -%}
+        </a>
+      </div>
+      <a
+        class="cart-item__remove small-text underline"
+        href="{{ routes.cart_change_url }}?id={{ item.key }}&quantity=0"
+      >
+        <svg
+          clip-rule="evenodd"
+          fill-rule="evenodd"
+          stroke-linejoin="round"
+          stroke-miterlimit="2"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="m4.015 5.494h-.253c-.413 0-.747-.335-.747-.747s.334-.747.747-.747h5.253v-1c0-.535.474-1 1-1h4c.526 0 1 .465 1 1v1h5.254c.412 0 .746.335.746.747s-.334.747-.746.747h-.254v15.435c0 .591-.448 1.071-1 1.071-2.873 0-11.127 0-14 0-.552 0-1-.48-1-1.071zm14.5 0h-13v15.006h13zm-4.25 2.506c-.414 0-.75.336-.75.75v8.5c0 .414.336.75.75.75s.75-.336.75-.75v-8.5c0-.414-.336-.75-.75-.75zm-4.5 0c-.414 0-.75.336-.75.75v8.5c0 .414.336.75.75.75s.75-.336.75-.75v-8.5c0-.414-.336-.75-.75-.75zm3.75-4v-.5h-3v.5z" fill-rule="nonzero"></path>
+        </svg>
+      </a>
+    </div>
+
+    {%- unless drawer -%}
+      <div class="cart-item__column cart-item__total">
+        <span class="theme-money cart-item__selling-total">{{ item.final_line_price | money }}</span>
+        {% if item.variant.compare_at_price > item.variant.price %}
+          <div class="theme-money struck-out-price small-text">
+            {{ item.variant.compare_at_price | times: item.quantity | money }}
+          </div>
+        {% elsif item.original_line_price != item.final_line_price %}
+          <div class="theme-money struck-out-price small-text">{{ item.original_line_price | money }}</div>
+        {% endif %}
+      </div>
+    {%- endunless -%}
+
+    {% if item.line_level_discount_allocations.size > 0 %}
+      <div class="cart-item__item-discounts">
+        <ul class="cart-discount-list">
+          {% for discount_allocation in item.line_level_discount_allocations %}
+            <li class="cart-discount cart-discount--inline">
+              <span class="cart-discount__label">
+                <span class="cart-discount__icon">{% render 'icon-label' %}</span>
+                <span class="cart-discount__title">
+                  {{- discount_allocation.discount_application.title | escape_once -}}
+                </span>
+              </span>
+              <span class="cart-discount__amount theme-money">{{ discount_allocation.amount | money }}</span>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    {% endif %}
+  </div>
+</div>

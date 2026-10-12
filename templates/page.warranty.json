@@ -1,0 +1,64 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "show_page_title": true,
+        "full_width": false
+      }
+    },
+    "rich_text_CaacPC": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_nYUYdE": {
+          "type": "heading",
+          "settings": {
+            "title": "Our Promise to You",
+            "use_h1": true
+          }
+        },
+        "text_CJw4dm": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Milano Lifetime Manufacturing Warranty</strong></p><p>At Milano, our unwavering commitment is to provide our customers with exquisite, high-quality jewelry that stands as a testament to timeless elegance and impeccable craftsmanship. We proudly stand behind each<br/>piece of jewelry purchased from ShopMilano.com, assuring you of its superior<br/>quality and enduring beauty. </p><p>Every piece of Milano jewelry is meticulously crafted to the highest standards using only the finest materials. Prior to shipment, each item undergoes rigorous inspection at our state-of-the-art manufacturing facility and distribution center.</p><p><strong>Lifetime Manufacturing Warranty Coverage</strong></p><p>The Lifetime Manufacturing Warranty is effective from the date of purchase exclusively for items bought on ShopMilano.com. This warranty is non-transferrable and extends to all our valued customers, irrespective of<br/>the price or type of the item.</p><p>We guarantee that all our jewelry will be free from manufacturing defects in materials and workmanship at the time of delivery. This warranty covers:</p><ul><li>Manufacturing defects such as faulty clasps, loose prongs, or flawed craftsmanship.</li><li>The optical properties of our Lab Grown Diamonds and Gemstones will remain intact, ensuring lasting brilliance and clarity.</li></ul><p><strong>What's Covered in your Manufacturers Warranty</strong></p><ul><li>Free prong tightening to ensure the safety of your precious stones.</li><li>Re-polishing to restore the luster and shine of your jewelry.</li><li>Rhodium plating to maintain the pristine appearance of white gold pieces.</li><li>Free Resizing up to one time per year for a lifetime. This applies to US orders only. This is only applicable if we can resize while maintaining the integrity of the ring. If the ring is resized too many times, it may not be possible to resize, and you may opt to trade in your ring against a purchase for a new ring.</li><li>Comprehensive cleaning services to keep your jewelry looking as good as new.</li></ul><p>Please note that shipping to Milano (if required) is the sole responsibility of the customer for any of the complimentary services covered under your manufacturers warranty.</p><p><strong>Exclusions from the Lifetime Manufacturing Warranty</strong></p><ul><li>General wear and tear, scratching, trauma, loss of center stones, product loss, theft, or improper cleaning and storage.</li><li>Fading or discoloration of metals over time due to inadequate care (Examples: wearing it in the hot tub or swimming pool, spraying perfume or other chemicals directly on the jewelry, etc.)</li><li>Precious metals, and especially prongs, wear down over time as part of normal use. Thinning of prongs due to regular wear might cause them to open up and the stone could be at risk of falling out. This is not considered a manufacturing defect.</li><li>The loss of a stone caused by trauma or damage is not covered under the Lifetime Manufacturing Warranty.</li></ul><p><strong>Warranty Service Process</strong></p><p>Should you encounter any issues with your Milano jewelry that fall under our Lifetime Manufacturing Warranty, please reach out to our Customer Service team. We will provide you with instructions on how to send your jewelry in to inspect if the damage is covered under our Lifetime Warranty. If it is covered, we will complete the work at our discretion and ship it back to you. If the damage is not covered by our Lifetime Manufacturing Warranty, we will provide you with a price quote for the work required. After you approve the quote, we will collect payment for the repair and ship the item back to you using a standard ground shipping method.</p><p><strong>Protecting Your Investment</strong></p><p>While we offer a Lifetime Warranty for Manufacturing defects. We recommend that you insure your jewelry for loss, theft, or damage. Examples of damage to the jewelry or gemstone may include chipping, cracking or breaking. While diamonds are durable, they are not indestructible. Precious metals and gemstones are not as durable and require more care. Normal wear and tear, especially on rings, can cause damage. </p><p>Milano provides an easy way to protect your jewelry through Extend Product Protection. This is a product insurance service that covers defects and damage not included in your manufacturer’s warranty such as damage caused by regular wear and tear. With the Extend Product Protection, damages such as chipped or cracked stones, bent or broken clasps or even the loss of stones would be covered. If your jewelry breaks, Extend will repair it without any deductible and if it cannot be repaired, it will be replaced.</p><p><strong>Repairs and Maintenance</strong></p><p>At Milano, we understand that regular wear and tear may necessitate repairs and maintenance over time. Our US-based facility offers a range of repair services, including prong tightening, stone replacement,<br/>re-polishing, and rhodium plating. Kindly note that repairs conducted by unauthorized third-party jewelers will void our Lifetime Manufacturing Warranty.</p><p>For international orders, please be aware that we are unable to offer ring resizing due to importation taxes and duties. Please also be aware that all international customers are responsible for any taxes and duties applicable due to the shipping into the U.S. for repair. International customers are also responsible for any applicable taxes and duties in their home countries when we ship their repaired jewelry back to them.</p><p><strong>Contact Us</strong></p><p>For any inquiries regarding our Lifetime Manufacturing Warranty, repairs, or other services, please do not hesitate to contact our dedicated <a href=\"/pages/contact\" title=\"Contact Us\">Customer Service</a> team. We are here to assist you in ensuring that your Milano jewelry remains a treasured piece for  generations to come.</p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_nYUYdE",
+        "text_CJw4dm"
+      ],
+      "settings": {
+        "height": "medium",
+        "text_alignment": "left",
+        "full_width": false,
+        "color_scheme": "default"
+      }
+    },
+    "rich_text_H3q4ky": {
+      "type": "rich-text",
+      "settings": {
+        "height": "small",
+        "text_alignment": "left",
+        "full_width": false,
+        "color_scheme": "default"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich_text_CaacPC",
+    "rich_text_H3q4ky"
+  ]
+}

@@ -1,0 +1,310 @@
+{% doc %}
+  @prompt
+    generate a shipping deadline horizontal banner size of the announcement banner with the copy that says With the copy that says 12/15 for ground shipping and 12/19 for overnight shipping with glowing effect, reduce the gap between the lines for mobile version and add prefix Order by before 12/19, on the desktop version, add a | inbetween the lines and make the whole text in one line
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-shipping-banner-{{ ai_gen_id }} {
+    width: 100%;
+    background-color: {{ block.settings.background_color }};
+    padding: {{ block.settings.padding_desktop }}px 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-shipping-banner-{{ ai_gen_id }} {
+      padding: {{ block.settings.padding_mobile }}px 15px;
+    }
+  }
+
+  .ai-shipping-banner-{{ ai_gen_id }}::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: {{ block.settings.glow_color }};
+    opacity: 0;
+    animation: ai-banner-glow-{{ ai_gen_id }} {{ block.settings.glow_duration }}s ease-in-out infinite;
+    pointer-events: none;
+  }
+
+  @keyframes ai-banner-glow-{{ ai_gen_id }} {
+    0%, 100% {
+      opacity: 0;
+    }
+    50% {
+      opacity: {{ block.settings.glow_intensity | divided_by: 100.0 }};
+    }
+  }
+
+  .ai-shipping-banner-content-{{ ai_gen_id }} {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: {{ block.settings.line_gap_desktop }}px;
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-shipping-banner-content-{{ ai_gen_id }} {
+      flex-direction: column;
+      gap: {{ block.settings.line_gap_mobile }}px;
+    }
+  }
+
+  .ai-shipping-banner-line-{{ ai_gen_id }} {
+    color: {{ block.settings.text_color }};
+    font-size: {{ block.settings.font_size_desktop }}px;
+    font-weight: {{ block.settings.font_weight }};
+    margin: 0;
+    line-height: 1.3;
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-shipping-banner-line-{{ ai_gen_id }} {
+      font-size: {{ block.settings.font_size_mobile }}px;
+    }
+  }
+
+  .ai-shipping-banner-prefix-{{ ai_gen_id }} {
+    display: inline;
+    margin-right: 4px;
+  }
+
+  .ai-shipping-banner-date-{{ ai_gen_id }} {
+    font-weight: 700;
+    color: {{ block.settings.date_color }};
+  }
+
+  .ai-shipping-banner-divider-{{ ai_gen_id }} {
+    color: {{ block.settings.divider_color }};
+    font-size: {{ block.settings.font_size_desktop }}px;
+    font-weight: 300;
+    display: inline-block;
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-shipping-banner-divider-{{ ai_gen_id }} {
+      display: none;
+    }
+  }
+{% endstyle %}
+
+<div
+  class="ai-shipping-banner-{{ ai_gen_id }}"
+  {{ block.shopify_attributes }}
+>
+  <div class="ai-shipping-banner-content-{{ ai_gen_id }}">
+    <div class="ai-shipping-banner-line-{{ ai_gen_id }}">
+      <span class="ai-shipping-banner-prefix-{{ ai_gen_id }}">{{ block.settings.prefix_text }}</span>
+      <span class="ai-shipping-banner-date-{{ ai_gen_id }}">{{ block.settings.ground_date }}</span>
+      {{ block.settings.ground_text }}
+    </div>
+    <span class="ai-shipping-banner-divider-{{ ai_gen_id }}">|</span>
+    <div class="ai-shipping-banner-line-{{ ai_gen_id }}">
+      <span class="ai-shipping-banner-prefix-{{ ai_gen_id }}">{{ block.settings.prefix_text }}</span>
+      <span class="ai-shipping-banner-date-{{ ai_gen_id }}">{{ block.settings.overnight_date }}</span>
+      {{ block.settings.overnight_text }}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Shipping deadline banner",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Content"
+    },
+    {
+      "type": "text",
+      "id": "prefix_text",
+      "label": "Prefix text",
+      "default": "Order by"
+    },
+    {
+      "type": "text",
+      "id": "ground_date",
+      "label": "Ground shipping date",
+      "default": "12/15"
+    },
+    {
+      "type": "text",
+      "id": "ground_text",
+      "label": "Ground shipping text",
+      "default": "for ground shipping"
+    },
+    {
+      "type": "text",
+      "id": "overnight_date",
+      "label": "Overnight shipping date",
+      "default": "12/19"
+    },
+    {
+      "type": "text",
+      "id": "overnight_text",
+      "label": "Overnight shipping text",
+      "default": "for overnight shipping"
+    },
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background",
+      "default": "#00205b"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "date_color",
+      "label": "Date",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "divider_color",
+      "label": "Divider",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "glow_color",
+      "label": "Glow",
+      "default": "#ffffff"
+    },
+    {
+      "type": "header",
+      "content": "Glow effect"
+    },
+    {
+      "type": "range",
+      "id": "glow_intensity",
+      "min": 0,
+      "max": 50,
+      "step": 5,
+      "unit": "%",
+      "label": "Intensity",
+      "default": 15
+    },
+    {
+      "type": "range",
+      "id": "glow_duration",
+      "min": 1,
+      "max": 5,
+      "step": 0.5,
+      "unit": "s",
+      "label": "Duration",
+      "default": 2
+    },
+    {
+      "type": "header",
+      "content": "Typography"
+    },
+    {
+      "type": "range",
+      "id": "font_size_desktop",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "label": "Font size (desktop)",
+      "default": 15
+    },
+    {
+      "type": "range",
+      "id": "font_size_mobile",
+      "min": 11,
+      "max": 18,
+      "step": 1,
+      "unit": "px",
+      "label": "Font size (mobile)",
+      "default": 13
+    },
+    {
+      "type": "select",
+      "id": "font_weight",
+      "label": "Font weight",
+      "options": [
+        {
+          "value": "400",
+          "label": "Normal"
+        },
+        {
+          "value": "500",
+          "label": "Medium"
+        },
+        {
+          "value": "600",
+          "label": "Semi-bold"
+        }
+      ],
+      "default": "400"
+    },
+    {
+      "type": "header",
+      "content": "Spacing"
+    },
+    {
+      "type": "range",
+      "id": "padding_desktop",
+      "min": 8,
+      "max": 30,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding (desktop)",
+      "default": 14
+    },
+    {
+      "type": "range",
+      "id": "padding_mobile",
+      "min": 6,
+      "max": 24,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding (mobile)",
+      "default": 12
+    },
+    {
+      "type": "range",
+      "id": "line_gap_desktop",
+      "min": 8,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "label": "Gap between lines (desktop)",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "line_gap_mobile",
+      "min": 2,
+      "max": 16,
+      "step": 2,
+      "unit": "px",
+      "label": "Gap between lines (mobile)",
+      "default": 4
+    }
+  ],
+  "presets": [
+    {
+      "name": "Shipping deadline banner"
+    }
+  ]
+}
+{% endschema %}

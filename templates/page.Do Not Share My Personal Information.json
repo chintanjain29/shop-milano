@@ -1,0 +1,54 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "show_page_title": true,
+        "full_width": false
+      }
+    },
+    "rich_text_H3q4ky": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_iE8L3z": {
+          "type": "heading",
+          "settings": {
+            "title": "Milano Privacy Policy",
+            "use_h1": true
+          }
+        },
+        "text_x33WR9": {
+          "type": "text",
+          "settings": {
+            "text": "<p>At ShopMilano.com, we are committed to safeguarding your privacy. This Do Not Share Policy outlines how we collect, use, and share your personal information, and your choices regarding the use of that information.</p><h5>1. <strong>Commitment to Privacy</strong></h5><p>Your privacy is a priority for ShopMilano.com. We will never sell, rent, or share your personal information with third parties for their own marketing purposes without your explicit consent. Our data-sharing practices are designed to protect your personal information while offering you an exceptional shopping experience.</p><h5>2. <strong>Information We Collect</strong></h5><p>We may collect the following types of personal information:</p><ul><li><strong>Contact Information</strong>: Name, email address, phone number, and physical address.</li><li><strong>Transaction Information</strong>: Payment details, order history, and billing information.</li><li><strong>Device and Usage Information</strong>: IP address, browser type, device information, and site activity.</li><li><strong>Preferences</strong>: Your product preferences, marketing preferences, and communications with us.</li></ul><p>This information helps us to provide and improve our services, process transactions, and communicate with you effectively.</p><h5>3. <strong>How We Use Your Information</strong></h5><p>The personal information you provide is used for:</p><ul><li><strong>Order Fulfillment</strong>: Processing transactions, confirming your orders, and delivering products.</li><li><strong>Customer Service</strong>: Responding to your inquiries and providing customer support.</li><li><strong>Personalization</strong>: Tailoring your shopping experience to your preferences.</li><li><strong>Marketing Communications</strong>: With your consent, sending you promotional emails and updates.</li><li><strong>Legal Obligations</strong>: Complying with applicable laws, regulations, or legal processes.</li></ul><h5>4. <strong>When and Why We Share Information</strong></h5><p>We may share your personal information with trusted third parties under specific circumstances:</p><ul><li><strong>Service Providers</strong>: We may share your information with third-party service providers who assist in delivering services to you, such as payment processors, shipping companies, and marketing partners. These third parties are contractually obligated to use your data only for the purpose of providing their services to ShopMilano.com and must protect your information.</li><li><strong>Legal Requirements</strong>: We may disclose your personal information if required by law, regulation, or legal process, or to respond to a government request.</li><li><strong>Business Transfers</strong>: In the event of a merger, acquisition, or sale of our business, your information may be transferred as part of that transaction.</li></ul><h5>5. <strong>Your Rights and Choices</strong></h5><p>You have the right to control your personal information. These rights include:</p><ul><li><strong>Access and Correction</strong>: You can request access to your personal information or correct any inaccuracies by logging into your account or contacting customer service.</li><li><strong>Opt-Out of Sharing</strong>: You may opt-out of sharing your personal information with third parties for marketing purposes at any time by updating your preferences in your account or by contacting us at [email address].</li><li><strong>Do Not Track</strong>: We do not respond to “Do Not Track” signals from web browsers. However, we provide you with the option to manage your cookies and other tracking preferences.</li><li><strong>Data Deletion</strong>: You may request the deletion of your personal data from our systems, subject to certain legal and business-related exceptions.</li></ul><h5>6. <strong>Cookies and Tracking Technologies</strong></h5><p>ShopMilano.com uses cookies and similar technologies to enhance your shopping experience and gather usage data. These technologies help us understand how our website is used and how we can improve our services.</p><p>You can manage your cookie preferences through your browser settings or by using tools we provide on our site. Please note that disabling cookies may affect the functionality of our website.</p><h5>7. <strong>Data Security</strong></h5><p>We take reasonable steps to protect your personal information from unauthorized access, use, or disclosure. This includes using encryption and other security protocols to safeguard the data you provide us. However, no system is completely secure, and we cannot guarantee the security of your data at all times.</p><h5>8. <strong>Children's Privacy</strong></h5><p>ShopMilano.com is not intended for individuals under the age of 13. We do not knowingly collect or share personal information from children. If we become aware that a child has provided us with personal information, we will take steps to delete that information.</p><h5>9. <strong>Changes to This Policy</strong></h5><p>We reserve the right to modify this Do Not Share Policy at any time. If we make material changes to this policy, we will notify you by email or by posting a notice on our website. Your continued use of our services after any changes are made will constitute your acceptance of the revised policy.</p><h5>10. <strong>Contact Us</strong></h5><p>If you have any questions or concerns about our Do Not Share Policy, or if you wish to exercise your rights regarding your personal information, please contact us at:</p><p>Email: info@milanodg.com<br/>Phone: 1 (800) 888-2166<br/>Mail: ShopMilano.com, 16W 46th St, 8th FL, New York, NY 10036</p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_iE8L3z",
+        "text_x33WR9"
+      ],
+      "settings": {
+        "height": "small",
+        "text_alignment": "left",
+        "full_width": false,
+        "color_scheme": "default"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich_text_H3q4ky"
+  ]
+}

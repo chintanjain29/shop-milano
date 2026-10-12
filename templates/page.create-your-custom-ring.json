@@ -1,0 +1,820 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "show_page_title": true,
+        "full_width": true
+      }
+    },
+    "gem_find_iwto_3cAMty": {
+      "type": "gem-find-iwto",
+      "blocks": {
+        "heading_6h8Q8e": {
+          "type": "heading",
+          "settings": {
+            "title": "Custom Diamond & Gemstone Fine Jewelry",
+            "heading_max_width": 30,
+            "title_size": 28,
+            "title_size_mobile": 26,
+            "use_h1": true
+          }
+        },
+        "subheading_LCMVw4": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Designed for life’s most meaningful moments — handcrafted your way."
+          }
+        },
+        "button_ndN9EV": {
+          "type": "button",
+          "settings": {
+            "button_label": "GET STARTED",
+            "button_link": "#customjewelryform",
+            "button_style": "primary"
+          }
+        }
+      },
+      "block_order": [
+        "heading_6h8Q8e",
+        "subheading_LCMVw4",
+        "button_ndN9EV"
+      ],
+      "name": "Image with text overlay",
+      "settings": {
+        "image": "shopify://shop_images/custom_page_hero_banner.png",
+        "mobile_image": "shopify://shop_images/custom_jewelry_mobile_banner.png",
+        "height": "adapt",
+        "height_desktop": 600,
+        "height_mobile": 460,
+        "image_link": "",
+        "full_width": true,
+        "text_alignment": "center left",
+        "mobile_overlay_under": true,
+        "overlay_style": "shadow"
+      }
+    },
+    "rich_text_QNa8tj": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_HeHiQX": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "BEGIN YOUR CUSTOM JOURNEY"
+          }
+        },
+        "text_AmYzkV": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Choose how you’d like to get started — we’re here to guide you every step of the way.<br/></strong></p>",
+            "enlarge_text": false
+          }
+        },
+        "text_YrjXfJ": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Every bespoke piece begins with your vision. Our expert artisans transform your sketches, references, and ideas into refined, handcrafted jewelry designed exclusively for you. Whether you’d like to begin with a personal consultation or already have a clear concept in mind, we make the process seamless. Connect one-on-one with our design expert for thoughtful guidance and collaboration, or share your inspiration directly with us — and we’ll bring it beautifully to life.</p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "subheading_HeHiQX",
+        "text_AmYzkV",
+        "text_YrjXfJ"
+      ],
+      "custom_css": [
+        ".subheading {color: #002058; font-size: 20px; margin-bottom: 6px;}"
+      ],
+      "settings": {
+        "height": "small",
+        "text_alignment": "center",
+        "full_width": true,
+        "color_scheme": "default"
+      }
+    },
+    "gallery_FVKwDQ": {
+      "type": "gallery",
+      "blocks": {
+        "media_LbBg8r": {
+          "type": "media",
+          "settings": {
+            "image": "shopify://shop_images/Jewelry_consult.png",
+            "enlarge_media": true,
+            "subheading": "",
+            "title": "",
+            "button_label": "MEET WITH A JEWELRY SPECIALIST",
+            "link": "https://outlook.office.com/book/VirtualAppointment@milanodg.com/?ismsaljsauthenabled",
+            "text_alignment": "bottom center"
+          }
+        },
+        "media_73iHXj": {
+          "type": "media",
+          "settings": {
+            "image": "shopify://shop_images/Dancing_Diamond_RIngs_Instagram.jpg",
+            "enlarge_media": true,
+            "subheading": "",
+            "title": "",
+            "button_label": "SUBMIT YOUR DESIGN",
+            "link": "#customjewelryform",
+            "text_alignment": "bottom center"
+          }
+        }
+      },
+      "block_order": [
+        "media_LbBg8r",
+        "media_73iHXj"
+      ],
+      "name": "Gallery",
+      "settings": {
+        "grid_desktop": 2,
+        "grid_mobile": "1",
+        "height": "fixed",
+        "desktop_image_height": 680,
+        "mobile_image_height": 360,
+        "title_size": 30,
+        "title_size_mobile": 22,
+        "enable_margin": false,
+        "enable_row_spacing": false,
+        "full_width": true,
+        "color_scheme": "default",
+        "enable_carousel": false,
+        "overlay_style": "full",
+        "button_style": "primary"
+      }
+    },
+    "rich_text_LpnBUM": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_cwMmxp": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Designed With Meaning. Crafted With Precision."
+          }
+        },
+        "text_6t7y8n": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Whether it’s a custom engagement ring, heirloom redesign, or a personal keepsake piece, our custom jewelry service combines your vision with expert craftsmanship so you get jewelry you love <em>and cherish forever</em>.</p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "subheading_cwMmxp",
+        "text_6t7y8n"
+      ],
+      "custom_css": [
+        ".subheading {color: #002058; font-size: 20px; margin-bottom: 6px; padding-bottom: 0px;}"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "height": "medium",
+        "text_alignment": "center",
+        "full_width": true,
+        "color_scheme": "default"
+      }
+    },
+    "multi_column_prNiw8": {
+      "type": "multi-column",
+      "blocks": {
+        "text_block_tiEPTD": {
+          "type": "text_block",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify://shop_images/Step_1_-_Custom.png",
+            "title": "SHARE YOUR VISION",
+            "text": "<p>Upload inspiration or start with a complimentary consultation. Tell us about your design, budget, and timeline.</p>",
+            "button_label": "",
+            "link": ""
+          }
+        },
+        "text_block_9eVf6t": {
+          "type": "text_block",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify://shop_images/Step_2_-_Custom.png",
+            "title": "DESIGN & REFINE",
+            "text": "<p>Our expert team develops a custom concept and detailed 3D rendering for your review. We refine every detail until it’s perfect.</p>",
+            "button_label": "",
+            "link": ""
+          }
+        },
+        "text_block_Vd3Cpq": {
+          "type": "text_block",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify://shop_images/Step_3_-_Custom.png",
+            "title": "HANDCRAFTED CREATION",
+            "text": "<p>Once approved, your piece is meticulously crafted by expert artisans using fine materials and precision techniques.</p>",
+            "button_label": "",
+            "link": ""
+          }
+        },
+        "text_block_M8zLiW": {
+          "type": "text_block",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify://shop_images/Step_4_-_Custom.png",
+            "title": "DELIVERED TO YOU",
+            "text": "<p>Your finished piece is quality-checked, beautifully packaged, and securely shipped.</p>",
+            "button_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_block_tiEPTD",
+        "text_block_9eVf6t",
+        "text_block_Vd3Cpq",
+        "text_block_M8zLiW"
+      ],
+      "name": "Multi-column",
+      "settings": {
+        "title": "STEP BY STEP PROCESS TO YOUR DREAM PIECE",
+        "media_aspect_ratio": "s",
+        "media_width": 700,
+        "text_alignment": "center",
+        "button_style": "primary",
+        "color_scheme": "default"
+      }
+    },
+    "custom_content_HMDJBH": {
+      "type": "custom-content",
+      "blocks": {
+        "text_cgN7YR": {
+          "type": "text",
+          "settings": {
+            "width": "half",
+            "subheading": "UNIQUELY CRAFTED FROM START TO FINISH",
+            "title": "",
+            "text": "<p>Every piece we create is thoughtfully handcrafted to reflect your individual story. From the first design concept to the final polish, our expert artisans bring precision, care, and intention to every detail.</p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "text_alignment": "center"
+          }
+        },
+        "image_DFPEhT": {
+          "type": "image",
+          "settings": {
+            "width": "half",
+            "image": "shopify://shop_images/PDP_Reviews_Image.png",
+            "mobile_image": "shopify://shop_images/PDP_Reviews_Image.png",
+            "height": "adapt",
+            "height_desktop": 520,
+            "height_mobile": 520,
+            "subheading": "",
+            "title": "",
+            "text": "",
+            "enlarge_text": false,
+            "button_label": "",
+            "button_style": "primary",
+            "image_link": "",
+            "text_alignment": "center center",
+            "mobile_overlay_under": false,
+            "overlay_style": "shadow"
+          }
+        }
+      },
+      "block_order": [
+        "text_cgN7YR",
+        "image_DFPEhT"
+      ],
+      "custom_css": [
+        ".subheading {color: #002058; font-size: 20px;}"
+      ],
+      "name": "Custom content",
+      "settings": {
+        "alignment": "middle"
+      }
+    },
+    "rich_text_TcWLxw": {
+      "type": "rich-text",
+      "blocks": {
+        "button_wNGdff": {
+          "type": "button",
+          "settings": {
+            "button_label": "VIEW OUR CRAFTSMANSHIP",
+            "button_link": "https://www.milanojewelry.com/pages/our-factory",
+            "button_style": "primary"
+          }
+        },
+        "button_aiGDQx": {
+          "type": "button",
+          "settings": {
+            "button_label": "DISCOVER OUR PROCESS",
+            "button_link": "https://www.milanojewelry.com/blogs/news/the-complete-guide-to-custom-engagement-rings-from-idea-to-yes",
+            "button_style": "primary"
+          }
+        }
+      },
+      "block_order": [
+        "button_wNGdff",
+        "button_aiGDQx"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "height": "medium",
+        "text_alignment": "center",
+        "full_width": false,
+        "color_scheme": "default"
+      }
+    },
+    "custom_liquid_mcjUrC": {
+      "type": "custom-liquid",
+      "name": "Custom Liquid",
+      "settings": {
+        "full_width": true,
+        "code": "<div id=\"customjewelryform\" class=\"custom-popup\">\n\n  <div class=\"custom-popup-inner\">\n\n    <a href=\"#\" class=\"popup-close\">&times;</a>\n\n    <div class=\"gorgias-form-wrapper\">\n      <script defer src=\"https://contact.gorgias.help/api/contact-forms/loader.js?v=3\" data-gorgias-loader-contact-form data-gorgias-contact-form-uid=\"751kym3c\"></script>\n    </div>\n\n  </div>\n\n</div>"
+      }
+    },
+    "ss_simple_faq_EapgYf": {
+      "type": "ss-simple-faq",
+      "blocks": {
+        "text_TKgBCj": {
+          "type": "text",
+          "settings": {
+            "question": "What is custom jewelry?",
+            "answer": "<p>Custom jewelry refers to made-to-order fine jewelry designed specifically for you. Each piece is handcrafted based on your preferences, allowing you to personalize the metal, gemstones, setting, and overall design.</p>"
+          }
+        },
+        "text_XJ6Eqw": {
+          "type": "text",
+          "settings": {
+            "question": "How does the custom jewelry process work?",
+            "answer": "<p>Our custom jewelry process begins with submitting a request or booking a consultation. You’ll share your ideas or inspiration, and our team will guide you through design options, pricing, and timelines before production begins.</p>"
+          }
+        },
+        "text_kwnP4X": {
+          "type": "text",
+          "settings": {
+            "question": "Can I create custom jewelry from a reference image or idea?",
+            "answer": "<p>Yes. You can create custom jewelry using reference images, sketches, or links. Our designers will translate your inspiration into a beautifully crafted, wearable piece.</p>"
+          }
+        },
+        "text_VrC4Wd": {
+          "type": "text",
+          "settings": {
+            "question": "What materials can I choose for custom jewelry?",
+            "answer": "<p>We offer a wide selection of fine materials, including 14K and 18K yellow, white, and rose gold, platinum, lab-grown diamonds, natural diamonds, and carefully selected gemstones.</p>"
+          }
+        },
+        "text_N6zRci": {
+          "type": "text",
+          "settings": {
+            "question": "How long does custom jewelry take to make?",
+            "answer": "<p>Most custom jewelry pieces are completed within <strong>4–6 weeks</strong> after final design approval. Timelines may vary depending on design complexity and material availability.</p>"
+          }
+        },
+        "text_dx8hFW": {
+          "type": "text",
+          "settings": {
+            "question": "Is custom jewelry more expensive than ready-to-ship jewelry?",
+            "answer": "<p>Custom jewelry pricing depends on the design, materials, and craftsmanship involved. We provide transparent pricing and a detailed quote before production begins.</p>"
+          }
+        },
+        "text_mJGmU6": {
+          "type": "text",
+          "settings": {
+            "question": "Can changes be made after approving the custom jewelry design?",
+            "answer": "<p>Minor changes may be possible before production starts. Once your custom jewelry enters production, changes may be limited or not feasible.</p>"
+          }
+        },
+        "text_ddfmmP": {
+          "type": "text",
+          "settings": {
+            "question": "Are custom jewelry pieces eligible for returns or exchanges?",
+            "answer": "<p>Because custom jewelry is made specifically for you, all custom pieces are typically <strong>final sale</strong>. However, we stand behind the quality and craftsmanship of every piece we create.</p>"
+          }
+        },
+        "text_rhQpF9": {
+          "type": "text",
+          "settings": {
+            "question": "Does custom jewelry come with a warranty?",
+            "answer": "<p>Yes. All custom jewelry is covered by our lifetime guarantee against manufacturing defects.</p>"
+          }
+        },
+        "text_K4zRPw": {
+          "type": "text",
+          "settings": {
+            "question": "How do I get started with a custom jewelry request?",
+            "answer": "<p>To begin, simply fill out our custom jewelry request form or book a one-on-one consultation. Our team will guide you from design to delivery.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_TKgBCj",
+        "text_XJ6Eqw",
+        "text_kwnP4X",
+        "text_VrC4Wd",
+        "text_N6zRci",
+        "text_dx8hFW",
+        "text_mJGmU6",
+        "text_ddfmmP",
+        "text_rhQpF9",
+        "text_K4zRPw"
+      ],
+      "name": "SS - FAQ #1",
+      "settings": {
+        "heading": "CUSTOM JEWELRY FAQ'S",
+        "icon_color": "#ffffff",
+        "hover_color": "#00205b",
+        "question_color": "#232323",
+        "background_color": "#fafafa",
+        "answer_color": "#232323",
+        "answer_bg_color": "#fafafa",
+        "questions-font-size": 1
+      }
+    },
+    "rich_text_dNGVBi": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_XiCR6K": {
+          "type": "heading",
+          "settings": {
+            "title": "From Concept to Creation",
+            "use_h1": false
+          }
+        },
+        "text_XtcPLn": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Watch your vision come to life. With our design process, you’ll see your dream ring evolve from an initial CAD wireframe to a lifelike 3D render. This interactive comparison lets you slide between the technical blueprint and the finished design, giving you complete confidence in every detail before your ring is brought to life.</p>",
+            "enlarge_text": true
+          }
+        },
+        "button_4raJzi": {
+          "type": "button",
+          "settings": {
+            "button_label": "Learn More about our process",
+            "button_link": "shopify://blogs/news/the-complete-guide-to-custom-engagement-rings-from-idea-to-yes",
+            "button_style": "primary"
+          }
+        }
+      },
+      "block_order": [
+        "heading_XiCR6K",
+        "text_XtcPLn",
+        "button_4raJzi"
+      ],
+      "disabled": true,
+      "settings": {
+        "height": "small",
+        "text_alignment": "center",
+        "full_width": false,
+        "color_scheme": "default"
+      }
+    },
+    "key_features_Vnj8Rk": {
+      "type": "key-features",
+      "blocks": {
+        "feature_37gXEm": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/Sketching_a_Timeless_Ring_Design_1.png",
+            "bg_color": "#ffffff",
+            "bg_gradient": "",
+            "text_color": "#505050",
+            "heading": "Step 1: Design Your Dream Piece",
+            "text": "<p>The custom design process can begin however you prefer—by email, phone, in-person or a one-on-one virtual consultation with our Milano design team. Whether you bring us inspiration through words, sketches, photos, links, or even an existing piece of jewelry, our team will carefully listen to your vision and needs. From this conversation, we’ll be able to understand your style and provide you with a precise, tailored quote.<br/><br/></p>",
+            "show_segments": true,
+            "segments": 5,
+            "active_segment": "1",
+            "fill_segments": true,
+            "show_labels": true,
+            "label_left": "",
+            "label_middle": "",
+            "label_right": "",
+            "show_icon": false,
+            "icon": "star"
+          }
+        },
+        "feature_LF9aLR": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/KR-8136-CAD_398ac24c-8074-4651-acb3-e6d15c383b05.jpg",
+            "bg_color": "#ffffff",
+            "bg_gradient": "",
+            "text_color": "#505050",
+            "heading": "Step 2: Approve the Design & Quote",
+            "text": "<p>We’ll collaborate with you to create a ring you truly love—crafted to your vision while staying within your desired budget. After finalizing any adjustments, and once you’ve approved the design and quote, we’ll provide a secure custom link so you can complete your purchase directly on our website.</p>",
+            "show_segments": true,
+            "segments": 5,
+            "active_segment": "2",
+            "fill_segments": true,
+            "show_labels": true,
+            "label_left": "",
+            "label_middle": "",
+            "label_right": "",
+            "show_icon": false,
+            "icon": "star"
+          }
+        },
+        "feature_Qqmhwd": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/KR-8136-Y4_cb647674-5181-4cd9-b114-218d3cccb5d0.jpg",
+            "bg_color": "#ffffff",
+            "bg_gradient": "",
+            "text_color": "#505050",
+            "heading": "Step 3: Approving Final 3D Rendering",
+            "text": "<p>Once your custom design is finalized, our team will provide detailed 3D renderings or wax model photos within a few days, allowing you to review every angle and ensure every detail is exactly as you envisioned.</p>",
+            "show_segments": true,
+            "segments": 5,
+            "active_segment": "3",
+            "fill_segments": true,
+            "show_labels": true,
+            "label_left": "",
+            "label_middle": "",
+            "label_right": "",
+            "show_icon": false,
+            "icon": "star"
+          }
+        },
+        "feature_9iRY8V": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/Casting.png",
+            "bg_color": "#ffffff",
+            "bg_gradient": "",
+            "text_color": "#505050",
+            "heading": "Step 4: Crafting Your Idea",
+            "text": "<p>With your final approval, the journey from vision to reality begins. Your design is first cast and then carefully refined by one of our skilled artisans. Each diamond or gemstone is hand-set under a microscope to ensure flawless precision, followed by meticulous polishing and finishing to bring out its brilliance. While our master craftsmen bring your idea to life, all you need to do is sit back and look forward to the moment your custom jewelry is ready to shine.</p>",
+            "show_segments": true,
+            "segments": 5,
+            "active_segment": "4",
+            "fill_segments": true,
+            "show_labels": true,
+            "label_left": "",
+            "label_middle": "",
+            "label_right": "",
+            "show_icon": false,
+            "icon": "star"
+          }
+        },
+        "feature_jmH8Xt": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/pexels-photo-6263113.jpg",
+            "bg_color": "#ffffff",
+            "bg_gradient": "",
+            "text_color": "#505050",
+            "heading": "Step 5: Enjoy Your Creation",
+            "text": "<p>The countdown to your one-of-a-kind ring begins. Within two to three weeks, your bespoke piece will be on its way to you via secure FedEx delivery. Before it leaves our hands, every ring undergoes a meticulous quality inspection under a microscope to ensure it meets Milano’s exacting standards of craftsmanship and brilliance. Once it passes our final checks, your jewelry is carefully packaged and prepared for its journey to you. To keep your jewelry shining for years to come, we’ll also provide care instructions so your piece retains the same sparkle as the day it was crafted.</p>",
+            "show_segments": true,
+            "segments": 5,
+            "active_segment": "5",
+            "fill_segments": true,
+            "show_labels": true,
+            "label_left": "",
+            "label_middle": "",
+            "label_right": "",
+            "show_icon": false,
+            "icon": "star"
+          }
+        },
+        "feature_HhRVCF": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/Custom_Ring_Image-min.png",
+            "bg_color": "#e3e3e3",
+            "bg_gradient": "",
+            "text_color": "#505050",
+            "heading": "Start Designing Your Custom Jewelry",
+            "text": "<h2><a href=\"https://outlook.office.com/book/VirtualAppointment@milanodg.com/?ismsaljsauthenabled\" target=\"_blank\" title=\"https://outlook.office.com/book/VirtualAppointment@milanodg.com/?ismsaljsauthenabled\"><strong>GET STARTED</strong><br/></a></h2>",
+            "show_segments": true,
+            "segments": 4,
+            "active_segment": "",
+            "fill_segments": true,
+            "show_labels": true,
+            "label_left": "",
+            "label_middle": "",
+            "label_right": "",
+            "show_icon": false,
+            "icon": "star"
+          }
+        }
+      },
+      "block_order": [
+        "feature_37gXEm",
+        "feature_LF9aLR",
+        "feature_Qqmhwd",
+        "feature_9iRY8V",
+        "feature_jmH8Xt",
+        "feature_HhRVCF"
+      ],
+      "disabled": true,
+      "settings": {
+        "heading": "",
+        "image_max_width": 640,
+        "media_aspect_ratio": "1",
+        "image_position": "right",
+        "segment_position": "over-text"
+      }
+    },
+    "1755458796407fd1f4": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_b3b92dd_Y83qXC": {
+          "type": "ai_gen_block_b3b92dd",
+          "settings": {
+            "title": "Frequently asked questions",
+            "subtitle": "Find answers to common questions about our products and services.",
+            "allow_multiple": false,
+            "text_alignment": "center",
+            "max_width": 800,
+            "content_max_width": 600,
+            "section_padding": 60,
+            "header_spacing": 40,
+            "title_margin": 15,
+            "item_spacing": 10,
+            "question_padding": 20,
+            "answer_padding": 20,
+            "title_size": 32,
+            "subtitle_size": 16,
+            "question_size": 18,
+            "answer_size": 16,
+            "background_color": "#ffffff",
+            "title_color": "#000000",
+            "subtitle_color": "#666666",
+            "question_color": "#000000",
+            "question_hover_color": "#333333",
+            "answer_color": "#555555",
+            "border_color": "#e0e0e0",
+            "question_1": "",
+            "answer_1": "",
+            "question_2": "",
+            "answer_2": "",
+            "question_3": "",
+            "answer_3": "",
+            "question_4": "",
+            "answer_4": "",
+            "question_5": "",
+            "answer_5": "",
+            "question_6": "",
+            "answer_6": "",
+            "question_7": "",
+            "answer_7": "",
+            "question_8": "",
+            "answer_8": ""
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_b3b92dd_Y83qXC"
+      ],
+      "disabled": true,
+      "settings": {}
+    },
+    "slideshow_fBWhGt": {
+      "type": "slideshow",
+      "blocks": {
+        "image_HBAWWK": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Create_Your_RIng_Banner_1.png",
+            "slide_link": "",
+            "subheading": "",
+            "title": "CREATE YOUR CUSTOM JEWELRY",
+            "heading_max_width": 16,
+            "title_size": 32,
+            "title_size_mobile": 28,
+            "use_h1": true,
+            "text": "<h6>Elevate your individuality with our step-by-step custom design process.</h6>",
+            "enlarge_text": false,
+            "button_label_1": "Get Started",
+            "button_url_1": "https://outlook.office.com/book/VirtualAppointment@milanodg.com/?ismsaljsauthenabled",
+            "button_label_2": "",
+            "button_url_2": "",
+            "text_alignment": "top left"
+          }
+        }
+      },
+      "block_order": [
+        "image_HBAWWK"
+      ],
+      "disabled": true,
+      "name": "Slideshow",
+      "settings": {
+        "height": "fixed",
+        "height_desktop": 680,
+        "height_mobile": 460,
+        "full_width": true,
+        "mobile_overlay_under": true,
+        "overlay_style": "shadow",
+        "transition": "fade",
+        "navigation": "arrows",
+        "autoplay": false,
+        "autoplay_speed": 7,
+        "accessibility_info": ""
+      }
+    },
+    "ss_before_after_image_PpPUDP": {
+      "type": "ss-before-after-image",
+      "blocks": {
+        "images_qjCBcD": {
+          "type": "images",
+          "settings": {
+            "desktop_height": 700,
+            "mobile_height": 500,
+            "border_radius": 12,
+            "before_image": "shopify://shop_images/KR-8136-CAD_44125642-532b-42fc-9461-8386dae1421c.jpg",
+            "after_image": "shopify://shop_images/KR-8136-Y1_7f51ce19-0921-44ff-8e47-ee0cf7b6ca3a.jpg",
+            "cover": true,
+            "before_text": "Before",
+            "after_text": "After",
+            "before_text_color": "#ffffff",
+            "after_text_color": "#ffffff",
+            "before_after_text_position": "bottom",
+            "drag_initial_position": 50,
+            "drag_cursor_bg": "#ffffff",
+            "drag_cursor_color": "#000000"
+          }
+        }
+      },
+      "block_order": [
+        "images_qjCBcD"
+      ],
+      "disabled": true,
+      "name": "SS - Before & After",
+      "settings": {
+        "background_color": "rgba(0,0,0,0)",
+        "background": "",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "section-width": 120
+      }
+    },
+    "image_with_text_npBaet": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_4PQLhd": {
+          "type": "heading",
+          "settings": {
+            "title": "Uniquely Crafted",
+            "use_h1": false
+          }
+        },
+        "text_R76RVe": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We joyfully craft jewelry uniquely tailored to you, capturing your individual story. Understanding that everyone is unique, our Ready-to-Ship collections offer modern twists on classic designs, while our custom pieces are crafted to your exact specifications by our expert artisans, ensuring your jewelry truly represents you.</p>",
+            "enlarge_text": false
+          }
+        },
+        "button_kUkgJh": {
+          "type": "button",
+          "settings": {
+            "button_label": "Our Manufacturing",
+            "button_link": "shopify://pages/our-factory",
+            "button_style": "primary"
+          }
+        }
+      },
+      "block_order": [
+        "heading_4PQLhd",
+        "text_R76RVe",
+        "button_kUkgJh"
+      ],
+      "disabled": true,
+      "settings": {
+        "image": "shopify://shop_images/jewelry-buffing-by-hand.jpg",
+        "image_width": 700,
+        "image_link": "",
+        "image_position": "right",
+        "text_alignment": "center",
+        "color_scheme": "default"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "gem_find_iwto_3cAMty",
+    "rich_text_QNa8tj",
+    "gallery_FVKwDQ",
+    "rich_text_LpnBUM",
+    "multi_column_prNiw8",
+    "custom_content_HMDJBH",
+    "rich_text_TcWLxw",
+    "custom_liquid_mcjUrC",
+    "ss_simple_faq_EapgYf",
+    "rich_text_dNGVBi",
+    "key_features_Vnj8Rk",
+    "1755458796407fd1f4",
+    "slideshow_fBWhGt",
+    "ss_before_after_image_PpPUDP",
+    "image_with_text_npBaet"
+  ]
+}

@@ -1,0 +1,929 @@
+<link rel="stylesheet" href="{{ 'article-editorial.css' | asset_url }}" {%- render 'lazy-stylesheet-attrs' %}>
+
+{%- liquid
+  assign author_name = article.author
+  if article.metafields.custom.author_name != blank
+    assign author_name = article.metafields.custom.author_name.value
+  elsif section.settings.author_name != blank
+    assign author_name = section.settings.author_name
+  endif
+
+  assign author_role = ''
+  if article.metafields.custom.author_role != blank
+    assign author_role = article.metafields.custom.author_role.value
+  elsif section.settings.author_role != blank
+    assign author_role = section.settings.author_role
+  endif
+
+  assign author_image = blank
+  if article.metafields.custom.author_image != blank
+    assign author_image = article.metafields.custom.author_image.value
+  elsif section.settings.author_image != blank
+    assign author_image = section.settings.author_image
+  endif
+
+  assign has_author_bio = false
+  if article.metafields.custom.author_bio != blank
+    assign has_author_bio = true
+  elsif section.settings.author_bio != blank
+    assign has_author_bio = true
+  endif
+
+  assign featured_image = article.image
+  if section.settings.featured_image != blank
+    assign featured_image = section.settings.featured_image
+  endif
+-%}
+
+<div class="article-editorial article article--main" id="section-id-{{ section.id }}">
+  {%- comment -%} Header band: breadcrumbs, title, tag pills {%- endcomment -%}
+  <div class="article-editorial__hero{% if section.settings.header_color_scheme != 'default' %} use-color-scheme use-color-scheme--{{ section.settings.header_color_scheme }}{% endif %}{% if section.settings.header_background != blank and section.settings.header_color_scheme == 'default' %} article-editorial__hero--custom-bg{% endif %}">
+    {% if section.settings.header_background != blank and section.settings.header_color_scheme == 'default' %}
+      {% style %}
+        #section-id-{{ section.id }} .article-editorial__hero--custom-bg {
+          --article-editorial-header-bg: {{ section.settings.header_background }};
+        }
+      {% endstyle %}
+    {% endif %}
+
+    <div class="container{% unless section.settings.show_sidebar %} article-editorial__container--full{% endunless %}">
+      <div class="article-editorial__breadcrumbs">
+        {% render 'breadcrumbs' %}
+      </div>
+
+      <div class="article-editorial__header" data-cc-animate>
+        <h1 class="majortitle">{{ article.title | escape }}</h1>
+
+        {%- if section.settings.show_article_tags and article.tags.size > 0 -%}
+          <div class="article-editorial__tags">
+            {%- for tag in article.tags -%}
+              <a class="article-editorial__tag" href="{{ blog.url }}/tagged/{{ tag | handle }}">{{ tag | escape }}</a>
+            {%- endfor -%}
+          </div>
+        {%- endif -%}
+      </div>
+    </div>
+  </div>
+
+  {%- comment -%} Two-column body {%- endcomment -%}
+  <div class="article-editorial__body">
+    <div class="container{% unless section.settings.show_sidebar %} article-editorial__container--full{% endunless %}">
+      <div class="article-editorial__grid">
+        <div class="article-editorial__main{% if section.settings.main_color_scheme != 'default' %} use-color-scheme use-color-scheme--{{ section.settings.main_color_scheme }}{% endif %}{% if section.settings.main_background != blank and section.settings.main_color_scheme == 'default' %} article-editorial__main--custom-bg{% endif %}" data-cc-animate>
+          {% if section.settings.main_background != blank and section.settings.main_color_scheme == 'default' %}
+            {% style %}
+              #section-id-{{ section.id }} .article-editorial__main--custom-bg {
+                --article-editorial-main-bg: {{ section.settings.main_background }};
+              }
+            {% endstyle %}
+          {% endif %}
+
+          {%- if section.settings.show_featured_image and featured_image != blank -%}
+            <div class="article-editorial__featured-image">
+              {%- render 'image' with featured_image, loading: 'eager', sizes: '(min-width: 768px) 66vw, 100vw' -%}
+            </div>
+          {%- endif -%}
+
+          {%- if section.settings.show_author or section.settings.show_sharing_icons or section.settings.show_date or has_author_bio -%}
+            <div class="article-editorial__meta">
+              <div class="article-editorial__meta-bar">
+                {%- if section.settings.show_author -%}
+                  <div class="article-editorial__author">
+                    {%- if author_image != blank -%}
+                      <div class="article-editorial__author-avatar">
+                        {%- render 'image' with author_image, class: 'article-editorial__author-image', sizes: '48px', widths: '48, 96' -%}
+                      </div>
+                    {%- endif -%}
+
+                    <div class="article-editorial__author-details">
+                      {%- if author_name != blank -%}
+                        <p class="article-editorial__author-name">{{ author_name | escape }}</p>
+                      {%- endif -%}
+
+                      {%- if author_role != blank -%}
+                        <p class="article-editorial__author-role">{{ author_role | escape }}</p>
+                      {%- endif -%}
+                    </div>
+                  </div>
+                {%- endif -%}
+
+                {%- if section.settings.show_sharing_icons -%}
+                  <div class="article-editorial__share">
+                    <div class="social-share flex items-center">
+                      <p class="social-share__heading">{{ 'general.social.share_heading' | t }}</p>
+                      {% render 'social-share',
+                        share_twitter: section.settings.show_twitter,
+                        share_facebook: section.settings.show_facebook,
+                        share_pinterest: section.settings.show_pinterest,
+                        share_title: article.title,
+                        share_url: article.url,
+                        share_image: article.image %}
+                    </div>
+                  </div>
+                {%- endif -%}
+              </div>
+
+              {%- if has_author_bio -%}
+                <div class="article-editorial__author-bio rte cf">
+                  {%- if article.metafields.custom.author_bio != blank -%}
+                    {{ article.metafields.custom.author_bio | metafield_tag }}
+                  {%- else -%}
+                    {{ section.settings.author_bio }}
+                  {%- endif -%}
+                </div>
+              {%- endif -%}
+
+              {%- if section.settings.show_date -%}
+                <div class="article-editorial__published">
+                  {%- if section.settings.show_published_icon -%}
+                    <span class="article-editorial__published-icon" aria-hidden="true">
+                      {%- if section.settings.published_icon_image != blank -%}
+                        {%- render 'image' with section.settings.published_icon_image, sizes: '16px', widths: '16, 32', class: 'article-editorial__published-icon-img' -%}
+                      {%- elsif section.settings.published_icon != 'none' -%}
+                        {%- render 'icon', icon: section.settings.published_icon, size: 'small' -%}
+                      {%- endif -%}
+                    </span>
+                  {%- endif -%}
+                  <span class="article-editorial__published-text">
+                    <span class="article-editorial__date-label">{{ section.settings.published_label | escape }}</span>
+                    <b>{{ article.published_at | time_tag: format: 'date' }}</b>
+                  </span>
+                </div>
+              {%- endif -%}
+            </div>
+
+            <hr class="article-editorial__divider">
+          {%- endif -%}
+
+          <div class="article-editorial__content">
+            {%- for block in section.blocks -%}
+              {%- case block.type -%}
+                {%- when 'faq' -%}
+                  {%- render 'article-editorial-faq', block: block, section: section, block_offset: forloop.index -%}
+                {%- when 'faq_question' -%}
+                {%- when 'connection_cta' -%}
+                  {%- render 'article-editorial-connection', block: block -%}
+                {%- else -%}
+                  {%- render 'article-editorial-block', block: block, section: section -%}
+              {%- endcase -%}
+            {%- endfor -%}
+          </div>
+
+          {%- if article.metafields.custom.supplemental_text != blank -%}
+            <div class="article-editorial__supplemental rte">
+              {{ article.metafields.custom.supplemental_text | metafield_tag }}
+            </div>
+          {%- elsif article.metafields.custom.article_quote != blank -%}
+            <div class="article-editorial__supplemental rte">
+              {{ article.metafields.custom.article_quote | metafield_tag }}
+            </div>
+          {%- elsif section.settings.supplemental_text != blank -%}
+            <div class="article-editorial__supplemental rte">
+              {{ section.settings.supplemental_text }}
+            </div>
+          {%- endif -%}
+
+          <div class="article-editorial__pagination pagination-row pagination-row-tabular" data-cc-animate>
+            <span class="prev">
+              {%- if blog.previous_article -%}
+                <a class="article-editorial__pagination-btn" href="{{ blog.previous_article }}">
+                  <span class="icon--small icon-natcol has-ltr-icon">{% render 'icon-chevron-left' %}</span>
+                  <span>{{ 'blogs.pagination.older_articles' | t }}</span>
+                </a>
+              {%- else -%}
+                <span class="article-editorial__pagination-btn article-editorial__pagination-btn--placeholder" aria-hidden="true"></span>
+              {%- endif -%}
+            </span>
+
+            <span class="back article-editorial__pagination-back">
+              {{ 'blogs.article.back_to_blog' | t: title: blog.title | link_to: blog.url }}
+            </span>
+
+            <span class="next">
+              {%- if blog.next_article -%}
+                <a class="article-editorial__pagination-btn" href="{{ blog.next_article }}">
+                  <span>{{ 'blogs.pagination.newer_articles' | t }}</span>
+                  <span class="icon--small icon-natcol has-ltr-icon">{% render 'icon-chevron-right' %}</span>
+                </a>
+              {%- else -%}
+                <span class="article-editorial__pagination-btn article-editorial__pagination-btn--placeholder" aria-hidden="true"></span>
+              {%- endif -%}
+            </span>
+          </div>
+        </div>
+
+        {%- if section.settings.show_sidebar -%}
+          {%- liquid
+            assign cta_color_scheme = section.settings.sidebar_color_scheme
+            if cta_color_scheme == 'default'
+              assign cta_color_scheme = section.settings.cta_color_scheme
+            endif
+          -%}
+          <aside class="article-editorial__sidebar" data-cc-animate>
+            <div class="article-editorial__cta-card{% if cta_color_scheme != 'default' %} use-color-scheme use-color-scheme--{{ cta_color_scheme }}{% endif %}{% if section.settings.sidebar_background != blank and section.settings.sidebar_color_scheme == 'default' %} article-editorial__cta-card--custom-bg{% endif %}">
+            {% if section.settings.sidebar_background != blank and section.settings.sidebar_color_scheme == 'default' %}
+              {% style %}
+                #section-id-{{ section.id }} .article-editorial__cta-card--custom-bg {
+                  --article-editorial-cta-bg: {{ section.settings.sidebar_background }};
+                }
+              {% endstyle %}
+            {% endif %}
+              {%- if section.settings.sidebar_heading != blank -%}
+                <p class="article-editorial__sidebar-label">{{ section.settings.sidebar_heading | escape }}</p>
+              {%- endif -%}
+
+              {%- if section.settings.sidebar_title != blank -%}
+                <h2 class="article-editorial__sidebar-title">{{ section.settings.sidebar_title | escape }}</h2>
+              {%- endif -%}
+
+              {%- if section.settings.sidebar_text != blank -%}
+                <div class="article-editorial__sidebar-text rte">{{ section.settings.sidebar_text }}</div>
+              {%- endif -%}
+
+              {%- if section.settings.sidebar_button_label != blank and section.settings.sidebar_button_link != blank -%}
+                <a class="{% if section.settings.sidebar_button_style != 'link' %}btn btn--{{ section.settings.sidebar_button_style }}{% else %}small-feature-link{% endif %}" href="{{ section.settings.sidebar_button_link }}">
+                  {{- section.settings.sidebar_button_label | escape -}}
+                </a>
+              {%- endif -%}
+            </div>
+
+            {%- if section.settings.show_blog_categories and blog.all_tags.size > 0 -%}
+              <div class="article-editorial__categories-wrap">
+                <h3 class="article-editorial__categories-heading">{{ section.settings.categories_heading | escape }}</h3>
+                <ul class="article-editorial__categories">
+                  {%- for tag in blog.all_tags -%}
+                    <li>
+                      <a href="{{ blog.url }}/tagged/{{ tag | handle }}">{{ tag | escape }}</a>
+                    </li>
+                  {%- endfor -%}
+                </ul>
+              </div>
+            {%- endif -%}
+          </aside>
+        {%- endif -%}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% if blog.comments_enabled? %}
+  <div class="container container--reading-width">
+    {% paginate article.comments by 50 %}
+      {% if article.comments != blank %}
+        <div id="comments" class="fully-spaced-row" data-cc-animate>
+          <h4 class="align-centre">{{ 'blogs.comments.title' | t }}</h4>
+
+          {% if comment and comment.status != 'published' %}
+            <div class="comment">
+              <div class="text">{{ comment.content }}</div>
+              <div class="author small-text">&mdash; {{ comment.author }}</div>
+            </div>
+          {% endif %}
+
+          {% for comment in article.comments %}
+            <div class="comment {% if forloop.first %}first{% endif %}">
+              <div class="text">{{ comment.content }}</div>
+              <div class="author small-text">&mdash; {{ comment.author }}</div>
+            </div>
+          {% endfor %}
+        </div>
+
+        <div class="pagination-row" data-cc-animate>{% render 'pagination-control', paginate: paginate %}</div>
+      {% endif %}
+    {% endpaginate %}
+
+    <div class="account-form fully-spaced-row" data-cc-animate>
+      {% form article %}
+        <h4 id="add-comment-title">{{ 'blogs.comments.form_title' | t }}</h4>
+
+        {% if form.posted_successfully? %}
+          <p>{{ 'blogs.comments.success' | t }}</p>
+        {% endif %}
+
+        {% if blog.moderated? %}
+          <p>{{ 'blogs.comments.moderated' | t }}</p>
+        {% endif %}
+
+        {% if form.errors %}
+          <ul class="errors">
+            {% for field in form.errors %}
+              <li>{{ field | capitalize }} {{ form.errors.messages[field] }}</li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+
+        <div class="input-row {% if form.errors contains 'author' %}has-error{% endif %}">
+          <label for="comment_author">{{ 'blogs.comments.name' | t }}</label>
+          <input type="text" id="comment_author" name="comment[author]" size="40" value="{{ form.author }}">
+        </div>
+        <div class="input-row {% if form.errors contains 'email' %}has-error{% endif %}">
+          <label for="comment_email">{{ 'blogs.comments.email' | t }}</label>
+          <input type="email" id="comment_email" name="comment[email]" size="40" value="{{ form.email }}">
+        </div>
+        <div class="input-row {% if form.errors contains 'body' %}has-error{% endif %}">
+          <label for="comment_body">{{ 'blogs.comments.message' | t }}</label>
+          <textarea id="comment_body" name="comment[body]" cols="40" rows="5">{{ form.body }}</textarea>
+        </div>
+
+        <div class="lightly-spaced-row-above">
+          <button type="submit" id="comment-submit" class="btn">{{ 'blogs.comments.post' | t }}</button>
+        </div>
+      {% endform %}
+    </div>
+  </div>
+{% endif %}
+
+{% render 'structured-data-article', article: article %}
+
+{% schema %}
+{
+  "name": "Editorial article",
+  "class": "page-section-spacing section-article-editorial",
+  "enabled_on": {
+    "templates": ["article"]
+  },
+  "settings": [
+    {
+      "type": "header",
+      "content": "Header — breadcrumbs, title and tags"
+    },
+    {
+      "type": "select",
+      "id": "header_color_scheme",
+      "label": "Header background",
+      "default": "2",
+      "options": [
+        { "value": "default", "label": "Default" },
+        { "value": "1", "label": "Scheme 1" },
+        { "value": "2", "label": "Scheme 2" }
+      ]
+    },
+    {
+      "type": "color",
+      "id": "header_background",
+      "label": "Header custom background",
+      "info": "Used when header background is set to Default."
+    },
+    {
+      "type": "checkbox",
+      "id": "show_article_tags",
+      "label": "Show tag pills under title",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "Main column"
+    },
+    {
+      "type": "select",
+      "id": "main_color_scheme",
+      "label": "Main column background",
+      "default": "default",
+      "options": [
+        { "value": "default", "label": "Default" },
+        { "value": "1", "label": "Scheme 1" },
+        { "value": "2", "label": "Scheme 2" }
+      ]
+    },
+    {
+      "type": "color",
+      "id": "main_background",
+      "label": "Main column custom background",
+      "info": "Used when main column background is set to Default."
+    },
+    {
+      "type": "checkbox",
+      "id": "show_featured_image",
+      "label": "Show featured image",
+      "default": true
+    },
+    {
+      "type": "image_picker",
+      "id": "featured_image",
+      "label": "Featured image override",
+      "info": "Uses the article featured image when empty."
+    },
+    {
+      "type": "header",
+      "content": "Author"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_author",
+      "label": "Show author",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_date",
+      "label": "Show publish date",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "published_label",
+      "label": "Published label",
+      "default": "Published on"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_published_icon",
+      "label": "Show icon before date",
+      "default": true
+    },
+    {
+      "type": "select",
+      "id": "published_icon",
+      "label": "Date icon",
+      "default": "calendar",
+      "options": [
+        { "value": "none", "label": "None" },
+        { "value": "calendar", "label": "Calendar" },
+        { "value": "clock", "label": "Clock" }
+      ]
+    },
+    {
+      "type": "image_picker",
+      "id": "published_icon_image",
+      "label": "Custom date icon",
+      "info": "Overrides the theme icon when set."
+    },
+    {
+      "type": "text",
+      "id": "author_name",
+      "label": "Author name override",
+      "info": "Defaults to the article author. Override per article with custom.author_name."
+    },
+    {
+      "type": "text",
+      "id": "author_role",
+      "label": "Author position override",
+      "info": "Override per article with custom.author_role."
+    },
+    {
+      "type": "richtext",
+      "id": "author_bio",
+      "label": "Author bio"
+    },
+    {
+      "type": "image_picker",
+      "id": "author_image",
+      "label": "Author image override",
+      "info": "Override per article with custom.author_image."
+    },
+    {
+      "type": "header",
+      "content": "Sharing"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_sharing_icons",
+      "label": "Show social sharing icons",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_twitter",
+      "label": "Show X (formerly Twitter)",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_facebook",
+      "label": "Show Facebook",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_pinterest",
+      "label": "Show Pinterest",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "Supplemental content"
+    },
+    {
+      "type": "richtext",
+      "id": "supplemental_text",
+      "label": "Supplemental rich text",
+      "info": "Shown below the article body. Override per article with custom.supplemental_text or custom.article_quote metafields."
+    },
+    {
+      "type": "header",
+      "content": "Sidebar"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_sidebar",
+      "label": "Show sidebar",
+      "default": true
+    },
+    {
+      "type": "select",
+      "id": "sidebar_color_scheme",
+      "label": "CTA card color scheme",
+      "default": "2",
+      "options": [
+        { "value": "default", "label": "Default" },
+        { "value": "1", "label": "Scheme 1" },
+        { "value": "2", "label": "Scheme 2" }
+      ]
+    },
+    {
+      "type": "color",
+      "id": "sidebar_background",
+      "label": "CTA card custom background",
+      "info": "Used when CTA card color scheme is set to Default."
+    },
+    {
+      "type": "select",
+      "id": "cta_color_scheme",
+      "label": "CTA card fallback color scheme",
+      "info": "Used when CTA card color scheme is set to Default.",
+      "default": "default",
+      "options": [
+        { "value": "default", "label": "Default (white)" },
+        { "value": "1", "label": "Scheme 1" },
+        { "value": "2", "label": "Scheme 2" }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "sidebar_heading",
+      "label": "CTA label",
+      "default": "About"
+    },
+    {
+      "type": "text",
+      "id": "sidebar_title",
+      "label": "CTA title",
+      "default": "Experience the Beauty of Milano"
+    },
+    {
+      "type": "richtext",
+      "id": "sidebar_text",
+      "label": "CTA text",
+      "default": "<p>Milano Jewelry proudly crafts exquisite diamond and gemstone jewelry to help you mark every special moment in life.</p>"
+    },
+    {
+      "type": "text",
+      "id": "sidebar_button_label",
+      "label": "Button label",
+      "default": "Contact Us"
+    },
+    {
+      "type": "url",
+      "id": "sidebar_button_link",
+      "label": "Button link"
+    },
+    {
+      "type": "select",
+      "id": "sidebar_button_style",
+      "label": "Button style",
+      "default": "primary",
+      "options": [
+        { "label": "Primary", "value": "primary" },
+        { "label": "Secondary", "value": "secondary" },
+        { "label": "Link", "value": "link" }
+      ]
+    },
+    {
+      "type": "header",
+      "content": "Blog categories"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_blog_categories",
+      "label": "Show blog categories",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "categories_heading",
+      "label": "Categories heading",
+      "default": "Blog Categories"
+    },
+    {
+      "type": "paragraph",
+      "content": "Article metafields: custom.author_name, custom.author_role, custom.author_bio (rich text), custom.author_image (file), custom.supplemental_text or custom.article_quote (rich text)."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "content_section",
+      "name": "Content section",
+      "settings": [
+        {
+          "type": "header",
+          "content": "Heading"
+        },
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Heading"
+        },
+        {
+          "type": "select",
+          "id": "heading_tag",
+          "label": "Heading tag",
+          "default": "h2",
+          "options": [
+            { "value": "h1", "label": "H1" },
+            { "value": "h2", "label": "H2" },
+            { "value": "h3", "label": "H3" },
+            { "value": "h4", "label": "H4" },
+            { "value": "h5", "label": "H5" },
+            { "value": "h6", "label": "H6" }
+          ]
+        },
+        {
+          "type": "range",
+          "id": "heading_font_size",
+          "label": "Heading font size",
+          "min": 16,
+          "max": 72,
+          "step": 1,
+          "unit": "px",
+          "default": 48
+        },
+        {
+          "type": "header",
+          "content": "Subheading"
+        },
+        {
+          "type": "text",
+          "id": "subheading",
+          "label": "Subheading"
+        },
+        {
+          "type": "color",
+          "id": "subheading_text_color",
+          "label": "Subheading text color",
+          "default": "#8b7d4a"
+        },
+        {
+          "type": "color",
+          "id": "subheading_background",
+          "label": "Subheading background",
+          "default": "#f5f2eb"
+        },
+        {
+          "type": "header",
+          "content": "Content"
+        },
+        {
+          "type": "richtext",
+          "id": "rich_text",
+          "label": "Rich text"
+        },
+        {
+          "type": "header",
+          "content": "Images"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_1",
+          "label": "Image 1"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_2",
+          "label": "Image 2"
+        },
+        {
+          "type": "header",
+          "content": "Featured products"
+        },
+        {
+          "type": "text",
+          "id": "products_heading",
+          "label": "Products heading",
+          "default": "Featured pieces:"
+        },
+        {
+          "type": "product_list",
+          "id": "product_list",
+          "label": "Products",
+          "limit": 4
+        },
+        {
+          "type": "header",
+          "content": "Accent text"
+        },
+        {
+          "type": "text",
+          "id": "accent_text",
+          "label": "Text"
+        },
+        {
+          "type": "color",
+          "id": "accent_text_color",
+          "label": "Text color"
+        },
+        {
+          "type": "header",
+          "content": "Button"
+        },
+        {
+          "type": "text",
+          "id": "button_label",
+          "label": "Button label"
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": "Button link"
+        },
+        {
+          "type": "select",
+          "id": "button_style",
+          "label": "Button style",
+          "default": "primary",
+          "options": [
+            { "label": "Primary", "value": "primary" },
+            { "label": "Secondary", "value": "secondary" },
+            { "label": "Link", "value": "link" }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "faq",
+      "name": "FAQ",
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Heading",
+          "default": "Fine Jewelry FAQ"
+        },
+        {
+          "type": "richtext",
+          "id": "intro",
+          "label": "Intro text"
+        },
+        {
+          "type": "color",
+          "id": "background_color",
+          "label": "Background color"
+        },
+        {
+          "type": "color",
+          "id": "border_top_color",
+          "label": "Top border color",
+          "info": "4px top border. Defaults to the theme button color when empty."
+        }
+      ]
+    },
+    {
+      "type": "faq_question",
+      "name": "FAQ question",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Question",
+          "default": "Question"
+        },
+        {
+          "type": "richtext",
+          "id": "answer",
+          "label": "Answer",
+          "default": "<p>Answer</p>"
+        }
+      ]
+    },
+    {
+      "type": "connection_cta",
+      "name": "Connection CTA",
+      "settings": [
+        {
+          "type": "header",
+          "content": "Content"
+        },
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Heading",
+          "default": "Craft a Connection"
+        },
+        {
+          "type": "color",
+          "id": "heading_color",
+          "label": "Heading color",
+          "default": "#5c6b3c"
+        },
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "Rich text"
+        },
+        {
+          "type": "color",
+          "id": "bold_text_color",
+          "label": "Bold and link color",
+          "info": "Applies to bold text and links inside the rich text.",
+          "default": "#1a2b4a"
+        },
+        {
+          "type": "text",
+          "id": "button_label",
+          "label": "Button label",
+          "default": "Contact Us"
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": "Button link"
+        },
+        {
+          "type": "select",
+          "id": "button_style",
+          "label": "Button style",
+          "default": "primary",
+          "options": [
+            { "label": "Primary", "value": "primary" },
+            { "label": "Secondary", "value": "secondary" },
+            { "label": "Link", "value": "link" }
+          ],
+          "info": "Used when custom button color is empty."
+        },
+        {
+          "type": "color",
+          "id": "button_background_color",
+          "label": "Button background color",
+          "info": "Overrides the theme button style when set."
+        },
+        {
+          "type": "header",
+          "content": "Image"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "range",
+          "id": "image_width",
+          "label": "Image width",
+          "min": 120,
+          "max": 600,
+          "step": 10,
+          "unit": "px",
+          "default": 280
+        },
+        {
+          "type": "range",
+          "id": "image_height",
+          "label": "Image height",
+          "min": 0,
+          "max": 600,
+          "step": 10,
+          "unit": "px",
+          "default": 380,
+          "info": "Set to 0 for automatic height."
+        },
+        {
+          "type": "range",
+          "id": "image_spacing",
+          "label": "Image spacing",
+          "min": 0,
+          "max": 80,
+          "step": 4,
+          "unit": "px",
+          "default": 24,
+          "info": "Space above, below, and to the right of the image."
+        },
+        {
+          "type": "header",
+          "content": "Style"
+        },
+        {
+          "type": "color",
+          "id": "background_color",
+          "label": "Background color",
+          "default": "#f5f5f5"
+        },
+        {
+          "type": "color",
+          "id": "border_color",
+          "label": "Border color",
+          "info": "4px top border and 1px side and bottom borders. Defaults to theme button color when empty."
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Editorial article",
+      "blocks": [
+        {
+          "type": "content_section"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

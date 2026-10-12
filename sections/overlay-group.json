@@ -1,0 +1,103 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "type": "aside",
+  "name": "Overlay Group",
+  "sections": {
+    "cart-drawer": {
+      "type": "cart-drawer",
+      "settings": {
+        "show_order_note": true,
+        "show_tax_and_shipping": true,
+        "enable_direct_cart": true,
+        "cart_terms_page": "",
+        "show_backorder_text": false,
+        "show_inventory_notice": "low",
+        "show_inventory_count": "low",
+        "inventory_threshold": 1,
+        "show_announcement": true,
+        "announcement_position": "above-subtotal",
+        "announcement_text": "<strong>✓ Free US Shipping · ✓ Easy 30-Day Returns · ✓ Lifetime Warranty</strong>",
+        "announcement_icon": "",
+        "announcement_icon_size": "small",
+        "announcement_enable_box": false,
+        "announcement_box_color": "#F4F4F0",
+        "empty_icon": "bag",
+        "empty_heading": "Your bag is empty",
+        "empty_text": "",
+        "empty_button_text": "Start shopping",
+        "empty_button_link": "shopify://collections/all",
+        "empty_button_style": "primary",
+        "empty_enable_custom_colors": false,
+        "empty_color_background": "",
+        "empty_color_background_gradient": "",
+        "empty_color_text": "",
+        "enable_cross_sells": false,
+        "cross_sell_title": "A little addition to your piece",
+        "cross_sell_products": [
+          "milano-foam-jewelry-cleaner",
+          "pear-blue-sapphire-charm",
+          "triple-row-lab-diamond-lever-back-earrings"
+        ],
+        "enable_automatic_cross_sells": false,
+        "croll_sell_color_scheme": "1"
+      }
+    },
+    "pop-up": {
+      "type": "pop-up",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Sign up and save",
+            "heading_size": "h4"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Entice customers to sign up for your mailing list with discounts or exclusive offers.</p>",
+            "text_size": ""
+          }
+        },
+        "newsletter-signup": {
+          "type": "newsletter-signup",
+          "settings": {
+            "button_style": "primary"
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text",
+        "newsletter-signup"
+      ],
+      "disabled": true,
+      "settings": {
+        "trigger": "delay",
+        "delay": 5,
+        "show_to_guests_only": true,
+        "show_on_mobile": true,
+        "dismiss_days": 30,
+        "position": "justify-center items-center",
+        "text_align": "text-center",
+        "heading_color": "#070707",
+        "text_color": "#070707",
+        "bg_color": "#ffffff",
+        "bg_grad": "",
+        "tint_opacity": 0
+      }
+    }
+  },
+  "order": [
+    "cart-drawer",
+    "pop-up"
+  ]
+}

@@ -1,0 +1,321 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "show_page_title": true,
+        "full_width": false
+      }
+    },
+    "gem_find_iwto_XkadxP": {
+      "type": "gem-find-iwto",
+      "blocks": {
+        "heading_r77TbX": {
+          "type": "heading",
+          "settings": {
+            "title": "EARN WITH MILANO JEWELRY",
+            "heading_max_width": 25,
+            "title_size": 30,
+            "title_size_mobile": 20,
+            "use_h1": true
+          }
+        },
+        "text_6BPJdX": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Partner with a trusted fine jewelry brand and earn commissions by sharing engagement rings, gemstone jewelry, and timeless designs your audience will love</p>",
+            "enlarge_text": false
+          }
+        },
+        "button_TLUR3p": {
+          "type": "button",
+          "settings": {
+            "button_label": "GET STARTED",
+            "button_link": "https://app.impact.com/campaign-promo-signup/MilanoJewelry.brand?execution=e18s1&",
+            "button_style": "primary"
+          }
+        }
+      },
+      "block_order": [
+        "heading_r77TbX",
+        "text_6BPJdX",
+        "button_TLUR3p"
+      ],
+      "custom_css": [
+        ".text-overlay {font-size: 16px; color: #101820;}",
+        "h1 {color: #00205b;}"
+      ],
+      "name": "Image with text overlay",
+      "settings": {
+        "image": "shopify://shop_images/Affiliate_Banner_Desktop.png",
+        "mobile_image": "shopify://shop_images/Affiliate_Mobile_Banner.png",
+        "height": "adapt",
+        "height_desktop": 440,
+        "height_mobile": 400,
+        "image_link": "",
+        "full_width": true,
+        "text_alignment": "bottom left",
+        "mobile_overlay_under": true,
+        "overlay_style": "full"
+      }
+    },
+    "custom_liquid_Ngfik8": {
+      "type": "custom-liquid",
+      "name": "Custom Liquid",
+      "settings": {
+        "full_width": true,
+        "code": "<style>\n.milano-affiliate {\n  width: 100%;\n  margin: 0;\n  font-family: 'Geist', -apple-system, BlinkMacSystemFont, sans-serif;\n  color: #101820;\n}\n\n/* CONTAINER */\n.milano-container {\n  max-width: 1400px;\n  margin: 0 auto;\n  padding: 40px 40px; /* reduced from 60 */\n}\n\n/* tighter spacing between sections */\n.milano-container + .milano-container {\n  margin-top: 20px;\n}\n\n/* HEADINGS */\n.section-title {\n  text-align: center;\n  font-size: 26px;\n  letter-spacing: 2px;\n  margin-bottom: 16px;\n  color: #00205B;\n  font-weight: 500;\n}\n\n/* DIVIDER */\n.divider {\n  width: 50px;\n  height: 2px;\n  background: #00205B;\n  margin: 0 auto 30px;\n}\n\n/* GRID */\n.grid {\n  display: flex;\n  gap: 20px;\n  justify-content: center;\n  flex-wrap: wrap;\n}\n\n/* CARDS */\n.card {\n  flex: 1;\n  min-width: 280px;\n  max-width: 380px;\n  padding: 28px;\n  background: #F4F4F0;\n  border-radius: 10px;\n  transition: 0.3s ease;\n  border: 1px solid #E5E5E5;\n}\n\n.card:hover {\n  transform: translateY(-4px);\n}\n\n.card h3 {\n  font-size: 18px;\n  margin-bottom: 10px;\n}\n\n.card p {\n  font-size: 15px;\n  line-height: 1.6;\n  color: #555;\n}\n\n/* FULL WIDTH CTA */\n.cta-full {\n  background: #F4F4F0;\n  padding: 60px 20px;\n  text-align: center;\n  margin-top: 30px;\n}\n\n.cta-full h2 {\n  font-size: 28px;\n  margin-bottom: 10px;\n}\n\n.cta-full p {\n  font-size: 16px;\n  margin-bottom: 20px;\n  color: #555;\n}\n\n/* BUTTON */\n.btn {\n  display: inline-block;\n  padding: 14px 34px;\n  background: #00205B;\n  color: #fff;\n  text-decoration: none;\n  border-radius: 6px;\n  font-size: 13px;\n  letter-spacing: 1px;\n  text-transform: uppercase;\n  transition: 0.3s ease;\n}\n\n.btn:hover {\n  background: #091350;\n}\n\n/* MOBILE */\n@media (max-width: 768px) {\n  .milano-container {\n    padding: 30px 20px;\n  }\n\n  .cta-full {\n    padding: 40px 20px;\n  }\n}\n</style>\n\n\n<div class=\"milano-affiliate\">\n\n  <!-- WHY -->\n  <div class=\"milano-container\">\n    <div class=\"section-title\">WHY PARTNER WITH MILANO</div>\n    <div class=\"divider\"></div>\n\n    <div class=\"grid\">\n      <div class=\"card\">\n        <h3>Premium Products</h3>\n        <p>\n          Lab-grown diamonds, gemstone jewelry, and fine pieces designed for modern consumers and high conversion.\n        </p>\n      </div>\n\n      <div class=\"card\">\n        <h3>High Conversion</h3>\n        <p>\n          Trusted by over 400,000 customers with strong demand, premium positioning, and high average order value.\n        </p>\n      </div>\n\n      <div class=\"card\">\n        <h3>Earn More</h3>\n        <p>\n          High-value products mean better commissions per sale with strong purchase intent.\n        </p>\n      </div>\n    </div>\n  </div>\n\n\n  <!-- HOW -->\n  <div class=\"milano-container\">\n    <div class=\"section-title\">HOW IT WORKS</div>\n    <div class=\"divider\"></div>\n\n    <div class=\"grid\">\n      <div class=\"card\">\n        <h3>Join</h3>\n        <p>\n          Sign up in minutes and access your dashboard.<br><br>\n          <a href=\"https://app.impact.com/campaign-promo-signup/MilanoJewelry.brand?execution=e18s1&\" style=\"color:#00205B; text-decoration:underline;\">\n            Sign up here →\n          </a>\n        </p>\n      </div>\n\n      <div class=\"card\">\n        <h3>Promote</h3>\n        <p>\n          Share your referral links across your content, social platforms, and campaigns.\n        </p>\n      </div>\n\n      <div class=\"card\">\n        <h3>Earn</h3>\n        <p>\n          Earn 5 - 10% commission on every successful referral with high-value jewelry purchases.\n        </p>\n      </div>\n    </div>\n  </div>\n\n\n  <!-- FULL WIDTH CTA -->\n  <div class=\"cta-full\">\n    <h2>Start Earning with Milano</h2>\n    <p>Join today and turn your audience into revenue.</p>\n\n    <a href=\"\" class=\"btn\">\n      START EARNING\n    </a>\n\n    <p style=\"margin-top:15px; font-size:14px;\">\n      Already an affiliate?\n      <a href=\"https://app.impact.com/campaign-promo-signup/MilanoJewelry.brand?execution=e18s1&\" style=\"color:#00205B; text-decoration:underline;\">\n        Login here →\n      </a>\n    </p>\n  </div>\n\n</div>"
+      }
+    },
+    "multi_column_6yDqiN": {
+      "type": "multi-column",
+      "blocks": {
+        "text_block_iBgUEt": {
+          "type": "text_block",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify://shop_images/Tennis_Bracelet_1_1024_x_1024_px.png",
+            "title": "LAB DIAMOND JEWELRY",
+            "text": "",
+            "button_label": "",
+            "link": "https://www.milanojewelry.com/collections/lab-grown-diamonds"
+          }
+        },
+        "text_block_pKWTVK": {
+          "type": "text_block",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify://shop_images/milano10.22final-25.jpg",
+            "title": "EVERYDAY ESSENTIALS",
+            "text": "",
+            "button_label": "",
+            "link": "https://www.milanojewelry.com/collections/essentials"
+          }
+        },
+        "text_block_yHy6Pr": {
+          "type": "text_block",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify://shop_images/milano10.22final-58.jpg",
+            "title": "GEMSTONE JEWELRY",
+            "text": "",
+            "button_label": "",
+            "link": "https://www.milanojewelry.com/collections/gemstone-jewelry"
+          }
+        }
+      },
+      "block_order": [
+        "text_block_iBgUEt",
+        "text_block_pKWTVK",
+        "text_block_yHy6Pr"
+      ],
+      "name": "Multi-column",
+      "settings": {
+        "title": "WHY YOUR AUDIENCE WILL LOVE MILANO",
+        "media_aspect_ratio": "1",
+        "media_width": 700,
+        "text_alignment": "center",
+        "button_style": "primary",
+        "color_scheme": "default"
+      }
+    },
+    "rich_text_cP8Ycz": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_Ry8AFW": {
+          "type": "heading",
+          "settings": {
+            "title": "⭐ 4.7 Rating   | 400,000+ Customers   | 35+ Stores",
+            "use_h1": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_Ry8AFW"
+      ],
+      "disabled": true,
+      "name": "Rich text",
+      "settings": {
+        "height": "medium",
+        "text_alignment": "center",
+        "full_width": false,
+        "color_scheme": "default"
+      }
+    },
+    "rich_text_czWEgw": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_JXaHAf": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "ABOUT MILANO JEWELRY"
+          }
+        },
+        "text_jUByfz": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Milano Jewelry is a fine jewelry brand specializing in lab-grown diamond engagement rings, gemstone jewelry, wedding bands, and everyday fine jewelry. Designed for modern consumers, Milano combines timeless craftsmanship with ethical sourcing, offering high-quality pieces at accessible prices.</p><p>Known for its customizable engagement rings and contemporary designs, Milano Jewelry features a curated selection of lab-grown diamonds, colored gemstone jewelry, and recycled precious metals, making it a sustainable and conscious choice.</p>",
+            "enlarge_text": false
+          }
+        },
+        "image_RAXYiY": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Light_Wordmark.jpg",
+            "image_width": 310,
+            "url": ""
+          }
+        },
+        "text_hNnGUx": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Milano Jewelry operates both online and in retail locations, delivering a seamless shopping experience with expert guidance, transparent pricing, and a strong focus on customer trust.<br/>Whether you're searching for a lab-grown diamond ring, gemstone jewelry, fine jewelry gift, or a custom engagement ring, Milano Jewelry offers elegant, high-quality pieces designed to last a lifetime.</p>",
+            "enlarge_text": false
+          }
+        },
+        "subheading_qr9FnA": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "WHY PARTNER WITH US"
+          }
+        },
+        "text_DTttYG": {
+          "type": "text",
+          "settings": {
+            "text": "<p>With <strong>400,000+ customers served</strong> and a presence across <strong>35+ retail locations</strong>, Milano Jewelry is a trusted brand your audience will feel confident purchasing from. Our <strong>in-house manufacturing and rich craftsmanship</strong> ensure every piece meets the highest standards of quality — making Milano a strong, high-converting referral for fine jewelry, engagement rings, and gemstone jewelry.<br/><br/>As an affiliate partner, you benefit from a brand that already is desirable — backed by strong retail presence, proven demand, and customer trust.<br/><br/><strong>The Milano Jewelry Affiliate Program offers:</strong><br/>Competitive Commission Payouts – Earn on every successful referral across our full range of fine jewelry, engagement rings, and gemstone pieces<br/>30-Day Cookie Window – Get credited for conversions within 30 days of referral<br/>High Average Order Value – Maximize earnings with premium product pricing<br/>Exclusive Promotions & Campaign Updates – Stay informed on upcoming launches and offers<br/>Dedicated Affiliate Support – We’re here to help you succeed<br/><br/><br/>Fees and commissions are paid monthly. Payments are net of any customer returns, cancellations, shipping fees, and applicable taxes.</p>",
+            "enlarge_text": false
+          }
+        },
+        "subheading_VEtWwb": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "COME PARTNER WITH US"
+          }
+        },
+        "text_eTKJt9": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Start Earning in 4 Simple Steps<br/>Join the Milano Affiliate Program and begin earning effortlessly.<br/><br/></p>",
+            "enlarge_text": false
+          }
+        },
+        "button_ngqQpV": {
+          "type": "button",
+          "settings": {
+            "button_label": "APPLY NOW",
+            "button_link": "https://savethewhales.org/",
+            "button_style": "primary"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_JXaHAf",
+        "text_jUByfz",
+        "image_RAXYiY",
+        "text_hNnGUx",
+        "subheading_qr9FnA",
+        "text_DTttYG",
+        "subheading_VEtWwb",
+        "text_eTKJt9",
+        "button_ngqQpV"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".subheading {color: #002058; font-size: 20px; margin-bottom: 6px;}"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "height": "small",
+        "text_alignment": "center",
+        "full_width": true,
+        "color_scheme": "default"
+      }
+    },
+    "rich_text_zeRU3G": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_CiwzhN": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "SHOP OUR WHALE COLLECTION"
+          }
+        },
+        "text_pgtN9h": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Each piece in this collection draws inspiration from the strength and elegance of the ocean’s most iconic creatures, crafted to feel enduring, refined, and effortless to wear.</p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "subheading_CiwzhN",
+        "text_pgtN9h"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".subheading {color: #002058; font-size: 20px; margin-bottom: 6px;}"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "height": "small",
+        "text_alignment": "center",
+        "full_width": false,
+        "color_scheme": "default"
+      }
+    },
+    "rich_text_Gd3wkL": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_Ma9jtw": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "DIVE INTO WHAT'S NEXT"
+          }
+        },
+        "text_xUwFNt": {
+          "type": "text",
+          "settings": {
+            "text": "<p>New ocean-inspired designs are always on the horizon.</p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "subheading_Ma9jtw",
+        "text_xUwFNt"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".subheading {color: #002058; font-size: 20px; margin-bottom: 6px;}"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "height": "medium",
+        "text_alignment": "center",
+        "full_width": false,
+        "color_scheme": "default"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "gem_find_iwto_XkadxP",
+    "custom_liquid_Ngfik8",
+    "multi_column_6yDqiN",
+    "rich_text_cP8Ycz",
+    "rich_text_czWEgw",
+    "rich_text_zeRU3G",
+    "rich_text_Gd3wkL"
+  ]
+}
