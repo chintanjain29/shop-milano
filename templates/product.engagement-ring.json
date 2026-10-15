@@ -58,6 +58,14 @@
             "size_chart_page": "about"
           }
         },
+        "ring-size-selector": {
+          "type": "ring-size-selector",
+          "settings": {
+            "enable_size_chart": true,
+            "size_chart_variant": "Size",
+            "size_chart_page": "about"
+          }
+        },
         "addon_tQ9ngw": {
           "type": "addon",
           "settings": {
@@ -154,7 +162,11 @@
             "show_in_tab": true,
             "open_tab": false,
             "icon": "",
-            "show_in_quickbuy": false
+            "show_in_quickbuy": false,
+            "enable_specification_table": false,
+            "stripe_color": "#e8ecf3",
+            "product_metafield_labels": "",
+            "product_metafield_keys": ""
           }
         },
         "accordion_zEhq7V": {
@@ -202,6 +214,7 @@
         "affirm_pay_over_time_messaging_product_block_phUTkD",
         "vendor",
         "variant-picker",
+        "ring-size-selector",
         "addon_tQ9ngw",
         "inventory_level_FkqPDq",
         "buy-buttons",
@@ -401,6 +414,8 @@
       "settings": {
         "image": "shopify://shop_images/Group_1_e9024839-0590-430a-9a6d-9a1532ac904a.png",
         "height": "fixed",
+        "ratio_desktop": 2.7,
+        "ratio_mobile": 0.7,
         "height_desktop": 380,
         "height_mobile": 380,
         "image_link": "shopify://pages/our-locations",
@@ -463,6 +478,7 @@
           "settings": {
             "icon": "shield",
             "text": "Lifetime Warranty",
+            "description": "",
             "url": "https://shopmilano.com/pages/warranty",
             "action": false,
             "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
@@ -476,6 +492,7 @@
           "settings": {
             "icon": "globe",
             "text": "Sustainable Manufacturing",
+            "description": "",
             "url": "https://shopmilano.com/pages/our-factory",
             "action": false,
             "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
@@ -489,6 +506,7 @@
           "settings": {
             "icon": "truck",
             "text": "Free US Shipping Fully Insured",
+            "description": "",
             "url": "https://shopmilano.com/pages/faq",
             "action": false,
             "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
@@ -503,6 +521,7 @@
             "image": "shopify://shop_images/Circle_Arrow.png",
             "icon": "return_arrow",
             "text": "Easy Returns & Exchanges",
+            "description": "",
             "url": "",
             "action": false,
             "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
@@ -555,6 +574,11 @@
         "modal_radius": 16,
         "modal_border_thickness": 0,
         "modal_overlay": 50,
+        "info_popup_bg_color": "#ffffff",
+        "info_popup_close_size_mobile": 36,
+        "info_popup_close_size": 36,
+        "info_popup_close_icon_size_mobile": 14,
+        "info_popup_close_icon_size": 14,
         "close_size": 42,
         "close_size_mobile": 42,
         "close_icon_size": 16,

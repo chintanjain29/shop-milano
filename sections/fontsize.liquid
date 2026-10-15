@@ -586,6 +586,9 @@
                       <div class="disclosure__panel has-motion">
                         <div class="disclosure__content rte cf">
                           {{- product.description -}}
+                          {% if block.settings.enable_specification_table %}
+                            {% render 'product-specifications', section:section, block:block, product:product %}
+                          {% endif %}
                         </div>
                       </div>
                     </details>
@@ -646,6 +649,13 @@
                 {%- if current_variant %}{{ current_variant.barcode }}{% endif -%}
               </span>
             </div>
+
+          {% when 'ring-size-selector' %}
+            {% if product.metafields.custom.ring_size.value != blank %}
+              <div class="input-row" {{ block.shopify_attributes }}>
+                {% render 'size-variant', product: product, product_form_id: product_form_id, block: block %}
+              </div>
+            {% endif %}
 
           {% when 'variant-picker' %}
             <div class="input-row" {{ block.shopify_attributes }}>
@@ -2132,6 +2142,37 @@
           "id": "show_in_quickbuy",
           "label": "Show in quick buy",
           "default": false
+        },
+        {
+          "type": "checkbox",
+          "id": "enable_specification_table",
+          "label": "Enable Specification Table"
+        },
+        {
+          "type": "color",
+          "id": "stripe_color",
+          "label": "Alternate row color",
+          "default": "#e8ecf3",
+          "visible_if": "{{ block.settings.enable_specification_table }}"
+        },
+        {
+          "type": "header",
+          "content": "Product specifications",
+          "visible_if": "{{ block.settings.enable_specification_table }}"
+        },
+        {
+          "type": "textarea",
+          "id": "product_metafield_labels",
+          "label": "Specification labels",
+          "info": "Separate labels with |. Example: Carat Total Weight|SKU|Main Stone Shape|Side Stone Color",
+          "visible_if": "{{ block.settings.enable_specification_table }}"
+        },
+        {
+          "type": "textarea",
+          "id": "product_metafield_keys",
+          "label": "Specification metafield keys",
+          "info": "Separate entries with |. Prefix each key with Product or Variant. Example: product:carat_total_weight|variant:sku|product:main_stone_shape|variant:side_stone_color",
+          "visible_if": "{{ block.settings.enable_specification_table }}"
         }
       ]
     },
@@ -2149,6 +2190,35 @@
       "type": "barcode",
       "name": "Barcode (ISBN, UPC, etc)",
       "limit": 1
+    },
+    {
+      "type": "ring-size-selector",
+      "name": "Size Selector",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "header",
+          "content": "Size chart"
+        },
+        {
+          "type": "checkbox",
+          "id": "enable_size_chart",
+          "label": "Enable size chart",
+          "default": false
+        },
+        {
+          "type": "text",
+          "id": "size_chart_variant",
+          "label": "Option name",
+          "info": "The label to show the link beside",
+          "default": "Size"
+        },
+        {
+          "type": "page",
+          "id": "size_chart_page",
+          "label": "Page containing size chart"
+        }
+      ]
     },
     {
       "type": "variant-picker",

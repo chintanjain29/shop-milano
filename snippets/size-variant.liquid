@@ -1,0 +1,154 @@
+{% doc %}
+  Renders the product's ring-size values as a line-item property, with the block's size chart beside the label.
+
+  @param {product} product - Product whose ring-size metafield contains the size values.
+  @param {string} product_form_id - ID of the product form to submit the selected size with.
+  @param {block} block - Size Selector block. Uses its size chart settings.
+
+  @example
+  {% render 'size-variant', product: product, product_form_id: product_form_id, block: block %}
+{% enddoc %}
+
+{%- liquid
+  assign ring_sizes = product.metafields.custom.ring_size.value
+  assign ring_size_input_id = product_form_id | append: '-ring-size'
+  assign show_size_chart = false
+
+  if block.settings.enable_size_chart and block.settings.size_chart_page != blank and block.settings.size_chart_variant != blank
+    assign show_size_chart = true
+  endif
+-%}
+
+{% if ring_sizes != blank %}
+  {%- capture ring_size_options_string -%}
+    {%- for ring_size in ring_sizes -%}
+      {%- assign ring_size_parts = ring_size | append: '' | split: '.' -%}
+      {%- assign ring_size_display = ring_size_parts.first -%}
+
+      {%- if ring_size_parts.size > 1 -%}
+        {%- assign fractional_part = ring_size_parts.last -%}
+        {%- assign fractional_digits = fractional_part | split: '' -%}
+        {%- assign last_nonzero_position = 0 -%}
+
+        {%- for digit in fractional_digits -%}
+          {%- unless digit == '0' -%}
+            {%- assign last_nonzero_position = forloop.index -%}
+          {%- endunless -%}
+        {%- endfor -%}
+
+        {%- if last_nonzero_position > 0 -%}
+          {%- assign trimmed_fraction = fractional_part | slice: 0, last_nonzero_position -%}
+          {%- assign ring_size_display = ring_size_display | append: '.' | append: trimmed_fraction -%}
+        {%- endif -%}
+      {%- endif -%}
+
+      {{- ring_size_display -}}{%- unless forloop.last -%}|{%- endunless -%}
+    {%- endfor -%}
+  {%- endcapture -%}
+
+  {%- assign ring_size_options = ring_size_options_string | split: '|' -%}
+
+  <script src="{{ 'custom-select.js' | asset_url }}" defer></script>
+
+  <div class="option-selector option-selector--custom option-selector--size">
+    <div class="flex justify-between">
+      <label class="label no-js-hidden" for="{{ ring_size_input_id }}-button">
+        {{ 'products.product.ring_size' | t }}
+      </label>
+
+      {% if show_size_chart %}
+        <a href="https://cdn.shopify.com/s/files/1/0367/6287/8085/files/Milano_Size_Guide_8798c192-65ef-4571-a1b1-1df5b3f6fed9.pdf" target="_blank" class="size-guide">
+          <span class="size-chart-link__icon">{%- render 'icon', icon: 'ruler', size: 'small' -%}</span>
+          <span class="size-chart-link__text underline">{{ 'products.product.size_chart' | t }}</span>
+        </a>
+      {% endif %}
+    </div>
+
+    <custom-select id="{{ ring_size_input_id }}">
+      <div class="custom-select relative w-full no-js-hidden">
+        <button
+          class="custom-select__btn input items-center"
+          type="button"
+          aria-expanded="false"
+          aria-haspopup="listbox"
+          id="{{ ring_size_input_id }}-button"
+        >
+          <div class="localization-form-icon-text" style="display:flex;gap:20px;align-items:center;">
+            <img
+              src="{{ 'global-icon.svg' | file_url }}"
+              loading="lazy"
+              width="20"
+              height="20"
+              style="display:none;"
+              alt=""
+            >
+            <span class="text-start">
+              {{ ring_size_options.first | escape }}
+            </span>
+          </div>
+
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            class="icon"
+            role="presentation"
+            focusable="false"
+            aria-hidden="true"
+          >
+            <path
+              d="M20 8.5 12.5 16 5 8.5"
+              stroke="currentColor"
+              stroke-width="1.5"
+              fill="none"
+            />
+          </svg>
+        </button>
+
+        <ul
+          class="custom-select__listbox absolute invisible"
+          role="listbox"
+          tabindex="-1"
+          aria-hidden="true"
+          hidden
+        >
+          {% for ring_size_option in ring_size_options %}
+            <li
+              class="custom-select__option flex items-center js-option"
+              id="{{ ring_size_input_id }}-opt-{{ forloop.index0 }}"
+              role="option"
+              data-value="{{ ring_size_option | escape }}"
+            >
+              <span class="pointer-events-none">
+                {{ ring_size_option | escape }}
+              </span>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </custom-select>
+
+    <label for="{{ ring_size_input_id }}-native" class="js-hidden label">
+      {{ 'products.product.ring_size' | t }}
+    </label>
+
+
+    <div class="js-hidden select inline-block relative">
+      <select
+        class="custom-select__native"
+        id="{{ ring_size_input_id }}-native"
+        name="properties[Ring size]"
+        form="{{ product_form_id }}"
+      >
+        {% for ring_size_option in ring_size_options %}
+          <option
+            value="{{ ring_size_option | escape }}"
+            {% if forloop.first %}selected{% endif %}
+          >
+            {{ ring_size_option | escape }}
+          </option>
+        {% endfor %}
+      </select>
+    </div>
+  </div>
+{% endif %}

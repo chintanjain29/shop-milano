@@ -1,1 +1,50 @@
-{"sections":{"main":{"type":"main-search","settings":{"show_vendor":false,"coll_num_per_page_int":24,"grid":4,"enable_filtering":true,"collapse_tag_sidebar_by_default":false,"collapse_filters_method":"over-12","show_filter_counts":false,"show_disabled_filters":true,"auto_apply_hide_unavailable":false,"enable_sticky_filter":true,"filter_two_columns":false,"show_sort":true}},"17558417002cbec401":{"type":"apps","blocks":{"boost_ai_search_filter_filter_product_list_ssr_MQg4xc":{"type":"shopify://apps/boost-ai-search-filter/blocks/filter-product-list-ssr/7fc998ae-a150-4367-bab8-505d8a4503f7","disabled":true,"settings":{}}},"block_order":["boost_ai_search_filter_filter_product_list_ssr_MQg4xc"],"settings":{"full_width":false}}},"order":["main","17558417002cbec401"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-search",
+      "settings": {
+        "show_vendor": false,
+        "coll_num_per_page_int": 24,
+        "grid": 4,
+        "enable_filtering": true,
+        "collapse_tag_sidebar_by_default": false,
+        "collapse_filters_method": "over-12",
+        "show_filter_counts": false,
+        "show_disabled_filters": true,
+        "auto_apply_hide_unavailable": false,
+        "enable_sticky_filter": true,
+        "filter_two_columns": false,
+        "show_sort": true
+      }
+    },
+    "17558417002cbec401": {
+      "type": "apps",
+      "blocks": {
+        "boost_ai_search_filter_filter_product_list_ssr_MQg4xc": {
+          "type": "shopify://apps/boost-ai-search-filter/blocks/filter-product-list-ssr/7fc998ae-a150-4367-bab8-505d8a4503f7",
+          "disabled": true,
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "boost_ai_search_filter_filter_product_list_ssr_MQg4xc"
+      ],
+      "settings": {
+        "full_width": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "17558417002cbec401"
+  ]
+}

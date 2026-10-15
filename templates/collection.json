@@ -1,1 +1,166 @@
-{"sections":{"gem_find_iwto_G4zxK3":{"type":"gem-find-iwto","name":"Image with text overlay","settings":{"image":"shopify:\/\/shop_images\/Petite_Promo_Revised.jpg","mobile_image":"shopify:\/\/shop_images\/Petite_Promo_Revised.jpg","height":"adapt","ratio_desktop":2.7,"ratio_mobile":0.7,"height_desktop":600,"height_mobile":460,"image_link":"https:\/\/www.milanojewelry.com\/products\/petite-lab-diamond-tennis-bracelet","full_width":true,"text_alignment":"center center","mobile_overlay_under":false,"overlay_style":"shadow"}},"gallery_rzVXaG":{"type":"gallery","blocks":{"media_RFDTRV":{"type":"media","settings":{"image":"shopify:\/\/shop_images\/Tennis_Promo_2.jpg","enlarge_media":true,"subheading":"","title":"","button_label":"","link":"https:\/\/www.milanojewelry.com\/products\/petite-lab-diamond-tennis-bracelet","text_alignment":"bottom left"}}},"block_order":["media_RFDTRV"],"name":"Gallery","settings":{"grid_desktop":1,"grid_mobile":"1","height":"fixed","desktop_image_height":300,"mobile_image_height":100,"title_size":30,"title_size_mobile":22,"enable_margin":false,"enable_row_spacing":false,"full_width":true,"color_scheme":"default","enable_carousel":false,"overlay_style":"full","button_style":"primary"}},"custom_content_UKNdPw":{"type":"custom-content","blocks":{"image_mmAfGV":{"type":"image","settings":{"width":"full","image":"shopify:\/\/shop_images\/petite_promo_1200x250_2.jpg","mobile_image":"shopify:\/\/shop_images\/petite_promo_1200x250_2.jpg","height":"adapt","height_desktop":600,"height_mobile":500,"subheading":"","title":"","text":"","enlarge_text":false,"button_label":"","button_style":"primary","image_link":"https:\/\/www.milanojewelry.com\/collections\/oro-dmilano-gold-jewelry","text_alignment":"center center","mobile_overlay_under":false,"overlay_style":"shadow"}}},"block_order":["image_mmAfGV"],"name":"Custom content","settings":{"alignment":"middle"}},"main":{"type":"main-collection","custom_css":[],"settings":{"show_title":true,"show_description":false,"show_image_behind_heading":false,"heading_image_height":"medium","overlay_style":"full image-overlay--bg-shadow","coll_desc_pos":"above","coll_num_per_page_int":32,"grid":4,"show_vendor":false,"show_total":true,"enable_filtering":true,"collapse_tag_sidebar_by_default":true,"collapse_filters_method":"over-12","show_filter_counts":true,"show_disabled_filters":true,"auto_apply_hide_unavailable":false,"enable_sticky_filter":true,"filter_two_columns":false,"show_sort":true,"sort_show_featured":true,"sort_show_best":true,"sort_show_alpha":false,"sort_show_price":true,"sort_show_date":false,"related_collections":[],"related_collections_style":"gallery","rel_coll_gall_aspect_ratio":"1","image_position":"center center","rel_coll_gall_enable_margin":true,"rel_coll_gall_full_width":false,"rel_coll_gall_overlay_style":"shadow","rel_coll_gall_text_alignment":"center center","rel_coll_grid_mobile":"2"}},"17138779121bcbcfbe":{"type":"apps","blocks":{"boost_ai_search_filter_filter_product_list_ssr_Wf98Wr":{"type":"shopify:\/\/apps\/boost-ai-search-filter\/blocks\/filter-product-list-ssr\/7fc998ae-a150-4367-bab8-505d8a4503f7","disabled":true,"settings":{}}},"block_order":["boost_ai_search_filter_filter_product_list_ssr_Wf98Wr"],"settings":{"full_width":true}}},"order":["gem_find_iwto_G4zxK3","gallery_rzVXaG","custom_content_UKNdPw","main","17138779121bcbcfbe"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "gem_find_iwto_G4zxK3": {
+      "type": "gem-find-iwto",
+      "disabled": true,
+      "name": "Image with text overlay",
+      "settings": {
+        "image": "shopify://shop_images/Petite_Promo_Revised.jpg",
+        "mobile_image": "shopify://shop_images/Petite_Promo_Revised.jpg",
+        "height": "adapt",
+        "ratio_desktop": 2.7,
+        "ratio_mobile": 0.7,
+        "height_desktop": 600,
+        "height_mobile": 460,
+        "image_link": "https://www.milanojewelry.com/products/petite-lab-diamond-tennis-bracelet",
+        "full_width": true,
+        "text_alignment": "center center",
+        "mobile_overlay_under": false,
+        "overlay_style": "shadow"
+      }
+    },
+    "gallery_rzVXaG": {
+      "type": "gallery",
+      "blocks": {
+        "media_RFDTRV": {
+          "type": "media",
+          "settings": {
+            "image": "shopify://shop_images/Tennis_Promo_2.jpg",
+            "enlarge_media": true,
+            "subheading": "",
+            "title": "",
+            "button_label": "",
+            "link": "https://www.milanojewelry.com/products/petite-lab-diamond-tennis-bracelet",
+            "text_alignment": "bottom left"
+          }
+        }
+      },
+      "block_order": [
+        "media_RFDTRV"
+      ],
+      "disabled": true,
+      "name": "Gallery",
+      "settings": {
+        "grid_desktop": 1,
+        "grid_mobile": "1",
+        "height": "fixed",
+        "desktop_image_height": 300,
+        "mobile_image_height": 100,
+        "title_size": 30,
+        "title_size_mobile": 22,
+        "enable_margin": false,
+        "enable_row_spacing": false,
+        "full_width": true,
+        "color_scheme": "default",
+        "enable_carousel": false,
+        "overlay_style": "full",
+        "button_style": "primary"
+      }
+    },
+    "custom_content_UKNdPw": {
+      "type": "custom-content",
+      "blocks": {
+        "image_mmAfGV": {
+          "type": "image",
+          "settings": {
+            "width": "full",
+            "image": "shopify://shop_images/petite_promo_1200x250_2.jpg",
+            "mobile_image": "shopify://shop_images/petite_promo_1200x250_2.jpg",
+            "height": "adapt",
+            "height_desktop": 600,
+            "height_mobile": 500,
+            "subheading": "",
+            "title": "",
+            "text": "",
+            "enlarge_text": false,
+            "button_label": "",
+            "button_style": "primary",
+            "image_link": "https://www.milanojewelry.com/collections/oro-dmilano-gold-jewelry",
+            "text_alignment": "center center",
+            "mobile_overlay_under": false,
+            "overlay_style": "shadow"
+          }
+        }
+      },
+      "block_order": [
+        "image_mmAfGV"
+      ],
+      "disabled": true,
+      "name": "Custom content",
+      "settings": {
+        "alignment": "middle"
+      }
+    },
+    "main": {
+      "type": "main-collection",
+      "custom_css": [],
+      "settings": {
+        "show_title": true,
+        "show_description": false,
+        "show_image_behind_heading": false,
+        "heading_image_height": "medium",
+        "overlay_style": "full image-overlay--bg-shadow",
+        "coll_desc_pos": "above",
+        "coll_num_per_page_int": 32,
+        "grid": 4,
+        "show_vendor": false,
+        "show_total": true,
+        "enable_filtering": true,
+        "collapse_tag_sidebar_by_default": true,
+        "collapse_filters_method": "over-12",
+        "show_filter_counts": true,
+        "show_disabled_filters": true,
+        "auto_apply_hide_unavailable": false,
+        "enable_sticky_filter": true,
+        "filter_two_columns": false,
+        "show_sort": true,
+        "sort_show_featured": true,
+        "sort_show_best": true,
+        "sort_show_alpha": false,
+        "sort_show_price": true,
+        "sort_show_date": false,
+        "related_collections": [],
+        "related_collections_style": "gallery",
+        "rel_coll_gall_aspect_ratio": "1",
+        "image_position": "center center",
+        "rel_coll_gall_enable_margin": true,
+        "rel_coll_gall_full_width": false,
+        "rel_coll_gall_overlay_style": "shadow",
+        "rel_coll_gall_text_alignment": "center center",
+        "rel_coll_grid_mobile": "2"
+      }
+    },
+    "17138779121bcbcfbe": {
+      "type": "apps",
+      "blocks": {
+        "boost_ai_search_filter_filter_product_list_ssr_Wf98Wr": {
+          "type": "shopify://apps/boost-ai-search-filter/blocks/filter-product-list-ssr/7fc998ae-a150-4367-bab8-505d8a4503f7",
+          "disabled": true,
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "boost_ai_search_filter_filter_product_list_ssr_Wf98Wr"
+      ],
+      "settings": {
+        "full_width": true
+      }
+    }
+  },
+  "order": [
+    "gem_find_iwto_G4zxK3",
+    "gallery_rzVXaG",
+    "custom_content_UKNdPw",
+    "main",
+    "17138779121bcbcfbe"
+  ]
+}

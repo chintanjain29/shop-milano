@@ -28,6 +28,14 @@
           "disabled": true,
           "settings": {}
         },
+        "ring-size-selector": {
+          "type": "ring-size-selector",
+          "settings": {
+            "enable_size_chart": true,
+            "size_chart_variant": "Size",
+            "size_chart_page": "about"
+          }
+        },
         "variant-picker": {
           "type": "variant-picker",
           "settings": {
@@ -163,6 +171,7 @@
         "title",
         "price",
         "vendor",
+        "ring-size-selector",
         "variant-picker",
         "inventory_level_FkqPDq",
         "buy-buttons",

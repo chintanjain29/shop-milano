@@ -408,6 +408,13 @@
               </span>
             </div>
 
+          {% when 'ring-size-selector' %}
+            {% if product.metafields.custom.ring_size.value != blank %}
+              <div class="input-row" {{ block.shopify_attributes }}>
+                {% render 'size-variant', product: product, product_form_id: product_form_id, block: block %}
+              </div>
+            {% endif %}
+
           {% when 'variant-picker' %}
             <div class="input-row" {{ block.shopify_attributes }}>
               {%- capture size_chart_icon -%}{%- render 'icon', icon: 'ruler', size: 'small' -%}{%- endcapture -%}
@@ -1849,6 +1856,35 @@ document.addEventListener("DOMContentLoaded", function () {
       "type": "barcode",
       "name": "Barcode (ISBN, UPC, etc)",
       "limit": 1
+    },
+    {
+      "type": "ring-size-selector",
+      "name": "Size Selector",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "header",
+          "content": "Size chart"
+        },
+        {
+          "type": "checkbox",
+          "id": "enable_size_chart",
+          "label": "Enable size chart",
+          "default": false
+        },
+        {
+          "type": "text",
+          "id": "size_chart_variant",
+          "label": "Option name",
+          "info": "The label to show the link beside",
+          "default": "Size"
+        },
+        {
+          "type": "page",
+          "id": "size_chart_page",
+          "label": "Page containing size chart"
+        }
+      ]
     },
     {
       "type": "variant-picker",

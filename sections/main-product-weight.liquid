@@ -499,10 +499,17 @@
               </span>
             </div>
 
+
+          {% when 'ring-size-selector' %}
+            {% if product.metafields.custom.ring_size.value != blank %}
+              <div class="input-row" {{ block.shopify_attributes }}>
+                {% render 'size-variant', product: product, product_form_id: product_form_id, block: block %}
+              </div>
+            {% endif %}
+
           {% when 'variant-picker' %}
             <div class="input-row" {{ block.shopify_attributes }}>
               {%- capture size_chart_icon -%}{%- render 'icon', icon: 'ruler', size: 'small' -%}{%- endcapture -%}
-
               {% render 'variant-picker-weight',
                 product: product,
                 product_form_id: product_form_id,
@@ -945,7 +952,7 @@
               {% endunless %}
               {{ block.shopify_attributes }}
             >
-{% when 'drophint' %}
+          {% when 'drophint' %}
             <div class="drophint" {{ block.shopify_attributes }}>
               <button type="button" class="drophint__btn btn--large {% if block.settings.btn_style == 'custom' %}btn{% elsif block.settings.btn_style != 'link' %}btn btn--{{ block.settings.btn_style }}{% else %}small-feature-link{% endif %}{% if block.settings.btn_full_width %} drophint__btn--full-width{% endif %}" {% if block.settings.btn_style == 'custom' %}style="--btn-bg-color: {{ block.settings.btn_custom_bg.rgb }}; --btn-bg-hover-color: {{ block.settings.btn_custom_bg_hover.rgb }}; --btn-text-color: {{ block.settings.btn_custom_text.rgb }}; --btn-text-hover-color: {{ block.settings.btn_custom_text_hover.rgb }}; --btn-border-color: {{ block.settings.btn_custom_bg.rgb }}; --btn-border-hover-color: {{ block.settings.btn_custom_bg_hover.rgb }};"{% endif %} data-drophint-trigger-klaviyo>
                 {% if block.settings.btn_icon == 'custom' and block.settings.btn_icon_image != blank %}
@@ -1069,7 +1076,6 @@
                 {% endcase %}
               </div>
             {%- endif -%}
-
           {% when 'related-products' %}
             {% if block.settings.product_list != blank %}
               <div class="lightly-spaced-row lightish-spaced-row-above not-in-quickbuy" {{ block.shopify_attributes }}>
@@ -2037,6 +2043,35 @@ document.addEventListener("DOMContentLoaded", function () {
         }
       ],
       "limit": 1
+    },
+    {
+      "type": "ring-size-selector",
+      "name": "Size Selector",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "header",
+          "content": "Size chart"
+        },
+        {
+          "type": "checkbox",
+          "id": "enable_size_chart",
+          "label": "Enable size chart",
+          "default": false
+        },
+        {
+          "type": "text",
+          "id": "size_chart_variant",
+          "label": "Option name",
+          "info": "The label to show the link beside",
+          "default": "Size"
+        },
+        {
+          "type": "page",
+          "id": "size_chart_page",
+          "label": "Page containing size chart"
+        }
+      ]
     },
     {
       "type": "buy-buttons",
@@ -3750,5 +3785,3 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     });
 </script>
-
-

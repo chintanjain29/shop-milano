@@ -1352,3 +1352,14 @@ button#swym-atw-pdp-button {
     display: none;
   }
 }
+
+/* Size Selector list stays in the product column instead of covering the variant picker. */
+.option-selector--size .custom-select__listbox {
+  position: static;
+  top: auto;
+  left: auto;
+  z-index: auto;
+  width: 100%;
+  min-width: 0;
+  margin-top: 4px;
+}

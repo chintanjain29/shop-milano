@@ -48,6 +48,14 @@
             "size_chart_page": "about"
           }
         },
+        "ring-size-selector": {
+          "type": "ring-size-selector",
+          "settings": {
+            "enable_size_chart": true,
+            "size_chart_variant": "Size",
+            "size_chart_page": "about"
+          }
+        },
         "addon_tQ9ngw": {
           "type": "addon",
           "disabled": true,
@@ -144,7 +152,11 @@
             "show_in_tab": true,
             "open_tab": false,
             "icon": "",
-            "show_in_quickbuy": false
+            "show_in_quickbuy": false,
+            "enable_specification_table": true,
+            "stripe_color": "#e8ecf3",
+            "product_metafield_labels": "SKU|Metal|Carat Total Weight|Main Stone Type|Creation Method|Main Stone Shape|Main Stone Setting Type|Side Diamond Type|Side Stone Shape|Side Stone Setting Type|Engravable|Plating|Length / Size (Inches)|Main Stone Color|Width (mm)|Height (mm)|Length (mm)|Main Stone Clarity|Average Cut|Stone Quantity|Chain Link Type|Type of Locking|Stone Certification|Side Stone Color|Side Stone Clarity|Total Carat Weight (Main)|Total Carat Weight (Side)",
+            "product_metafield_keys": "variant:sku|variant:metal|product:carat_total_weight|product:main_stone_type|product:creation_method|product:main_stone_shape|product:main_stone_setting_type|product:side_diamond_type|product:side_stone_shape|product:side_stone_setting_type|product:engravable|variant:plating|variant:length_size_inches|variant:main_stone_color|variant:width_mm|variant:height_mm|variant:length_mm|variant:main_stone_clarity|variant:average_cut|variant:stone_quantity|variant:chain_link_type|variant:type_of_locking|variant:stone_certification|variant:side_stone_color|variant:side_stone_clarity|variant:total_carat_weight_main|variant:total_carat_weight_side"
           }
         },
         "accordion_zEhq7V": {
@@ -203,6 +215,7 @@
         "price",
         "vendor",
         "variant-picker",
+        "ring-size-selector",
         "addon_tQ9ngw",
         "inventory_level_FkqPDq",
         "buy-buttons",

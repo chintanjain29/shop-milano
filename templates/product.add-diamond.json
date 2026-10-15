@@ -67,6 +67,14 @@
             "size_chart_page": "about"
           }
         },
+        "ring-size-selector": {
+          "type": "ring-size-selector",
+          "settings": {
+            "enable_size_chart": true,
+            "size_chart_variant": "Size",
+            "size_chart_page": "about"
+          }
+        },
         "addon_tQ9ngw": {
           "type": "addon",
           "settings": {
@@ -161,7 +169,11 @@
             "show_in_tab": true,
             "open_tab": false,
             "icon": "",
-            "show_in_quickbuy": false
+            "show_in_quickbuy": false,
+            "enable_specification_table": false,
+            "stripe_color": "#e8ecf3",
+            "product_metafield_labels": "",
+            "product_metafield_keys": ""
           }
         },
         "accordion_zEhq7V": {
@@ -239,6 +251,7 @@
         "synchrony_marketing_messaging_syf_unifi_jxbN4H",
         "vendor",
         "variant-picker",
+        "ring-size-selector",
         "addon_tQ9ngw",
         "inventory_level_FkqPDq",
         "custom_liquid_nNPHR7",

@@ -116,12 +116,14 @@
       "product_variants": "Product variants",
       "quantity": "Quantity",
       "quick_buy": "Quick buy",
+      "ring_size": "Size",
       "reviews_count": {
         "one": "{{ count }} review",
         "other": "{{ count }} reviews"
       },
       "sale": "Sale",
       "shipping_policy_html": "<a href=\"{{ link }}\">Shipping</a> calculated at checkout.",
+      "select_ring_size": "Select Size",
       "size_chart": "Size guide",
       "sku": "SKU:",
       "sold_out": "Sold out",

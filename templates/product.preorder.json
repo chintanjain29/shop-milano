@@ -34,6 +34,14 @@
             "show_in_quickbuy": false
           }
         },
+        "ring-size-selector": {
+          "type": "ring-size-selector",
+          "settings": {
+            "enable_size_chart": true,
+            "size_chart_variant": "Size",
+            "size_chart_page": "about"
+          }
+        },
         "variant-picker": {
           "type": "variant-picker",
           "settings": {
@@ -86,6 +94,7 @@
         "price",
         "vendor",
         "divider",
+        "ring-size-selector",
         "variant-picker",
         "buy-buttons",
         "custom_liquid_JDgQCG",

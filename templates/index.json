@@ -1,1 +1,1226 @@
-{"sections":{"gallery_JqMhaU":{"type":"gallery","blocks":{"media_tJMhWy":{"type":"media","settings":{"image":"shopify:\/\/shop_images\/Fine_jewelry_Lab.png","enlarge_media":false,"subheading":"","title":"","button_label":"","link":"https:\/\/www.milanojewelry.com\/collections\/spring-collection","text_alignment":"bottom left"}},"media_j3NChX":{"type":"media","settings":{"image":"shopify:\/\/shop_images\/Stackable_rings_2.png","enlarge_media":false,"subheading":"","title":"","button_label":"","link":"https:\/\/www.milanojewelry.com\/collections\/tennis","text_alignment":"bottom left"}}},"block_order":["media_tJMhWy","media_j3NChX"],"disabled":true,"custom_css":[".gallery > .gallery__item:nth-of-type(2) .text-overlay__text {color: #ffffff !important;}",".gallery__image {height: auto !important;}",".gallery__image img.theme-img {width: 100% !important; height: auto !important; object-fit: contain !important;}","@media screen and (min-width: 1024px) {.gallery.gallery--height-adapt {height: 80vh !important; } .gallery.gallery--height-adapt .gallery__item {height: 100% !important; } .gallery.gallery--height-adapt img.theme-img {height: 100% !important; width: 100% !important; object-fit: cover !important; }}"],"name":"Gallery","settings":{"grid_desktop":2,"grid_mobile":"1","height":"adapt","desktop_image_height":680,"mobile_image_height":360,"title_size":38,"title_size_mobile":24,"enable_margin":false,"enable_row_spacing":false,"full_width":true,"color_scheme":"default","enable_carousel":false,"overlay_style":"full","button_style":"primary"}},"gem_find_iwto_BHbHEW":{"type":"gem-find-iwto","blocks":{"button_WWbhCE":{"type":"button","settings":{"button_label":"SHOP COLOR","button_link":"https:\/\/www.milanojewelry.com\/collections\/gemstone-jewelry-1","button_style":"primary"}},"button_xkxRYk":{"type":"button","settings":{"button_label":"THE FALL EDIT","button_link":"https:\/\/www.milanojewelry.com\/collections\/the-fall-edit","button_style":"primary"}}},"block_order":["button_WWbhCE","button_xkxRYk"],"custom_css":[".text-overlay-parent--mobile-stack {padding-bottom: 0px;}","{color: #ffffff;}",".button-row {display: flex; justify-content: left;}",".text-overlay-parent--mobile-stack {padding-bottom: 0px;}",".text-overlay__subheading {margin: 6px;}","@media (max-width: 767px) {.text-overlay__button-row {margin-top: -10px; } .button-row {justify-content: center; }}"],"name":"Hero Banner","settings":{"image":"shopify:\/\/shop_images\/Color_Edit_-web.jpg","mobile_image":"shopify:\/\/shop_images\/Color_Edit_-mob.jpg","height":"fixed-ratio","ratio_desktop":3,"ratio_mobile":1,"height_desktop":440,"height_mobile":500,"image_link":"https:\/\/www.milanojewelry.com\/collections\/gemstone-jewelry-1","full_width":true,"text_alignment":"bottom left","mobile_overlay_under":true,"overlay_style":"full"}},"collection_list_bhxfBF":{"type":"collection-list","blocks":{"collection_FGDymw":{"type":"collection","settings":{"collection":"ring","custom_title":"Rings","image":"shopify:\/\/shop_images\/DSC04943.jpg","subheading":"","button_label":""}},"collection_qrLNDk":{"type":"collection","settings":{"collection":"necklace-and-charms","custom_title":"","image":"shopify:\/\/shop_images\/DSC04854.jpg","subheading":"","button_label":""}},"collection_8jPPWE":{"type":"collection","settings":{"collection":"earrings","custom_title":"","image":"shopify:\/\/shop_images\/DSC05118.jpg","subheading":"","button_label":""}},"collection_3ciJHN":{"type":"collection","settings":{"collection":"bracelets","custom_title":"","image":"shopify:\/\/shop_images\/DSC05543.jpg","subheading":"","button_label":""}},"collection_Key4q7":{"type":"collection","settings":{"collection":"gemstone-jewelry-1","custom_title":"","image":"shopify:\/\/shop_images\/milano10.22final-55.jpg","subheading":"","button_label":""}},"collection_3HJRGa":{"type":"collection","settings":{"collection":"pre-styled-engagement-rings","custom_title":"","image":"shopify:\/\/shop_images\/DSC05745.jpg","subheading":"","button_label":""}}},"block_order":["collection_FGDymw","collection_qrLNDk","collection_8jPPWE","collection_3ciJHN","collection_Key4q7","collection_3HJRGa"],"custom_css":["h2,.section-header__title {font-family: \"Geist\", sans-serif !important; font-size: 24px; font-weight: 300; color: #002058; letter-spacing: -0.01em;}","@media (max-width: 767px) {.collection-slider-row {margin-top: 10px; }}","@media (min-width: 768px) {.collection-slider-row.for-collections {margin-bottom: calc(-1 * var(--section-padding)); }}"],"settings":{"title":"SHOP BY CATEGORY","enable_carousel":false,"disable_desktop_carousel":true,"grid":6,"color_scheme":"default","full_width":true,"coll_grid_image_shape":"square","coll_grid_image_position":"center center","coll_thumb_mob_per_row":"2","coll_grid_show_count":false,"coll_text_position":"below","coll_text_position_under_mobile":false,"coll_thumb_text_align_x":"center","coll_thumb_text_align_y":"center","coll_button_style":"primary"}},"gem_find_iwto_Ui4mLH":{"type":"gem-find-iwto","name":"Image with text overlay","settings":{"image":"shopify:\/\/shop_images\/GWP-web.jpg","mobile_image":"shopify:\/\/shop_images\/GWP-mob.jpg","height":"adapt","ratio_desktop":8,"ratio_mobile":4,"height_desktop":600,"height_mobile":460,"image_link":"https:\/\/www.milanojewelry.com\/products\/round-3-prong-martini-lab-diamond-studs","full_width":false,"text_alignment":"center center","mobile_overlay_under":false,"overlay_style":"shadow"}},"gem_find_iwto_PUhpTQ":{"type":"gem-find-iwto","disabled":true,"name":"Image with text overlay","settings":{"image":"shopify:\/\/shop_images\/GWP-web.jpg","mobile_image":"shopify:\/\/shop_images\/GWP-web.jpg","height":"fixed-ratio","ratio_desktop":8,"ratio_mobile":4,"height_desktop":600,"height_mobile":460,"image_link":"https:\/\/www.milanojewelry.com\/products\/round-3-prong-martini-lab-diamond-studs","full_width":true,"text_alignment":"center center","mobile_overlay_under":false,"overlay_style":"shadow"}},"16359278676808bea5":{"type":"featured-collection","disabled":true,"custom_css":["{margin-top: 8px !important; padding-top: 4px !important;}"," {padding-bottom: 8px;}","h2,.section-header__title {font-family: \"Geist\", sans-serif !important; font-size: 24px; font-weight: 300; color: #002058; letter-spacing: -0.01em;}"],"settings":{"title":"BEST SELLERS","collection":"best-sellers","show_vendor":false,"enable_carousel":true,"grid":4,"rows":1,"color_scheme":"default","show_view_all":true,"full_width":true}},"multi_column_3nDUQF":{"type":"multi-column","blocks":{"text_block_mw8piA":{"type":"text_block","settings":{"enable_media":true,"image":"shopify:\/\/shop_images\/milano10.22final-33.jpg","title":"BEST SELLERS","text":"<p>Discover our most-loved diamond jewelry and timeless fine jewelry favorites designed for everyday luxury, gifting, and special occasions.<\/p>","button_label":"","link":"https:\/\/www.milanojewelry.com\/collections\/best-sellers"}},"text_block_mLrdpa":{"type":"text_block","settings":{"enable_media":true,"image":"shopify:\/\/shop_images\/Stackable_rings_1.png","title":"QUICK SHIP PIECES","text":"<p>Shop classic diamond studs, rings, necklaces, and earrings crafted for effortless everyday elegance and modern fine jewelry styling.<\/p>","button_label":"","link":"https:\/\/www.milanojewelry.com\/collections\/gifts-under-2500"}}},"block_order":["text_block_mw8piA","text_block_mLrdpa"],"custom_css":["h2,.section-header__title {font-family: \"Geist\", sans-serif !important; font-size: 24px; font-weight: 300; color: #002058; letter-spacing: -0.01em;}",".lightly-spaced-row {margin-bottom: 20px;}"," {--larger-section-padding: 30px; --larger-section-padding-mobile: 25px;}"],"name":"Multi-column","settings":{"title":"ALL TIME CLASSICS","media_aspect_ratio":"1.5","media_width":700,"text_alignment":"center","button_style":"primary","color_scheme":"default"}},"rich_text_ht9gAC":{"type":"rich-text","blocks":{"heading_pyRUcG":{"type":"heading","settings":{"title":"SHINE IN SUMMER","use_h1":false}},"text_WUndgi":{"type":"text","settings":{"text":"<p>Discover summer fine jewelry curated for effortless styling, meaningful gifting, and everyday luxury. Explore diamond essentials, graduation gifts, and vibrant gemstone jewelry to shine all season long.<\/p>","enlarge_text":false}}},"block_order":["heading_pyRUcG","text_WUndgi"],"disabled":true,"name":"Rich text","settings":{"height":"small","text_alignment":"center","full_width":false,"color_scheme":"default"}},"gallery_iKkj8q":{"type":"gallery","blocks":{"media_ppdMQX":{"type":"media","settings":{"image":"shopify:\/\/shop_images\/milano10.22final-21.jpg","enlarge_media":false,"subheading":"","title":"THE FALL EDIT","button_label":"","link":"https:\/\/www.milanojewelry.com\/collections\/the-fall-edit","text_alignment":"bottom center"}},"media_exhAt9":{"type":"media","settings":{"image":"shopify:\/\/shop_images\/Milano-099.jpg","enlarge_media":false,"subheading":"","title":"BIRTHSTONE JEWELRY","button_label":"","link":"https:\/\/www.milanojewelry.com\/collections\/sapphire","text_alignment":"bottom center"}},"media_Dr6RcL":{"type":"media","settings":{"image":"shopify:\/\/shop_images\/Milano-031.jpg","enlarge_media":false,"subheading":"","title":"LUXURY AT $1000","button_label":"","link":"https:\/\/www.milanojewelry.com\/collections\/gifts-under-1000","text_alignment":"bottom center"}}},"block_order":["media_ppdMQX","media_exhAt9","media_Dr6RcL"],"custom_css":["{color: #ffffff;}",".container {margin-bottom: 10px;}"],"name":"Gallery","settings":{"grid_desktop":3,"grid_mobile":"1","height":"fixed","desktop_image_height":460,"mobile_image_height":400,"title_size":30,"title_size_mobile":22,"enable_margin":true,"enable_row_spacing":false,"full_width":false,"color_scheme":"default","enable_carousel":true,"overlay_style":"full","button_style":"primary"}},"gem_find_iwto_CTmjLN":{"type":"gem-find-iwto","blocks":{"button_KVNJfJ":{"type":"button","settings":{"button_label":"DESIGN YOUR RING","button_link":"https:\/\/www.milanojewelry.com\/pages\/ring-builder?stage=Select+Setting&isSWS=true&sort=PRICE-ASC&rconfigShow=true&currentSKU=3654475434435642304c314d345a&ringRegion=us","button_style":"primary"}},"button_zBRPLF":{"type":"button","settings":{"button_label":"CUSTOMIZE WITH US","button_link":"https:\/\/www.milanojewelry.com\/pages\/create-your-custom-jewelry","button_style":"primary"}}},"block_order":["button_KVNJfJ","button_zBRPLF"],"custom_css":[".button-row {display: flex; justify-content: left;}"],"name":"Image with text overlay","settings":{"image":"shopify:\/\/shop_images\/Rings-Web.jpg","mobile_image":"shopify:\/\/shop_images\/Rings_mob.jpg","height":"fixed-ratio","ratio_desktop":3,"ratio_mobile":0.9,"height_desktop":600,"height_mobile":460,"image_link":"https:\/\/www.milanojewelry.com\/pages\/ring-builder?stage=Select+Setting&isSWS=true&sort=PRICE-ASC&rconfigShow=true&currentSKU=3654475434435642304c314d345a&ringRegion=us","full_width":true,"text_alignment":"bottom left","mobile_overlay_under":true,"overlay_style":"shadow"}},"image_with_text_hxWz3y":{"type":"image-with-text","blocks":{"heading_6LAfhy":{"type":"heading","settings":{"title":"DESIGN YOUR DREAM RING","use_h1":false}},"text_bgTWpg":{"type":"text","settings":{"text":"<p>Create a custom engagement ring that reflects your story. Choose your diamond, setting, and style with our online Ring Builder or work one-on-one with our jewelry specialists to design a bespoke ring.<\/p>","enlarge_text":false}},"button_7D4GR6":{"type":"button","settings":{"button_label":"BUILD YOUR RING","button_link":"https:\/\/www.milanojewelry.com\/pages\/ring-builder?","button_style":"primary"}},"button_Qq7jgA":{"type":"button","settings":{"button_label":"CUSTOMIZE WITH US","button_link":"https:\/\/www.milanojewelry.com\/pages\/create-your-custom-jewelry","button_style":"primary"}}},"block_order":["heading_6LAfhy","text_bgTWpg","button_7D4GR6","button_Qq7jgA"],"disabled":true,"custom_css":["h2,.section-header__title {font-family: \"Geist\", sans-serif !important; font-size: 24px; font-weight: 300; color: #002058; letter-spacing: -0.01em;}"," {--larger-section-padding: 30px; --larger-section-padding-mobile: 25px;}"],"name":"Image with text","settings":{"image":"shopify:\/\/shop_images\/DSC05698.jpg","image_width":700,"image_link":"","image_position":"left","text_alignment":"center","color_scheme":"2"}},"ss_scrolling_announcement_bar_2_8t9pgW":{"type":"ss-scrolling-announcement-bar-2","blocks":{"item_kizwXH":{"type":"item","settings":{"icon":"heart","text":"Valentine’s Ready — Made-to-Order pieces best planned by Jan 23"}},"item_DtQPQT":{"type":"item","settings":{"icon":"heart","text":"Valentine’s Ready — Ready-to-Ship styles available through Feb 8"}}},"block_order":["item_kizwXH","item_DtQPQT"],"disabled":true,"name":"SS - Scrolling Announcement Bar #2","settings":{"insert_css_class_target":"","url":"https:\/\/www.milanojewelry.com\/collections\/ready-to-ship","layout_gap":50,"layout_gap_mobile":30,"animate_speed":100,"animate_direction":"right","animate_pause":true,"icon_size":20,"icon_size_mobile":20,"text_custom":false,"text_font":"sans_serif_n4","text_size":12,"text_size_mobile":12,"text_height":100,"text_color":"#ffffff","icon_color":"#ffffff","background_color":"#000000","background_gradient":"","border_color":"#000000","margin_top":0,"margin_bottom":0,"padding_top":12,"padding_bottom":12,"padding_horizontal":0,"padding_horizontal_mobile":0,"full_width":true,"content_width":120,"border_thickness":0}},"17751196762fc6ad88":{"type":"apps","blocks":{"judge_me_reviews_all_reviews_text_qCMC4c":{"type":"shopify:\/\/apps\/judge-me-reviews\/blocks\/all_reviews_text\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8","settings":{}},"judge_me_reviews_cards_carousel_c3CeXn":{"type":"shopify:\/\/apps\/judge-me-reviews\/blocks\/cards_carousel\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8","settings":{"show_sample_reviews":false,"reviews_selection":"product_reviews","products":[],"filter_pinned":false,"filter_featured":false,"filter_custom_tags":"","star_rating":"4_to_5_star","show_review_media":true,"display_order":"most_recent","no_image_fallback":"review_text_only","max_reviews":20,"review_length":"medium","text_size":"medium","image_ratio":"1","reviews_shown":5,"show_reviewer_name":true,"show_product_name":false,"hide_arrows_mobile":true,"arrows_position":"sides","max_width":1600,"corner_styling":"soft","header_text_color":"#00205b","text_color":"#000000","card_color":"#f9f9f9","stars_color":"","arrows_color":"#000000","transition_speed":5,"header_text":"Customers Love","show_average_rating":false,"rating_display":"default"}}},"block_order":["judge_me_reviews_all_reviews_text_qCMC4c","judge_me_reviews_cards_carousel_c3CeXn"],"custom_css":["h2,.section-header__title {font-family: \"Geist\", sans-serif !important; font-size: 24px; font-weight: 300; color: #002058; letter-spacing: -0.01em;}"," {margin-top: 30px;}","@media (max-width: 767px) {{margin-top: 25px; }}",".jdgm-cards-carousel {padding: 0;}",".jdgm-cards-carousel .jdgm-content {margin-bottom: 10px;}"],"settings":{"full_width":false}},"17550342366a08de2f":{"type":"apps","blocks":{"klaviyo_reviews_featured_reviews_carousel_Tn8epF":{"type":"shopify:\/\/apps\/klaviyo-reviews\/blocks\/featured-reviews-carousel\/db20e365-d984-4ac4-9655-e1588d951ca9","settings":{}}},"block_order":["klaviyo_reviews_featured_reviews_carousel_Tn8epF"],"disabled":true,"custom_css":["{margin-top: 0px !important;}"],"settings":{"full_width":true}},"17408896856f084fb3":{"type":"apps","blocks":{"instafeed_app_block_e9dBGA":{"type":"shopify:\/\/apps\/instafeed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5","settings":{"title":"GET INSPIRED","title_color":"#00205b","title_size_v2":24,"alignment":"center","instafeed_margin_top":0,"instafeed_margin_bottom":0,"instafeed_margin_sides":60,"show_instagram_link":true,"link_alignment":"left","link_color":"#000000","background_color":"","feed_id":"","html_area":""}}},"block_order":["instafeed_app_block_e9dBGA"],"custom_css":["{display: block; margin-top: 36px;}","& {margin-top: 0px !important;}"," {margin-bottom: 30px;}","@media (max-width: 767px) {{margin-bottom: 25px; }}"],"settings":{"full_width":true}},"gem_find_iwto_WAVBFd":{"type":"gem-find-iwto","disabled":true,"name":"GWP Christmas 2025","settings":{"image":"shopify:\/\/shop_images\/Christmas_GWP_2025_Mobile_Final_Beige_2200_x_928_px_1.png","mobile_image":"shopify:\/\/shop_images\/Christmas_GWP_2025_Mobile_Final_Beige_1.png","height":"adapt","ratio_desktop":2.7,"ratio_mobile":0.7,"height_desktop":600,"height_mobile":460,"image_link":"shopify:\/\/pages\/promotions-special-offers","full_width":true,"text_alignment":"center center","mobile_overlay_under":false,"overlay_style":"full image-overlay--bg-shadow"}},"ss_scrolling_announcement_bar_2_ByymQd":{"type":"ss-scrolling-announcement-bar-2","blocks":{"item_XCMagw":{"type":"item","settings":{"icon":"box","text":"CHRISTMAS DELIVERY - Order by 12\/15 for Ground Shipping"}},"item_gXxCGF":{"type":"item","settings":{"icon":"airplane","text":"CHRISTMAS DELIVERY - Order by 12\/19 for Overnight Shipping"}}},"block_order":["item_XCMagw","item_gXxCGF"],"disabled":true,"name":"SS - Scrolling Announcement Bar #2","settings":{"insert_css_class_target":"","url":"shopify:\/\/collections\/ready-to-ship","layout_gap":50,"layout_gap_mobile":30,"animate_speed":40,"animate_direction":"right","animate_pause":true,"icon_size":20,"icon_size_mobile":20,"text_custom":false,"text_font":"josefin_sans_n4","text_size":12,"text_size_mobile":12,"text_height":100,"text_color":"#ffffff","icon_color":"#ffffff","background_color":"#000000","background_gradient":"","border_color":"#000000","margin_top":0,"margin_bottom":0,"padding_top":12,"padding_bottom":12,"padding_horizontal":0,"padding_horizontal_mobile":0,"full_width":true,"content_width":120,"border_thickness":0}},"163592857728b8bdc2":{"type":"multi-column","blocks":{"163592857728b8bdc2-0":{"type":"text_block","settings":{"enable_media":true,"image":"shopify:\/\/shop_images\/milanofinal-2.jpg","title":"FLEX BANGLE JEWELRY","text":"<h5>Get flexibly fabulous with our bangles, the ultimate arm candy!<\/h5>","button_label":"","link":"shopify:\/\/collections\/flex-collection"}},"text_block_Y6B4xK":{"type":"text_block","settings":{"enable_media":true,"image":"shopify:\/\/shop_images\/Bubble_Letters.jpg","title":"PERSONALIZED JEWELRY","text":"<h5>Personalized Jewelry that's as Unique as You Are!<\/h5>","button_label":"","link":"shopify:\/\/collections\/personalized-jewelry"}},"163592857728b8bdc2-1":{"type":"text_block","settings":{"enable_media":true,"image":"shopify:\/\/shop_images\/milanofinal-19.jpg","title":"LAB GROWN DIAMONDS","text":"<h5>Sparkle and Shine with Our Lab Diamond Jewelry Pieces!<\/h5>","button_label":"","link":"shopify:\/\/collections\/lab-grown-diamonds"}},"text_block_hnQ7E7":{"type":"text_block","disabled":true,"settings":{"enable_media":true,"image":"shopify:\/\/shop_images\/Men_s_Collection_88a52851-17c3-4033-8afb-265e257dd408.jpg","title":"MEN'S JEWELRY","text":"<h5>Discover Classy Accessories for Men<\/h5>","button_label":"","link":"shopify:\/\/collections\/mens"}}},"block_order":["163592857728b8bdc2-0","text_block_Y6B4xK","163592857728b8bdc2-1","text_block_hnQ7E7"],"disabled":true,"settings":{"title":"","media_aspect_ratio":"0.8","media_width":700,"text_alignment":"center","button_style":"primary","color_scheme":"default"}},"collection_list_MEeyQA":{"type":"collection-list","blocks":{"collection_iryHYy":{"type":"collection","settings":{"collection":"ring","custom_title":"","image":"shopify:\/\/shop_images\/Ring-min.jpg","subheading":"","button_label":""}},"collection_zBeRge":{"type":"collection","settings":{"collection":"necklace-and-charms","custom_title":"","image":"shopify:\/\/shop_images\/Gold_Necklaces.jpg","subheading":"","button_label":""}},"collection_rh8q3q":{"type":"collection","settings":{"collection":"bracelets","custom_title":"","image":"shopify:\/\/shop_images\/Bracelets-min.jpg","subheading":"","button_label":""}},"collection_DfVBEG":{"type":"collection","settings":{"collection":"earrings","custom_title":"","image":"shopify:\/\/shop_images\/Earrings.jpg","subheading":"","button_label":""}}},"block_order":["collection_iryHYy","collection_zBeRge","collection_rh8q3q","collection_DfVBEG"],"disabled":true,"custom_css":["h2 {font-size: 32px;}"],"settings":{"title":"Shop By Category","enable_carousel":true,"disable_desktop_carousel":false,"grid":4,"color_scheme":"default","full_width":true,"coll_grid_image_shape":"portrait-45","coll_grid_image_position":"center center","coll_thumb_mob_per_row":"2","coll_grid_show_count":false,"coll_text_position":"below","coll_text_position_under_mobile":false,"coll_thumb_text_align_x":"left","coll_thumb_text_align_y":"center","coll_button_style":"primary"}},"shop_the_look_cnG6DG":{"type":"shop-the-look","blocks":{"subheading_WVpbWA":{"type":"subheading","settings":{"subheading":""}},"heading_L4JNMa":{"type":"heading","settings":{"title":"Stack ’Em, Flex ’Em, Love ’Em","heading_max_width":10,"title_size":40,"title_size_mobile":26,"use_h1":false}},"text_AMrzn9":{"type":"text","settings":{"text":"","enlarge_text":true}}},"block_order":["subheading_WVpbWA","heading_L4JNMa","text_AMrzn9"],"disabled":true,"settings":{"image":"shopify:\/\/shop_images\/Bracelet_Image_f28e6739-b761-4da3-9a33-06c5fa9c813e.jpg","mobile_image":"shopify:\/\/shop_images\/Flex_Bangle_Mobile_94f4d864-c4f7-41c9-94b5-4053972a6b18.jpg","video_external":"","video_description":"","height":"fixed","height_desktop":760,"height_mobile":500,"product_list":["eternity-diamond-flex-bangle","halfway-diamond-flex-bangle","2-00-carat-half-eternity-diamond-flex-bangle","serpent-flex-diamond-bangle","7-station-clover-diamond-flex-bangle","5-station-diamond-clover-flex-bangle","pave-lab-diamond-flex-cuff","open-beaded-flex-diamond-bangle","multi-shape-gemstone-and-diamond-flex-bangle","multi-shape-ruby-and-diamond-flex-bangle"],"products_alignment":"bottom center","product_card_layout":"landscape","show_swatches":true,"full_width":true,"text_alignment":"top right","mobile_overlay_over":false,"overlay_style":"no_background"}},"image_with_text_LKaQiC":{"type":"image-with-text","blocks":{"heading_dFN7Xa":{"type":"heading","settings":{"title":"DESIGN YOUR DREAM RING","use_h1":false}},"text_iJcMVp":{"type":"text","settings":{"text":"<h6><strong>Build your perfect engagement ring in 3 simple steps<\/strong><\/h6><h6><strong>1. Choose your setting<\/strong><\/h6><h6><strong>2. Choose your diamonds<\/strong><\/h6><h6><strong>3. Personalize the ring <\/strong><\/h6><h6><strong>Each ring is uniquely yours!<\/strong><\/h6>","enlarge_text":false}},"button_iBqMAG":{"type":"button","settings":{"button_label":"Start with a setting","button_link":"https:\/\/shopmilano.com\/apps\/ringbuilder\/settings\/","button_style":"primary"}},"button_LPJhCH":{"type":"button","settings":{"button_label":"START WITH A DIAMOND","button_link":"https:\/\/shopmilano.com\/apps\/ringbuilder\/diamondtools\/","button_style":"primary"}}},"block_order":["heading_dFN7Xa","text_iJcMVp","button_iBqMAG","button_LPJhCH"],"disabled":true,"settings":{"image":"shopify:\/\/shop_images\/Design_Your_Dream_ring.jpg","image_width":700,"image_link":"","image_position":"right","text_alignment":"left","color_scheme":"default"}},"scrolling_banner_xtfRVX":{"type":"scrolling-banner","blocks":{"text_aPz8Xx":{"type":"text","settings":{"text":"Use Code : HOLIDAY25 in CART + Receive   free jewelry on spend of $1000+ with every order.","color":"#ffffff","link":"","use_h1":false,"stencil_all_text":false,"stencil_text":""}}},"block_order":["text_aPz8Xx"],"disabled":true,"name":"Scrolling banner","settings":{"full_width":true,"color_scheme":"default","text_size":16,"vertical_padding":20,"speed":0.5,"direction":"left","font":"heading","space":50}},"image_with_text_YeCPqq":{"type":"image-with-text","blocks":{"heading_giYFy6":{"type":"heading","settings":{"title":"OUR PROMISE","use_h1":false}},"text_TpQiUC":{"type":"text","settings":{"text":"<h6><strong>At Milano we hold ourselves to strict standards with an unwavering attention to quality<\/strong><em><strong> <\/strong><\/em><strong>and detail that is only possible due to our own manufacturing facility. <\/strong><\/h6><h6><strong>Every Milano piece is backed by our Industry leading manufacturing warranty.<\/strong><\/h6><h6><strong>We are committed to using the finest ethically sourced materials<\/strong><\/h6>","enlarge_text":true}},"button_JRTHzG":{"type":"button","settings":{"button_label":"learn about our manufacturing","button_link":"shopify:\/\/pages\/our-factory","button_style":"primary"}}},"block_order":["heading_giYFy6","text_TpQiUC","button_JRTHzG"],"disabled":true,"settings":{"image":"shopify:\/\/shop_images\/pexels-tima-miroshnichenko-6263143_-_1_46730832-167d-44fa-a1c8-1ca4a7b54813.jpg","image_width":700,"image_link":"","image_position":"left","text_alignment":"center","color_scheme":"2"}},"rich_text_dBFyV6":{"type":"rich-text","blocks":{"text_e9XiXw":{"type":"text","settings":{"text":"<h1>LOVED BY OVER <strong>300,000 <\/strong>CUSTOMERS<\/h1><h5>SEE WHAT THEY ARE SAYING<\/h5>","enlarge_text":true}}},"block_order":["text_e9XiXw"],"disabled":true,"custom_css":[],"settings":{"height":"medium","text_alignment":"center","full_width":true,"color_scheme":"default"}},"testimonials_YHnawj":{"type":"testimonials","blocks":{"testimonial_PpENyC":{"type":"testimonial","settings":{"star_rating":5,"testimonial":"Perfect stacking ring. Looks great.","author":"Carol N.","image":"shopify:\/\/shop_images\/54acb41e-9523-4554-a1a7-2bac38476844.jpg","image_caption":"","link":"shopify:\/\/products\/east-west-tanzanite-and-bezel-diamond-ring"}},"testimonial_ynnEc4":{"type":"testimonial","settings":{"star_rating":5,"testimonial":"This bracelet is absolutely gorgeous!! I fits perfectly and is very comfortable on my wrist. The stones are very pretty color and silver is very shiny. The bracelet seems well built and durable. I am very happy with this and very excited to have it.","author":"Shawna O.","image":"shopify:\/\/shop_images\/Hugs_and_Kisses.jpg","image_caption":"","link":"shopify:\/\/products\/hugs-and-kisses-tanzanite-bracelet"}},"testimonial_3y8DNP":{"type":"testimonial","settings":{"star_rating":5,"testimonial":"I purchased this ring in Grand Cayman. I was not aware of dancing diamonds and fell in love with this ring. It is absolutely beautiful!","author":"Marlena","image":"shopify:\/\/shop_images\/Cayman_Dancing_Diamond_Review.jpg","image_caption":"Dancing Diamond RIng","link":"shopify:\/\/products\/square-halo-dancing-diamond-ring"}},"testimonial_Wf4CmM":{"type":"testimonial","settings":{"star_rating":5,"testimonial":"I was very pleased. We got a good price on diamond earrings. This is the third time I’m buying jewelry from Milano. I recommend them.","author":"Sherry H","image":"shopify:\/\/shop_images\/caption.jpg","image_caption":"","link":""}},"testimonial_tALXdV":{"type":"testimonial","settings":{"star_rating":5,"testimonial":"Had a great experience shopping for jewelry with my fiancé for my birthday. The jeweler was knowledgeable and helpful. They had a beautiful selection of diamonds and sapphires and I was able to find the perfect earrings and necklace. Such great quality. Will definitely be going back for additional pieces!","author":"Stephanie S.","image":"shopify:\/\/shop_images\/2024-05-30.jpg","image_caption":"","link":"shopify:\/\/products\/classic-halo-oval-sapphire-and-diamond-pendant"}},"testimonial_rbfBac":{"type":"testimonial","settings":{"star_rating":5,"testimonial":"I love this ring!! It’s gorgeous!! Very sparky, great size!! I bought the matching necklace and love the set!!","author":"Shawna O.","image":"shopify:\/\/shop_images\/bf2ba427-3f03-45e5-bd83-5900e8a19ff7.jpg","image_caption":"","link":"shopify:\/\/products\/oval-tanzanite-and-lab-diamond-ring"}},"testimonial_wUBQMk":{"type":"testimonial","settings":{"star_rating":5,"testimonial":"The salespeople are fantastic, friendly, and trustworthy. I came back to specifically look for a small tanzanite ring. ","author":"Jennifer W","image":"shopify:\/\/shop_images\/20191018-170142-largejpg.jpg","image_caption":"","link":""}}},"block_order":["testimonial_PpENyC","testimonial_ynnEc4","testimonial_3y8DNP","testimonial_Wf4CmM","testimonial_tALXdV","testimonial_rbfBac","testimonial_wUBQMk"],"disabled":true,"settings":{"title":"","layout":"image-left","text_caps":false,"quote_text_size":25,"quote_text_size_mobile":20,"image_shape":"square","color_scheme":"default","autoplay":true,"autoplay_speed":5}}},"order":["gallery_JqMhaU","gem_find_iwto_BHbHEW","collection_list_bhxfBF","gem_find_iwto_Ui4mLH","gem_find_iwto_PUhpTQ","16359278676808bea5","multi_column_3nDUQF","rich_text_ht9gAC","gallery_iKkj8q","gem_find_iwto_CTmjLN","image_with_text_hxWz3y","ss_scrolling_announcement_bar_2_8t9pgW","17751196762fc6ad88","17550342366a08de2f","17408896856f084fb3","gem_find_iwto_WAVBFd","ss_scrolling_announcement_bar_2_ByymQd","163592857728b8bdc2","collection_list_MEeyQA","shop_the_look_cnG6DG","image_with_text_LKaQiC","scrolling_banner_xtfRVX","image_with_text_YeCPqq","rich_text_dBFyV6","testimonials_YHnawj"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "gallery_JqMhaU": {
+      "type": "gallery",
+      "blocks": {
+        "media_tJMhWy": {
+          "type": "media",
+          "settings": {
+            "image": "shopify://shop_images/Fine_jewelry_Lab.png",
+            "enlarge_media": false,
+            "subheading": "",
+            "title": "",
+            "button_label": "",
+            "link": "https://www.milanojewelry.com/collections/spring-collection",
+            "text_alignment": "bottom left"
+          }
+        },
+        "media_j3NChX": {
+          "type": "media",
+          "settings": {
+            "image": "shopify://shop_images/Stackable_rings_2.png",
+            "enlarge_media": false,
+            "subheading": "",
+            "title": "",
+            "button_label": "",
+            "link": "https://www.milanojewelry.com/collections/tennis",
+            "text_alignment": "bottom left"
+          }
+        }
+      },
+      "block_order": [
+        "media_tJMhWy",
+        "media_j3NChX"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".gallery > .gallery__item:nth-of-type(2) .text-overlay__text {color: #ffffff !important;}",
+        ".gallery__image {height: auto !important;}",
+        ".gallery__image img.theme-img {width: 100% !important; height: auto !important; object-fit: contain !important;}",
+        "@media screen and (min-width: 1024px) {.gallery.gallery--height-adapt {height: 80vh !important; } .gallery.gallery--height-adapt .gallery__item {height: 100% !important; } .gallery.gallery--height-adapt img.theme-img {height: 100% !important; width: 100% !important; object-fit: cover !important; }}"
+      ],
+      "name": "Gallery",
+      "settings": {
+        "grid_desktop": 2,
+        "grid_mobile": "1",
+        "height": "adapt",
+        "desktop_image_height": 680,
+        "mobile_image_height": 360,
+        "title_size": 38,
+        "title_size_mobile": 24,
+        "enable_margin": false,
+        "enable_row_spacing": false,
+        "full_width": true,
+        "color_scheme": "default",
+        "enable_carousel": false,
+        "overlay_style": "full",
+        "button_style": "primary"
+      }
+    },
+    "gem_find_iwto_BHbHEW": {
+      "type": "gem-find-iwto",
+      "blocks": {
+        "button_WWbhCE": {
+          "type": "button",
+          "settings": {
+            "button_label": "SHOP COLOR",
+            "button_link": "https://www.milanojewelry.com/collections/gemstone-jewelry-1",
+            "button_style": "primary"
+          }
+        },
+        "button_xkxRYk": {
+          "type": "button",
+          "settings": {
+            "button_label": "THE FALL EDIT",
+            "button_link": "https://www.milanojewelry.com/collections/the-fall-edit",
+            "button_style": "primary"
+          }
+        }
+      },
+      "block_order": [
+        "button_WWbhCE",
+        "button_xkxRYk"
+      ],
+      "custom_css": [
+        ".text-overlay-parent--mobile-stack {padding-bottom: 0px;}",
+        " {color: #ffffff;}",
+        ".button-row {display: flex; justify-content: left;}",
+        ".text-overlay-parent--mobile-stack {padding-bottom: 0px;}",
+        ".text-overlay__subheading {margin: 6px;}",
+        "@media (max-width: 767px) {.text-overlay__button-row {margin-top: -10px; } .button-row {justify-content: center; }}"
+      ],
+      "name": "Hero Banner",
+      "settings": {
+        "image": "shopify://shop_images/Color_Edit_-web.jpg",
+        "mobile_image": "shopify://shop_images/Color_Edit_-mob.jpg",
+        "height": "fixed-ratio",
+        "ratio_desktop": 3,
+        "ratio_mobile": 1,
+        "height_desktop": 440,
+        "height_mobile": 500,
+        "image_link": "https://www.milanojewelry.com/collections/gemstone-jewelry-1",
+        "full_width": true,
+        "text_alignment": "bottom left",
+        "mobile_overlay_under": true,
+        "overlay_style": "full"
+      }
+    },
+    "collection_list_bhxfBF": {
+      "type": "collection-list",
+      "blocks": {
+        "collection_FGDymw": {
+          "type": "collection",
+          "settings": {
+            "collection": "ring",
+            "custom_title": "Rings",
+            "image": "shopify://shop_images/DSC04943.jpg",
+            "subheading": "",
+            "button_label": ""
+          }
+        },
+        "collection_qrLNDk": {
+          "type": "collection",
+          "settings": {
+            "collection": "necklace-and-charms",
+            "custom_title": "",
+            "image": "shopify://shop_images/DSC04854.jpg",
+            "subheading": "",
+            "button_label": ""
+          }
+        },
+        "collection_8jPPWE": {
+          "type": "collection",
+          "settings": {
+            "collection": "earrings",
+            "custom_title": "",
+            "image": "shopify://shop_images/DSC05118.jpg",
+            "subheading": "",
+            "button_label": ""
+          }
+        },
+        "collection_3ciJHN": {
+          "type": "collection",
+          "settings": {
+            "collection": "bracelets",
+            "custom_title": "",
+            "image": "shopify://shop_images/DSC05543.jpg",
+            "subheading": "",
+            "button_label": ""
+          }
+        },
+        "collection_Key4q7": {
+          "type": "collection",
+          "settings": {
+            "collection": "gemstone-jewelry-1",
+            "custom_title": "",
+            "image": "shopify://shop_images/milano10.22final-55.jpg",
+            "subheading": "",
+            "button_label": ""
+          }
+        },
+        "collection_3HJRGa": {
+          "type": "collection",
+          "settings": {
+            "collection": "pre-styled-engagement-rings",
+            "custom_title": "",
+            "image": "shopify://shop_images/DSC05745.jpg",
+            "subheading": "",
+            "button_label": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection_FGDymw",
+        "collection_qrLNDk",
+        "collection_8jPPWE",
+        "collection_3ciJHN",
+        "collection_Key4q7",
+        "collection_3HJRGa"
+      ],
+      "custom_css": [
+        "h2,.section-header__title {font-family: \"Geist\", sans-serif !important; font-size: 24px; font-weight: 300; color: #002058; letter-spacing: -0.01em;}",
+        "@media (max-width: 767px) {.collection-slider-row {margin-top: 10px; }}",
+        "@media (min-width: 768px) {.collection-slider-row.for-collections {margin-bottom: calc(-1 * var(--section-padding)); }}"
+      ],
+      "settings": {
+        "title": "SHOP BY CATEGORY",
+        "enable_carousel": false,
+        "disable_desktop_carousel": true,
+        "grid": 6,
+        "color_scheme": "default",
+        "full_width": true,
+        "coll_grid_image_shape": "square",
+        "coll_grid_image_position": "center center",
+        "coll_thumb_mob_per_row": "2",
+        "coll_grid_show_count": false,
+        "coll_text_position": "below",
+        "coll_text_position_under_mobile": false,
+        "coll_thumb_text_align_x": "center",
+        "coll_thumb_text_align_y": "center",
+        "coll_button_style": "primary"
+      }
+    },
+    "gem_find_iwto_Ui4mLH": {
+      "type": "gem-find-iwto",
+      "name": "Image with text overlay",
+      "settings": {
+        "image": "shopify://shop_images/GWP-web.jpg",
+        "mobile_image": "shopify://shop_images/GWP-mob.jpg",
+        "height": "adapt",
+        "ratio_desktop": 8,
+        "ratio_mobile": 4,
+        "height_desktop": 600,
+        "height_mobile": 460,
+        "image_link": "https://www.milanojewelry.com/products/round-3-prong-martini-lab-diamond-studs",
+        "full_width": false,
+        "text_alignment": "center center",
+        "mobile_overlay_under": false,
+        "overlay_style": "shadow"
+      }
+    },
+    "gem_find_iwto_PUhpTQ": {
+      "type": "gem-find-iwto",
+      "disabled": true,
+      "name": "Image with text overlay",
+      "settings": {
+        "image": "shopify://shop_images/GWP-web.jpg",
+        "mobile_image": "shopify://shop_images/GWP-web.jpg",
+        "height": "fixed-ratio",
+        "ratio_desktop": 8,
+        "ratio_mobile": 4,
+        "height_desktop": 600,
+        "height_mobile": 460,
+        "image_link": "https://www.milanojewelry.com/products/round-3-prong-martini-lab-diamond-studs",
+        "full_width": true,
+        "text_alignment": "center center",
+        "mobile_overlay_under": false,
+        "overlay_style": "shadow"
+      }
+    },
+    "16359278676808bea5": {
+      "type": "featured-collection",
+      "disabled": true,
+      "custom_css": [
+        "{margin-top: 8px !important; padding-top: 4px !important;}",
+        " {padding-bottom: 8px;}",
+        "h2,.section-header__title {font-family: \"Geist\", sans-serif !important; font-size: 24px; font-weight: 300; color: #002058; letter-spacing: -0.01em;}"
+      ],
+      "settings": {
+        "title": "BEST SELLERS",
+        "collection": "best-sellers",
+        "show_vendor": false,
+        "enable_carousel": true,
+        "grid": 4,
+        "rows": 1,
+        "color_scheme": "default",
+        "show_view_all": true,
+        "full_width": true
+      }
+    },
+    "multi_column_3nDUQF": {
+      "type": "multi-column",
+      "blocks": {
+        "text_block_mw8piA": {
+          "type": "text_block",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify://shop_images/milano10.22final-33.jpg",
+            "title": "BEST SELLERS",
+            "text": "<p>Discover our most-loved diamond jewelry and timeless fine jewelry favorites designed for everyday luxury, gifting, and special occasions.</p>",
+            "button_label": "",
+            "link": "https://www.milanojewelry.com/collections/best-sellers"
+          }
+        },
+        "text_block_mLrdpa": {
+          "type": "text_block",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify://shop_images/Stackable_rings_1.png",
+            "title": "QUICK SHIP PIECES",
+            "text": "<p>Shop classic diamond studs, rings, necklaces, and earrings crafted for effortless everyday elegance and modern fine jewelry styling.</p>",
+            "button_label": "",
+            "link": "https://www.milanojewelry.com/collections/gifts-under-2500"
+          }
+        }
+      },
+      "block_order": [
+        "text_block_mw8piA",
+        "text_block_mLrdpa"
+      ],
+      "custom_css": [
+        "h2,.section-header__title {font-family: \"Geist\", sans-serif !important; font-size: 24px; font-weight: 300; color: #002058; letter-spacing: -0.01em;}",
+        ".lightly-spaced-row {margin-bottom: 20px;}",
+        " {--larger-section-padding: 30px; --larger-section-padding-mobile: 25px;}"
+      ],
+      "name": "Multi-column",
+      "settings": {
+        "title": "ALL TIME CLASSICS",
+        "media_aspect_ratio": "1.5",
+        "media_width": 700,
+        "text_alignment": "center",
+        "button_style": "primary",
+        "color_scheme": "default"
+      }
+    },
+    "rich_text_ht9gAC": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_pyRUcG": {
+          "type": "heading",
+          "settings": {
+            "title": "SHINE IN SUMMER",
+            "use_h1": false
+          }
+        },
+        "text_WUndgi": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Discover summer fine jewelry curated for effortless styling, meaningful gifting, and everyday luxury. Explore diamond essentials, graduation gifts, and vibrant gemstone jewelry to shine all season long.</p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_pyRUcG",
+        "text_WUndgi"
+      ],
+      "disabled": true,
+      "name": "Rich text",
+      "settings": {
+        "height": "small",
+        "text_alignment": "center",
+        "full_width": false,
+        "color_scheme": "default"
+      }
+    },
+    "gallery_iKkj8q": {
+      "type": "gallery",
+      "blocks": {
+        "media_ppdMQX": {
+          "type": "media",
+          "settings": {
+            "image": "shopify://shop_images/milano10.22final-21.jpg",
+            "enlarge_media": false,
+            "subheading": "",
+            "title": "THE FALL EDIT",
+            "button_label": "",
+            "link": "https://www.milanojewelry.com/collections/the-fall-edit",
+            "text_alignment": "bottom center"
+          }
+        },
+        "media_exhAt9": {
+          "type": "media",
+          "settings": {
+            "image": "shopify://shop_images/pink-Key_2.png",
+            "enlarge_media": false,
+            "subheading": "",
+            "title": "JEWELRY THAT GIVES BACK",
+            "button_label": "",
+            "link": "https://www.milanojewelry.com/products/pink-lab-diamond-key-pendant-necklace",
+            "text_alignment": "bottom center"
+          }
+        },
+        "media_Dr6RcL": {
+          "type": "media",
+          "settings": {
+            "image": "shopify://shop_images/Milano-031.jpg",
+            "enlarge_media": false,
+            "subheading": "",
+            "title": "LUXURY AT $1000",
+            "button_label": "",
+            "link": "https://www.milanojewelry.com/collections/gifts-under-1000",
+            "text_alignment": "bottom center"
+          }
+        }
+      },
+      "block_order": [
+        "media_ppdMQX",
+        "media_exhAt9",
+        "media_Dr6RcL"
+      ],
+      "custom_css": [
+        "{color: #ffffff;}",
+        ".container {margin-bottom: 10px;}"
+      ],
+      "name": "Gallery",
+      "settings": {
+        "grid_desktop": 3,
+        "grid_mobile": "1",
+        "height": "fixed",
+        "desktop_image_height": 460,
+        "mobile_image_height": 400,
+        "title_size": 26,
+        "title_size_mobile": 22,
+        "enable_margin": true,
+        "enable_row_spacing": false,
+        "full_width": false,
+        "color_scheme": "default",
+        "enable_carousel": true,
+        "overlay_style": "full",
+        "button_style": "primary"
+      }
+    },
+    "gem_find_iwto_CTmjLN": {
+      "type": "gem-find-iwto",
+      "blocks": {
+        "button_KVNJfJ": {
+          "type": "button",
+          "settings": {
+            "button_label": "DESIGN YOUR RING",
+            "button_link": "https://www.milanojewelry.com/pages/ring-builder?stage=Select+Setting&isSWS=true&sort=PRICE-ASC&rconfigShow=true&currentSKU=3654475434435642304c314d345a&ringRegion=us",
+            "button_style": "primary"
+          }
+        },
+        "button_zBRPLF": {
+          "type": "button",
+          "settings": {
+            "button_label": "CUSTOMIZE WITH US",
+            "button_link": "https://www.milanojewelry.com/pages/create-your-custom-jewelry",
+            "button_style": "primary"
+          }
+        }
+      },
+      "block_order": [
+        "button_KVNJfJ",
+        "button_zBRPLF"
+      ],
+      "custom_css": [
+        ".button-row {display: flex; justify-content: left;}"
+      ],
+      "name": "Image with text overlay",
+      "settings": {
+        "image": "shopify://shop_images/Rings-Web.jpg",
+        "mobile_image": "shopify://shop_images/Rings_mob.jpg",
+        "height": "fixed-ratio",
+        "ratio_desktop": 3,
+        "ratio_mobile": 0.9,
+        "height_desktop": 600,
+        "height_mobile": 460,
+        "image_link": "https://www.milanojewelry.com/pages/ring-builder?stage=Select+Setting&isSWS=true&sort=PRICE-ASC&rconfigShow=true&currentSKU=3654475434435642304c314d345a&ringRegion=us",
+        "full_width": true,
+        "text_alignment": "bottom left",
+        "mobile_overlay_under": true,
+        "overlay_style": "shadow"
+      }
+    },
+    "image_with_text_hxWz3y": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_6LAfhy": {
+          "type": "heading",
+          "settings": {
+            "title": "DESIGN YOUR DREAM RING",
+            "use_h1": false
+          }
+        },
+        "text_bgTWpg": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Create a custom engagement ring that reflects your story. Choose your diamond, setting, and style with our online Ring Builder or work one-on-one with our jewelry specialists to design a bespoke ring.</p>",
+            "enlarge_text": false
+          }
+        },
+        "button_7D4GR6": {
+          "type": "button",
+          "settings": {
+            "button_label": "BUILD YOUR RING",
+            "button_link": "https://www.milanojewelry.com/pages/ring-builder?",
+            "button_style": "primary"
+          }
+        },
+        "button_Qq7jgA": {
+          "type": "button",
+          "settings": {
+            "button_label": "CUSTOMIZE WITH US",
+            "button_link": "https://www.milanojewelry.com/pages/create-your-custom-jewelry",
+            "button_style": "primary"
+          }
+        }
+      },
+      "block_order": [
+        "heading_6LAfhy",
+        "text_bgTWpg",
+        "button_7D4GR6",
+        "button_Qq7jgA"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "h2,.section-header__title {font-family: \"Geist\", sans-serif !important; font-size: 24px; font-weight: 300; color: #002058; letter-spacing: -0.01em;}",
+        " {--larger-section-padding: 30px; --larger-section-padding-mobile: 25px;}"
+      ],
+      "name": "Image with text",
+      "settings": {
+        "image": "shopify://shop_images/DSC05698.jpg",
+        "image_width": 700,
+        "image_link": "",
+        "image_position": "left",
+        "text_alignment": "center",
+        "color_scheme": "2"
+      }
+    },
+    "ss_scrolling_announcement_bar_2_8t9pgW": {
+      "type": "ss-scrolling-announcement-bar-2",
+      "blocks": {
+        "item_kizwXH": {
+          "type": "item",
+          "settings": {
+            "icon": "heart",
+            "text": "Valentine’s Ready — Made-to-Order pieces best planned by Jan 23"
+          }
+        },
+        "item_DtQPQT": {
+          "type": "item",
+          "settings": {
+            "icon": "heart",
+            "text": "Valentine’s Ready — Ready-to-Ship styles available through Feb 8"
+          }
+        }
+      },
+      "block_order": [
+        "item_kizwXH",
+        "item_DtQPQT"
+      ],
+      "disabled": true,
+      "name": "SS - Scrolling Announcement Bar #2",
+      "settings": {
+        "insert_css_class_target": "",
+        "url": "https://www.milanojewelry.com/collections/ready-to-ship",
+        "layout_gap": 50,
+        "layout_gap_mobile": 30,
+        "animate_speed": 100,
+        "animate_direction": "right",
+        "animate_pause": true,
+        "icon_size": 20,
+        "icon_size_mobile": 20,
+        "text_custom": false,
+        "text_font": "sans_serif_n4",
+        "text_size": 12,
+        "text_size_mobile": 12,
+        "text_height": 100,
+        "text_color": "#ffffff",
+        "icon_color": "#ffffff",
+        "background_color": "#000000",
+        "background_gradient": "",
+        "border_color": "#000000",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding_top": 12,
+        "padding_bottom": 12,
+        "padding_horizontal": 0,
+        "padding_horizontal_mobile": 0,
+        "full_width": true,
+        "content_width": 120,
+        "border_thickness": 0
+      }
+    },
+    "17751196762fc6ad88": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_all_reviews_text_qCMC4c": {
+          "type": "shopify://apps/judge-me-reviews/blocks/all_reviews_text/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
+        },
+        "judge_me_reviews_cards_carousel_c3CeXn": {
+          "type": "shopify://apps/judge-me-reviews/blocks/cards_carousel/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "show_sample_reviews": false,
+            "reviews_selection": "product_reviews",
+            "products": [],
+            "filter_pinned": false,
+            "filter_featured": false,
+            "filter_custom_tags": "",
+            "star_rating": "4_to_5_star",
+            "show_review_media": true,
+            "display_order": "most_recent",
+            "no_image_fallback": "review_text_only",
+            "max_reviews": 20,
+            "review_length": "medium",
+            "text_size": "medium",
+            "image_ratio": "1",
+            "reviews_shown": 5,
+            "show_reviewer_name": true,
+            "show_product_name": false,
+            "hide_arrows_mobile": true,
+            "arrows_position": "sides",
+            "max_width": 1600,
+            "corner_styling": "soft",
+            "header_text_color": "#00205b",
+            "text_color": "#000000",
+            "card_color": "#f9f9f9",
+            "stars_color": "",
+            "arrows_color": "#000000",
+            "transition_speed": 5,
+            "header_text": "Customers Love",
+            "show_average_rating": false,
+            "rating_display": "default"
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_all_reviews_text_qCMC4c",
+        "judge_me_reviews_cards_carousel_c3CeXn"
+      ],
+      "custom_css": [
+        "h2,.section-header__title {font-family: \"Geist\", sans-serif !important; font-size: 24px; font-weight: 300; color: #002058; letter-spacing: -0.01em;}",
+        " {margin-top: 30px;}",
+        "@media (max-width: 767px) {{margin-top: 25px; }}",
+        ".jdgm-cards-carousel {padding: 0;}",
+        ".jdgm-cards-carousel .jdgm-content {margin-bottom: 10px;}"
+      ],
+      "settings": {
+        "full_width": false
+      }
+    },
+    "17550342366a08de2f": {
+      "type": "apps",
+      "blocks": {
+        "klaviyo_reviews_featured_reviews_carousel_Tn8epF": {
+          "type": "shopify://apps/klaviyo-reviews/blocks/featured-reviews-carousel/db20e365-d984-4ac4-9655-e1588d951ca9",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "klaviyo_reviews_featured_reviews_carousel_Tn8epF"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "{margin-top: 0px !important;}"
+      ],
+      "settings": {
+        "full_width": true
+      }
+    },
+    "17408896856f084fb3": {
+      "type": "apps",
+      "blocks": {
+        "instafeed_app_block_e9dBGA": {
+          "type": "shopify://apps/instafeed/blocks/app-block/c447db20-095d-4a10-9725-b5977662c9d5",
+          "settings": {
+            "title": "GET INSPIRED",
+            "title_color": "#00205b",
+            "title_size_v2": 24,
+            "alignment": "center",
+            "instafeed_margin_top": 0,
+            "instafeed_margin_bottom": 0,
+            "instafeed_margin_sides": 60,
+            "show_instagram_link": true,
+            "link_alignment": "left",
+            "link_color": "#000000",
+            "background_color": "",
+            "feed_id": "",
+            "html_area": ""
+          }
+        }
+      },
+      "block_order": [
+        "instafeed_app_block_e9dBGA"
+      ],
+      "custom_css": [
+        "{display: block; margin-top: 36px;}",
+        "& {margin-top: 0px !important;}",
+        " {margin-bottom: 30px;}",
+        "@media (max-width: 767px) {{margin-bottom: 25px; }}"
+      ],
+      "settings": {
+        "full_width": true
+      }
+    },
+    "gem_find_iwto_WAVBFd": {
+      "type": "gem-find-iwto",
+      "disabled": true,
+      "name": "GWP Christmas 2025",
+      "settings": {
+        "image": "shopify://shop_images/Christmas_GWP_2025_Mobile_Final_Beige_2200_x_928_px_1.png",
+        "mobile_image": "shopify://shop_images/Christmas_GWP_2025_Mobile_Final_Beige_1.png",
+        "height": "adapt",
+        "ratio_desktop": 2.7,
+        "ratio_mobile": 0.7,
+        "height_desktop": 600,
+        "height_mobile": 460,
+        "image_link": "shopify://pages/promotions-special-offers",
+        "full_width": true,
+        "text_alignment": "center center",
+        "mobile_overlay_under": false,
+        "overlay_style": "full image-overlay--bg-shadow"
+      }
+    },
+    "ss_scrolling_announcement_bar_2_ByymQd": {
+      "type": "ss-scrolling-announcement-bar-2",
+      "blocks": {
+        "item_XCMagw": {
+          "type": "item",
+          "settings": {
+            "icon": "box",
+            "text": "CHRISTMAS DELIVERY - Order by 12/15 for Ground Shipping"
+          }
+        },
+        "item_gXxCGF": {
+          "type": "item",
+          "settings": {
+            "icon": "airplane",
+            "text": "CHRISTMAS DELIVERY - Order by 12/19 for Overnight Shipping"
+          }
+        }
+      },
+      "block_order": [
+        "item_XCMagw",
+        "item_gXxCGF"
+      ],
+      "disabled": true,
+      "name": "SS - Scrolling Announcement Bar #2",
+      "settings": {
+        "insert_css_class_target": "",
+        "url": "shopify://collections/ready-to-ship",
+        "layout_gap": 50,
+        "layout_gap_mobile": 30,
+        "animate_speed": 40,
+        "animate_direction": "right",
+        "animate_pause": true,
+        "icon_size": 20,
+        "icon_size_mobile": 20,
+        "text_custom": false,
+        "text_font": "josefin_sans_n4",
+        "text_size": 12,
+        "text_size_mobile": 12,
+        "text_height": 100,
+        "text_color": "#ffffff",
+        "icon_color": "#ffffff",
+        "background_color": "#000000",
+        "background_gradient": "",
+        "border_color": "#000000",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding_top": 12,
+        "padding_bottom": 12,
+        "padding_horizontal": 0,
+        "padding_horizontal_mobile": 0,
+        "full_width": true,
+        "content_width": 120,
+        "border_thickness": 0
+      }
+    },
+    "163592857728b8bdc2": {
+      "type": "multi-column",
+      "blocks": {
+        "163592857728b8bdc2-0": {
+          "type": "text_block",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify://shop_images/milanofinal-2.jpg",
+            "title": "FLEX BANGLE JEWELRY",
+            "text": "<h5>Get flexibly fabulous with our bangles, the ultimate arm candy!</h5>",
+            "button_label": "",
+            "link": "shopify://collections/flex-collection"
+          }
+        },
+        "text_block_Y6B4xK": {
+          "type": "text_block",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify://shop_images/Bubble_Letters.jpg",
+            "title": "PERSONALIZED JEWELRY",
+            "text": "<h5>Personalized Jewelry that's as Unique as You Are!</h5>",
+            "button_label": "",
+            "link": "shopify://collections/personalized-jewelry"
+          }
+        },
+        "163592857728b8bdc2-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify://shop_images/milanofinal-19.jpg",
+            "title": "LAB GROWN DIAMONDS",
+            "text": "<h5>Sparkle and Shine with Our Lab Diamond Jewelry Pieces!</h5>",
+            "button_label": "",
+            "link": "shopify://collections/lab-grown-diamonds"
+          }
+        },
+        "text_block_hnQ7E7": {
+          "type": "text_block",
+          "disabled": true,
+          "settings": {
+            "enable_media": true,
+            "image": "shopify://shop_images/Men_s_Collection_88a52851-17c3-4033-8afb-265e257dd408.jpg",
+            "title": "MEN'S JEWELRY",
+            "text": "<h5>Discover Classy Accessories for Men</h5>",
+            "button_label": "",
+            "link": "shopify://collections/mens"
+          }
+        }
+      },
+      "block_order": [
+        "163592857728b8bdc2-0",
+        "text_block_Y6B4xK",
+        "163592857728b8bdc2-1",
+        "text_block_hnQ7E7"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "media_aspect_ratio": "0.8",
+        "media_width": 700,
+        "text_alignment": "center",
+        "button_style": "primary",
+        "color_scheme": "default"
+      }
+    },
+    "collection_list_MEeyQA": {
+      "type": "collection-list",
+      "blocks": {
+        "collection_iryHYy": {
+          "type": "collection",
+          "settings": {
+            "collection": "ring",
+            "custom_title": "",
+            "image": "shopify://shop_images/Ring-min.jpg",
+            "subheading": "",
+            "button_label": ""
+          }
+        },
+        "collection_zBeRge": {
+          "type": "collection",
+          "settings": {
+            "collection": "necklace-and-charms",
+            "custom_title": "",
+            "image": "shopify://shop_images/Gold_Necklaces.jpg",
+            "subheading": "",
+            "button_label": ""
+          }
+        },
+        "collection_rh8q3q": {
+          "type": "collection",
+          "settings": {
+            "collection": "bracelets",
+            "custom_title": "",
+            "image": "shopify://shop_images/Bracelets-min.jpg",
+            "subheading": "",
+            "button_label": ""
+          }
+        },
+        "collection_DfVBEG": {
+          "type": "collection",
+          "settings": {
+            "collection": "earrings",
+            "custom_title": "",
+            "image": "shopify://shop_images/Earrings.jpg",
+            "subheading": "",
+            "button_label": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection_iryHYy",
+        "collection_zBeRge",
+        "collection_rh8q3q",
+        "collection_DfVBEG"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "h2 {font-size: 32px;}"
+      ],
+      "settings": {
+        "title": "Shop By Category",
+        "enable_carousel": true,
+        "disable_desktop_carousel": false,
+        "grid": 4,
+        "color_scheme": "default",
+        "full_width": true,
+        "coll_grid_image_shape": "portrait-45",
+        "coll_grid_image_position": "center center",
+        "coll_thumb_mob_per_row": "2",
+        "coll_grid_show_count": false,
+        "coll_text_position": "below",
+        "coll_text_position_under_mobile": false,
+        "coll_thumb_text_align_x": "left",
+        "coll_thumb_text_align_y": "center",
+        "coll_button_style": "primary"
+      }
+    },
+    "shop_the_look_cnG6DG": {
+      "type": "shop-the-look",
+      "blocks": {
+        "subheading_WVpbWA": {
+          "type": "subheading",
+          "settings": {
+            "subheading": ""
+          }
+        },
+        "heading_L4JNMa": {
+          "type": "heading",
+          "settings": {
+            "title": "Stack ’Em, Flex ’Em, Love ’Em",
+            "heading_max_width": 10,
+            "title_size": 40,
+            "title_size_mobile": 26,
+            "use_h1": false
+          }
+        },
+        "text_AMrzn9": {
+          "type": "text",
+          "settings": {
+            "text": "",
+            "enlarge_text": true
+          }
+        }
+      },
+      "block_order": [
+        "subheading_WVpbWA",
+        "heading_L4JNMa",
+        "text_AMrzn9"
+      ],
+      "disabled": true,
+      "settings": {
+        "image": "shopify://shop_images/Bracelet_Image_f28e6739-b761-4da3-9a33-06c5fa9c813e.jpg",
+        "mobile_image": "shopify://shop_images/Flex_Bangle_Mobile_94f4d864-c4f7-41c9-94b5-4053972a6b18.jpg",
+        "video_external": "",
+        "video_description": "",
+        "height": "fixed",
+        "height_desktop": 760,
+        "height_mobile": 500,
+        "product_list": [
+          "eternity-diamond-flex-bangle",
+          "halfway-diamond-flex-bangle",
+          "2-00-carat-half-eternity-diamond-flex-bangle",
+          "serpent-flex-diamond-bangle",
+          "7-station-clover-diamond-flex-bangle",
+          "5-station-diamond-clover-flex-bangle",
+          "pave-lab-diamond-flex-cuff",
+          "open-beaded-flex-diamond-bangle",
+          "multi-shape-gemstone-and-diamond-flex-bangle",
+          "multi-shape-ruby-and-diamond-flex-bangle"
+        ],
+        "products_alignment": "bottom center",
+        "product_card_layout": "landscape",
+        "show_swatches": true,
+        "full_width": true,
+        "text_alignment": "top right",
+        "mobile_overlay_over": false,
+        "overlay_style": "no_background"
+      }
+    },
+    "image_with_text_LKaQiC": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_dFN7Xa": {
+          "type": "heading",
+          "settings": {
+            "title": "DESIGN YOUR DREAM RING",
+            "use_h1": false
+          }
+        },
+        "text_iJcMVp": {
+          "type": "text",
+          "settings": {
+            "text": "<h6><strong>Build your perfect engagement ring in 3 simple steps</strong></h6><h6><strong>1. Choose your setting</strong></h6><h6><strong>2. Choose your diamonds</strong></h6><h6><strong>3. Personalize the ring </strong></h6><h6><strong>Each ring is uniquely yours!</strong></h6>",
+            "enlarge_text": false
+          }
+        },
+        "button_iBqMAG": {
+          "type": "button",
+          "settings": {
+            "button_label": "Start with a setting",
+            "button_link": "https://shopmilano.com/apps/ringbuilder/settings/",
+            "button_style": "primary"
+          }
+        },
+        "button_LPJhCH": {
+          "type": "button",
+          "settings": {
+            "button_label": "START WITH A DIAMOND",
+            "button_link": "https://shopmilano.com/apps/ringbuilder/diamondtools/",
+            "button_style": "primary"
+          }
+        }
+      },
+      "block_order": [
+        "heading_dFN7Xa",
+        "text_iJcMVp",
+        "button_iBqMAG",
+        "button_LPJhCH"
+      ],
+      "disabled": true,
+      "settings": {
+        "image": "shopify://shop_images/Design_Your_Dream_ring.jpg",
+        "image_width": 700,
+        "image_link": "",
+        "image_position": "right",
+        "text_alignment": "left",
+        "color_scheme": "default"
+      }
+    },
+    "scrolling_banner_xtfRVX": {
+      "type": "scrolling-banner",
+      "blocks": {
+        "text_aPz8Xx": {
+          "type": "text",
+          "settings": {
+            "text": "Use Code : HOLIDAY25 in CART + Receive   free jewelry on spend of $1000+ with every order.",
+            "color": "#ffffff",
+            "link": "",
+            "use_h1": false,
+            "stencil_all_text": false,
+            "stencil_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_aPz8Xx"
+      ],
+      "disabled": true,
+      "name": "Scrolling banner",
+      "settings": {
+        "full_width": true,
+        "color_scheme": "default",
+        "text_size": 16,
+        "vertical_padding": 20,
+        "speed": 0.5,
+        "direction": "left",
+        "font": "heading",
+        "space": 50
+      }
+    },
+    "image_with_text_YeCPqq": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_giYFy6": {
+          "type": "heading",
+          "settings": {
+            "title": "OUR PROMISE",
+            "use_h1": false
+          }
+        },
+        "text_TpQiUC": {
+          "type": "text",
+          "settings": {
+            "text": "<h6><strong>At Milano we hold ourselves to strict standards with an unwavering attention to quality</strong><em><strong> </strong></em><strong>and detail that is only possible due to our own manufacturing facility. </strong></h6><h6><strong>Every Milano piece is backed by our Industry leading manufacturing warranty.</strong></h6><h6><strong>We are committed to using the finest ethically sourced materials</strong></h6>",
+            "enlarge_text": true
+          }
+        },
+        "button_JRTHzG": {
+          "type": "button",
+          "settings": {
+            "button_label": "learn about our manufacturing",
+            "button_link": "shopify://pages/our-factory",
+            "button_style": "primary"
+          }
+        }
+      },
+      "block_order": [
+        "heading_giYFy6",
+        "text_TpQiUC",
+        "button_JRTHzG"
+      ],
+      "disabled": true,
+      "settings": {
+        "image": "shopify://shop_images/pexels-tima-miroshnichenko-6263143_-_1_46730832-167d-44fa-a1c8-1ca4a7b54813.jpg",
+        "image_width": 700,
+        "image_link": "",
+        "image_position": "left",
+        "text_alignment": "center",
+        "color_scheme": "2"
+      }
+    },
+    "rich_text_dBFyV6": {
+      "type": "rich-text",
+      "blocks": {
+        "text_e9XiXw": {
+          "type": "text",
+          "settings": {
+            "text": "<h1>LOVED BY OVER <strong>300,000 </strong>CUSTOMERS</h1><h5>SEE WHAT THEY ARE SAYING</h5>",
+            "enlarge_text": true
+          }
+        }
+      },
+      "block_order": [
+        "text_e9XiXw"
+      ],
+      "disabled": true,
+      "custom_css": [],
+      "settings": {
+        "height": "medium",
+        "text_alignment": "center",
+        "full_width": true,
+        "color_scheme": "default"
+      }
+    },
+    "testimonials_YHnawj": {
+      "type": "testimonials",
+      "blocks": {
+        "testimonial_PpENyC": {
+          "type": "testimonial",
+          "settings": {
+            "star_rating": 5,
+            "testimonial": "Perfect stacking ring. Looks great.",
+            "author": "Carol N.",
+            "image": "shopify://shop_images/54acb41e-9523-4554-a1a7-2bac38476844.jpg",
+            "image_caption": "",
+            "link": "shopify://products/east-west-tanzanite-and-bezel-diamond-ring"
+          }
+        },
+        "testimonial_ynnEc4": {
+          "type": "testimonial",
+          "settings": {
+            "star_rating": 5,
+            "testimonial": "This bracelet is absolutely gorgeous!! I fits perfectly and is very comfortable on my wrist. The stones are very pretty color and silver is very shiny. The bracelet seems well built and durable. I am very happy with this and very excited to have it.",
+            "author": "Shawna O.",
+            "image": "shopify://shop_images/Hugs_and_Kisses.jpg",
+            "image_caption": "",
+            "link": "shopify://products/hugs-and-kisses-tanzanite-bracelet"
+          }
+        },
+        "testimonial_3y8DNP": {
+          "type": "testimonial",
+          "settings": {
+            "star_rating": 5,
+            "testimonial": "I purchased this ring in Grand Cayman. I was not aware of dancing diamonds and fell in love with this ring. It is absolutely beautiful!",
+            "author": "Marlena",
+            "image": "shopify://shop_images/Cayman_Dancing_Diamond_Review.jpg",
+            "image_caption": "Dancing Diamond RIng",
+            "link": "shopify://products/square-halo-dancing-diamond-ring"
+          }
+        },
+        "testimonial_Wf4CmM": {
+          "type": "testimonial",
+          "settings": {
+            "star_rating": 5,
+            "testimonial": "I was very pleased. We got a good price on diamond earrings. This is the third time I’m buying jewelry from Milano. I recommend them.",
+            "author": "Sherry H",
+            "image": "shopify://shop_images/caption.jpg",
+            "image_caption": "",
+            "link": ""
+          }
+        },
+        "testimonial_tALXdV": {
+          "type": "testimonial",
+          "settings": {
+            "star_rating": 5,
+            "testimonial": "Had a great experience shopping for jewelry with my fiancé for my birthday. The jeweler was knowledgeable and helpful. They had a beautiful selection of diamonds and sapphires and I was able to find the perfect earrings and necklace. Such great quality. Will definitely be going back for additional pieces!",
+            "author": "Stephanie S.",
+            "image": "shopify://shop_images/2024-05-30.jpg",
+            "image_caption": "",
+            "link": "shopify://products/classic-halo-oval-sapphire-and-diamond-pendant"
+          }
+        },
+        "testimonial_rbfBac": {
+          "type": "testimonial",
+          "settings": {
+            "star_rating": 5,
+            "testimonial": "I love this ring!! It’s gorgeous!! Very sparky, great size!! I bought the matching necklace and love the set!!",
+            "author": "Shawna O.",
+            "image": "shopify://shop_images/bf2ba427-3f03-45e5-bd83-5900e8a19ff7.jpg",
+            "image_caption": "",
+            "link": "shopify://products/oval-tanzanite-and-lab-diamond-ring"
+          }
+        },
+        "testimonial_wUBQMk": {
+          "type": "testimonial",
+          "settings": {
+            "star_rating": 5,
+            "testimonial": "The salespeople are fantastic, friendly, and trustworthy. I came back to specifically look for a small tanzanite ring. ",
+            "author": "Jennifer W",
+            "image": "shopify://shop_images/20191018-170142-largejpg.jpg",
+            "image_caption": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_PpENyC",
+        "testimonial_ynnEc4",
+        "testimonial_3y8DNP",
+        "testimonial_Wf4CmM",
+        "testimonial_tALXdV",
+        "testimonial_rbfBac",
+        "testimonial_wUBQMk"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "layout": "image-left",
+        "text_caps": false,
+        "quote_text_size": 25,
+        "quote_text_size_mobile": 20,
+        "image_shape": "square",
+        "color_scheme": "default",
+        "autoplay": true,
+        "autoplay_speed": 5
+      }
+    }
+  },
+  "order": [
+    "gallery_JqMhaU",
+    "gem_find_iwto_BHbHEW",
+    "collection_list_bhxfBF",
+    "gem_find_iwto_Ui4mLH",
+    "gem_find_iwto_PUhpTQ",
+    "16359278676808bea5",
+    "multi_column_3nDUQF",
+    "rich_text_ht9gAC",
+    "gallery_iKkj8q",
+    "gem_find_iwto_CTmjLN",
+    "image_with_text_hxWz3y",
+    "ss_scrolling_announcement_bar_2_8t9pgW",
+    "17751196762fc6ad88",
+    "17550342366a08de2f",
+    "17408896856f084fb3",
+    "gem_find_iwto_WAVBFd",
+    "ss_scrolling_announcement_bar_2_ByymQd",
+    "163592857728b8bdc2",
+    "collection_list_MEeyQA",
+    "shop_the_look_cnG6DG",
+    "image_with_text_LKaQiC",
+    "scrolling_banner_xtfRVX",
+    "image_with_text_YeCPqq",
+    "rich_text_dBFyV6",
+    "testimonials_YHnawj"
+  ]
+}
