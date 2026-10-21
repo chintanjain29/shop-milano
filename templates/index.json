@@ -122,7 +122,7 @@
           "settings": {
             "collection": "ring",
             "custom_title": "Rings",
-            "image": "shopify://shop_images/DSC04943.jpg",
+            "image": "shopify://shop_images/RI_3.png",
             "subheading": "",
             "button_label": ""
           }
@@ -132,7 +132,7 @@
           "settings": {
             "collection": "necklace-and-charms",
             "custom_title": "",
-            "image": "shopify://shop_images/DSC04854.jpg",
+            "image": "shopify://shop_images/NK.jpg",
             "subheading": "",
             "button_label": ""
           }
@@ -142,7 +142,7 @@
           "settings": {
             "collection": "earrings",
             "custom_title": "",
-            "image": "shopify://shop_images/DSC05118.jpg",
+            "image": "shopify://shop_images/ER.png",
             "subheading": "",
             "button_label": ""
           }
@@ -152,7 +152,7 @@
           "settings": {
             "collection": "bracelets",
             "custom_title": "",
-            "image": "shopify://shop_images/DSC05543.jpg",
+            "image": "shopify://shop_images/BR.png",
             "subheading": "",
             "button_label": ""
           }
@@ -162,7 +162,7 @@
           "settings": {
             "collection": "gemstone-jewelry-1",
             "custom_title": "",
-            "image": "shopify://shop_images/milano10.22final-55.jpg",
+            "image": "shopify://shop_images/GM.png",
             "subheading": "",
             "button_label": ""
           }
@@ -172,7 +172,7 @@
           "settings": {
             "collection": "pre-styled-engagement-rings",
             "custom_title": "",
-            "image": "shopify://shop_images/DSC05745.jpg",
+            "image": "shopify://shop_images/ENG.png",
             "subheading": "",
             "button_label": ""
           }

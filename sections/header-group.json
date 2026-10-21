@@ -1,1 +1,317 @@
-{"type":"header","name":"Header Group","sections":{"announcement-bar":{"type":"announcement-bar","blocks":{"announcement_8VdQEn":{"type":"announcement","settings":{"text":"<a href=\"https:\/\/www.milanojewelry.com\/collections\/gemstone-jewelry-1\" title=\"https:\/\/www.milanojewelry.com\/collections\/gemstone-jewelry-1\">ADD A LITTLE COLOR - 20% OFF GEMSTONES<\/a>","show_countdown":false,"hide_on_end":false,"end_date":"","end_time":"","number_font":"base","countdown_separator":"box"}},"announcement_3hWVfz":{"type":"announcement","settings":{"text":"<a href=\"https:\/\/www.milanojewelry.com\/collections\/all-products?pf_p_price=1499%3A21860\" title=\"https:\/\/www.milanojewelry.com\/collections\/all-products?pf_p_price=1499%3A21860\">FREE 0.5 CTW LAB DIAMOND STUDS WITH $1,499+<\/a>","show_countdown":false,"hide_on_end":false,"end_date":"","end_time":"","number_font":"base","countdown_separator":"box"}},"announcement_DGKp7m":{"type":"announcement","disabled":true,"settings":{"text":"LABOR DAY SALE - ENJOY 25% OFF ON YOUR PURCHASE - <a href=\"https:\/\/www.milanojewelry.com\/collections\/all-products\" title=\"https:\/\/www.milanojewelry.com\/collections\/all-products\"><em>Shop Now<\/em><\/a>","show_countdown":false,"hide_on_end":false,"end_date":"","end_time":"","number_font":"base","countdown_separator":"box"}},"announcement_jDfjC4":{"type":"announcement","settings":{"text":"<a href=\"https:\/\/www.milanojewelry.com\/collections\/the-fall-edit\" title=\"https:\/\/www.milanojewelry.com\/collections\/the-fall-edit\">MEET YOUR FALL OBSESSIONS<\/a>","show_countdown":false,"hide_on_end":false,"end_date":"","end_time":"","number_font":"base","countdown_separator":"box"}},"announcement_pATepx":{"type":"announcement","settings":{"text":"<a href=\"https:\/\/www.milanojewelry.com\/collections\/horseshoe-collection\" title=\"https:\/\/www.milanojewelry.com\/collections\/horseshoe-collection\">CELEBRATE THE YEAR OF THE FIRE HORSE<\/a>","show_countdown":false,"hide_on_end":false,"end_date":"","end_time":"","number_font":"base","countdown_separator":"box"}},"announcement_DpC4Wm":{"type":"announcement","settings":{"text":"<a href=\"https:\/\/www.milanojewelry.com\/pages\/faq\" title=\"https:\/\/www.milanojewelry.com\/pages\/faq\">FREE SHIPPING | 30 DAY RETURNS | LIFETIME WARRANTY<\/a>","show_countdown":false,"hide_on_end":false,"end_date":"","end_time":"23:59","number_font":"base","countdown_separator":"box"}},"announcement_iEqG6G":{"type":"announcement","settings":{"text":"<a href=\"https:\/\/www.milanojewelry.com\/pages\/payment-financing\" title=\"https:\/\/www.milanojewelry.com\/pages\/payment-financing\">FLEXIBLE FINANCING & PAYMENT OPTIONS<\/a>","show_countdown":false,"hide_on_end":false,"end_date":"","end_time":"","number_font":"base","countdown_separator":"box"}}},"block_order":["announcement_8VdQEn","announcement_3hWVfz","announcement_DGKp7m","announcement_jDfjC4","announcement_pATepx","announcement_DpC4Wm","announcement_iEqG6G"],"settings":{"announcement_bar_col":"#00205b","announcement_text_col":"#ffffff","message_font_size":14,"show_social_icons":false,"menu":"","enable_country_selector":true,"enable_language_selector":true}},"header":{"type":"header","blocks":{"menu_promotion_small_QACaUJ":{"type":"menu-promotion-small","name":"SHOP BY","settings":{"dropdown_link_title":"Shop By","image":"shopify:\/\/shop_images\/milano10.22final-53.jpg","title":"SHOP ALL JEWELRY","link_url":"https:\/\/www.milanojewelry.com\/collections\/all"}},"menu_promotion_small_WbBagx":{"type":"menu-promotion-small","name":"LAB DIAMOND JEWELRY","settings":{"dropdown_link_title":"Lab Diamond Jewelry","image":"shopify:\/\/shop_images\/milano10.22final-52_1.jpg","title":"SHOP LAB DIAMONDS","link_url":"shopify:\/\/collections\/lab-grown-diamonds"}},"menu_promotion_small_WtrWUn":{"type":"menu-promotion-small","name":"BRIDAL","settings":{"dropdown_link_title":"BRIDAL","image":"shopify:\/\/shop_images\/milano10.22final-47.jpg","title":"SHOP BRIDAL","link_url":"shopify:\/\/collections\/pre-styled-engagement-rings"}},"menu_promotion_small_8EiE8R":{"type":"menu-promotion-small","name":"COLLECTIONS","settings":{"dropdown_link_title":"Collections","image":"shopify:\/\/shop_images\/milano10.22final-59.jpg","title":"SHOP GEMSTONES","link_url":"https:\/\/www.milanojewelry.com\/collections\/gemstone-jewelry-1"}},"menu_promotion_small_mJrw8Q":{"type":"menu-promotion-small","name":"GIFTS","settings":{"dropdown_link_title":"GIFTS","image":"shopify:\/\/shop_images\/milanourgent-4.jpg","title":"SHOP READY TO SHIP","link_url":"shopify:\/\/collections\/ready-to-ship"}},"icon_link_KwGCAd":{"type":"icon_link","settings":{"icon":"shopify:\/\/shop_images\/wishlist-icon.png","text":"WISHLIST","link":"shopify:\/\/pages\/swym-share-wishlist"}},"icon_link_DkKqa7":{"type":"icon_link","settings":{"icon":"shopify:\/\/shop_images\/svgviewer-png-output_3.png","text":"ACCOUNT","link":"\/account"}},"icon_link_hBUXk4":{"type":"icon_link","settings":{"icon":"shopify:\/\/shop_images\/location-icon.png","text":"RETAIL LOCATIONS","link":"shopify:\/\/pages\/our-locations"}},"icon_link_NYxybp":{"type":"icon_link","settings":{"icon":"shopify:\/\/shop_images\/calender_icon_334c0ef5-7927-41f0-99bb-bf3dad80f5b9.png","text":"BOOK AN APPOINTMENT","link":"https:\/\/bookings.cloud.microsoft\/book\/VirtualAppointment@milanodg.com\/?ismsaljsauthenabled=&ref=christinekesteloo"}},"icon_link_xrdD33":{"type":"icon_link","settings":{"icon":"shopify:\/\/shop_images\/call-icon.png","text":"+1 (800) 888-2166","link":"tel:+1 (800) 888-2166"}},"icon_link_XbG7Xe":{"type":"icon_link","settings":{"icon":"shopify:\/\/shop_images\/svgviewer-png-output_4.png","text":"EMAIL US","link":"mailto:concierge@milanojewelry.com"}}},"block_order":["menu_promotion_small_QACaUJ","menu_promotion_small_WbBagx","menu_promotion_small_WtrWUn","menu_promotion_small_8EiE8R","menu_promotion_small_mJrw8Q","icon_link_KwGCAd","icon_link_DkKqa7","icon_link_hBUXk4","icon_link_NYxybp","icon_link_xrdD33","icon_link_XbG7Xe"],"settings":{"logo":"shopify:\/\/shop_images\/Blue_Wordmark_1_d7cee542-70bd-47e2-a3a7-d43b448480e6.png","logo_img_width_int":210,"mobile_logo_img_width_int":140,"logo_h1":true,"enable_sticky":true,"location_button_link":"\/pages\/our-locations","phone_number":"+18008882166","book_an_appointment_icon":"shopify:\/\/shop_images\/VA_Icon_Final.png","book_an_appointment_text":"Book an appointment","book_an_appointment_url":"https:\/\/bookings.cloud.microsoft\/book\/VirtualAppointment@milanodg.com\/?ismsaljsauthenabled=&ref=christinekesteloo","enable_transparent":false,"transparent_color":"#ffffff","transparent_logo":"shopify:\/\/shop_images\/Blue_Wordmark_1_d7cee542-70bd-47e2-a3a7-d43b448480e6.png","menu_linklist":"menu-2-0","menu_layout":"underneath","nav_featured_link":"Sale","menu_linklist_mobile":"main-menu-mobile-in-dev-use","mobile_expand_with_entire_link":true,"enable_mobile_promo_carousel":true,"enable_nav_mob_products":false,"nav_mob_products_title":"Best Sellers","nav_mob_products_collection":"","enable_search":true,"search_recommendations_title":"","search_recommendations_menu":"","icon_strategy":"icons_only","cart_icon":"bag"}},"store-messages":{"type":"store-messages","blocks":{"1601308104445":{"type":"message","settings":{"heading":"","subheading":"Free shipping on orders over $100","link_url":""}},"1601308125690":{"type":"message","settings":{"heading":"","subheading":"Free Click & Collect to US stores*","link_url":""}},"1601308127822":{"type":"message","settings":{"heading":"","subheading":"Free and easy domestic returns","link_url":""}}},"block_order":["1601308104445","1601308125690","1601308127822"],"disabled":true,"settings":{"head_not_home_only":false,"head_not_col_bg":"#f4f6f8","head_not_col_txt1":"#171717","head_not_col_txt2":"#4c4c4b","head_not_mob_show":true,"head_not_mob_text":"Free shipping on orders over $100","head_not_mob_url":""}}},"order":["announcement-bar","header","store-messages"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "type": "header",
+  "name": "Header Group",
+  "sections": {
+    "announcement-bar": {
+      "type": "announcement-bar",
+      "blocks": {
+        "announcement_8VdQEn": {
+          "type": "announcement",
+          "settings": {
+            "text": "<a href=\"https://www.milanojewelry.com/collections/gemstone-jewelry-1\" title=\"https://www.milanojewelry.com/collections/gemstone-jewelry-1\">ADD A LITTLE COLOR - 20% OFF GEMSTONES</a>",
+            "show_countdown": false,
+            "hide_on_end": false,
+            "end_date": "",
+            "end_time": "",
+            "number_font": "base",
+            "countdown_separator": "box"
+          }
+        },
+        "announcement_3hWVfz": {
+          "type": "announcement",
+          "settings": {
+            "text": "<a href=\"https://www.milanojewelry.com/collections/all-products?pf_p_price=1499%3A21860\" title=\"https://www.milanojewelry.com/collections/all-products?pf_p_price=1499%3A21860\">FREE 0.5 CTW LAB DIAMOND STUDS WITH $1,499+</a>",
+            "show_countdown": false,
+            "hide_on_end": false,
+            "end_date": "",
+            "end_time": "",
+            "number_font": "base",
+            "countdown_separator": "box"
+          }
+        },
+        "announcement_DGKp7m": {
+          "type": "announcement",
+          "disabled": true,
+          "settings": {
+            "text": "LABOR DAY SALE - ENJOY 25% OFF ON YOUR PURCHASE - <a href=\"https://www.milanojewelry.com/collections/all-products\" title=\"https://www.milanojewelry.com/collections/all-products\"><em>Shop Now</em></a>",
+            "show_countdown": false,
+            "hide_on_end": false,
+            "end_date": "",
+            "end_time": "",
+            "number_font": "base",
+            "countdown_separator": "box"
+          }
+        },
+        "announcement_jDfjC4": {
+          "type": "announcement",
+          "settings": {
+            "text": "<a href=\"https://www.milanojewelry.com/collections/the-fall-edit\" title=\"https://www.milanojewelry.com/collections/the-fall-edit\">MEET YOUR FALL OBSESSIONS</a>",
+            "show_countdown": false,
+            "hide_on_end": false,
+            "end_date": "",
+            "end_time": "",
+            "number_font": "base",
+            "countdown_separator": "box"
+          }
+        },
+        "announcement_pATepx": {
+          "type": "announcement",
+          "settings": {
+            "text": "<a href=\"https://www.milanojewelry.com/collections/horseshoe-collection\" title=\"https://www.milanojewelry.com/collections/horseshoe-collection\">CELEBRATE THE YEAR OF THE FIRE HORSE</a>",
+            "show_countdown": false,
+            "hide_on_end": false,
+            "end_date": "",
+            "end_time": "",
+            "number_font": "base",
+            "countdown_separator": "box"
+          }
+        },
+        "announcement_DpC4Wm": {
+          "type": "announcement",
+          "settings": {
+            "text": "<a href=\"https://www.milanojewelry.com/pages/faq\" title=\"https://www.milanojewelry.com/pages/faq\">FREE SHIPPING | 30 DAY RETURNS | LIFETIME WARRANTY</a>",
+            "show_countdown": false,
+            "hide_on_end": false,
+            "end_date": "",
+            "end_time": "23:59",
+            "number_font": "base",
+            "countdown_separator": "box"
+          }
+        },
+        "announcement_iEqG6G": {
+          "type": "announcement",
+          "settings": {
+            "text": "<a href=\"https://www.milanojewelry.com/pages/payment-financing\" title=\"https://www.milanojewelry.com/pages/payment-financing\">FLEXIBLE FINANCING & PAYMENT OPTIONS</a>",
+            "show_countdown": false,
+            "hide_on_end": false,
+            "end_date": "",
+            "end_time": "",
+            "number_font": "base",
+            "countdown_separator": "box"
+          }
+        }
+      },
+      "block_order": [
+        "announcement_8VdQEn",
+        "announcement_3hWVfz",
+        "announcement_DGKp7m",
+        "announcement_jDfjC4",
+        "announcement_pATepx",
+        "announcement_DpC4Wm",
+        "announcement_iEqG6G"
+      ],
+      "settings": {
+        "announcement_bar_col": "#00205b",
+        "announcement_text_col": "#ffffff",
+        "message_font_size": 14,
+        "show_social_icons": false,
+        "menu": "",
+        "enable_country_selector": true,
+        "enable_language_selector": true
+      }
+    },
+    "header": {
+      "type": "header",
+      "blocks": {
+        "menu_promotion_small_QACaUJ": {
+          "type": "menu-promotion-small",
+          "name": "SHOP BY",
+          "settings": {
+            "dropdown_link_title": "Shop By",
+            "image": "shopify://shop_images/milano10.22final-53.jpg",
+            "title": "SHOP ALL JEWELRY",
+            "link_url": "https://www.milanojewelry.com/collections/all"
+          }
+        },
+        "menu_promotion_small_WbBagx": {
+          "type": "menu-promotion-small",
+          "name": "LAB DIAMOND JEWELRY",
+          "settings": {
+            "dropdown_link_title": "Lab Diamond Jewelry",
+            "image": "shopify://shop_images/milano10.22final-52_1.jpg",
+            "title": "SHOP LAB DIAMONDS",
+            "link_url": "shopify://collections/lab-grown-diamonds"
+          }
+        },
+        "menu_promotion_small_WtrWUn": {
+          "type": "menu-promotion-small",
+          "name": "BRIDAL",
+          "settings": {
+            "dropdown_link_title": "BRIDAL",
+            "image": "shopify://shop_images/milano10.22final-47.jpg",
+            "title": "SHOP BRIDAL",
+            "link_url": "shopify://collections/pre-styled-engagement-rings"
+          }
+        },
+        "menu_promotion_small_8EiE8R": {
+          "type": "menu-promotion-small",
+          "name": "COLLECTIONS",
+          "settings": {
+            "dropdown_link_title": "Collections",
+            "image": "shopify://shop_images/milano10.22final-59.jpg",
+            "title": "SHOP GEMSTONES",
+            "link_url": "https://www.milanojewelry.com/collections/gemstone-jewelry-1"
+          }
+        },
+        "menu_promotion_small_mJrw8Q": {
+          "type": "menu-promotion-small",
+          "name": "GIFTS",
+          "settings": {
+            "dropdown_link_title": "GIFTS",
+            "image": "shopify://shop_images/milanourgent-4.jpg",
+            "title": "SHOP READY TO SHIP",
+            "link_url": "shopify://collections/ready-to-ship"
+          }
+        },
+        "icon_link_KwGCAd": {
+          "type": "icon_link",
+          "settings": {
+            "icon": "shopify://shop_images/wishlist-icon.png",
+            "text": "WISHLIST",
+            "link": "shopify://pages/swym-share-wishlist"
+          }
+        },
+        "icon_link_DkKqa7": {
+          "type": "icon_link",
+          "settings": {
+            "icon": "shopify://shop_images/svgviewer-png-output_3.png",
+            "text": "ACCOUNT",
+            "link": "/account"
+          }
+        },
+        "icon_link_hBUXk4": {
+          "type": "icon_link",
+          "settings": {
+            "icon": "shopify://shop_images/location-icon.png",
+            "text": "RETAIL LOCATIONS",
+            "link": "shopify://pages/our-locations"
+          }
+        },
+        "icon_link_NYxybp": {
+          "type": "icon_link",
+          "settings": {
+            "icon": "shopify://shop_images/calender_icon_334c0ef5-7927-41f0-99bb-bf3dad80f5b9.png",
+            "text": "BOOK AN APPOINTMENT",
+            "link": "https://bookings.cloud.microsoft/book/VirtualAppointment@milanodg.com/?ismsaljsauthenabled=&ref=christinekesteloo"
+          }
+        },
+        "icon_link_xrdD33": {
+          "type": "icon_link",
+          "settings": {
+            "icon": "shopify://shop_images/call-icon.png",
+            "text": "+1 (800) 888-2166",
+            "link": "tel:+1 (800) 888-2166"
+          }
+        },
+        "icon_link_XbG7Xe": {
+          "type": "icon_link",
+          "settings": {
+            "icon": "shopify://shop_images/svgviewer-png-output_4.png",
+            "text": "EMAIL US",
+            "link": "mailto:concierge@milanojewelry.com"
+          }
+        }
+      },
+      "block_order": [
+        "menu_promotion_small_QACaUJ",
+        "menu_promotion_small_WbBagx",
+        "menu_promotion_small_WtrWUn",
+        "menu_promotion_small_8EiE8R",
+        "menu_promotion_small_mJrw8Q",
+        "icon_link_KwGCAd",
+        "icon_link_DkKqa7",
+        "icon_link_hBUXk4",
+        "icon_link_NYxybp",
+        "icon_link_xrdD33",
+        "icon_link_XbG7Xe"
+      ],
+      "settings": {
+        "logo": "shopify://shop_images/Blue_Wordmark_1_d7cee542-70bd-47e2-a3a7-d43b448480e6.png",
+        "logo_img_width_int": 210,
+        "mobile_logo_img_width_int": 140,
+        "logo_h1": true,
+        "enable_sticky": true,
+        "location_button_link": "/pages/our-locations",
+        "phone_number": "+18008882166",
+        "book_an_appointment_icon": "shopify://shop_images/VA_Icon_Final.png",
+        "book_an_appointment_text": "Book an appointment",
+        "book_an_appointment_url": "https://bookings.cloud.microsoft/book/VirtualAppointment@milanodg.com/?ismsaljsauthenabled=&ref=christinekesteloo",
+        "enable_transparent": false,
+        "transparent_color": "#ffffff",
+        "transparent_logo": "shopify://shop_images/Blue_Wordmark_1_d7cee542-70bd-47e2-a3a7-d43b448480e6.png",
+        "menu_linklist": "menu-2-0",
+        "menu_layout": "underneath",
+        "nav_featured_link": "Sale",
+        "menu_linklist_mobile": "main-menu-mobile-in-dev-use",
+        "mobile_expand_with_entire_link": true,
+        "enable_mobile_promo_carousel": true,
+        "enable_nav_mob_products": false,
+        "nav_mob_products_title": "Best Sellers",
+        "nav_mob_products_collection": "",
+        "enable_search": true,
+        "search_recommendations_title": "",
+        "search_recommendations_menu": "",
+        "icon_strategy": "icons_only",
+        "cart_icon": "bag"
+      }
+    },
+    "store-messages": {
+      "type": "store-messages",
+      "blocks": {
+        "1601308104445": {
+          "type": "message",
+          "settings": {
+            "heading": "",
+            "subheading": "Free shipping on orders over $100",
+            "link_url": ""
+          }
+        },
+        "1601308125690": {
+          "type": "message",
+          "settings": {
+            "heading": "",
+            "subheading": "Free Click & Collect to US stores*",
+            "link_url": ""
+          }
+        },
+        "1601308127822": {
+          "type": "message",
+          "settings": {
+            "heading": "",
+            "subheading": "Free and easy domestic returns",
+            "link_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "1601308104445",
+        "1601308125690",
+        "1601308127822"
+      ],
+      "disabled": true,
+      "settings": {
+        "head_not_home_only": false,
+        "head_not_col_bg": "#f4f6f8",
+        "head_not_col_txt1": "#171717",
+        "head_not_col_txt2": "#4c4c4b",
+        "head_not_mob_show": true,
+        "head_not_mob_text": "Free shipping on orders over $100",
+        "head_not_mob_url": ""
+      }
+    }
+  },
+  "order": [
+    "announcement-bar",
+    "header",
+    "store-messages"
+  ]
+}
